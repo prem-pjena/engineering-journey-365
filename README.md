@@ -1,5 +1,9 @@
 # 🚀 Engineering Journey 365
 
+**👤 Prem Prakash Jena** — AI Engineering Intern → FAANG-grade Agentic AI Engineer (30+ LPA target)
+
+> **Agent Folder:** `agent/` contains all personal progress tracking, learning journals, error database, skill scores, portfolio roadmap, and office work mappings. It's gitignored — my private engineering cockpit. Mentor AI uses this folder to guide my daily learning.
+
 <div align="center">
 
 # From Beginner to Professional Software & AI Engineer
@@ -8,7 +12,7 @@
 
 ---
 
-![Days Completed](https://img.shields.io/badge/Days%20Completed-1%2F365-blue)
+![Days Completed](https://img.shields.io/badge/Days%20Completed-3%2F365-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-green)
 ![Commitment](https://img.shields.io/badge/Commitment-Daily-orange)
 
@@ -136,6 +140,19 @@ engineering-journey-365/
 ├── Month-10/
 ├── Month-11/
 └── Month-12/
+│
+└── agent/                        ← 🔒 Personal (gitignored)
+    ├── reports/                  ← Daily progress, journals
+    ├── learnings/                ← SkillVeda work → concept mapping
+    ├── portfolio/                ← Project roadmap, branding guide
+    ├── dsa/                      ← Problem-solving tracker
+    ├── tests/                    ← Weekly test results
+    ├── HANDOFF_CONTEXT.md        ← Office work context
+    ├── resume.md                 ← Growing resume
+    ├── learning_plan.md          ← 12-month roadmap
+    ├── skill_tracker.md          ← Scores over time
+    ├── error_database.md         ← Every mistake logged
+    └── evidence_log.md           ← Proof of independent building
 ```
 
 ---

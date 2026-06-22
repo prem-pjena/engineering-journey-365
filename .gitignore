@@ -1,0 +1,29 @@
+# Agent folder — personal progress tracking, scores, journals
+# NOT part of the learning content — kept local only
+agent/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Node
+node_modules/
