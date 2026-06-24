@@ -8,7 +8,7 @@
 
 ---
 
-![Days Completed](https://img.shields.io/badge/Days%20Completed-3%2F365-blue)
+![Days Completed](https://img.shields.io/badge/Days%20Completed-4%2F365-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-success)
 ![Commitment](https://img.shields.io/badge/Commitment-Daily-orange)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
@@ -127,7 +127,7 @@ engineering-journey-365/
 
 ## 🔗 Connect With Me
 
-- **LinkedIn:** [Prem Prakash Jena](https://linkedin.com/in/prem-pjena)
+- **LinkedIn:** [Prem Prakash Jena](https://www.linkedin.com/in/premprakashj/)
 - **GitHub:** [@prem-pjena](https://github.com/prem-pjena)
 - **Weekly Updates:** Every Sunday on LinkedIn — follow for the journey
 
