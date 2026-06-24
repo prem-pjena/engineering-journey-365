@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# From Intern → FAANG-Grade Agentic AI Engineer
+# From Beginner to Professional Software & AI Engineer
 
 ### A 365-Day Public Learning Journey
 
@@ -11,133 +11,151 @@
 ![Days Completed](https://img.shields.io/badge/Days%20Completed-3%2F365-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-success)
 ![Commitment](https://img.shields.io/badge/Commitment-Daily-orange)
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![AWS](https://img.shields.io/badge/AWS-Learning-orange)
-![LangChain](https://img.shields.io/badge/LangChain-In%20Progress-green)
-
-**👤 Prem Prakash Jena** — AI Engineering Intern
-
-🎯 **Target:** Agentic AI Backend Engineer at FAANG | 30+ LPA
-
-📆 **365 days of daily commits, weekly LinkedIn posts, and building in public.**
 
 </div>
 
 ---
 
-## 📖 About This Repository
+# 📖 About This Repository
 
-This is my **live engineering journal** — documenting a structured 12-month transformation from AI Engineering Intern to FAANG-grade Agentic AI Backend Engineer.
+Welcome to my engineering journey.
 
-Instead of endless tutorials, I focus on:
+This repository documents my progress as I learn Software Engineering, Data Structures & Algorithms, Backend Development, System Design, and AI Engineering over the course of one year.
 
-- **🧠 Learning** — Structured curriculum (Python → Distributed Systems → ML → RAG → Agents → Inference)
-- **🔨 Building** — 4 production-grade portfolio projects deployed on AWS
-- **🐛 Debugging** — Every mistake logged, never repeated
-- **📝 Documenting** — Daily progress pushed to GitHub
-- **📈 Improving** — Weekly tests, retention drills, skill tracking
+Instead of endlessly consuming tutorials, I am focusing on:
 
----
+* Learning
+* Building
+* Debugging
+* Documenting
+* Improving every day
 
-## 📅 12-Month Roadmap
+Every day I complete learning tasks, write code, solve problems, document lessons learned, and push my progress publicly to GitHub.
 
-```
-Month  1-2:  Python + DSA + Intro ML + AWS Fundamentals
-Month  3-4:  Distributed Systems + Docker + Queues + AWS Core
-Month  5:    Classical ML + FastAPI Backend + Project 1
-Month  6-7:  AI Engineering (LangChain, RAG, LangSmith) + Project 2
-Month  8-9:  Agentic AI (LangGraph, MCP, Multi-Agent) + Project 3
-Month 10:    Inference Optimization (vLLM, BPE) + System Design
-Month 11:    Full-Stack Agentic Platform on AWS + Project 4
-Month 12:    FAANG Interview Prep + Open Source Contributions
-```
+This repository serves as both:
+
+* A personal engineering journal
+* A public accountability system
+* A portfolio of growth over time
 
 ---
 
-## 🛠️ Tech Stack (Growing)
+# 🎯 Primary Goal
 
-| Category | Technologies |
-|----------|-------------|
-| **Languages** | Python, TypeScript, JavaScript, Bash |
-| **Backend** | FastAPI, Express.js, REST APIs, SQLAlchemy |
-| **Database** | PostgreSQL, pgvector, Redis, SQL |
-| **AI/ML** | LangChain, LangGraph, LangSmith, RAG, MCP, vLLM, XGBoost |
-| **Cloud** | AWS (S3, Lambda, ECS, Bedrock, ElastiCache, SQS, Step Functions) |
-| **DevOps** | Docker, GitHub Actions, CI/CD, Linux |
-| **System Design** | Distributed Systems, Caching, Event-Driven Architecture, CAP |
+My goal is to become a highly capable Software & AI Engineer by building strong foundations in:
+
+## Programming
+
+* Python
+* JavaScript
+
+## Data Structures & Algorithms
+
+* Arrays
+* Strings
+* Linked Lists
+* Stacks
+* Queues
+* Trees
+* Graphs
+* Recursion
+* Dynamic Programming
+
+## Backend Engineering
+
+* APIs
+* Authentication
+* Databases
+* Scalable Systems
+
+## Databases
+
+* SQL
+* Database Design
+* Query Optimization
+
+## Version Control
+
+* Git
+* GitHub
+
+## System Design
+
+* Scalability
+* Reliability
+* Distributed Systems
+
+## AI Engineering
+
+* LLM Applications
+* RAG Systems
+* AI Agents
+* Multi-Agent Systems
+* MCP
+* Agent-to-Agent Communication
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 engineering-journey-365/
+
 │
 ├── README.md
 │
-├── Month-01/         ← Python + DSA + ML Intro + AWS Basics
-├── Month-02/         ← OOP + DSA Core + ML Basics
-├── Month-03/         ← Distributed Systems + Docker + Queues
-├── Month-04/         ← Classical ML + Backend + Task Scheduling
-├── Month-05/         ← Backend Deep Dive + Event-Driven + Project 1
-├── Month-06/         ← LangChain + RAG + Vector DBs
-├── Month-07/         ← Advanced RAG + Eval + Project 2
-├── Month-08/         ← LangGraph + MCP + Agents
-├── Month-09/         ← Multi-Agent Systems + Project 3
-├── Month-10/         ← Inference Optimization + System Design
-├── Month-11/         ← Full-Stack Platform + Project 4
-├── Month-12/         ← Interview Prep + Open Source
+├── Month-01/
+│   │
+│   ├── Day-01/
+│   │   │
+│   │   ├── README.md
+│   │   │
+│   │   └── task_XX.py
+│   │
+│   ├── Day-02/
+│   ├── Day-03/
+│   ├── Day-04/
+│   └── ...
 │
-└── Each day contains:
-    ├── README.md     ← Topics learned, programs built, mistakes fixed
-    └── task_XX.py    ← Daily programming tasks
+├── Month-02/
+├── Month-03/
+├── Month-04/
+├── Month-05/
+├── Month-06/
+├── Month-07/
+├── Month-08/
+├── Month-09/
+├── Month-10/
+├── Month-11/
+└── Month-12/
 ```
 
 ---
 
-## 🏆 Portfolio Projects
+# 📅 Daily Documentation Format
 
-| # | Project | Timeline | Status |
-|---|---------|----------|--------|
-| 1 | Python CLI Tool with DSA | Month 3-5 | ⏳ Planned |
-| 2 | Production Hybrid RAG Pipeline (hybrid search + CI/CD eval) | Month 6-7 | ⏳ Planned |
-| 3 | Stateful Multi-Agent System with MCP | Month 8-9 | ⏳ Planned |
-| 4 | Full-Stack Agentic AI Platform on AWS | Month 11 | ⏳ Planned |
+Each day's folder contains:
 
----
+## README.md
 
-## 📈 Progress Tracker
+* Topics learned
+* Programs built
+* Mistakes fixed
+* End-of-day report
 
-| Month | Focus Area | Progress |
-|-------|-----------|----------|
-| Month 01 | Python + DSA + ML Intro + AWS | 🔄 In Progress |
-| Month 02 | OOP + DSA Core + ML Basics | ⏳ Pending |
-| Month 03 | Distributed Systems + Docker | ⏳ Pending |
-| Month 04 | Classical ML + Backend | ⏳ Pending |
-| Month 05 | Backend Deep Dive + Project 1 | ⏳ Pending |
-| Month 06 | LangChain + RAG | ⏳ Pending |
-| Month 07 | Advanced RAG + Eval + Project 2 | ⏳ Pending |
-| Month 08 | LangGraph + MCP | ⏳ Pending |
-| Month 09 | Multi-Agent + Project 3 | ⏳ Pending |
-| Month 10 | Inference Optimization | ⏳ Pending |
-| Month 11 | Full-Stack Platform + Project 4 | ⏳ Pending |
-| Month 12 | Interview Prep + Open Source | ⏳ Pending |
+## Task Files
+
+* task_01.py, task_02.py ... for each exercise
 
 ---
 
-## 🔗 Connect With Me
+# 📈 Progress Tracker
 
-- **LinkedIn:** [Prem Prakash Jena](https://www.linkedin.com/in/premprakashj/)
-- **GitHub:** [@prem-pjena](https://github.com/prem-pjena)
-- **Weekly Updates:** Every Sunday on LinkedIn — follow for the journey
-
----
-
-<div align="center">
-
-*Learning. Building. Debugging. Documenting. Every single day.*
-
-</div>
+| Month    | Progress       |
+| -------- | -------------- |
+| Month 01 | 🔄 In Progress |
+| Month 02 | ⏳ Pending      |
+| Month 03 | ⏳ Pending      |
 | Month 04 | ⏳ Pending      |
 | Month 05 | ⏳ Pending      |
 | Month 06 | ⏳ Pending      |
@@ -147,6 +165,139 @@ engineering-journey-365/
 | Month 10 | ⏳ Pending      |
 | Month 11 | ⏳ Pending      |
 | Month 12 | ⏳ Pending      |
+
+---
+
+# 🏆 Challenge Rules
+
+1. Learn every day.
+2. Write code every day.
+3. Push to GitHub every day.
+4. Document mistakes honestly.
+5. Focus on consistency over perfection.
+6. Build before consuming more tutorials.
+7. Track measurable progress.
+
+---
+
+# 📊 Current Statistics
+
+| Metric         | Value     |
+| -------------- | --------- |
+| Start Date     | June 2026 |
+| Duration       | 365 Days  |
+| Current Day    | Day 4     |
+| Days Completed | 3         |
+| Days Remaining | 362       |
+
+---
+
+# 📝 Daily Log
+
+| Day    | Topics                                                  | Status     |
+| ------ | ------------------------------------------------------- | ---------- |
+| Day 01 | Python Basics, Algorithms, Time Complexity              | ✅ Complete |
+| Day 02 | Comparison Operators, Booleans, if/elif/else            | ✅ Complete |
+| Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
+
+---
+
+# 🚀 Current Focus
+
+### Month 1 — Foundations
+
+Topics:
+
+* Python Programming
+* DSA Fundamentals
+* Problem Solving
+* Engineering Thinking
+* Coding Consistency
+
+---
+
+# 🔥 Why This Exists
+
+Many people watch tutorials.
+
+Far fewer people consistently build.
+
+This repository is proof that real progress comes from:
+
+* Showing up daily
+* Writing code
+* Making mistakes
+* Learning from them
+* Repeating the process
+
+The goal is not perfection.
+
+The goal is becoming better than yesterday.
+
+---
+
+# 📚 Milestones
+
+## Phase 1
+
+Foundations
+
+* Python
+* DSA
+* SQL
+* Git
+
+## Phase 2
+
+Backend Development
+
+* APIs
+* Databases
+* Authentication
+
+## Phase 3
+
+System Design
+
+* Scalability
+* Architecture
+* Reliability
+
+## Phase 4
+
+AI Engineering
+
+* LLM Applications
+* Agents
+* Multi-Agent Systems
+
+## Phase 5
+
+Portfolio & Interview Preparation
+
+* Projects
+* LeetCode
+* Interview Readiness
+
+---
+
+# 💡 Motto
+
+> Small improvements repeated daily create extraordinary results.
+
+---
+
+# ⭐ Current Status
+
+✅ Day 1 Completed
+
+✅ Day 2 Completed
+
+✅ Day 3 Completed
+
+🚀 Day 4 Loading...
+
+See you on Day 365.
 
 ---
 
