@@ -15,7 +15,7 @@
 ![AWS](https://img.shields.io/badge/AWS-Learning-orange)
 ![LangChain](https://img.shields.io/badge/LangChain-In%20Progress-green)
 
-**👤 Prem Prakash Jena** — AI Engineering Intern @ SkillVeda (YC-backed)
+**👤 Prem Prakash Jena** — AI Engineering Intern
 
 🎯 **Target:** Agentic AI Backend Engineer at FAANG | 30+ LPA
 
