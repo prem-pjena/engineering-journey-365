@@ -8,7 +8,7 @@
 
 ---
 
-![Days Completed](https://img.shields.io/badge/Days%20Completed-3%2F365-blue)
+![Days Completed](https://img.shields.io/badge/Days%20Completed-4%2F365-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-success)
 ![Commitment](https://img.shields.io/badge/Commitment-Daily-orange)
 
