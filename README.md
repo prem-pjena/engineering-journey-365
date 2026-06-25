@@ -319,8 +319,8 @@ See you on Day 365.
 | -------------- | --------- |
 | Start Date     | June 2026 |
 | Duration       | 365 Days  |
-| Current Day    | Day 1     |
-| Days Completed | 1         |
+| Current Day    | Day 5     |
+| Days Completed | 4         |
 | Days Remaining | 364       |
 
 ---
@@ -422,6 +422,12 @@ Portfolio & Interview Preparation
 
 ✅ Day 1 Completed
 
-🚀 Day 2 Loading...
+✅ Day 2 Completed
+
+✅ Day 3 Completed
+
+✅ Day 4 Completed
+
+🚀 Day 5 Loading...
 
 See you on Day 365.
