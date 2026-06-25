@@ -186,9 +186,9 @@ Each day's folder contains:
 | -------------- | --------- |
 | Start Date     | June 2026 |
 | Duration       | 365 Days  |
-| Current Day    | Day 4     |
-| Days Completed | 3         |
-| Days Remaining | 362       |
+| Current Day    | Day 5     |
+| Days Completed | 4         |
+| Days Remaining | 361       |
 
 ---
 
@@ -199,6 +199,7 @@ Each day's folder contains:
 | Day 01 | Python Basics, Algorithms, Time Complexity              | ✅ Complete |
 | Day 02 | Comparison Operators, Booleans, if/elif/else            | ✅ Complete |
 | Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
+| Day 04 | While Loops, Break, Continue, Retry Logic, Menu Systems | ✅ Complete |
 
 ---
 
@@ -321,15 +322,18 @@ See you on Day 365.
 | Duration       | 365 Days  |
 | Current Day    | Day 5     |
 | Days Completed | 4         |
-| Days Remaining | 364       |
+| Days Remaining | 361       |
 
 ---
 
 # 📝 Daily Log
 
-| Day    | Topics                                     | Status     |
-| ------ | ------------------------------------------ | ---------- |
-| Day 01 | Python Basics, Algorithms, Time Complexity | ✅ Complete |
+| Day    | Topics                                                  | Status     |
+| ------ | ------------------------------------------------------- | ---------- |
+| Day 01 | Python Basics, Algorithms, Time Complexity              | ✅ Complete |
+| Day 02 | Comparison Operators, Booleans, if/elif/else            | ✅ Complete |
+| Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
+| Day 04 | While Loops, Break, Continue, Retry Logic, Menu Systems | ✅ Complete |
 
 ---
 
