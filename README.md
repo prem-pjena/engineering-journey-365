@@ -8,7 +8,7 @@
 
 ---
 
-![Days Completed](https://img.shields.io/badge/Days%20Completed-5%2F365-blue)
+![Days Completed](https://img.shields.io/badge/Days%20Completed-6%2F365-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-success)
 ![Commitment](https://img.shields.io/badge/Commitment-Daily-orange)
 
@@ -187,8 +187,8 @@ Each day's folder contains:
 | Start Date     | June 2026 |
 | Duration       | 365 Days  |
 | Current Day    | Day 5     |
-| Days Completed | 5         |
-| Days Remaining | 360       |
+| Days Completed | 6         |
+| Days Remaining | 359       |
 
 ---
 
@@ -201,6 +201,7 @@ Each day's folder contains:
 | Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
 | Day 04 | While Loops, Break, Continue, Retry Logic, Menu Systems | ✅ Complete |
 | Day 05 | For Loops, range(), String Iteration, Accumulator Pattern | ✅ Complete |
+| Day 06 | Functions (def, parameters, return, default params) | ✅ Complete |
 
 ---
 
@@ -322,8 +323,8 @@ See you on Day 365.
 | Start Date     | June 2026 |
 | Duration       | 365 Days  |
 | Current Day    | Day 5     |
-| Days Completed | 5         |
-| Days Remaining | 360       |
+| Days Completed | 6         |
+| Days Remaining | 359       |
 
 ---
 
@@ -336,6 +337,7 @@ See you on Day 365.
 | Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
 | Day 04 | While Loops, Break, Continue, Retry Logic, Menu Systems | ✅ Complete |
 | Day 05 | For Loops, range(), String Iteration, Accumulator Pattern | ✅ Complete |
+| Day 06 | Functions (def, parameters, return, default params) | ✅ Complete |
 
 ---
 
