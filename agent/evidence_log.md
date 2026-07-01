@@ -270,6 +270,77 @@
 | **Day** | Day 7 |
 | **File** | `Month-1/Day-7/task_07.py` |
 
+
+## Evidence 48
+| Field | Detail |
+|-------|--------|
+| **What** | Used list slicing independently |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_01.py` |
+
+## Evidence 49
+| Field | Detail |
+|-------|--------|
+| **What** | Used membership operators (`in`, `not in`) |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_02.py` |
+
+## Evidence 50
+| Field | Detail |
+|-------|--------|
+| **What** | Built list comprehensions independently |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_03.py` |
+
+## Evidence 51
+| Field | Detail |
+|-------|--------|
+| **What** | Removed duplicates manually (no set()) |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_04.py` |
+
+## Evidence 52
+| Field | Detail |
+|-------|--------|
+| **What** | Created and manipulated dictionaries |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_05.py` |
+
+## Evidence 53
+| Field | Detail |
+|-------|--------|
+| **What** | Used .get(), .keys(), .values(), .items() |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_05.py` |
+
+## Evidence 54
+| Field | Detail |
+|-------|--------|
+| **What** | Built list of dicts with student scores |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_06.py` |
+
+## Evidence 55
+| Field | Detail |
+|-------|--------|
+| **What** | Implemented Linear Search (O(n)) |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_06.py` |
+
+## Evidence 56
+| Field | Detail |
+|-------|--------|
+| **What** | Built Contact Book with CRUD operations |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_07.py` |
+
+## Evidence 57
+| Field | Detail |
+|-------|--------|
+| **What** | Combined lists, dicts, loops, functions, linear search in one app |
+| **Day** | Day 8 |
+| **File** | `Month-1/Day-8/task_07.py` |
+
 ---
 
 *New evidence will be appended as milestones are reached.*

@@ -118,6 +118,39 @@
 | **Correction** | Structure menu-driven apps as: loop → show options → get choice → act |
 | **Status** | ✅ Resolved |
 
+
+## Error #14
+| Field | Detail |
+|-------|--------|
+| **Topic** | Variable naming (typo) |
+| **Mistake** | Typo: `menue` vs `menu` |
+| **Correction** | Always double-check variable name spelling. Python treats `menue` as a new undefined variable. |
+| **Status** | ✅ Resolved |
+
+## Error #15
+| Field | Detail |
+|-------|--------|
+| **Topic** | Loop variable vs list element |
+| **Mistake** | Confused index `i` with the actual dict `contacts[i]` |
+| **Correction** | `for i` gives the index. Use `contacts[i]` to access the dict at that index. OR use `for contact in contacts` to get dicts directly. |
+| **Status** | ✅ Resolved |
+
+## Error #16
+| Field | Detail |
+|-------|--------|
+| **Topic** | Search logic placement |
+| **Mistake** | Printed "Not found" inside the loop instead of after searching the whole list |
+| **Correction** | Only declare "not found" AFTER the loop completes without a match. Use a `found` flag. |
+| **Status** | ✅ Resolved |
+
+## Error #17
+| Field | Detail |
+|-------|--------|
+| **Topic** | `=` vs `==` in conditions |
+| **Mistake** | Used single `=` (assignment) instead of `==` (comparison) inside `if` |
+| **Correction** | `=` assigns a value. `==` compares two values. Use `==` in conditions. |
+| **Status** | ✅ Resolved |
+
 ---
 
 *New errors will be appended here as they occur.*
