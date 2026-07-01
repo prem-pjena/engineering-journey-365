@@ -1,32 +1,59 @@
-# 📚 3-Month AI Engineer Sprint: Job-Ready by Oct 1
+# 📚 Dual-Goal AI Engineer Sprint: Domestic by Oct 1 → Global Remote by Dec 2027
 
-**Target:** Agentic AI Engineer / AI Engineer | 50k+ in-hand/month OR 15k+ internship → FT
+## 🎯 Two Goals
 
-**Deadline:** Sep 10, 2026 (SkillVeda internship ends) → Offer by Oct 1
+### Goal 1 (Short-term — Oct 1, 2026): Domestic ₹50k+/mo FT
+**Target:** Agentic AI Engineer / AI Engineer at Indian startup
+**Deadline:** Sep 10 (SkillVeda ends) → Offer by Oct 1
+
+### Goal 2 (Long-term — Dec 2027): Global Remote $80-110k USD/yr
+**Target:** Remote AI Engineer for US/EU startup, paid in USD while living in India
+**Mechanism:** Section 44ADA tax arbitrage → ~₹4.4-5.7L/mo in-hand
 
 ---
 
 ## 🎯 Timeline
 
 ```
-Now (Day 6):       Python basics — functions, lists, dicts
-Week 3 (Jul 14):   Python done + DSA basics (30 problems)
-Week 5 (Jul 28):   FastAPI + PostgreSQL + LLM APIs — Mini Project done
-Week 7 (Aug 11):   LangChain + RAG + Vector DBs — AI Project 1 done
-Week 9 (Aug 25):   LangGraph + AI Agents — AI Project 2 done
-Week 10 (Sep 1):   Resume + LinkedIn + Start applying
-Week 12 (Sep 14):  Interview loop → Offer by Oct 1 ✅
+Now (Day 7):        Python — lists, dicts, functions done
+Week 3 (Jul 14):    Python done + DSA 30 problems
+Week 5 (Jul 28):    FastAPI + PostgreSQL + Docker → Mini Project: AI CLI
+Week 7 (Aug 11):    LangChain + Advanced RAG + Ragas → PROJECT 1: PDF Q&A 🏗️
+Week 9 (Aug 25):    LangGraph + MCP + Agents → PROJECT 2: Multi-Agent 🏗️
+Week 10 (Sep 1):    Resume + LinkedIn + Apply domestic
+Week 12 (Sep 14):   Interview loop → DOMESTIC OFFER BY OCT 1 ✅
+--- 2027 ---
+Month 4-6 (2027):   Advanced RAG, LangGraph mastery, MCP servers
+Month 7-9 (2027):   TypeScript, Next.js, Open Source contributions
+Month 10-12 (2027): AI System Design, global apps → GLOBAL OFFER ✅
 ```
 
 **Past Experience:** 6 months DevOps (May-Oct 2025) + 3 months AI Intern at SkillVeda = **9 months total experience on resume.**
 
 ---
 
-## 🔥 Why This Works
+## 🔥 Why The Dual Strategy
 
-AI/Agentic Engineer roles at startups value **demonstrable AI projects** over years of experience. With 2 deployed AI projects + SkillVeda internship + DevOps background, you're competitive for 5-9 LPA AI roles at early-stage startups.
+Based on Gemini Deep Research (Jul 2026):
 
-**Backup plan:** If 50k+ FT doesn't materialize by Oct 1 → take a 15k+/month AI internship → convert to FT within 2-3 months → resume 1L+ plan.
+1. **Direct leap to global fails:** Zero production experience = rejection at take-home assignments. Domestic role first builds the baseline.
+2. **Section 44ADA is a cheat code:** $60k USD at 44ADA → ~₹4.4L/mo in-hand. That's 8-10x the domestic target. Same work, different currency.
+3. **Market demands production AI, not tutorials:** Naive RAG (chunk + cosine similarity) is obsolete. Global hiring filters for hybrid search, reranking, Ragas evals, MCP.
+4. **Timeline is realistic but brutal:** $80-110k in 12-18 months from Python basics is aggressive but achievable with 100% focus on production AI systems.
+
+**Backup:** If $80k+ global doesn't materialize by Month 12 → pivot to Senior AI role at Indian product company (₹18-30 LPA) using same Advanced RAG/Agent skills.
+
+---
+
+## 💰 Salary Arbitrage: Why This Matters
+
+| Role | Gross USD/yr | Gross INR/yr | 44ADA Tax | Net In-hand/mo |
+|------|-------------|-------------|-----------|----------------|
+| Entry Global (target) | $60,000 | ~₹56.9L | ~₹4.5L | **~₹4.37L/mo** |
+| Upper 44ADA Limit | $75,000 | ~₹71.2L | ~₹6.7L | **~₹5.37L/mo** |
+| Mid-Level Global | $120,000 | ~₹1.14Cr | Regular audit | **~₹6.82L/mo** |
+
+Compare to domestic ₹50k/mo → ₹45k in-hand. Global at $60k = **9.7x more.**
 
 ---
 
@@ -43,19 +70,31 @@ WEEK 11   (Sep):   Interview loops
 WEEK 12   (Sep):   Offer by Oct 1 ✅
 ```
 
-## 🧠 AI Engineer Target Skills
+## 🧠 Dual-Goal Target Skills
 
-| Skill | Level Needed | How to Prove |
-|-------|-------------|--------------|
-| Python | 6/10 | Day 1-6 tasks done |
-| FastAPI | 5/10 | Mini Project + Project 1 |
-| LLM APIs | 5/10 | Projects: call OpenAI/Gemini |
-| LangChain | 5/10 | Project 1: RAG pipeline |
-| LangGraph | 4/10 | Project 2: multi-agent |
-| RAG / Vector DBs | 4/10 | Project 1: pgvector |
-| PostgreSQL | 4/10 | Both projects use it |
-| Docker | 3/10 | Containerize both projects |
-| DSA | 4/10 | 50 problems solved |
+| Skill | Current | Need (Domestic) | Need (Global Remote) |
+|-------|---------|-----------------|---------------------|
+| Python | 7.2/10 | 7/10 | 9/10 (asyncio, type hints, OOP) |
+| FastAPI | 0/10 | 6/10 | 8/10 (Pydantic v2, async DB, routers) |
+| PostgreSQL + pgvector | 0/10 | 5/10 | 7/10 (indexing, vector search) |
+| LLM APIs | 0/10 | 5/10 | 6/10 (OpenAI, Anthropic, streaming) |
+| LangChain | 0/10 | 5/10 | 6/10 (know it, but don't rely on it) |
+| LangGraph | 0/10 | 4/10 | 8/10 (state mgmt, cyclic graphs, retries) |
+| Advanced RAG + Evals | 0/10 | 4/10 | 9/10 (hybrid search, reranking, Ragas) |
+| Docker + AWS | 3/10 | 5/10 | 7/10 (ECS, EC2, containerized deploy) |
+| MCP (Model Context Protocol) | 0/10 | 2/10 | 7/10 (build custom MCP servers) |
+| TypeScript + Next.js | 0/10 | 0/10 | 5/10 (bridge Python backend to UI) |
+| DSA / LeetCode | 3.2/10 | 5/10 | 6/10 (Easy/Medium consistency) |
+| System Design (AI-specific) | 0/10 | 2/10 | 7/10 (latency/cost/accuracy tradeoffs) |
+
+**Key insight from research:** Global hiring filters for **Advanced RAG** and **LangGraph** over raw LeetCode. DSA = 20% effort. Production AI systems = 80% effort.
+
+**Domestic roles need:** Python + FastAPI + basic RAG + basic DSA
+**Global roles additionally need:** Hybrid search, reranking, Ragas evals, LangGraph state mgmt, MCP servers, TypeScript, deployed live URLs
+
+---
+
+## Phase 1 (Months 1-3): DOMESTIC ROLE FOUNDATION — Offer by Oct 1
 
 ---
 
@@ -64,7 +103,7 @@ WEEK 12   (Sep):   Offer by Oct 1 ✅
 
 ### Topics
 - **Python:** functions (def, params, return), lists (append, indexing, slicing), dicts (keys, values, get), list comprehensions, error handling (try/except)
-- **DSA (1hr daily):** Big O, arrays, strings, hash maps — 30 problems from NeetCode 150
+- **DSA (1hr daily, 20% effort):** Big O, arrays, strings, hash maps — 30 problems from NeetCode 150
 
 ### By End of Week 2
 - Python done, can write any basic script
@@ -77,34 +116,37 @@ WEEK 12   (Sep):   Offer by Oct 1 ✅
 **Theme:** Build APIs. Call AI models. Store data.
 
 ### Topics
-- **FastAPI:** Routes, Pydantic models, CRUD, query/body params, error handling
-- **PostgreSQL:** SELECT, JOINs (INNER, LEFT), INSERT, UPDATE, DELETE, basic indexing, Alembic migrations
+- **FastAPI:** Routes, Pydantic models (v2), CRUD, async endpoints, query/body params, error handling
+- **PostgreSQL:** SELECT, JOINs (INNER, LEFT), INSERT, UPDATE, DELETE, basic indexing, pgvector setup
 - **SQL:** Subqueries, GROUP BY, HAVING, ORDER BY, aggregations (COUNT, SUM, AVG), WHERE filtering
-- **LLM APIs:** OpenAI API (GPT) + Gemini API — chat completions, embeddings, streaming
+- **LLM APIs:** OpenAI API (GPT-4o) + Gemini API — chat completions, embeddings, streaming
 - **Docker:** Dockerfile for FastAPI, docker-compose with PostgreSQL
-- **DSA:** Stacks, queues, recursion, two pointers (+10 problems)
+- **DSA (20% effort):** Stacks, queues, recursion, two pointers (+10 problems)
 
 ### Mini-Project: AI CLI Assistant
 - Python CLI that calls OpenAI/Gemini
 - Stores conversation in PostgreSQL
-- Dockerized
+- Dockerized with docker-compose
+- **Deliverable:** First containerized AI app on GitHub
 
 ### By End of Week 4
 - FastAPI + PostgreSQL + Docker working
-- Can call LLM APIs
-- 40 DSA problems
+- Can call LLM APIs with streaming
+- 40 DSA problems solved
+- 1 deployed containerized project
 
 ---
 
 ## Week 5-6 — LangChain + RAG + Ragas Eval → Project 1 🏗️
-**Theme:** Build your AI portfolio piece. Must be production-grade, not tutorial-grade.
+**Theme:** Build your first AI portfolio piece. Production-grade, not tutorial-grade.
 
 ### Topics
-- **LangChain:** Chains, prompts, output parsers, document loaders, text splitters
-- **RAG:** Chunking strategies, embeddings (text-embedding-3), pgvector, similarity search
-- **Ragas Evaluation:** Faithfulness, Answer Relevance, Context Precision, Context Recall — quantitative scoring
-- **LangSmith:** Tracing LLM calls, debugging chains
-- **DSA:** Linked lists, trees (BST), sorting (merge, quick) (+10 problems)
+- **LangChain:** LCEL chains, document loaders, text splitters, prompt templates
+- **Naive RAG:** Chunking → embeddings → pgvector → cosine similarity → LLM response
+- **Advanced RAG:** Hybrid search (BM25 + dense vectors), cross-encoder reranking (Cohere/BGE)
+- **Ragas Evaluation:** Faithfulness, answer relevance, context precision — automated scoring
+- **Prompt Engineering:** Few-shot, chain-of-thought, structured outputs with Pydantic
+- **DSA (light, 10% effort):** Hash maps, two pointers (+5 problems)
 
 ### PROJECT 1: Enterprise RAG System with RBAC 🔐
 - Role-Based Access Control — users see only docs they have permission for
@@ -150,87 +192,45 @@ WEEK 12   (Sep):   Offer by Oct 1 ✅
 
 ---
 
-## Week 9-10 — Resume + Applications + DSA Revision
-**Theme:** Look hireable. Target the right companies.
+## Week 9 — Resume + Domestic Applications
+**Theme:** Land domestic offer by Oct 1.
 
-### Target Companies (20+)
-Prioritize these AI startups hiring juniors:
-
+### Target Companies
 | Company | Location | Notes |
 |---------|----------|-------|
 | Sarvam AI | Bengaluru | Indic LLMs, $53M funding |
 | Krutrim | Bengaluru | India's 1st AI unicorn |
-| Krazimo | Bengaluru | Ex-Google founders, enterprise RAG |
-| SuperKalam | Remote | YC-backed, ~20 people, high visibility |
-| Mowka | Bengaluru | Talent/AI matching, fast response |
-| Metaforms | Bengaluru | Agentic market research |
+| SuperKalam | Remote | YC-backed, ~20 people |
+| Mowka | Bengaluru | Talent/AI matching |
 | Smart Audit | Bengaluru/Remote | Audit workflow AI |
-| TRAKO INFRA | Remote | Hiring Jr AI Engineers |
-| Rainclouds Global | Pune | Risk/compliance AI |
-| Mira Labs AI | Pune | Mortgage AI co-pilot |
-| KoiReader | Remote | Computer vision, logistics |
-| drytis | Delhi | App generation AI |
-| Skarvo | Remote | On-device LLM |
-| Frequency.cx | Mumbai | Executive hiring AI |
-| Cerebral Works | Bengaluru | Web/mobile AI |
+| KoiReader | Remote | Computer vision |
 | GeekyAnts | Bengaluru | AI product engineering |
 
-### Resume
-- **Summary:** "Applied AI Engineer with DevOps and cloud infrastructure foundation. Proficient in LangGraph agents, RAG evaluation (Ragas), FastMCP servers, and containerized LLM deployment on AWS."
-- **Keywords:** LangChain, LangGraph, RAG, FastMCP, pgvector, Ragas/DeepEval, Docker, CI/CD, FastAPI, AWS
-- **DevOps framing:** "Containerized LangGraph agents, managed API gateways, deployed LLM pipelines on AWS"
-- **Gap explanation:** "Post-graduation, focused on cloud infrastructure — AWS, Docker, CI/CD — leading to DevOps contract. Currently pivoting to applied AI via SkillVeda internship."
-
-### LinkedIn
-- Headline: "AI Engineer | LangChain · LangGraph · RAG · FastMCP | AWS | Ex-DevOps"
-- Set to "Open to Work"
-- Connect with CTOs/Eng Managers at target companies (not just recruiters)
+### Resume Keywords
+LangChain, LangGraph, RAG, FastMCP, pgvector, Ragas, Docker, CI/CD, FastAPI, AWS
 
 ### Sourcing
-- **Wellfound (AngelList)** — #1 for AI startup roles
-- **Instahyre** — product company matching
-- **LinkedIn DMs** to CTOs (70% success vs 40% cold apply)
-- Target: Seed to Series A AI startups
-
-### DSA Revision
-- 50 problems from high-frequency patterns (NeetCode 150 filtered)
-- Focus: arrays, strings, hash maps, two pointers, trees
-- Each problem: code from memory under 20 min
+- Wellfound (AngelList) — #1 for AI startup roles
+- Instahyre — product company matching
+- LinkedIn DMs to CTOs (70% success vs 40% cold apply)
 
 ---
 
-## �️ Negotiation Script (When They Ask Salary)
+## Week 10-12 — Interview Loop → DOMESTIC OFFER ✅
 
-**Don't share numbers early.** Pivot:
-> "I'm focused on finding the right technical fit first. I'm happy to discuss compensation once we both agree this is a good match."
-
-**When asked after technical rounds, present value:**
-> "Based on market benchmarks for engineers who can architect LangGraph agents, implement Ragas evaluation, and deploy containerized LLM pipelines on AWS, I'm targeting ₹8,00,000 LPA."
-
-**Never** mention personal need. Only market value. Treat ESOPs as bonus — base must hit ₹7-9L.
+**DSA Revision:** 50 problems (arrays, strings, hash maps, two pointers, trees)
+**Mock interviews:** Walk through Project 1 & 2 architecture
+**Negotiation:** Target ₹7-9L. Pivot compensation to market value.
 
 ---
 
-## 📊 Backup by Oct 1
+## 📊 Backup if No Domestic Offer by Oct 1
 
-| Option | Role | Pay | Path to AI Engineer |
-|--------|------|-----|---------------------|
-| A | AI Intern @ another startup | 15k+/month | Convert to FT in 2-3mo |
-| B | Backend Engineer (Python+AI) at AI startup | 40-50k/month | Volunteer for AI repos → transition internally |
-| C | MLOps / Platform Engineer | 40-60k/month | DevOps → AI infra → AI Engineer in 6mo |
-| D | Freelance (Upwork) — LangChain pipelines | Project-based | Build portfolio while earning |
-
----
-
-## 📅 Post-Oct 1: Continue to 1L+/month
-
-Once you land the role, use evenings/weekends for:
-```
-Month 4-5:  System Design + DSA 100+
-Month 6-7:  MCP + Advanced Agents
-Month 8-9:  SQL Mastery + DSA 200+
-Month 10-12: Interview prep for 1L+ roles
-```
+| Option | Role | Pay | Path |
+|--------|------|-----|------|
+| A | AI Intern (another startup) | 15k+/mo | Convert FT in 2-3mo |
+| B | Backend Engineer (Python+AI) | 40-50k/mo | Volunteer for AI repos → transition internally |
+| C | Upwork freelance (LangChain) | Project-based | Build portfolio while earning |
 
 ---
 
