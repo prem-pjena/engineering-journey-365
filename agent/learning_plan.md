@@ -137,17 +137,17 @@ WEEK 12   (Sep):   Offer by Oct 1 ✅
 ## Month 1 (Jul 1 — Jul 31): Python Done + FastAPI Foundation
 
 ### Week 1-2 (Jul 1-14): Python Completion + DSA Kickoff
-**Python (finish basics):**
-- Day 7: Lists (append, pop, remove, insert, len, iteration) ✅ DONE
-- Day 8: List slicing, list comprehensions, membership operator
-- Day 9: Dictionaries (keys, values, get, items, update)
-- Day 10: Dicts + Lists combined (list of dicts, dict of lists)
-- Day 11: Error handling (try/except/else/finally)
-- Day 12: File I/O (open, read, write, with statement)
-- Day 13: Functions deep dive (args, kwargs, lambda, map/filter)
-- Day 14: Review + test + retention check
+**Python topics (all must be covered, order adaptive to pace):**
+- List slicing, list comprehensions, membership operator
+- Dictionaries (keys, values, get, items, update)
+- Dicts + Lists combined (list of dicts, dict of lists)
+- Error handling (try/except/else/finally)
+- File I/O (open, read, write, with statement)
+- Functions deep dive (args, kwargs, lambda, map/filter)
+- *args, **kwargs
+- lambda, map(), filter()
 
-**DSA (1hr daily, 25 problems):**
+**DSA (1hr daily, target 25-30 problems):**
 - Big O analysis
 - Arrays: two sum, contains duplicate, valid anagram
 - Hash maps: group anagrams, top k frequent

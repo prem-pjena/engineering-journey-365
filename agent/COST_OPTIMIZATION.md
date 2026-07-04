@@ -189,7 +189,19 @@ runSubagent (explore all of the above in one go)
 
 ---
 
-## 8. Avoid Redundant Calls
+## 9. Syllabus Sync — Never Guess What's Next
+
+### Always check `agent/day_syllabus.md` before:
+- Generating a day prompt
+- Planning upcoming topics
+- Answering "what's next?"
+
+### Rules
+- **Never assume** what was taught. Check the Completed table.
+- **Never plan** more than 3 days ahead. Let actual pace dictate.
+- **Update day_syllabus.md** after each day completes — append to Completed, move next to Current.
+- The learning_plan.md has WEEK-level goals. day_syllabus.md has the actual DAY-level reality.
+- If the user's pace differs from the plan → update day_syllabus.md, don't force the plan.
 
 ### ❌ Expensive (Avoid)
 ```
