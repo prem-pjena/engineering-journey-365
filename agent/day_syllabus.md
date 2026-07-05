@@ -16,6 +16,7 @@
 | 6 | Jun 30 | Functions (def, params, return, default params) | — | 0 |
 | 7 | Jul 1 | Lists (indexing, append, pop, remove, insert, len, iteration, sum manually, max manually, Todo app) | — | 0 |
 | 8 | Jul 1 | List slicing, list comprehensions, membership (in/not in), dicts (get, keys, values, items, update), list of dicts, linear search, Contact Book | Linear Search (O(n), O(1)) | 0 |
+| 9 | Jul 4 | Exception handling (try/except/else/finally, ValueError, ZeroDivisionError, KeyError), *args, **kwargs, lambda, map(), filter(), program organization, dispatch table, Calculator 2.0 | Big O review (O(1), O(n), O(n²)) | 0 |
 
 ---
 
@@ -23,7 +24,7 @@
 
 | Day | Date | Status | Topics | DSA |
 |-----|------|--------|--------|-----|
-| 9 | Jul 4 | 🔴 IN PROGRESS | *args, **kwargs, lambda, map(), filter(), Calculator 2.0 | Arrays (two sum, contains duplicate) |
+| 10 | Jul 5 | 🔴 IN PROGRESS | File I/O (open, read, write, with, readlines, append, modes), Sets | Arrays: Two Sum |
 
 ---
 
@@ -31,12 +32,11 @@
 
 | Day | Planned Topics | DSA |
 |-----|---------------|-----|
-| 10 | File I/O (open, read, write, with statement) | Arrays continued |
-| 11 | Error handling (try/except/else/finally, specific exceptions) | Hash maps |
-| 12 | Review + retention test | Strings |
-| 13 | Python wrap-up + cumulative test | Trees intro |
-| 14 | FASTAPI STARTS — Routes, Pydantic v2, async | Two pointers |
-| 15 | FastAPI continued — CRUD, query/body params | Two pointers |
+| 11 | Tuples, Set operations, type conversions | Arrays: Contains Duplicate, Valid Anagram |
+| 12 | Review + retention test, Python fundamentals wrap | Strings: Valid Palindrome, Reverse String |
+| 13 | Cumulative mini-project | Trees: Max Depth of Binary Tree |
+| 14 | FASTAPI STARTS — Routes, Pydantic v2, async basics | Trees: Invert Tree |
+| 15 | FastAPI continued — CRUD, query/body params, error handling | Two Pointers |
 
 ---
 

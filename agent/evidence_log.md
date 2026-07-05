@@ -341,6 +341,76 @@
 | **Day** | Day 8 |
 | **File** | `Month-1/Day-8/task_07.py` |
 
+## Evidence 58
+| Field | Detail |
+|-------|--------|
+| **What** | Built exception handling programs (try/except/else/finally) |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_01.py` |
+
+## Evidence 59
+| Field | Detail |
+|-------|--------|
+| **What** | Built division calculator with ValueError and ZeroDivisionError |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_02.py` |
+
+## Evidence 60
+| Field | Detail |
+|-------|--------|
+| **What** | Implemented `sum_all(*args)` with accumulator pattern |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_03.py` |
+
+## Evidence 61
+| Field | Detail |
+|-------|--------|
+| **What** | Implemented `show_info(**kwargs)` with .items() iteration |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_04.py` |
+
+## Evidence 62
+| Field | Detail |
+|-------|--------|
+| **What** | Used lambda functions with single and multiple params |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_05.py` |
+
+## Evidence 63
+| Field | Detail |
+|-------|--------|
+| **What** | Used map() to transform lists |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_06.py` |
+
+## Evidence 64
+| Field | Detail |
+|-------|--------|
+| **What** | Used filter() to keep elements by condition |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_06.py` |
+
+## Evidence 65
+| Field | Detail |
+|-------|--------|
+| **What** | Refactored Contact Book into separate functions |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_07.py` |
+
+## Evidence 66
+| Field | Detail |
+|-------|--------|
+| **What** | Built Calculator 2.0 with function dispatch table |
+| **Day** | Day 9 |
+| **File** | `Month-1/Day-9/task_08.py` |
+
+## Evidence 67
+| Field | Detail |
+|-------|--------|
+| **What** | Explained O(1), O(n), O(n²) complexity without notes |
+| **Day** | Day 9 |
+| **Retention** | Passed — correctly identified View/O(n), Search/O(n), Delete/O(n) |
+
 ---
 
 *New evidence will be appended as milestones are reached.*

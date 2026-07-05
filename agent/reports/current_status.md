@@ -1,6 +1,6 @@
 # 📊 Current Status — 3-Month AI Engineer Sprint
 
-**Last Updated:** 2026-07-01 (Day 8)
+**Last Updated:** 2026-07-04 (Day 9)
 
 ---
 
@@ -24,9 +24,9 @@ Sep 2-22:  Interview loop → Offer by Oct 1 ✅
 | Metric | Value |
 |--------|-------|
 | Month | Month 1 of 12 |
-| Days Completed | 8 (Day 1 ✅ → Day 8 ✅) |
+| Days Completed | 9 (Day 1 ✅ → Day 9 ✅) |
 | Current Phase | Python + DSA Foundations |
-| Consistency Streak | 8 days |
+| Consistency Streak | 9 days |
 
 ---
 
@@ -34,12 +34,12 @@ Sep 2-22:  Interview loop → Offer by Oct 1 ✅
 
 | Skill | Day 1 | Day 2 | Day 3 | Day 4 | Current | Target (Month 12) |
 |-------|-------|-------|-------|-------|---------|-------------------|
-| Python | 2.5/10 | 3.5/10 | 4.5/10 | 5.2/10 | 6.0/10 | 6.6/10 | 7.2/10 | 7.9/10 | 9/10 |
-| DSA | 1.5/10 | 2.0/10 | 2.5/10 | 2.8/10 | 3.0/10 | 3.2/10 | 3.2/10 | 3.8/10 | 9/10 |
-| Problem Solving | 2.0/10 | 3.0/10 | 4.0/10 | 4.6/10 | 5.1/10 | 5.4/10 | 6.1/10 | 6.9/10 | 9/10 |
-| Coding Confidence | 3.5/10 | 5.5/10 | 9.0/10 | 9.4/10 | 9.7/10 | 9.8/10 | 9.9/10 | 10.0/10 | 9/10 |
-| Retention | 4.0/10 | 5.0/10 | 7.0/10 | 7.6/10 | 7.6/10 | 7.6/10 | 9/10 |
-| Independent Builder | 3.0/10 | 4.5/10 | 6.0/10 | 6.8/10 | 7.1/10 | 7.6/10 | 8.1/10 | 8.8/10 | 9/10 |
+| Python | 2.5/10 | 3.5/10 | 4.5/10 | 5.2/10 | 6.0/10 | 6.6/10 | 7.2/10 | 7.9/10 | 8.4/10 | 9/10 |
+| DSA | 1.5/10 | 2.0/10 | 2.5/10 | 2.8/10 | 3.0/10 | 3.2/10 | 3.2/10 | 3.8/10 | 4.5/10 | 9/10 |
+| Problem Solving | 2.0/10 | 3.0/10 | 4.0/10 | 4.6/10 | 5.1/10 | 5.4/10 | 6.1/10 | 6.9/10 | 7.4/10 | 9/10 |
+| Coding Confidence | 3.5/10 | 5.5/10 | 9.0/10 | 9.4/10 | 9.7/10 | 9.8/10 | 9.9/10 | 10.0/10 | 10.0/10 | 9/10 |
+| Retention | 4.0/10 | 5.0/10 | 7.0/10 | 7.6/10 | 7.6/10 | 7.6/10 | 9.6/10 | 9/10 |
+| Independent Builder | 3.0/10 | 4.5/10 | 6.0/10 | 6.8/10 | 7.1/10 | 7.6/10 | 8.1/10 | 8.8/10 | 9.5/10 | 9/10 |
 | System Design | 0/10 | 0/10 | 0/10 | 0/10 | 0/10 | 8/10 |
 | Backend | 2/10 | 2/10 | 2/10 | 2/10 | 2/10 | 9/10 |
 | AI/ML | 2/10 | 2/10 | 2/10 | 2/10 | 2/10 | 8/10 |
@@ -77,7 +77,17 @@ Sep 2-22:  Interview loop → Offer by Oct 1 ✅
 - [x] Accumulator pattern (sum)
 - [x] Find largest number manually
 - [x] Build menu-driven Todo app
-- [ ] Use dictionaries
+- [x] Use dictionaries
+- [x] Use list slicing ([::n], [::-1])
+- [x] Write list comprehensions
+- [x] Use membership operators (in, not in)
+- [x] Remove duplicates manually
+- [x] Handle exceptions (try/except/else/finally)
+- [x] Use *args and **kwargs
+- [x] Write lambda functions
+- [x] Use map() and filter()
+- [x] Build function dispatch tables
+- [x] Create organized multi-function programs
 
 ---
 
@@ -92,6 +102,21 @@ Sep 2-22:  Interview loop → Offer by Oct 1 ✅
 | 5 | String comparison without quotes (`if id == yes:`) | ✅ Resolved |
 | 6 | `continue` before updating loop variable → infinite loop | ✅ Resolved |
 | 7 | `lower.name` should be `name.lower()` — dot notation order | ✅ Resolved |
+| 8 | Called function without required argument | ✅ Resolved |
+| 9 | Repeated code instead of using loop | ✅ Resolved |
+| 10 | Reset max inside loop instead of before | ✅ Resolved |
+| 11 | Used `remove()` when `pop()` was needed | ✅ Resolved |
+| 12 | Off-by-one: `pop(index)` vs `pop(index-1)` | ✅ Resolved |
+| 13 | Forgot menu logic structure in Todo app | ✅ Resolved |
+| 14 | Typo: `menue` vs `menu` | ✅ Resolved |
+| 15 | Confused loop index `i` with dict `contacts[i]` | ✅ Resolved |
+| 16 | Printed "Not found" inside loop instead of after | ✅ Resolved |
+| 17 | Used `=` instead of `==` in condition | ✅ Resolved |
+| 18 | Used `false` instead of `False` | ✅ Resolved |
+| 19 | Used `dict` as variable name (built-in shadowing) | ✅ Resolved |
+| 20 | Forgot function with print() returns None | ✅ Resolved |
+| 21 | Thought missing dict key raises ValueError → KeyError | ✅ Resolved |
+| 22 | Confused `add` (reference) vs `add()` (execution) | ✅ Resolved |
 
 ---
 
@@ -140,9 +165,10 @@ Month 12:  Apply → Land 1L+ role 🏆
 
 ## Next Up
 
-- **Day 6:** Functions (`def`, parameters, return values)
-- **Day 6:** First retention drill (all concepts so far)
-- **End of Week 1:** First weekly test
+- **Day 10:** File I/O (open, read, write, with, modes, readlines) + Sets intro
+- **DSA Day 10:** Two Sum (Array problem)
+- **End of Week 2:** Python completion → FastAPI begins
+- **Jul 15 target:** Start FastAPI + PostgreSQL + Docker
 
 ---
 

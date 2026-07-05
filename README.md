@@ -186,9 +186,9 @@ Each day's folder contains:
 | -------------- | --------- |
 | Start Date     | June 2026 |
 | Duration       | 365 Days  |
-| Current Day    | Day 5     |
-| Days Completed | 6         |
-| Days Remaining | 359       |
+| Current Day    | Day 10    |
+| Days Completed | 9         |
+| Days Remaining | 356       |
 
 ---
 
@@ -201,7 +201,10 @@ Each day's folder contains:
 | Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
 | Day 04 | While Loops, Break, Continue, Retry Logic, Menu Systems | ✅ Complete |
 | Day 05 | For Loops, range(), String Iteration, Accumulator Pattern | ✅ Complete |
-| Day 06 | Functions (def, parameters, return, default params) | ✅ Complete |
+| Day 06 | Functions (def, parameters, return, default params)     | ✅ Complete |
+| Day 07 | Lists, Todo List Manager mini-project                   | ✅ Complete |
+| Day 08 | List Slicing, Dicts, Comprehensions, Contact Book       | ✅ Complete |
+| Day 09 | Exception Handling, *args/**kwargs, Lambda, map/filter, Program Organization, Dispatch Table, Calculator 2.0 | ✅ Complete |
 
 ---
 
@@ -337,7 +340,10 @@ See you on Day 365.
 | Day 03 | Logical Operators, Nested Conditions, Login Validation  | ✅ Complete |
 | Day 04 | While Loops, Break, Continue, Retry Logic, Menu Systems | ✅ Complete |
 | Day 05 | For Loops, range(), String Iteration, Accumulator Pattern | ✅ Complete |
-| Day 06 | Functions (def, parameters, return, default params) | ✅ Complete |
+| Day 06 | Functions (def, parameters, return, default params)     | ✅ Complete |
+| Day 07 | Lists, Todo List Manager mini-project                   | ✅ Complete |
+| Day 08 | List Slicing, Dicts, Comprehensions, Contact Book       | ✅ Complete |
+| Day 09 | Exception Handling, *args/**kwargs, Lambda, map/filter, Program Organization, Dispatch Table, Calculator 2.0 | ✅ Complete |
 
 ---
 
@@ -436,6 +442,16 @@ Portfolio & Interview Preparation
 
 ✅ Day 4 Completed
 
-🚀 Day 5 Loading...
+✅ Day 5 Completed
+
+✅ Day 6 Completed
+
+✅ Day 7 Completed
+
+✅ Day 8 Completed
+
+✅ Day 9 Completed
+
+🚀 Day 10 Loading...
 
 See you on Day 365.

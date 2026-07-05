@@ -151,6 +151,46 @@
 | **Correction** | `=` assigns a value. `==` compares two values. Use `==` in conditions. |
 | **Status** | ✅ Resolved |
 
+## Error #18
+| Field | Detail |
+|-------|--------|
+| **Topic** | Boolean casing |
+| **Mistake** | Used `false` instead of `False` |
+| **Correction** | Python is case-sensitive. Boolean literals must be `True`/`False` with capital first letter |
+| **Status** | ✅ Resolved |
+
+## Error #19
+| Field | Detail |
+|-------|--------|
+| **Topic** | Variable naming (built-in shadowing) |
+| **Mistake** | Used `dict` as a variable name, overriding Python's built-in |
+| **Correction** | Never use Python built-in names (dict, list, str, int, etc.) as variable names. Use `contact` or `data` instead |
+| **Status** | ✅ Resolved |
+
+## Error #20
+| Field | Detail |
+|-------|--------|
+| **Topic** | Function return vs print |
+| **Mistake** | Forgot that `show_numbers()` prints values and returns `None` |
+| **Correction** | `print()` outputs to console but returns `None`. Use `return` to send values back to the caller |
+| **Status** | ✅ Resolved |
+
+## Error #21
+| Field | Detail |
+|-------|--------|
+| **Topic** | Exception types |
+| **Mistake** | Thought missing dict key raises `ValueError` |
+| **Correction** | Dict lookup with missing key raises `KeyError`, not `ValueError`. ValueError is for invalid value conversions |
+| **Status** | ✅ Resolved |
+
+## Error #22
+| Field | Detail |
+|-------|--------|
+| **Topic** | Function reference vs execution |
+| **Mistake** | Confused `add` (function object/reference) with `add()` (function call/execution) |
+| **Correction** | `add` is a reference to the function object (usable in dispatch tables). `add()` calls the function and returns its result. Crucial difference |
+| **Status** | ✅ Resolved |
+
 ---
 
 *New errors will be appended here as they occur.*
