@@ -203,6 +203,21 @@ runSubagent (explore all of the above in one go)
 - The learning_plan.md has WEEK-level goals. day_syllabus.md has the actual DAY-level reality.
 - If the user's pace differs from the plan → update day_syllabus.md, don't force the plan.
 
+---
+
+## 10. Context Persistence — Cross-Session Memory
+
+`agent/context/agent_context.md` is the **single source of truth** for your entire session state. It persists across chat restarts and IDE switches.
+
+### Rules
+- **Always read `agent/context/agent_context.md`** at the start of a new session — before any other file.
+- **Update it after every significant change:** day completed, scores updated, files created, major decisions made.
+- **The file has two sections:**
+  - `VS Code Dump` — maintained by this agent. Write all current context here.
+  - `Current Session V2` — maintained by another agent (Zed). **Do NOT touch** this section.
+- If context seems stale or incomplete, read the context file first before asking the user.
+- This file exists so the user can switch between chats/IDEs without losing context.
+
 ### ❌ Expensive (Avoid)
 ```
 # Already know the file exists
