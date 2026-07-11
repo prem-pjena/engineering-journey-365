@@ -167,12 +167,16 @@ Month 12:  Apply → Land 1L+ role 🏆
 
 - **Day 10:** File I/O (open, read, write, with, modes, readlines) + Sets intro
 - **DSA Day 10:** Two Sum (Array problem)
-- **End of Week 2:** Python completion → FastAPI begins
-- **Jul 15 target:** Start FastAPI + PostgreSQL + Docker
+- **Post-Day 10:** Tuples, String methods, OOP, Context Managers, Modules, Async, uv, Type hints
+- **Then:** FastAPI + ORM + Alembic + Rate Limiting + Security + Testing
+- **End of Python phase:** ~Day 20
+- **~Jul 25 target:** Start FastAPI + PostgreSQL + Docker
 
 ---
 
 ## Portfolio Projects (Focused)
+
+**Note:** Full detailed 12-month plan is in `agent/learning_plan.md` (updated with Deep Research additions). This status file is a high-level snapshot.
 
 | # | Project | Timeline | Status |
 |---|---------|----------|--------|

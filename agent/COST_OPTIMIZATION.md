@@ -207,16 +207,20 @@ runSubagent (explore all of the above in one go)
 
 ## 10. Context Persistence — Cross-Session Memory
 
-`agent/context/agent_context.md` is the **single source of truth** for your entire session state. It persists across chat restarts and IDE switches.
+Two context files. **Read both. Write only yours.**
+
+### Files
+| File | Read | Write |
+|------|------|-------|
+| `agent/context/vs_code_context.md` | ✅ Always | ✅ Yes — if running in VS Code |
+| `agent/context/zed_context.md` | ✅ Always | ❌ Never — Zed agent's file |
 
 ### Rules
-- **Always read `agent/context/agent_context.md`** at the start of a new session — before any other file.
-- **Update it after every significant change:** day completed, scores updated, files created, major decisions made.
-- **The file has two sections:**
-  - `VS Code Dump` — maintained by this agent. Write all current context here.
-  - `Current Session V2` — maintained by another agent (Zed). **Do NOT touch** this section.
-- If context seems stale or incomplete, read the context file first before asking the user.
-- This file exists so the user can switch between chats/IDEs without losing context.
+- **Read both files** at the start of every new session.
+- **Update only your own context file** — vs_code_context.md for VS Code agent, zed_context.md for Zed agent.
+- **Never write to the other agent's file.**
+- After every significant change, update your context file.
+- These files persist across chat restarts and IDE switches.
 
 ### ❌ Expensive (Avoid)
 ```

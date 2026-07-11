@@ -2,46 +2,38 @@
 # Last updated: 2026-07-11
 
 ## Status
-- **Day:** Day 10 🔴 IN PROGRESS (will start today)
-- **Situation:** Fired from SkillVeda internship. Need job ASAP.
-- **Plan:** 30-day accelerated sprint → tech ready by Aug 10
-- **Target:** ₹50k+/mo AI Engineer at Indian startup
+- **Day:** 10 ✅ COMPLETED (Jul 11)
+- **Next:** Day 11 — Tuples, enumerate/zip, Contains Duplicate, Valid Anagram
+- **Situation:** Fired from SkillVeda. 30-day sprint to AI Engineer job.
+- **Target:** ₹50k+/mo by Aug-Sep 2026
 
-## Skills (Day 9 completed)
-- Python: 8.4/10 | DSA: 4.5/10 | Problem Solving: 7.4/10
-- Confidence: 10/10 | Builder: 9.5/10 | Retention: 9.6/10
-- Functions: 9.2 | Exception Handling: 9.2 | Lambda: 9.5 | Program Org: 9.3
+## Skills (Day 10 completed)
+- Python: 8.9/10 | DSA: 5.2/10 | Problem Solving: 7.8/10
+- File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6
+- Functions: 9.5 | Production Thinking: 9.4
+- Confidence: 10/10 | Builder: 9.6 | Retention: 9.7
 
-## Topics Done (Days 1-9)
-Variables, I/O, if/elif/else, while/for, functions, *args/**kwargs, lambda, map/filter, lists (all methods), dicts, linear search, exception handling, program organization, dispatch table, Calculator 2.0, Contact Book, Todo app, Big O
+## DSA Progress
+- Solved: Two Sum (LeetCode #1)
+- Total: 1/25
 
-## Still To Learn (30-day sprint)
-File I/O, Sets, Tuples, String methods, JSON, Generators, OOP, Context Managers, Modules, Async, FastAPI (routes/Pydantic/JWT/RBAC), PostgreSQL (+ pgvector), Docker (+ compose), LLM APIs, LangChain, RAG, Ragas eval, LangGraph, MCP, AWS deploy, DSA (30 problems)
+## Topics Done (Days 1-10)
+Variables, I/O, if/elif/else, while/for, functions, *args/**kwargs, lambda, map/filter, lists (all), dicts, linear search, exception handling, program organization, dispatch table, File I/O (read/write/append/with/modes), Sets (add/remove/discard/union/intersection), Two Sum, Calculator 2.0, Contact Book, Todo app, Big O
 
-## 30-Day Sprint Structure
-- Week 1 (Days 1-7): Python mastery → FastAPI + JWT Task API → Docker
-- Week 2 (Days 8-14): PostgreSQL → LLM APIs → Naive RAG + LangChain
-- Week 3 (Days 15-21): PROJECT 1 — RAG + Ragas + AWS deploy + applications start
-- Week 4 (Days 22-30): LangGraph + MCP + interview prep
-
-## DSA (30 problems)
-Arrays/Hashing (7), Two Pointers (6), Stack (3), Binary Search (3), Linked List (3), Trees (5)
-
-## Target Companies
-Sarvam AI, SpotDraft, 100ms, ClearFeed, Zensar, NTT Ltd, Bynd, NeuroGrid, and 13 more listed in learning_plan.md
-
-## Backup
-Backend Engineer (Python/FastAPI) ₹40-60k, MLOps ₹40-60k, QA Automation (AI) ₹35-50k, or accept ₹30-40k at AI startup for title+exp
+## 30-Day Sprint
+- Week 1 (Days 1-7): Day 10 done ✅ → remaining: Tuples, OOP, Context Mgrs, Modules, Async, FastAPI
+- Week 2 (Days 8-14): PostgreSQL, Docker, LLM APIs, LangChain, RAG
+- Week 3 (Days 15-21): PROJECT 1 — RAG + Ragas + AWS + applications start
+- Week 4 (Days 22-30): LangGraph, MCP, interview prep
 
 ## Key Files
-- agent/learning_plan.md — updated with 30-day sprint
+- agent/learning_plan.md — 30-day sprint plan
 - agent/day_syllabus.md — live tracker
 - agent/skill_tracker.md — scores
-- agent/prompt_template.md — prompt generator with phase rules
-- agent/COST_OPTIMIZATION.md — caveman rules (must follow)
+- agent/reports/day10_journal.md — today's journal
 
 ## Rules
 - Read both context files at session start
-- Write only to vs_code_context.md, never zed_context.md
+- Write only vs_code_context.md, never zed_context.md
 - Caveman mode: ≤5-30 words. No greetings, filler, sign-offs, apologies
 - Batch edits. Read 50-100 lines. grep_search first

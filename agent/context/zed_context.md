@@ -103,7 +103,7 @@ Future/
 │   │   ├── current_status.md
 │   │   └── day9_journal.md
 │   ├── context/
-│   │   └── agent_context.md     # This file
+│   │   └── zed_context.md     # This file
 │   └── dsa/, learnings/, portfolio/, tests/ (empty)
 ```
 
@@ -125,9 +125,6 @@ Future/
 | Lists | 8.8/10 |
 | Dictionaries | 8.2/10 |
 | Loop Confidence | 8.4/10 |
-| Exception Handling | 9.2/10 |
-| Lambda | 9.5/10 |
-| Program Organization | 9.3/10 |
 | System Design | 0/10 |
 | Backend | 2/10 |
 | AI/ML | 2/10 |
@@ -218,7 +215,7 @@ Variables, data types, I/O, arithmetic, if/elif/else, logical operators, nested 
 - agent/reports/current_status.md, agent/reports/day9_journal.md
 - agent/germany/language_plan.md, agent/germany/prompts/prompt_01_a1_intro.md, agent/germany/progress/session_01_report.md
 - agent/Prem/profile.md, agent/finance/current_budget.md
-- agent/context/agent_context.md (this file)
+- agent/context/zed_context.md (this file)
 - README.md
 - Month-1/Day - 8/task_07.py (Contact Book)
 - Month-1/Day - 9/* (all 8 task files)
