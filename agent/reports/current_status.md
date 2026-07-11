@@ -33,7 +33,7 @@ Week 4 (Aug 1-8):    LangGraph → MCP → Interview prep → Offers
 |-------|----------|---------------|------------------|
 | A — Immediate Income | Weeks 1-2 | ₹15-25k/mo internship | Ketto, Soothsayer, Repowise |
 | B — Career Role | Weeks 3-4 | ₹40k+/mo FT | BlitzenX, SureBright, Lexsi |
-| Skip | — | — | algoleap (needs 2+ yrs exp) |
+| Skip | — | — | Roles requiring 2+ yrs production AI |
 
 ---
 

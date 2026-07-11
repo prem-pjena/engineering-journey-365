@@ -1,29 +1,26 @@
-# 📚 30-Day Accelerated AI Engineering Sprint (Market-Validated)
+# 📚 30-Day Accelerated AI Engineering Sprint
 
 **Context:** Fired from SkillVeda. Need ₹50k+/mo job ASAP.
 **Deadline:** 30 days (Jul 11 → Aug 10) for technical readiness. Apply earlier.
-**Based on:** Deep Research + 8 real JDs (Repowise, Ketto, BlitzenX, Soothsayer, GM, Lexsi, SureBright, algoleap)
+**Based on:** Deep Research — market-validated skill priorities.
 
 ---
 
-## 🎯 Two-Track Strategy
+## 🎯 Strategy
 
 ### Track A — Immediate Income (Weeks 1-2)
 Target ₹15-25k/mo internship. Stop the financial bleed.
-**Targets:** Ketto (AI Product Intern), Soothsayer (AI Intern), Repowise (SDE Intern)
+**Focus:** FastAPI + basic AI integration + quick deployable prototype.
 
 ### Track B — Career Role (Weeks 3-4)
 Target ₹40k+/mo FT or high-stipend internship.
-**Targets:** BlitzenX, SureBright, Lexsi Labs
-
-### Do NOT Apply To
-algoleap — requires 2+ years production AI experience. Revisit in 12 months.
+**Focus:** Full RAG system + LangGraph + MCP + AWS deployment.
 
 ---
 
 ## 🧠 Current Skill Snapshot (Day 10 Done)
 
-| Skill | Score | Needed for Target Roles |
+| Skill | Score | Market Need |
 |-------|-------|------------------------|
 | Python | 8.9/10 | ✅ Good enough |
 | DSA | 5.2/10 | Needs 5.5+ for interviews |
@@ -89,18 +86,7 @@ algoleap — requires 2+ years production AI experience. Revisit in 12 months.
 
 ---
 
-## 🏆 Priority Matrix (Likelihood × Salary × Growth)
 
-| Rank | Company | Role | Priority | Apply Strategy |
-|------|---------|------|----------|----------------|
-| 1 | **Repowise** | SDE Intern (Founding) | 🔴 HIGHEST | GitHub Discussions post TODAY. Install CLI, run on repo, post findings. |
-| 2 | **Ketto** | AI Product Intern | 🔴 HIGH | Cold email product team with LLM prototype. Fastest path to income. |
-| 3 | **BlitzenX** | AI Developer Intern | 🟠 MED | Apply Week 3 after portfolio deployed. PPO possible. |
-| 4 | **Soothsayer** | AI Intern | 🟠 MED | Apply Week 2. Pandas/ML focus. Pathway to FT. |
-| 5 | **GM** | AI/ML Intern | 🟡 LOW | 6-month onsite. Slow process. Apply but don't wait. |
-| 6 | **Lexsi Labs** | AI Agent Intern | 🟡 LOW | High bar. Apply Week 3-4 with Ragas eval portfolio. |
-| 7 | **SureBright** | AI Engineer (Agentic) | ⚪ STRETCH | YC-backed, ₹1.5-3M/yr. Target for Week 4+ |
-| 8 | **algoleap** | Agentic AI Engineer | ⚫ SKIP | Requires 2+ yrs exp. Revisit in 12 months. |
 
 ---
 
