@@ -29,16 +29,16 @@
 
 ---
 
-## 📅 Upcoming (Market-Validated — Pandas Pivot + Repowise Priority)
+## 📅 Upcoming (Market-Validated)
 
 | Day | Planned Topics | DSA |
 |-----|---------------|-----|
 | 12 | Scikit-learn (regression, classification, train/test), Tuples, enumerate(), zip() | Valid Anagram |
 | 13 | OOP (classes, inheritance, dunder, @property), Context Managers, Modules | Two Sum II |
-| 14 | Async Python (asyncio, async/await, gather), **Tree-sitter (AST parsing)** — unlocks Repowise | Group Anagrams |
+| 14 | Async Python (asyncio, async/await, gather), **Tree-sitter (AST parsing)** | Group Anagrams |
 | 15 | FastAPI (routes, Pydantic v2, CRUD, async endpoints) | Top K Frequent |
 | 16 | FastAPI JWT auth + OAuth2 + RBAC + Dockerize + **fastmcp** | Product of Array |
-| 17 | **REPOWISE PROTOCOL** (install CLI, run on repo, post to GitHub Discussions) + **KETTO PROTOTYPE** (LLM crowdfunding story generator) | Valid Palindrome |
+| 17 | **Build + deploy first AI prototype** (LLM API + FastAPI endpoint + Docker) | Valid Palindrome |
 | 18 | OpenAI API, Gemini, streaming, chat completions, embeddings | 3Sum |
 | 19 | PostgreSQL (SELECT, INSERT, JOINs, aggregations), pgvector setup | Container With Most Water |
 | 20 | LangChain (loaders, splitters, LCEL chains), Naive RAG | Best Time to Buy/Sell |
