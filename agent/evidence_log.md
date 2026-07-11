@@ -411,6 +411,49 @@
 | **Day** | Day 9 |
 | **Retention** | Passed — correctly identified View/O(n), Search/O(n), Delete/O(n) |
 
+
+## Evidence 67
+| Field | Detail |
+|-------|--------|
+| **What** | Used file I/O (read/write/append) with `with` statement |
+| **Day** | Day 10 |
+| **File** | `Month-1/Day-10/task_01.py` |
+
+## Evidence 68
+| Field | Detail |
+|-------|--------|
+| **What** | Built contact persistence with save/load from file |
+| **Day** | Day 10 |
+| **File** | `Month-1/Day-10/task_02.py` |
+
+## Evidence 69
+| Field | Detail |
+|-------|--------|
+| **What** | Handled FileNotFoundError gracefully |
+| **Day** | Day 10 |
+| **File** | `Month-1/Day-10/task_03.py` |
+
+## Evidence 70
+| Field | Detail |
+|-------|--------|
+| **What** | Used sets (add, remove, discard, union, intersection) |
+| **Day** | Day 10 |
+| **File** | `Month-1/Day-10/task_04.py` |
+
+## Evidence 71
+| Field | Detail |
+|-------|--------|
+| **What** | Solved Two Sum brute force O(n²) independently |
+| **Day** | Day 10 |
+| **File** | `Month-1/Day-10/task_06.py` |
+
+## Evidence 72
+| Field | Detail |
+|-------|--------|
+| **What** | Solved Two Sum optimized O(n) with hash map |
+| **Day** | Day 10 |
+| **File** | `Month-1/Day-10/task_07.py` |
+
 ---
 
 *New evidence will be appended as milestones are reached.*

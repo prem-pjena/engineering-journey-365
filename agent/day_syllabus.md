@@ -25,24 +25,23 @@
 
 | Day | Date | Status | Topics | DSA |
 |-----|------|--------|--------|-----|
-| 11 | Jul 11 | 🔴 IN PROGRESS | Tuples, enumerate(), zip(), type conversions | Contains Duplicate, Valid Anagram |
+| 11 | Jul 11 | 🔴 IN PROGRESS | Pandas (DataFrames, read_csv, groupby), NumPy (arrays, broadcasting) | Contains Duplicate, Valid Anagram |
 
 ---
 
-## 📅 Upcoming (Flexible)
+## 📅 Upcoming (Market-Validated — Pandas Pivot + Repowise Priority)
 
 | Day | Planned Topics | DSA |
 |-----|---------------|-----|
-| 11 | Tuples, Set operations, type conversions + enumerate(), zip() | Arrays: Contains Duplicate, Valid Anagram |
-| 12 | String methods (.split, .join, .strip, .replace, .find) + JSON module (dumps/loads) + dict/set comprehensions + **Generators (yield, generator expressions, lazy evaluation)** | Strings: Valid Palindrome, Reverse String |
-| 13 | **OOP** — Classes, objects, `__init__`, self, methods, `__str__` | Arrays: Two Sum II |
-| 14 | **OOP** — Inheritance, `super()`, dunder methods, `@property`, staticmethod, classmethod + **Context Managers (`__enter__`, `__exit__`, `with` statement, contextlib)** | Trees: Max Depth of Binary Tree |
-| 15 | **OOP mini-project** (Bank Account / Library system) | Trees: Invert Tree |
-| 16 | **Modules & imports** — `import`, `from`, `as`, `__init__.py`, `if __name__ == "__main__"`, package structure | Two Pointers |
-| 17 | **Modern env: uv** (instead of pip/venv), pyproject.toml, lockfiles + **Type hints** (`def func(x: int) -> str:`) + **Env vars** (`os.getenv`, `python-dotenv`) + **Async Concurrency** (asyncio, async/await, asyncio.gather, event loop, I/O vs CPU-bound) | Valid Parentheses |
-| 18 | **FastAPI starts** — Routes, Pydantic v2, async endpoints + **ORM (SQLModel/SQLAlchemy)** + **Alembic migrations** + pgvector setup | Min Stack |
-| 19 | FastAPI — CRUD, query/body params, error handling + **Rate Limiting** (Redis sliding window, FastAPI dependency, 429 responses) | Container With Most Water |
-| 20 | FastAPI — Dependency injection, middleware, file upload + **API Security (JWT, OAuth2)** + **Testing (pytest, openai-responses mocking)** | 3Sum |
+| 12 | Scikit-learn (regression, classification, train/test), Tuples, enumerate(), zip() | Valid Anagram |
+| 13 | OOP (classes, inheritance, dunder, @property), Context Managers, Modules | Two Sum II |
+| 14 | Async Python (asyncio, async/await, gather), **Tree-sitter (AST parsing)** — unlocks Repowise | Group Anagrams |
+| 15 | FastAPI (routes, Pydantic v2, CRUD, async endpoints) | Top K Frequent |
+| 16 | FastAPI JWT auth + OAuth2 + RBAC + Dockerize + **fastmcp** | Product of Array |
+| 17 | **REPOWISE PROTOCOL** (install CLI, run on repo, post to GitHub Discussions) + **KETTO PROTOTYPE** (LLM crowdfunding story generator) | Valid Palindrome |
+| 18 | OpenAI API, Gemini, streaming, chat completions, embeddings | 3Sum |
+| 19 | PostgreSQL (SELECT, INSERT, JOINs, aggregations), pgvector setup | Container With Most Water |
+| 20 | LangChain (loaders, splitters, LCEL chains), Naive RAG | Best Time to Buy/Sell |
 
 ## 📅 Month 2 Additions (from Deep Research audit)
 
