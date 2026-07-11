@@ -3,37 +3,49 @@
 
 ## Status
 - **Day:** 10 ✅ COMPLETED (Jul 11)
-- **Next:** Day 11 — Tuples, enumerate/zip, Contains Duplicate, Valid Anagram
-- **Situation:** Fired from SkillVeda. 30-day sprint to AI Engineer job.
-- **Target:** ₹50k+/mo by Aug-Sep 2026
+- **Next:** Day 11 — Pandas + NumPy (data science pivot for Soothsayer/GM)
+- **Situation:** Fired from SkillVeda. $0 income. 30-day sprint.
+- **Updated Plan:** Market-validated against 8 real JDs (Jul 11 Deep Research)
 
-## Skills (Day 10 completed)
+## Skills (Day 10)
 - Python: 8.9/10 | DSA: 5.2/10 | Problem Solving: 7.8/10
-- File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6
-- Functions: 9.5 | Production Thinking: 9.4
-- Confidence: 10/10 | Builder: 9.6 | Retention: 9.7
-
-## DSA Progress
-- Solved: Two Sum (LeetCode #1)
-- Total: 1/25
+- File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6 | Functions: 9.5
+- CRITICAL GAPS: Pandas (0), Scikit-learn (0), FastAPI (0), PostgreSQL (0)
 
 ## Topics Done (Days 1-10)
-Variables, I/O, if/elif/else, while/for, functions, *args/**kwargs, lambda, map/filter, lists (all), dicts, linear search, exception handling, program organization, dispatch table, File I/O (read/write/append/with/modes), Sets (add/remove/discard/union/intersection), Two Sum, Calculator 2.0, Contact Book, Todo app, Big O
+Variables, I/O, if/elif/else, while/for, functions (*args/**kwargs), lambda, map/filter, lists (all), dicts, linear search, exception handling, program organization, dispatch table, File I/O (read/write/append/modes), Sets (union/intersection/membership), Two Sum (brute + optimized), Big O, Contact Book, Todo app, Calculator 2.0
 
-## 30-Day Sprint
-- Week 1 (Days 1-7): Day 10 done ✅ → remaining: Tuples, OOP, Context Mgrs, Modules, Async, FastAPI
-- Week 2 (Days 8-14): PostgreSQL, Docker, LLM APIs, LangChain, RAG
-- Week 3 (Days 15-21): PROJECT 1 — RAG + Ragas + AWS + applications start
-- Week 4 (Days 22-30): LangGraph, MCP, interview prep
+## Two-Track Strategy
+- **Track A (Weeks 1-2):** ₹15-25k/mo internship — Ketto, Soothsayer, Repowise
+- **Track B (Weeks 3-4):** ₹40k+/mo FT — BlitzenX, SureBright, Lexsi
+- **SKIP:** algoleap (needs 2+ yrs exp)
+
+## Revised Week 1 (Market-Validated Pivot)
+| Day | Topics |
+|-----|--------|
+| 11 | Pandas (DataFrames, read_csv, groupby) + NumPy |
+| 12 | Scikit-learn (regression, classification) + Tuples, enumerate/zip |
+| 13 | OOP (classes, inheritance, dunder, @property) + Context Managers |
+| 14 | Async Python + **Tree-sitter (AST parsing)** — unlocks Repowise |
+| 15 | FastAPI (routes, Pydantic v2, CRUD, JWT auth) |
+| 16 | Dockerize FastAPI + **fastmcp** (wrap endpoints as MCP tools) |
+| 17 | **REPOWISE PROTOCOL** (install CLI, run on repo, post to GitHub Discussions) + **KETTO PROTOTYPE** (LLM crowdfunding story generator) |
+
+## Priority Companies
+| # | Company | Role | Apply Strategy |
+|---|---------|------|----------------|
+| 1 | Repowise | SDE Intern (Founding) | GitHub Discussions post TODAY. Install CLI, run on repo. |
+| 2 | Ketto | AI Product Intern | Cold email product team with LLM prototype. |
+| 3 | BlitzenX | AI Developer Intern | Apply Week 3 after portfolio deployed. |
+| 4 | Soothsayer | AI Intern | Apply Week 2. Pandas/ML focus. |
 
 ## Key Files
-- agent/learning_plan.md — 30-day sprint plan
+- agent/learning_plan.md — market-validated 30-day sprint
 - agent/day_syllabus.md — live tracker
 - agent/skill_tracker.md — scores
-- agent/reports/day10_journal.md — today's journal
+- agent/reports/day10_journal.md
 
 ## Rules
 - Read both context files at session start
 - Write only vs_code_context.md, never zed_context.md
 - Caveman mode: ≤5-30 words. No greetings, filler, sign-offs, apologies
-- Batch edits. Read 50-100 lines. grep_search first

@@ -1,136 +1,118 @@
-# 📚 30-Day Accelerated AI Engineering Sprint
+# 📚 30-Day Accelerated AI Engineering Sprint (Market-Validated)
 
-**Context:** Fired from SkillVeda internship. Need ₹50k+/mo job ASAP.
-**Deadline:** 30 days (Jul 11 → Aug 10) for technical readiness. Offer by Day 45-60.
-
----
-
-## 🎯 Target
-
-| Role | Salary | Timeline |
-|------|--------|----------|
-| AI Engineer / AI Backend (Indian startup) | ₹50k+/mo in-hand (₹6-9 LPA) | Tech ready by Day 30. Offer by Day 45-60. |
+**Context:** Fired from SkillVeda. Need ₹50k+/mo job ASAP.
+**Deadline:** 30 days (Jul 11 → Aug 10) for technical readiness. Apply earlier.
+**Based on:** Deep Research + 8 real JDs (Repowise, Ketto, BlitzenX, Soothsayer, GM, Lexsi, SureBright, algoleap)
 
 ---
 
-## 🧠 Current Skill Snapshot (Day 9 Done)
+## 🎯 Two-Track Strategy
 
-| Skill | Score |
-|-------|-------|
-| Python | 8.4/10 |
-| DSA | 4.5/10 |
-| FastAPI | 0/10 |
-| PostgreSQL | 0/10 |
-| Docker | 3.0/10 |
-| LLM APIs | 0/10 |
-| RAG | 0/10 |
+### Track A — Immediate Income (Weeks 1-2)
+Target ₹15-25k/mo internship. Stop the financial bleed.
+**Targets:** Ketto (AI Product Intern), Soothsayer (AI Intern), Repowise (SDE Intern)
 
----
+### Track B — Career Role (Weeks 3-4)
+Target ₹40k+/mo FT or high-stipend internship.
+**Targets:** BlitzenX, SureBright, Lexsi Labs
 
-## 📅 30-Day Sprint: Week-by-Week
-
-| Week | Days | Theme | Outcome |
-|------|------|-------|---------|
-| 1 | 1-7 | Python mastery + FastAPI backend | Deployed Task API with JWT auth |
-| 2 | 8-14 | PostgreSQL + Docker + LLM APIs | RAG pipeline with pgvector |
-| 3 | 15-21 | **PROJECT 1** — RAG + Ragas + AWS deploy | Portfolio piece live + applications start |
-| 4 | 22-30 | LangGraph + MCP + Interview prep | Full interview readiness |
+### Do NOT Apply To
+algoleap — requires 2+ years production AI experience. Revisit in 12 months.
 
 ---
 
-## Week 1 (Days 1-7): Python Mastery + FastAPI Backend
+## 🧠 Current Skill Snapshot (Day 10 Done)
 
-| Day | Morning | Afternoon | DSA |
-|-----|---------|-----------|-----|
-| 1 | File I/O, String methods, JSON | uv, pyproject.toml, type hints, env vars | Contains Duplicate, Valid Anagram |
-| 2 | Sets, Tuples, Dict/Set comprehensions | *args/**kwargs, exception handling deep | Two Sum, Group Anagrams |
-| 3 | Generators (yield), Iterators | OOP: classes, __init__, inheritance, dunder | Top K Frequent |
-| 4 | Context Managers, Modules, Packages | Async: asyncio, async/await, gather | Product of Array Except Self |
-| 5 | FastAPI: routes, async endpoints, Pydantic v2 | CRUD in-memory Task API | Valid Palindrome |
-| 6 | FastAPI: OAuth2, JWT, RBAC | Dependency injection, error handling | 3Sum |
-| 7 | **Deploy Task API with JWT** | Dockerfile + docker-compose | Container With Most Water |
+| Skill | Score | Needed for Target Roles |
+|-------|-------|------------------------|
+| Python | 8.9/10 | ✅ Good enough |
+| DSA | 5.2/10 | Needs 5.5+ for interviews |
+| Pandas/NumPy | 0/10 | ⚠️ CRITICAL GAP — unlocks Soothsayer, GM |
+| Scikit-learn | 0/10 | ⚠️ CRITICAL GAP |
+| FastAPI | 0/10 | ✅ In plan — unlocks Repowise, BlitzenX |
+| PostgreSQL | 0/10 | ✅ In plan |
+| Docker | 3/10 | ✅ Existing DevOps exp |
+| AWS | 3/10 | ✅ Existing DevOps exp |
+| Tree-sitter/AST | 0/10 | ⚠️ Unlocks Repowise |
+| MCP | 0/10 | ✅ In plan — unlocks Repowise, SureBright |
 
-## Week 2 (Days 8-14): PostgreSQL + Docker + LLM APIs
+---
+
+## 📅 Revised 30-Day Sprint (Market-Validated)
+
+### Week 1: Data Science + API Foundations (Pivot to unlock Soothsayer/GM/Repowise)
+
+| Day | Morning (3hr) | Afternoon (3hr) | Evening (2hr) |
+|-----|---------------|-----------------|----------------|
+| **11** | Pandas: DataFrames, read_csv, cleaning, groupby | NumPy: arrays, operations, broadcasting | DSA: Contains Duplicate |
+| **12** | Scikit-learn: regression, classification, train/test split | Tuples, enumerate(), zip() | DSA: Valid Anagram |
+| **13** | OOP: classes, __init__, inheritance, dunder, @property | Context Managers, Modules, __init__.py | DSA: Two Sum II |
+| **14** | Async Python: asyncio, async/await, gather, event loop | **Tree-sitter:** AST parsing, code query language | DSA: Group Anagrams |
+| **15** | FastAPI: routes, async endpoints, Pydantic v2, CRUD | JWT auth, OAuth2, RBAC, dependency injection | DSA: Top K Frequent |
+| **16** | Dockerize FastAPI app + PostgreSQL | **fastmcp:** Wrap FastAPI endpoints as MCP tools | DSA: Product of Array |
+| **17** | **REPOWISE PROTOCOL** — Install CLI, run on repo, post findings to GitHub Discussions | **KETTO PROTOTYPE** — Build LLM crowdfunding story generator | DSA: Valid Palindrome |
+
+### Week 2: LLM APIs + PostgreSQL + RAG Foundation
 
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 8 | PostgreSQL basics, SQLModel ORM, Alembic | Best Time to Buy/Sell |
-| 9 | Subqueries, window functions, pgvector setup | Longest Substring |
-| 10 | Docker multi-service, docker-compose | Valid Parentheses |
-| 11 | OpenAI API, Gemini, streaming, chat completions | Min Stack |
-| 12 | Embeddings, Naive RAG architecture | Evaluate Reverse Polish |
-| 13 | LangChain loaders, splitters, LCEL chains | Binary Search |
-| 14 | Hybrid search, pgvector queries, reranking basics | Search 2D Matrix |
+| 18 | OpenAI API, Gemini, streaming, chat completions, embeddings | 3Sum |
+| 19 | PostgreSQL: SELECT, INSERT, JOINs, aggregations, indexing | Container With Most Water |
+| 20 | pgvector: setup, vector columns, cosine similarity, hybrid search | Best Time to Buy/Sell |
+| 21 | LangChain: loaders, splitters, LCEL chains, prompt templates | Longest Substring |
+| 22 | **Naive RAG:** chunk → embed → store → retrieve → generate | Valid Parentheses |
+| 23 | **Advanced RAG:** semantic chunking, cross-encoder reranking, hybrid search | Min Stack |
+| 24 | **Ragas Evaluation:** faithfulness, context precision, answer relevance | Binary Search |
 
-## Week 3 (Days 15-21): PROJECT 1 — RAG System 🏗️
-
-| Day | Topics | DSA |
-|-----|--------|-----|
-| 15 | Prompt engineering, few-shot, structured outputs | Reverse Linked List |
-| 16 | **Ragas Eval**: Faithfulness, Context Precision | Merge Two Sorted |
-| 17 | **Build RAG API**: upload → chunk → embed → query | Reorder List |
-| 18 | Integration tests, pytest, mock OpenAI | Invert Binary Tree |
-| 19 | **Deploy on AWS EC2** with Docker | Max Depth |
-| 20 | CI/CD (GitHub Actions), README, architecture diagram | Same Tree |
-| 21 | **Portfolio launch** — Loom demo, applications start | Level Order Traversal |
-
-## Week 4 (Days 22-30): LangGraph + MCP + Interview Prep
+### Week 3: PROJECT 1 — RAG System + Deploy + APPLY
 
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 22 | ReAct pattern, tool calling, function calling | Review Arrays |
-| 23 | LangGraph: StateGraph, nodes, edges, state | Review Pointers |
-| 24 | LangGraph: conditional routing, persistence | Review Stack |
-| 25 | **MCP**: FastMCP server, host-client-server | Review Binary Search |
-| 26 | FastMCP + LangGraph integration | Review Linked Lists |
-| 27 | System design: RAG at scale, caching, routing | Review Trees |
-| 28 | Mock interviews, behavioral prep | DSA review |
-| 29 | Applications + follow-ups | DSA review |
-| 30 | **Buffer day** — interviews, take-homes | DSA review |
+| 25 | Prompt engineering (few-shot, CoT, structured outputs) + RBAC | Reverse Linked List |
+| 26 | **Build RAG API:** upload → chunk → embed → pgvector → query with citations | Merge Two Sorted |
+| 27 | **Ragas CI pipeline:** eval harness, auto-score on each query | Max Depth Tree |
+| 28 | **Deploy on AWS EC2** with Docker Compose + CI/CD (GitHub Actions) | Same Tree |
+| 29 | **Apply to Ketto, Soothsayer, BlitzenX** — tailored resumes + cold emails | Level Order Traversal |
+| 30 | **Apply to Repowise** (if not hired yet), SureBright, Lexsi | DSA review |
+
+### Week 4: LangGraph + MCP + Interview Prep
+
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 31 | ReAct pattern, tool calling, function calling | Review Arrays |
+| 32 | LangGraph: StateGraph, nodes, edges, state, conditional routing | Review Pointers |
+| 33 | MCP servers with fastmcp — expose DB as AI tool | Review Stack |
+| 34 | Integrate MCP with LangGraph agent | Review Binary Search |
+| 35 | Mock interviews, behavioral prep, salary negotiation | Review Trees |
+| 36-37 | Applications + follow-ups + take-home assignments | DSA review |
+| 38-40 | Buffer — interviews, offers | DSA review |
 
 ---
 
-## 🏗️ The Portfolio Project (Days 15-21)
+## 🏆 Priority Matrix (Likelihood × Salary × Growth)
 
-**Project:** Enterprise-Grade Document Intelligence API
-- FastAPI + PostgreSQL/pgvector + LangChain + OpenAI
-- JWT auth with RBAC (Admin/User)
-- Upload PDF → chunk → embed → query with citations
-- **Ragas evaluation** — Faithfulness + Context Precision scores
-- Docker Compose → deployed on AWS EC2
-- GitHub Actions CI/CD
-- Secondary: FastMCP server exposing DB as LLM tool
-
----
-
-## 🎯 DSA: 30 High-ROI Problems
-
-| Category | Problems |
-|----------|----------|
-| Arrays & Hashing | Contains Duplicate, Valid Anagram, Two Sum, Group Anagrams, Top K Frequent, Product of Array Except Self, Longest Consecutive |
-| Two Pointers | Valid Palindrome, Two Sum II, 3Sum, Container With Most Water, Best Time to Buy/Sell, Longest Substring |
-| Stack | Valid Parentheses, Min Stack, Evaluate Reverse Polish |
-| Binary Search | Binary Search, Search 2D Matrix, Find Min Rotated |
-| Linked List | Reverse Linked List, Merge Two Sorted, Reorder List |
-| Trees | Invert Tree, Max Depth, Same Tree, LCA, Level Order |
+| Rank | Company | Role | Priority | Apply Strategy |
+|------|---------|------|----------|----------------|
+| 1 | **Repowise** | SDE Intern (Founding) | 🔴 HIGHEST | GitHub Discussions post TODAY. Install CLI, run on repo, post findings. |
+| 2 | **Ketto** | AI Product Intern | 🔴 HIGH | Cold email product team with LLM prototype. Fastest path to income. |
+| 3 | **BlitzenX** | AI Developer Intern | 🟠 MED | Apply Week 3 after portfolio deployed. PPO possible. |
+| 4 | **Soothsayer** | AI Intern | 🟠 MED | Apply Week 2. Pandas/ML focus. Pathway to FT. |
+| 5 | **GM** | AI/ML Intern | 🟡 LOW | 6-month onsite. Slow process. Apply but don't wait. |
+| 6 | **Lexsi Labs** | AI Agent Intern | 🟡 LOW | High bar. Apply Week 3-4 with Ragas eval portfolio. |
+| 7 | **SureBright** | AI Engineer (Agentic) | ⚪ STRETCH | YC-backed, ₹1.5-3M/yr. Target for Week 4+ |
+| 8 | **algoleap** | Agentic AI Engineer | ⚫ SKIP | Requires 2+ yrs exp. Revisit in 12 months. |
 
 ---
 
-## 🎯 Target Companies (20)
+## 🛡️ Backup Plan
 
-Sarvam AI, SpotDraft, 100ms, ClearFeed, Infilect, Zensar, PeopleLogic, Fiddle Leaf, Acute Informatics, Diensten Tech, Prajapati NexaTech, School Serv, Tru Global, Guiding Consulting, Techkshetra, NTT Ltd, Orbit AI, FAC INFOSEC, NeuroGrid, Bynd
-
----
-
-## 🛡️ Backup (if pure AI Engineer not available by Day 45)
-
-| Role | Salary | Path to AI |
-|------|--------|------------|
-| Backend Engineer (Python/FastAPI) | ₹40-60k/mo | Transfer to AI team internally |
-| MLOps / Platform Engineer | ₹40-60k/mo | DevOps → AI infra → AI Engineer |
-| QA Automation (AI focus) | ₹35-50k/mo | Testing LLMs → building them |
-| Accept ₹30-40k/mo at AI startup | Lower pay | AI title + experience → 15L+ in 2yr |
+| If... | Then... |
+|-------|---------|
+| No FT offer by Day 30 | Accept ₹15-25k internship (Ketto, Soothsayer, Repowise) |
+| Internship doesn't convert | Build MCP servers + open source. Apply again with more experience. |
+| Market crashes | Take Backend Engineer (FastAPI) role ₹40-60k, transfer to AI later. |
+| Rent pressure | Accept any ₹15k+ role. Keep building evenings. Title matters less than income + experience. |
 
 ---
 
-*Based on Gemini Deep Research: "Accelerated AI Engineering Sprint" (Jul 2026)*
+*Based on Gemini Deep Research: Strategic Alignment and Market Validation Report (Jul 2026)*
