@@ -1,41 +1,49 @@
-# 📚 Complete AI/ML Engineer Roadmap (12 Months)
+# 📚 Complete AI Engineer Roadmap (12 Months)
 
-**Ultimate Goal:** Eligible for ALL AI/ML roles — Gen AI, Traditional ML, DL, NLP, CV, MLOps.
+**Target Role:** AI Engineer / Agentic AI Engineer
+**Focus:** LLMs, RAG, agents, NLP, applied ML. NO research, NO heavy math.
 **Phase 1 (30 days):** Quick job to stop financial bleed.
-**Phases 2-4:** Fill all gaps to become a complete AI/ML engineer.
+**Phases 2-4:** Deepen AI skills, fill interview knowledge gaps.
 
 ---
 
-## 🎯 Target Role Ecosystem
+## 🎯 Target Roles
 
-After 12 months, you can apply for any of these:
-
-| Role Category | Example Titles | Salary (India) |
-|--------------|----------------|----------------|
-| **Generative AI** | AI Engineer, GenAI Engineer, LLM Engineer | ₹8-25 LPA |
-| **Traditional ML** | ML Engineer, Data Scientist, ML Developer | ₹7-20 LPA |
-| **Deep Learning** | Deep Learning Engineer, CV Engineer, NLP Engineer | ₹8-22 LPA |
-| **MLOps** | ML Ops Engineer, AI Infrastructure Engineer | ₹10-25 LPA |
-| **Applied AI** | AI Backend Engineer, Product AI Engineer | ₹8-18 LPA |
+| Role | Salary (India) | Fit |
+|------|----------------|-----|
+| **AI Engineer** | ₹8-25 LPA | ✅ Primary target |
+| **Agentic AI Engineer** | ₹10-30 LPA | ✅ Primary target |
+| **GenAI Engineer** | ₹8-22 LPA | ✅ Strong fit |
+| **AI/ML Developer** | ₹7-18 LPA | ✅ Strong fit |
+| Backend AI Engineer | ₹8-18 LPA | ⚠️ Fallback |
+| ML Engineer | ₹7-20 LPA | ⚠️ Possible but less interest |
+| Data Scientist | ₹6-18 LPA | ❌ Not interested |
 
 ---
 
-## 📊 Complete AI/ML Engineer Tech Stack
+## 🧠 Complete AI Engineer Tech Stack
 
-| Domain | Technologies |
-|--------|-------------|
-| **Languages** | Python, SQL |
-| **Data Manipulation** | Pandas, NumPy, data cleaning, EDA |
-| **Traditional ML** | Scikit-learn (regression, classification, clustering, dimensionality reduction) |
-| **Deep Learning** | TensorFlow / PyTorch, Neural Networks, CNNs, RNNs, Transformers |
-| **Computer Vision** | OpenCV, image classification, object detection |
-| **NLP** | Tokenization, embeddings, transformers, BERT, fine-tuning |
-| **Gen AI / LLMs** | OpenAI API, LangChain, RAG, LangGraph, MCP, prompt engineering |
-| **Evaluation** | Ragas, MLflow, model validation, cross-validation |
-| **Backend API** | FastAPI, Pydantic, REST, JWT auth |
-| **Databases** | PostgreSQL, pgvector, vector databases |
-| **MLOps** | Docker, AWS, CI/CD, model deployment, monitoring |
-| **DSA** | 100+ problems — arrays, strings, hash maps, trees, graphs, DP |
+| Domain | Technologies | Depth |
+|--------|-------------|-------|
+| **Languages** | Python, SQL | Deep |
+| **Data Manipulation** | Pandas, NumPy | Practical — enough for interviews |
+| **ML Fundamentals** | Scikit-learn (regression, classification, clustering basics) | Conceptual — explain algorithms, not implement from scratch |
+| **NLP** | Tokenization, embeddings, BERT vs GPT, transformers concept | Interview-ready — explain architecture, not math |
+| **LLMs & Gen AI** | OpenAI API, LangChain, RAG, LangGraph, MCP, prompt engineering | Deep — core skill |
+| **AI Agents** | LangGraph (StateGraph, multi-agent), tool calling, MCP servers | Deep — core skill |
+| **Model Serving** | FastAPI, Docker, AWS EC2 | Practical — deploy models, not build infra |
+| **Evaluation** | Ragas, LLM-as-a-judge, basic ML metrics | Practical |
+| **DSA** | 60 problems (arrays, strings, hash maps, trees, graphs) | Interview-ready |
+| **System Design** | AI system design basics (RAG scaling, caching, routing) | Conceptual |
+
+## NOT in Scope (Skip These)
+- ❌ PyTorch / TensorFlow deep dives
+- ❌ Backpropagation math derivations
+- ❌ Research papers (unless directly relevant to agents)
+- ❌ Computer Vision (CNNs, object detection, image processing)
+- ❌ Model training from scratch
+- ❌ Kubernetes, Kubeflow, MLOps platforms
+- ❌ Statistical ML theory (hypothesis testing, p-values, Bayesian)
 
 ---
 
@@ -43,127 +51,101 @@ After 12 months, you can apply for any of these:
 
 ### Phase 1 (30 Days — Jul 11 to Aug 10): QUICK JOB
 **Goal:** ₹15-40k/mo role. Stop financial bleed.
-**Stack:** FastAPI + PostgreSQL + LLM APIs + RAG + Docker + AWS deploy + 30 DSA problems
+**Stack:** FastAPI + PostgreSQL + LLM APIs + RAG + Docker + AWS + 30 DSA
+**Interview prep:** Transformer architecture, RNN vs CNN vs Transformer (basic), NLP basics (tokenization, embeddings), ML fundamentals (overfitting, cross-validation)
 **Portfolio:** 1 deployed RAG API with Ragas eval
-**Interview prep:** Transformer architecture, RNN vs CNN vs Transformer, image matching, NLP basics, ML fundamentals — 30 min/day
-**Eligible for:** AI Intern, Jr AI Backend Engineer, GenAI Developer
+**Eligible for:** AI Intern, Jr GenAI Engineer, AI Developer
 
-### Phase 1 Interview Prep (Gen AI + Backend)
-Questions you'll face even in Agentic AI interviews:
-- **Transformer architecture:** Self-attention, multi-head attention, positional encoding, encoder-decoder structure
-- **RNN vs CNN vs Transformer:** When to use each, tradeoffs
-- **Image matching:** Feature detection (SIFT, ORB), Siamese networks, cosine similarity of embeddings
-- **NLP basics:** Tokenization, embeddings (Word2Vec, GloVe), BERT vs GPT, sequence length, padding
-- **ML fundamentals:** Overfitting, underfitting, bias-variance tradeoff, cross-validation, regularization (L1/L2)
-- **How to study:** 30 min/day reading + flashcards. Focus on explaining concepts out loud.
+### Phase 2 (Months 2-3 — Aug-Sep): ML FUNDAMENTALS + DEEPER NLP
+**Goal:** Fill interview knowledge gaps. Be credible in any AI interview.
+**Applied skills:** Scikit-learn end-to-end pipelines, Pandas/NumPy advanced, feature engineering
+**Interview knowledge:**
+- ML: Regression, classification, clustering, decision trees, ensembles (Random Forest, XGBoost), regularization, cross-validation, confusion matrix, precision/recall/F1, ROC-AUC
+- NLP: Tokenization (BPE, WordPiece), Word2Vec/GloVe, sequence length, padding, BERT vs GPT in depth, fine-tuning vs RAG, prompt engineering vs fine-tuning
+- Deep learning concepts (NOT implementation): What are neural networks? What is backpropagation conceptually? What are activation functions? What is attention?
+**Portfolio:** Upgrade RAG system with better retrieval + evaluation
+**Eligible for:** AI Engineer, GenAI Engineer, NLP-focused AI roles
 
-### Phase 2 (Months 2-3 — Aug-Sep): TRADITIONAL ML + DATA SCIENCE
-**Goal:** Fill classical ML gaps. Be eligible for Data Scientist/ML Engineer roles.
-**Stack:** Pandas/NumPy deep dive, Scikit-learn (all algorithms), feature engineering, hyperparameter tuning, cross-validation, MLflow experiment tracking
-**Portfolio:** 1 end-to-end ML project (regression + classification) deployed on AWS
-**Eligible for:** ML Engineer, Data Scientist, AI/ML Developer
+### Phase 3 (Months 4-6 — Oct-Dec): AGENTIC AI MASTERY
+**Goal:** Be a strong Agentic AI Engineer candidate.
+**Applied skills:** LangGraph advanced (multi-agent, human-in-the-loop, checkpointing), MCP servers (2-3 custom), open-source contributions, advanced RAG (hybrid search, reranking)
+**Interview knowledge:**
+- Agent patterns: ReAct, Plan-Execute, Reflection, Tool use, Multi-agent orchestration
+- Memory systems: Short-term, episodic, semantic memory in agents
+- Evaluation: Task completion rate, error recovery, latency/cost tradeoffs
+- MCP architecture: Host-Client-Server, tool discovery, resource exposure
+**Open source:** 2-3 merged PRs in LangChain, Ragas, or FastMCP repos
+**Eligible for:** Agentic AI Engineer, Senior AI Engineer
 
-### Phase 2 Interview Prep (Traditional ML)
-- **Regression:** Linear, logistic, polynomial, regularization (Ridge, Lasso, ElasticNet)
-- **Classification:** Decision Trees, Random Forest, SVM, KNN, Naive Bayes
-- **Clustering:** K-Means, DBSCAN, Hierarchical, evaluation metrics (silhouette score)
-- **Feature engineering:** Scaling, encoding, selection, PCA, t-SNE
-- **Metrics:** Accuracy, precision, recall, F1, ROC-AUC, confusion matrix, MSE, MAE, R²
-- **How to study:** Implement each algorithm from scratch once. Then explain to a peer.
+### Phase 4 (Months 7-12 — Jan-Jun): BROADEN + SPECIALIZE
+**Goal:** Eligible for all AI Engineer roles up to mid-senior.
+**Deepen:** LangGraph at scale, production MCP, multi-modal LLMs, cost optimization, semantic caching
+**Broaden:** Model serving (vLLM, Ollama basics), prompt optimization, LLM observability (Langfuse)
+**DSA:** 60 problems total (add graphs, DP basics)
+**System design:** AI system design for interviews (RAG at scale, agent architecture, LLM gateway)
+**Eligible for:** ALL AI Engineer roles up to mid-senior level
 
-### Phase 3 (Months 4-6 — Oct-Dec): DEEP LEARNING + NLP + CV
-**Goal:** Master neural networks. Be eligible for DL/CV/NLP roles.
-**Stack:** PyTorch (or TensorFlow), CNNs, RNNs, Transformers, BERT fine-tuning, OpenCV basics, image classification, text classification, tokenization, word embeddings
-**Portfolio:** 1 deep learning project (image classification or text sentiment) deployed
-**Eligible for:** Deep Learning Engineer, NLP Engineer, CV Engineer
+---
 
-### Phase 3 Interview Prep (DL + NLP + CV)
-- **Deep Learning:** Backpropagation, gradient descent variants (SGD, Adam), activation functions, batch normalization, dropout, vanishing/exploding gradients
-- **CNNs:** Convolution operation, pooling, stride, padding, common architectures (ResNet, VGG, YOLO), object detection vs image classification
-- **RNNs:** LSTM, GRU, vanishing gradient in RNNs, sequence-to-sequence, attention mechanism
-- **Transformers:** Self-attention (Q, K, V), multi-head attention, positional encoding, BERT (encoder-only), GPT (decoder-only), T5 (encoder-decoder)
-- **NLP specifics:** Tokenization (BPE, WordPiece), embeddings vs hidden states, fine-tuning vs feature extraction, prompt engineering vs fine-tuning
-- **CV specifics:** Image matching (feature-based vs learning-based), data augmentation, transfer learning, Siamese networks
-- **Common questions you already faced:**
-  - "How does Transformer architecture work?" → Explain Q, K, V, self-attention formula, multi-head
-  - "How to match two images?" → Feature detectors (SIFT/ORB) → match keypoints → RANSAC. OR: Siamese network → embedding → cosine similarity
-  - "Compare RNN, CNN, Transformer for NLP" → RNN: sequential but slow. CNN: parallel but limited context. Transformer: best of both with self-attention
-  - "Explain BERT vs GPT" → BERT: encoder-only, bidirectional, fill-mask. GPT: decoder-only, unidirectional, text generation
-- **How to study:** Whiteboard architecture diagrams. Explain like teaching a beginner. Mock interview with audio recording.
+## 🚫 What You Will NOT Do (And That's Fine)
 
-### Phase 4 (Months 7-12 — Jan-Jun): MLOps + ADVANCED + DSA MASTERY
-**Goal:** Production expertise. Be eligible for senior/staff roles.
-**Stack:** MLflow/Kubeflow, model monitoring, A/B testing, feature stores, advanced LangGraph, multi-agent MCP systems, 100+ DSA problems, system design for AI
-**Portfolio:** 1 production-grade ML platform + 1 multi-agent AI system
-**Eligible for:** ALL AI/ML roles up to mid-senior level
+| Topic | Why Skip |
+|-------|----------|
+| **PyTorch/TensorFlow deep dives** | AI Engineer roles use LLM APIs, not train models |
+| **Backpropagation math** | Not tested in AI Engineer interviews (concept only) |
+| **Research papers** | Unless directly working in research, not needed |
+| **Computer Vision** | Not relevant to agentic AI / LLM roles |
+| **Kubernetes/MLOps platforms** | Docker + AWS is enough for AI Engineer |
+| **Statistical theory** | You're not applying for Data Scientist roles |
 
 ---
 
 ## 📅 Phase 1 Detail — First 30 Days
 
-### Week 1: Data Science + API Foundations
+### Week 1: Python + Data Basics + FastAPI Foundation
 
 | Day | Morning | Afternoon | Evening (DSA) |
 |-----|---------|-----------|---------------|
 | **11** | Pandas (DataFrames, read_csv, groupby) | NumPy (arrays, broadcasting) | Contains Duplicate |
-| **12** | Scikit-learn (regression, classification) | Tuples, enumerate(), zip() | Valid Anagram |
-| **13** | OOP (classes, inheritance, dunder, @property) | Context Managers, Modules | Two Sum II |
-| **14** | Async Python (asyncio, async/await, gather) | Tree-sitter (AST parsing) | Group Anagrams |
-| **15** | FastAPI (routes, Pydantic v2, CRUD) | JWT auth, OAuth2, RBAC, DI | Top K Frequent |
-| **16** | Dockerize FastAPI + PostgreSQL | FastMCP (wrap endpoints as tools) | Product of Array |
+| **12** | Scikit-learn basics (regression, classification) | Tuples, enumerate(), zip() | Valid Anagram |
+| **13** | OOP (classes, inheritance, @property) | Context Managers, Modules | Two Sum II |
+| **14** | Async Python (asyncio, async/await) | FastAPI basics (routes, Pydantic) | Group Anagrams |
+| **15** | FastAPI CRUD + JWT auth | Docker + PostgreSQL setup | Top K Frequent |
+| **16** | Dockerize FastAPI app | LLM APIs (OpenAI, streaming) | Product of Array |
 | **17** | **First AI prototype** (LLM + FastAPI + Docker) | Valid Palindrome |
 
-### Week 2: LLM APIs + RAG Foundation
+### Week 2: RAG Foundation
 
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 18 | OpenAI API, Gemini, streaming, embeddings | 3Sum |
-| 19  | PostgreSQL (SELECT, INSERT, JOINs, aggregations) | Container With Most Water |
-| 20 | pgvector (setup, vector search, hybrid search) | Best Time to Buy/Sell |
-| 21 | LangChain (loaders, splitters, LCEL chains) | Longest Substring |
-| 22 | Naive RAG (chunk → embed → retrieve → generate) | Valid Parentheses |
-| 23 | Advanced RAG (semantic chunking, reranking) | Min Stack |
-| 24 | Ragas evaluation (faithfulness, context precision) | Binary Search |
+| 18 | PostgreSQL queries, pgvector setup | 3Sum |
+| 19 | LangChain (loaders, splitters, chains) | Container With Most Water |
+| 20 | Naive RAG + embeddings + cosine search | Best Time to Buy/Sell |
+| 21 | LangGraph basics (StateGraph, nodes, edges) | Valid Parentheses |
+| 22 | ReAct pattern, tool calling | Min Stack |
+| 23 | Advanced RAG (hybrid search, reranking) | Binary Search |
+| 24 | Ragas evaluation (faithfulness, precision) | Search 2D Matrix |
 
-### Week 3: Project 1 — Full RAG System + Deploy
+### Week 3: Project + LangGraph + MCP
 
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 25 | Prompt engineering (few-shot, CoT, structured outputs) | Reverse Linked List |
-| 26 | **Build RAG API** (upload → chunk → embed → pgvector → query) | Merge Two Sorted |
-| 27 | **Ragas CI pipeline** (auto-eval on every query) | Max Depth Tree |
-| 28 | **Deploy on AWS** (Docker Compose + EC2 + GitHub Actions) | Same Tree |
-| 29 | Resume + LinkedIn + start applying | Level Order Traversal |
+| 25 | **Build RAG API** (upload → chunk → embed → query) | Reverse Linked List |
+| 26 | LangGraph state persistence + conditional routing | Merge Two Sorted |
+| 27 | **MCP server** (FastMCP, expose DB as tool) | Max Depth Tree |
+| 28 | **Deploy on AWS** (Docker + EC2 + CI/CD) | Same Tree |
+| 29 | Resume + LinkedIn + applications start | Level Order Traversal |
 | 30 | Applications + DSA revision | Review |
 
-### Week 4: LangGraph + MCP + Interview Prep
+### Week 4: Interview Prep + Applications
 
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 31 | ReAct pattern, tool calling, function calling | Review Arrays |
-| 32 | LangGraph (StateGraph, nodes, edges, routing) | Review Pointers |
-| 33 | MCP servers with FastMCP (expose DB as AI tool) | Review Stack |
-| 34 | Integrate MCP with LangGraph agent | Review Binary Search |
-| 35 | Mock interviews + behavioral prep | Review Trees |
-| 36-40 | Applications + take-homes + offers | DSA review |
-
----
-
-## 📈 Skill Progression Over 12 Months
-
-| Skill | Now | Month 1 | Month 3 | Month 6 | Month 12 |
-|-------|-----|---------|---------|---------|----------|
-| Python | 8.9 | 9.2 | 9.5 | 9.8 | 10 |
-| DSA | 5.2 | 6.0 | 6.5 | 7.5 | 8.5 |
-| FastAPI | 0 | 7.0 | 8.0 | 9.0 | 9.5 |
-| Pandas/NumPy | 0 | 6.0 | 8.0 | 9.0 | 9.5 |
-| Scikit-learn | 0 | 5.0 | 8.0 | 9.0 | 9.5 |
-| PyTorch/TF | 0 | 0 | 3.0 | 7.0 | 8.5 |
-| NLP/CV | 0 | 0 | 0 | 6.0 | 8.0 |
-| LLMs/RAG | 0 | 7.0 | 8.0 | 9.0 | 9.5 |
-| LangGraph | 0 | 5.0 | 7.0 | 8.0 | 9.0 |
-| Docker/AWS | 3.0 | 6.0 | 7.0 | 8.0 | 9.0 |
-| MLOps | 0 | 0 | 2.0 | 5.0 | 8.0 |
+| 31 | Mock interview — Transformer architecture, RNN vs CNN vs Transformer | Review Arrays |
+| 32 | Mock interview — NLP basics, BERT vs GPT, embeddings | Review Pointers |
+| 33 | Mock interview — ML fundamentals, overfitting, regularization | Review Stack |
+| 34 | Mock interview — Agent patterns, ReAct, tool calling | Review Trees |
+| 35-40 | Applications + take-homes + offers | DSA review |
 
 ---
 
@@ -172,10 +154,9 @@ Questions you'll face even in Agentic AI interviews:
 | If... | Then... |
 |-------|---------|
 | No FT offer by Day 40 | Take ₹15-25k internship. Keep building evenings. |
-| Want to switch to pure ML | Already have Pandas/Scikit-learn from Phase 2 |
-| Want to switch to CV/NLP | Already have PyTorch from Phase 3 |
-| Market demands MLOps | Already have Docker/AWS from Phase 1 + MLOps in Phase 4 |
+| Interview asks math-heavy ML | Admit "I focus on applied AI, not research. But conceptually I understand X." |
+| Role requires PyTorch | Learn basics in 1 week — enough for interview. |
 
 ---
 
-*Roadmap covers: Gen AI, Traditional ML, Deep Learning, NLP, CV, MLOps — the complete AI/ML engineer.*
+*Target: AI Engineer / Agentic AI Engineer. Not researcher, not backend-only, not data scientist.*
