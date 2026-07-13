@@ -36,14 +36,13 @@
 | **DSA** | 60 problems (arrays, strings, hash maps, trees, graphs) | Interview-ready |
 | **System Design** | AI system design basics (RAG scaling, caching, routing) | Conceptual |
 
-## NOT in Scope (Skip These)
-- ❌ PyTorch / TensorFlow deep dives
-- ❌ Backpropagation math derivations
-- ❌ Research papers (unless directly relevant to agents)
-- ❌ Computer Vision (CNNs, object detection, image processing)
-- ❌ Model training from scratch
-- ❌ Kubernetes, Kubeflow, MLOps platforms
-- ❌ Statistical ML theory (hypothesis testing, p-values, Bayesian)
+## Phase 1 NOT in Scope (Postpone to Phases 3-4)
+- ⏳ PyTorch / TensorFlow → Phase 3
+- ⏳ MLOps (Kubeflow, model monitoring) → Phase 4
+- ⏳ Model training/fine-tuning → Phase 3
+- ⏳ Research papers → Phase 4
+- ❌ Computer Vision (not relevant to target roles)
+- ❌ Statistical ML theory (hypothesis testing, Bayesian)
 
 ---
 
@@ -66,37 +65,47 @@
 **Portfolio:** Upgrade RAG system with better retrieval + evaluation
 **Eligible for:** AI Engineer, GenAI Engineer, NLP-focused AI roles
 
-### Phase 3 (Months 4-6 — Oct-Dec): AGENTIC AI MASTERY
-**Goal:** Be a strong Agentic AI Engineer candidate.
-**Applied skills:** LangGraph advanced (multi-agent, human-in-the-loop, checkpointing), MCP servers (2-3 custom), open-source contributions, advanced RAG (hybrid search, reranking)
+### Phase 3 (Months 4-6 — Oct-Dec): AGENTIC AI + DEEP LEARNING
+**Goal:** Be a strong Agentic AI Engineer. Also learn DL fundamentals.
+**Agentic AI skills:** LangGraph advanced (multi-agent, human-in-the-loop, checkpointing), MCP servers (2-3 custom), open-source contributions, advanced RAG (hybrid search, reranking)
+**Deep Learning (PyTorch):**
+- Tensors, autograd, nn.Module, datasets/dataloaders
+- Build: simple NN for classification, CNN for image tasks
+- Fine-tune: BERT/GPT with HuggingFace Transformers
+- Concept: backpropagation, gradient descent optimizers, loss functions
 **Interview knowledge:**
-- Agent patterns: ReAct, Plan-Execute, Reflection, Tool use, Multi-agent orchestration
+- Agent patterns: ReAct, Plan-Execute, Reflection, Tool use, Multi-agent
 - Memory systems: Short-term, episodic, semantic memory in agents
-- Evaluation: Task completion rate, error recovery, latency/cost tradeoffs
-- MCP architecture: Host-Client-Server, tool discovery, resource exposure
+- Evaluation: Task completion rate, latency/cost tradeoffs
+- DL: What are neural networks? How does backpropagation work? What are CNNs/RNNs/Transformers?
 **Open source:** 2-3 merged PRs in LangChain, Ragas, or FastMCP repos
-**Eligible for:** Agentic AI Engineer, Senior AI Engineer
+**Portfolio:** 1 fine-tuned model (BERT sentiment or similar) deployed + agent system
+**Eligible for:** Agentic AI Engineer, AI Engineer (with DL knowledge)
 
-### Phase 4 (Months 7-12 — Jan-Jun): BROADEN + SPECIALIZE
-**Goal:** Eligible for all AI Engineer roles up to mid-senior.
+### Phase 4 (Months 7-12 — Jan-Jun): BROADEN + MLOps + SPECIALIZE
+**Goal:** Eligible for all AI Engineer roles up to mid-senior + MLOps knowledge.
+**MLOps:**
+- MLflow: experiment tracking, model registry, deployment
+- Model monitoring: data drift, concept drift, performance decay
+- CI/CD for ML: automated retraining pipelines, A/B testing
+- Feature stores, model versioning, canary deployments
+- Model serving: vLLM, Ollama, Triton Inference Server basics
 **Deepen:** LangGraph at scale, production MCP, multi-modal LLMs, cost optimization, semantic caching
-**Broaden:** Model serving (vLLM, Ollama basics), prompt optimization, LLM observability (Langfuse)
+**Observe:** Langfuse, Helicone — LLM tracing, P95 latency, token cost dashboards
 **DSA:** 60 problems total (add graphs, DP basics)
 **System design:** AI system design for interviews (RAG at scale, agent architecture, LLM gateway)
-**Eligible for:** ALL AI Engineer roles up to mid-senior level
+**Eligible for:** ALL AI Engineer roles + MLOps-aware roles up to mid-senior
 
 ---
 
-## 🚫 What You Will NOT Do (And That's Fine)
+## 🚫 Not in Scope (Even Long Term)
 
 | Topic | Why Skip |
 |-------|----------|
-| **PyTorch/TensorFlow deep dives** | AI Engineer roles use LLM APIs, not train models |
-| **Backpropagation math** | Not tested in AI Engineer interviews (concept only) |
-| **Research papers** | Unless directly working in research, not needed |
-| **Computer Vision** | Not relevant to agentic AI / LLM roles |
-| **Kubernetes/MLOps platforms** | Docker + AWS is enough for AI Engineer |
-| **Statistical theory** | You're not applying for Data Scientist roles |
+| **Computer Vision deep dive** | Not relevant to target roles |
+| **Statistical theory** (hypothesis testing, p-values, Bayesian) | Data Scientist territory |
+| **Research paper implementation** | Unless working in research lab |
+| **Kubernetes deep dive** | Docker + AWS ECS is sufficient |
 
 ---
 
