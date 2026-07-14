@@ -1,171 +1,218 @@
-# 📚 Complete AI Engineer Roadmap (12 Months)
+# 📚 8-Week AI Engineer Sprint: ₹30k Internship → ₹60-80k FT
 
-**Target Role:** AI Engineer / Agentic AI Engineer
-**Focus:** LLMs, RAG, agents, NLP, applied ML. NO research, NO heavy math.
-**Phase 1 (30 days):** Quick job to stop financial bleed.
-**Phases 2-4:** Deepen AI skills, fill interview knowledge gaps.
-
----
-
-## 🎯 Target Roles
-
-| Role | Salary (India) | Fit |
-|------|----------------|-----|
-| **AI Engineer** | ₹8-25 LPA | ✅ Primary target |
-| **Agentic AI Engineer** | ₹10-30 LPA | ✅ Primary target |
-| **GenAI Engineer** | ₹8-22 LPA | ✅ Strong fit |
-| **AI/ML Developer** | ₹7-18 LPA | ✅ Strong fit |
-| Backend AI Engineer | ₹8-18 LPA | ⚠️ Fallback |
-| ML Engineer | ₹7-20 LPA | ⚠️ Possible but less interest |
-| Data Scientist | ₹6-18 LPA | ❌ Not interested |
+**Target Role:** AI Engineer / Agentic AI Engineer / SDE AI
+**Timeline:** 8 weeks (56 days)
+**Salary Target:** ₹30k/mo internship by Day 28 → ₹60-80k/mo FT by Day 56
 
 ---
 
-## 🧠 Complete AI Engineer Tech Stack
+## 🎯 Market Validation (from Deep Research)
 
-| Domain | Technologies | Depth |
-|--------|-------------|-------|
-| **Languages** | Python, SQL | Deep |
-| **Data Manipulation** | Pandas, NumPy | Practical — enough for interviews |
-| **ML Fundamentals** | Scikit-learn (regression, classification, clustering basics) | Conceptual — explain algorithms, not implement from scratch |
-| **NLP** | Tokenization, embeddings, BERT vs GPT, transformers concept | Interview-ready — explain architecture, not math |
-| **LLMs & Gen AI** | OpenAI API, LangChain, RAG, LangGraph, MCP, prompt engineering | Deep — core skill |
-| **AI Agents** | LangGraph (StateGraph, multi-agent), tool calling, MCP servers | Deep — core skill |
-| **Model Serving** | FastAPI, Docker, AWS EC2 | Practical — deploy models, not build infra |
-| **Evaluation** | Ragas, LLM-as-a-judge, basic ML metrics | Practical |
-| **DSA** | 60 problems (arrays, strings, hash maps, trees, graphs) | Interview-ready |
-| **System Design** | AI system design basics (RAG scaling, caching, routing) | Conceptual |
+| Goal | Timeline | Target | Realistic? |
+|------|----------|--------|------------|
+| Internship | 28 days | ₹30k/mo | ✅ Realistic with deployed RAG project |
+| FT Role | 56 days | ₹60-80k/mo (₹7.2-9.6 LPA) | ✅ Realistic with LangGraph + MCP + DevOps angle |
 
-## Phase 1 NOT in Scope (Postpone to Phases 3-4)
-- ⏳ PyTorch / TensorFlow → Phase 3
-- ⏳ MLOps (Kubeflow, model monitoring) → Phase 4
-- ⏳ Model training/fine-tuning → Phase 3
-- ⏳ Research papers → Phase 4
-- ❌ Computer Vision (not relevant to target roles)
-- ❌ Statistical ML theory (hypothesis testing, Bayesian)
+**Key insight:** AI Engineer roles (GenAI/LLM/Agentic) pay 20-40% premium over traditional ML roles in India. The DevOps background is the #1 differentiator — most candidates can't deploy code.
 
 ---
 
-## 🧭 4-Phase Roadmap
+## 📊 Skill Priority Matrix
 
-### Phase 1 (30 Days — Jul 11 to Aug 10): QUICK JOB
-**Goal:** ₹15-40k/mo role. Stop financial bleed.
-**Stack:** FastAPI + PostgreSQL + LLM APIs + RAG + Docker + AWS + 30 DSA
-**Interview prep:** Transformer architecture, RNN vs CNN vs Transformer (basic), NLP basics (tokenization, embeddings), ML fundamentals (overfitting, cross-validation)
-**Portfolio:** 1 deployed RAG API with Ragas eval
-**Eligible for:** AI Intern, Jr GenAI Engineer, AI Developer
-
-### Phase 2 (Months 2-3 — Aug-Sep): ML FUNDAMENTALS + DEEPER NLP
-**Goal:** Fill interview knowledge gaps. Be credible in any AI interview.
-**Applied skills:** Scikit-learn end-to-end pipelines, Pandas/NumPy advanced, feature engineering
-**Interview knowledge:**
-- ML: Regression, classification, clustering, decision trees, ensembles (Random Forest, XGBoost), regularization, cross-validation, confusion matrix, precision/recall/F1, ROC-AUC
-- NLP: Tokenization (BPE, WordPiece), Word2Vec/GloVe, sequence length, padding, BERT vs GPT in depth, fine-tuning vs RAG, prompt engineering vs fine-tuning
-- Deep learning concepts (NOT implementation): What are neural networks? What is backpropagation conceptually? What are activation functions? What is attention?
-**Portfolio:** Upgrade RAG system with better retrieval + evaluation
-**Eligible for:** AI Engineer, GenAI Engineer, NLP-focused AI roles
-
-### Phase 3 (Months 4-6 — Oct-Dec): AGENTIC AI + DEEP LEARNING
-**Goal:** Be a strong Agentic AI Engineer. Also learn DL fundamentals.
-**Agentic AI skills:** LangGraph advanced (multi-agent, human-in-the-loop, checkpointing), MCP servers (2-3 custom), open-source contributions, advanced RAG (hybrid search, reranking)
-**Deep Learning (PyTorch):**
-- Tensors, autograd, nn.Module, datasets/dataloaders
-- Build: simple NN for classification, CNN for image tasks
-- Fine-tune: BERT/GPT with HuggingFace Transformers
-- Concept: backpropagation, gradient descent optimizers, loss functions
-**Interview knowledge:**
-- Agent patterns: ReAct, Plan-Execute, Reflection, Tool use, Multi-agent
-- Memory systems: Short-term, episodic, semantic memory in agents
-- Evaluation: Task completion rate, latency/cost tradeoffs
-- DL: What are neural networks? How does backpropagation work? What are CNNs/RNNs/Transformers?
-**Open source:** 2-3 merged PRs in LangChain, Ragas, or FastMCP repos
-**Portfolio:** 1 fine-tuned model (BERT sentiment or similar) deployed + agent system
-**Eligible for:** Agentic AI Engineer, AI Engineer (with DL knowledge)
-
-### Phase 4 (Months 7-12 — Jan-Jun): BROADEN + MLOps + SPECIALIZE
-**Goal:** Eligible for all AI Engineer roles up to mid-senior + MLOps knowledge.
-**MLOps:**
-- MLflow: experiment tracking, model registry, deployment
-- Model monitoring: data drift, concept drift, performance decay
-- CI/CD for ML: automated retraining pipelines, A/B testing
-- Feature stores, model versioning, canary deployments
-- Model serving: vLLM, Ollama, Triton Inference Server basics
-**Deepen:** LangGraph at scale, production MCP, multi-modal LLMs, cost optimization, semantic caching
-**Observe:** Langfuse, Helicone — LLM tracing, P95 latency, token cost dashboards
-**DSA:** 60 problems total (add graphs, DP basics)
-**System design:** AI system design for interviews (RAG at scale, agent architecture, LLM gateway)
-**Eligible for:** ALL AI Engineer roles + MLOps-aware roles up to mid-senior
+| Rank | Skill | Why |
+|------|-------|-----|
+| 🔴 Must-have | FastAPI + deployed API | Core of AI Engineering |
+| 🔴 Must-have | RAG with Ragas evaluation | Most deployed enterprise pattern |
+| 🔴 Must-have | Docker + AWS deploy | DevOps background = competitive moat |
+| 🔴 Must-have | DSA (30-50 problems) | Arrays, strings, hash maps, two pointers, sliding window |
+| 🟠 FT requirement | LangGraph + stateful agents | Converts ₹30k → ₹80k |
+| 🟠 FT requirement | MCP (Model Context Protocol) | Emerging standard, elite differentiator |
+| 🟠 FT requirement | System design for AI | Latency, caching, multi-tenant isolation |
+| 🟢 Bonus | NLP theory (BERT vs GPT, embeddings) | Needed for interview answers |
+| 🟢 Bonus | Scikit-learn conceptually | Broader context, not deep |
 
 ---
 
-## 🚫 Not in Scope (Even Long Term)
+## 📅 8-Week Sprint
 
-| Topic | Why Skip |
-|-------|----------|
-| **Computer Vision deep dive** | Not relevant to target roles |
-| **Statistical theory** (hypothesis testing, p-values, Bayesian) | Data Scientist territory |
-| **Research paper implementation** | Unless working in research lab |
-| **Kubernetes deep dive** | Docker + AWS ECS is sufficient |
+### Month 1: ₹30k Internship (Days 1-28)
 
----
-
-## 📅 Phase 1 Detail — First 30 Days
-
-### Week 1: Python + Data Basics + FastAPI Foundation
-
-| Day | Morning | Afternoon | Evening (DSA) |
-|-----|---------|-----------|---------------|
-| **11** | Pandas (DataFrames, read_csv, groupby) | NumPy (arrays, broadcasting) | Contains Duplicate |
-| **12** | Scikit-learn basics (regression, classification) | Tuples, enumerate(), zip() | Valid Anagram |
-| **13** | OOP (classes, inheritance, @property) | Context Managers, Modules | Two Sum II |
-| **14** | Async Python (asyncio, async/await) | FastAPI basics (routes, Pydantic) | Group Anagrams |
-| **15** | FastAPI CRUD + JWT auth | Docker + PostgreSQL setup | Top K Frequent |
-| **16** | Dockerize FastAPI app | LLM APIs (OpenAI, streaming) | Product of Array |
-| **17** | **First AI prototype** (LLM + FastAPI + Docker) | Valid Palindrome |
-
-### Week 2: RAG Foundation
-
+#### Week 1 (Days 1-7): FastAPI + LLM APIs + Vector DB
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 18 | PostgreSQL queries, pgvector setup | 3Sum |
-| 19 | LangChain (loaders, splitters, chains) | Container With Most Water |
-| 20 | Naive RAG + embeddings + cosine search | Best Time to Buy/Sell |
-| 21 | LangGraph basics (StateGraph, nodes, edges) | Valid Parentheses |
-| 22 | ReAct pattern, tool calling | Min Stack |
-| 23 | Advanced RAG (hybrid search, reranking) | Binary Search |
-| 24 | Ragas evaluation (faithfulness, precision) | Search 2D Matrix |
+| 1 | FastAPI routes, async endpoints, Pydantic v2 | Contains Duplicate |
+| 2 | JWT auth, RBAC, dependency injection | Valid Anagram |
+| 3 | LLM APIs (OpenAI, Gemini) — chat, streaming, embeddings | Two Sum II |
+| 4 | Vector DB (ChromaDB/pgvector), cosine similarity, embedding models | Group Anagrams |
+| 5 | LangChain loaders, text splitters, chunk strategies | Top K Frequent |
+| 6 | Dockerize FastAPI + PostgreSQL | Product of Array |
+| 7 | **First deploy** — API + DB on AWS EC2 | Valid Palindrome |
 
-### Week 3: Project + LangGraph + MCP
-
+#### Week 2 (Days 8-14): Advanced RAG + Evaluation
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 25 | **Build RAG API** (upload → chunk → embed → query) | Reverse Linked List |
-| 26 | LangGraph state persistence + conditional routing | Merge Two Sorted |
-| 27 | **MCP server** (FastMCP, expose DB as tool) | Max Depth Tree |
-| 28 | **Deploy on AWS** (Docker + EC2 + CI/CD) | Same Tree |
-| 29 | Resume + LinkedIn + applications start | Level Order Traversal |
-| 30 | Applications + DSA revision | Review |
+| 8 | Naive RAG (chunk → embed → retrieve → generate) | 3Sum |
+| 9 | Multi-query retrieval, MMR, metadata filtering | Container With Most Water |
+| 10 | **Ragas evaluation** — faithfulness, context precision, recall | Best Time to Buy/Sell |
+| 11 | Prompt engineering (few-shot, CoT, structured outputs) | Longest Substring |
+| 12 | Advanced chunking strategies, hybrid search concepts | Valid Parentheses |
+| 13 | Interview prep: Transformer architecture, tokenization | Min Stack |
+| 14 | **Catch-up + revision** | Binary Search |
 
-### Week 4: Interview Prep + Applications
-
+#### Week 3 (Days 15-21): PROJECT 1 — RAG Knowledge Assistant
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 31 | Mock interview — Transformer architecture, RNN vs CNN vs Transformer | Review Arrays |
-| 32 | Mock interview — NLP basics, BERT vs GPT, embeddings | Review Pointers |
-| 33 | Mock interview — ML fundamentals, overfitting, regularization | Review Stack |
-| 34 | Mock interview — Agent patterns, ReAct, tool calling | Review Trees |
-| 35-40 | Applications + take-homes + offers | DSA review |
+| 15 | Build RAG ingestion pipeline (PDF → chunk → embed → store) | Reverse Linked List |
+| 16 | Build RAG query endpoint with source citations | Merge Two Sorted |
+| 17 | Add Ragas eval harness — scorecard in README | Max Depth Tree |
+| 18 | Docker Compose (API + DB + cache) | Same Tree |
+| 19 | Deploy on AWS EC2 with CI/CD (GitHub Actions) | Level Order Traversal |
+| 20 | README: architecture diagram, eval scores, setup guide | DSA review |
+| 21 | **Project 1 complete — live URL** | DSA review |
+
+#### Week 4 (Days 22-28): APPLY + Interview Prep
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 22 | Resume + LinkedIn overhaul — DevOps→AI Engineer angle | Sliding Window |
+| 23 | Apply to 10-15 Bangalore AI startups (Instahyre, Wellfound) | Two Pointers |
+| 24 | ML theory: bias-variance, overfitting, regularization | Hash Maps |
+| 25 | NLP theory: BERT vs GPT, embeddings, tokenization | Arrays |
+| 26 | Mock interview — RAG architecture, Transformer, evaluation | Strings |
+| 27 | Mock interview — system design, latency optimization | Review |
+| 28 | **Apply + follow-ups. Target: ₹30k internship offer** | Review |
 
 ---
 
-## 🛡️ Backup
+### Month 2: ₹60-80k FT (Days 29-56)
 
-| If... | Then... |
-|-------|---------|
-| No FT offer by Day 40 | Take ₹15-25k internship. Keep building evenings. |
-| Interview asks math-heavy ML | Admit "I focus on applied AI, not research. But conceptually I understand X." |
-| Role requires PyTorch | Learn basics in 1 week — enough for interview. |
+#### Week 5 (Days 29-35): LangGraph + Agentic AI
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 29 | LangGraph StateGraph — nodes, edges, state | Linked List basics |
+| 30 | Conditional routing, state persistence, checkpointing | Linked List cycle |
+| 31 | ReAct pattern — agent with tool calling | Stack review |
+| 32 | Multi-agent architecture (Planner → Executor → Synthesizer) | Queue review |
+| 33 | Memory systems (short-term, episodic, semantic) | Tree BFS/DFS |
+| 34 | Agent evaluation — task completion, error recovery | Tree review |
+| 35 | **Build agent system** — LangGraph + tools | DSA review |
+
+#### Week 6 (Days 36-42): MCP Mastery
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 36 | MCP architecture — Host, Client, Server, JSON-RPC 2.0 | Hash Map design |
+| 37 | MCP Tools vs Resources vs Prompts — when to use each | LRU Cache |
+| 38 | **Build MCP server** — expose DB as tool | Binary Search |
+| 39 | Connect MCP server to LangGraph agent | Search 2D Matrix |
+| 40 | MCP security — sandboxing, read-only defaults, audit | DSA review |
+| 41 | Interview prep: MCP architecture, agent patterns | DSA review |
+| 42 | **Integrate MCP + LangGraph** into existing project | DSA review |
+
+#### Week 7 (Days 43-49): System Design + ML Theory
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 43 | ML theory: supervised vs unsupervised, gradient descent | DSA review |
+| 44 | ML metrics: precision, recall, F1, ROC-AUC (conceptual) | DSA review |
+| 45 | System design: RAG at scale, caching, routing | DSA review |
+| 46 | System design: multi-tenant isolation, latency optimization | DSA review |
+| 47 | Bi-encoder vs Cross-encoder, TF-IDF vs dense embeddings | DSA review |
+| 48 | STAR stories — frame DevOps experience for AI roles | DSA review |
+| 49 | **Mock interview full loop** | DSA review |
+
+#### Week 8 (Days 50-56): PROJECT 2 + APPLY FT
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 50 | **Build Project 2** — MCP-Connected Multi-Agent Orchestrator | DSA review |
+| 51 | Planner agent → Researcher → Writer — LangGraph state machine | DSA review |
+| 52 | Add MCP server (DB + API tools) | DSA review |
+| 53 | Dockerize + deploy on AWS | DSA review |
+| 54 | **Apply FT** — 15-20 roles (Instahyre, Wellfound, LinkedIn DMs) | DSA review |
+| 55 | Interview loop — LLM, RAG, agents, system design | DSA review |
+| 56 | **Follow-ups + offers. Target: ₹60-80k/mo FT** | DSA review |
 
 ---
 
-*Target: AI Engineer / Agentic AI Engineer. Not researcher, not backend-only, not data scientist.*
+## 🏗️ The 2 Projects That Get You Hired
+
+### Project 1 (Weeks 1-3): RAG Knowledge Assistant — ₹30k level
+- FastAPI + PostgreSQL/pgvector + OpenAI + LangChain
+- JWT auth with RBAC
+- PDF upload → chunk → embed → query with citations
+- **Ragas eval** — faithfulness, context precision scores in README
+- Docker Compose → deployed on AWS EC2
+- GitHub Actions CI/CD
+- Architecture diagram + eval scorecard
+
+### Project 2 (Weeks 5-8): MCP-Connected Multi-Agent Orchestrator — ₹80k level
+- LangGraph StateGraph (Planner → Researcher → Writer agents)
+- Custom Python MCP server (DB resource + API tool + prompt template)
+- Two-stage retrieval: Bi-encoder (recall) → Cross-encoder (precision)
+- Human-in-the-loop guardrails, iteration caps
+- Dockerized → deployed on AWS
+
+---
+
+## 📚 Interview Question Bank (from Deep Research)
+
+### LLM + RAG + Agents (15 questions)
+1. How do Transformers work? Explain Q, K, V, self-attention
+2. What is tokenization? Why does token count drive cost?
+3. Prefill vs Decode phases in LLM inference
+4. Core RAG evaluation metrics (Ragas: faithfulness, precision, recall)
+5. How to achieve sub-2-second latency in GenAI?
+6. Prompting vs RAG vs Fine-tuning — when to use each?
+7. How to handle hallucinations when no info found in context?
+8. What is semantic caching? How does it reduce cost?
+9. How does chunk size affect retrieval accuracy?
+10. What makes a system "agentic" vs a standard chain?
+11. How to detect and stop infinite agent loops?
+12. Security risks of tool-using agents — how to sandbox?
+13. MCP: what is Host, Client, Server?
+14. MCP: Tool vs Resource vs Prompt?
+15. Why build MCP server instead of REST API?
+
+### System Design for AI (5 questions)
+16. Design end-to-end RAG chatbot for high-traffic e-commerce
+17. LLM API has latency spikes — how to stabilize?
+18. Fallback strategy when primary LLM provider goes down
+19. Multi-tenant data isolation in RAG
+20. Async ingestion pipeline for multi-modal documents
+
+### ML Theory (5 questions)
+21. Bias-variance tradeoff
+22. Precision, Recall, F1 Score
+23. Data leakage — how to prevent?
+24. Supervised vs unsupervised vs semi-supervised
+25. Gradient descent intuition + activation functions
+
+### NLP (3 questions)
+26. Bi-encoder vs Cross-encoder — when to use each
+27. TF-IDF vs dense embeddings
+28. Encoder-only (BERT) vs decoder-only (GPT)
+
+---
+
+## 🏢 Company Strategy
+
+| Archetype | Salary | Viability | Strategy |
+|-----------|--------|-----------|----------|
+| AI-first startups (Bangalore) | ₹8-14 LPA | ✅ Primary | Pitch as "AI Platform Engineer" — DevOps + AI deploy |
+| Service-based IT | ₹4-6 LPA | ❌ Reject | ATS filters out gaps. Skip. |
+| GCCs (Walmart, JPMC) | ₹10-18 LPA | ⚠️ Slow | Long cycles, high DSA bar. Apply but don't wait. |
+
+**Position yourself as:** "AI Platform Engineer" or "LLMOps Engineer" — not "ML Engineer." This leverages DevOps background and sidesteps deep ML theory questions.
+
+---
+
+## 🛡️ Risk Mitigation
+
+| Risk | Mitigation |
+|------|-----------|
+| Tutorial Hell — unoriginal projects | Solve a unique problem. Document architecture + metrics. Live deploy. |
+| Over-indexing on math | Spend ZERO time on backpropagation calculus. Focus on deployment. |
+| Weak system design articulation | Practice explaining tradeoffs: why Pinecone vs Chroma? Why Bi-encoder vs Cross-encoder? |
+| Inconsistent daily execution | 8-week sprint has no recovery days. Miss 2 days = miss target. |
+| Terminated internship on resume | Frame as "DevOps→AI pivot." Lead with deployed projects. Bypass ATS via direct outreach. |
+
+---
+
+*Based on Gemini Deep Research: Strategic Roadmap for Accelerated AI Engineering Career Transition (Jul 2026)*
