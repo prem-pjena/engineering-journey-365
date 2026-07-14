@@ -1,16 +1,20 @@
-# 📊 Current Status — 30-Day Accelerated Sprint
+# 📊 Current Status — 60-Day Agentic AI Engineer Sprint
 
-**Last Updated:** 2026-07-11 (Day 10 completed)
+**Last Updated:** 2026-07-14 (Day 10 completed)
 
 ---
 
-## 🎯 Sprint Timeline
+## 🎯 Timeline
 
 ```
-Week 1 (Jul 11-17):  Pandas/NumPy → Scikit-learn → OOP → Async → FastAPI → MCP → Repowise Protocol
-Week 2 (Jul 18-24):  LLM APIs → PostgreSQL → pgvector → LangChain → RAG → Ragas
-Week 3 (Jul 25-31):  PROJECT 1 — Build + Deploy RAG on AWS + APPLY
-Week 4 (Aug 1-8):    LangGraph → MCP → Interview prep → Offers
+Days 1-7:   LangChain + Structured Outputs + LLM APIs
+Days 8-14:  RAG + pgvector + LangGraph basics
+Days 15-21: ReAct agents + MCP + Project 1
+Days 22-28: APPLY — ₹30k internship target
+Days 29-35: LangGraph advanced + multi-agent
+Days 36-42: MCP advanced + Advanced RAG
+Days 43-49: Interview prep (ML, NLP, system design)
+Days 50-56: Project 2 + APPLY FT — ₹60-80k target
 ```
 
 ---
@@ -20,51 +24,43 @@ Week 4 (Aug 1-8):    LangGraph → MCP → Interview prep → Offers
 | Metric | Value |
 |--------|-------|
 | Days Completed | 10 (Day 1 ✅ → Day 10 ✅) |
-| Current Phase | Week 1 — Data Science + API Foundations |
+| Current Phase | Day 11 — LangChain + Structured Outputs |
 | Consistency Streak | 10 days |
-| DSA Problems Solved | 1 / target 30 |
+| DSA Problems Solved | 1 / target 50 |
 | Projects Deployed | 0 |
 
 ---
 
-## Two-Track Strategy
+## Target Roles
 
-| Track | Timeline | Target Salary | Target Companies |
-|-------|----------|---------------|------------------|
-| A — Immediate Income | Weeks 1-2 | ₹15-25k/mo internship | Ketto, Soothsayer, Repowise |
-| B — Career Role | Weeks 3-4 | ₹40k+/mo FT | BlitzenX, SureBright, Lexsi |
-| Skip | — | — | Roles requiring 2+ yrs production AI |
+| Role | YoY Growth | Fit |
+|------|-----------|-----|
+| Agentic AI Developer | +260% | ✅ Primary |
+| GenAI & Agentic AI Engineer | +205% | ✅ Primary |
+| Forward Deployed Engineer | Emerging | ✅ Perfect match |
+| AI Platform Engineer | +105% | ✅ Strong |
+
+---
+
+## Key Platforms
+
+| Platform | Strategy | % Effort |
+|----------|----------|----------|
+| Apna | Chat-based recruiter engagement. Fastest hiring. | 50% |
+| Wellfound (AngelList) | Direct founder messaging. YC startups. | 40% |
+| LinkedIn DMs | Founders/CTOs of AI startups | 10% |
 
 ---
 
 ## Skill Scores
 
-| Skill | Day 9 | Day 10 | Target (Week 4) |
-|-------|-------|--------|-----------------|
-| Python | 8.4/10 | 8.9/10 | 9.5/10 |
-| DSA | 4.5/10 | 5.2/10 | 6.0/10 |
-| Problem Solving | 7.4/10 | 7.8/10 | 8.5/10 |
-| Coding Confidence | 10/10 | 10/10 | 10/10 |
-| Independent Builder | 9.5/10 | 9.6/10 | 10/10 |
-| FastAPI | 0/10 | 0/10 | 7/10 |
-| Pandas/NumPy | 0/10 | 0/10 | 6/10 |
-| PostgreSQL | 0/10 | 0/10 | 5/10 |
-| Docker | 3/10 | 3/10 | 6/10 |
-
----
-
-## What I Can Do Independently
-
-- [x] Python scripting (all fundamentals)
-- [x] File I/O with persistence
-- [x] Sets, dicts, lists, comprehensions
-- [x] Exception handling
-- [x] Functions (*args, **kwargs, lambda, map/filter)
-- [x] Two Sum (brute + optimized)
-- [ ] Pandas / NumPy
-- [ ] FastAPI
-- [ ] PostgreSQL
-- [ ] Docker deployment
-- [ ] LLM API integration
-- [ ] RAG pipeline
-- [ ] AWS deployment
+| Skill | Current | Target (Day 60) |
+|-------|---------|-----------------|
+| Python | 8.9/10 | 9.5/10 |
+| DSA | 5.2/10 | 7.0/10 |
+| LangChain | 0/10 | 8.0/10 |
+| LangGraph | 0/10 | 8.0/10 |
+| RAG | 0/10 | 8.0/10 |
+| MCP | 0/10 | 7.0/10 |
+| LLM APIs | 0/10 | 8.0/10 |
+| Docker/AWS | 3.0/10 | 5.0/10 |

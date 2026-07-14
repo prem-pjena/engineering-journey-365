@@ -25,29 +25,32 @@
 
 | Day | Date | Status | Topics | DSA |
 |-----|------|--------|--------|-----|
-| 11 | Jul 11 | 🔴 IN PROGRESS | Pandas (DataFrames, read_csv, groupby), NumPy (arrays, broadcasting) | Contains Duplicate, Valid Anagram |
+| 11 | Jul 14 | 🔴 IN PROGRESS | LangChain LCEL, prompt templates, ChatOpenAI, Pydantic + with_structured_output() | Contains Duplicate, Valid Anagram |
 
 ---
 
-## 📅 Upcoming (Market-Validated)
+## 📅 Upcoming (60-Day Agentic AI Sprint — All Concepts Preserved)
 
 | Day | Planned Topics | DSA |
 |-----|---------------|-----|
-| 12 | Scikit-learn (regression, classification, train/test), Tuples, enumerate(), zip() | Valid Anagram |
-| 13 | OOP (classes, inheritance, dunder, @property), Context Managers, Modules | Two Sum II |
-| 14 | Async Python (asyncio, async/await, gather), **Tree-sitter (AST parsing)** | Group Anagrams |
-| 15 | FastAPI (routes, Pydantic v2, CRUD, async endpoints) | Top K Frequent |
-| 16 | FastAPI JWT auth + OAuth2 + RBAC + Dockerize + **fastmcp** | Product of Array |
-| 17 | **Build + deploy first AI prototype** (LLM API + FastAPI endpoint + Docker) | Valid Palindrome |
-| 18 | OpenAI API, Gemini, streaming, chat completions, embeddings | 3Sum |
-| 19 | PostgreSQL (SELECT, INSERT, JOINs, aggregations), pgvector setup | Container With Most Water |
-| 20 | LangChain (loaders, splitters, LCEL chains), Naive RAG | Best Time to Buy/Sell |
+| 11 | **LangChain LCEL, prompt templates, ChatOpenAI** + Pydantic BaseModel + with_structured_output() | Contains Duplicate |
+| 12 | **LLM APIs (OpenAI, Gemini)** — chat, streaming, embeddings, json_mode vs json_schema | Valid Anagram |
+| 13 | **OOP deep dive** — classes, inheritance, dunder, @property, Context Managers, Modules | Two Sum II |
+| 14 | **Async Python** (asyncio, async/await, gather, event loop) + Tuples, enumerate(), zip() | Group Anagrams |
+| 15 | **Vector DBs** — pgvector setup, embeddings, cosine similarity, SQL queries for RAG | Top K Frequent |
+| 16 | **Naive RAG** — chunk → embed → store → retrieve → generate + chunking strategies | Product of Array |
+| 17 | **LangGraph basics** — StateGraph, nodes, edges, state, Reducers, add_messages | Valid Palindrome |
+| 18 | **ReAct pattern** — agent with tool calling, conditional routing, state persistence | 3Sum |
+| 19 | **Ragas evaluation** — faithfulness, context precision, recall + prompt engineering | Container With Most Water |
+| 20 | **MCP basics** — Host/Client/Server, Tools vs Resources vs Prompts, stdio transport | Best Time to Buy/Sell |
+| 21 | **Project 1** — Build RAG Agent with LangGraph + MCP | Longest Substring |
+| 22-28 | **Apply for ₹30k internship** — Apna, Wellfound. Interview prep. | Targeted DSA + Review |
+| 29-35 | **LangGraph advanced** — multi-agent, parallel execution, human-in-the-loop, LangSmith | Review + mock |
+| 36-42 | **MCP advanced** — Streamable HTTP, security, auth + Advanced RAG (hybrid search, reranking) | Review + mock |
+| 43-49 | **Interview prep** — ML concepts, NLP, system design, behavioral (termination narrative) | Targeted practice |
+| 50-56 | **Project 2** — Multi-Agent MCP Orchestrator + **Apply FT** ₹60-80k | DSA review |
 
-## 📅 Month 2 Additions (from Deep Research audit)
-
-These topics must be inserted into the existing Month 2 plan:
-
-| Insert After | New Topic | Priority |
+**All previous concepts included:** OOP, Context Managers, Async, Tuples, Generators, String methods, JSON, Type hints — integrated into LangChain/agent projects during Weeks 1-2.
 |-------------|-----------|----------|
 | Naive RAG intro | **Semantic Chunking** — statistical rolling-window cosine distance, agentic chunking for tables/headers | 🔴 |
 | Prompt Engineering | **Constrained Decoding** — Native Structured Outputs, Pydantic response_format, no regex parsing | 🔴 |
