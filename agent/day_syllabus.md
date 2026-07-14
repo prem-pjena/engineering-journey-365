@@ -25,11 +25,57 @@
 
 | Day | Date | Status | Topics | DSA |
 |-----|------|--------|--------|-----|
-| 11 | Jul 14 | 🔴 IN PROGRESS | LangChain LCEL, prompt templates, ChatOpenAI, Pydantic + with_structured_output() | Contains Duplicate, Valid Anagram |
+| 11 | Jul 14 | 🔴 IN PROGRESS | OOP: classes, inheritance, dunder, @property, Context Managers, Modules | Two Sum, Valid Anagram |
 
 ---
 
-## 📅 Upcoming (60-Day Agentic AI Sprint — All Concepts Preserved)
+## 📅 Upcoming (Complete 60-Day Curriculum — All Concepts, No Skipping)
+
+### Week 1 (Days 1-7): Python Foundations + LLM Basics
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 11 | OOP: classes, inheritance, dunder, @property | Build mock Vector Store class | Two Sum |
+| 12 | Context Managers, Modules, __init__.py | LLM wrapper with static methods | Valid Anagram |
+| 13 | Async: asyncio, event loop, gather | Fetch 5 mock APIs concurrently | Group Anagrams |
+| 14 | Generators (yield), Tuples, enumerate, zip | Build streaming token generator | Top K Frequent |
+| 15 | String methods, JSON module | Parse nested JSON LLM outputs | Product of Array |
+| 16 | Type hints, Comprehensions, uv setup | Production Python env | Valid Palindrome |
+| 17 | LLM APIs: OpenAI/Gemini, streaming | Chat + streaming responses | 3Sum |
+
+### Week 2 (Days 8-14): LangChain + RAG + SQL
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 18 | Prompt Engineering: few-shot, CoT, system prompts | Container With Most Water |
+| 19 | LangChain LCEL, Prompt Templates | Longest Substring |
+| 20 | with_structured_output, Pydantic schemas | Valid Parentheses |
+| 21 | Document Loaders, Text Splitters | Binary Search |
+| 22 | Vector DBs, Cosine similarity, Embeddings, ChromaDB | Search 2D Matrix |
+| 23 | Naive RAG: chunk → embed → store → retrieve | Reverse Linked List |
+| 24 | SQL: SELECT, INSERT, JOINs, aggregations | Merge Two Sorted |
+
+### Week 3 (Days 15-21): Advanced RAG + pgvector
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 25 | Multi-query, MMR retrieval | Reorder List |
+| 26 | Metadata filtering, hybrid search | Max Depth Tree |
+| 27 | Cross-encoder reranking (BGE) | Same Tree |
+| 28 | pgvector setup, vector queries, HNSW vs IVFFlat | Invert Tree |
+| 29 | Agentic RAG | Level Order Traversal |
+| 30 | **PROJECT 1: RAG System** + Ragas evaluation | LCA of BST |
+
+### Week 4 (Days 22-28): Apply ₹30k + Interview Prep
+| Day | Topics | DSA |
+|-----|--------|-----|
+| 22-24 | Docker + AWS EC2 deploy, ML concepts, NLP concepts | Trie, Kth Largest |
+| 25-28 | Apply on Apna + Wellfound, mock interviews | Review all patterns |
+
+### Weeks 5-8 (Days 29-56): LangGraph → MCP → Project 2 → Apply FT
+| Week | Focus | Target |
+|------|-------|--------|
+| 5 | LangGraph (StateGraph, reducers, routing, HITL, multi-agent, LangSmith) | Agent mastery |
+| 6 | MCP (stdio, HTTP SSE, Tools/Resources/Prompts, LangGraph+MCP) | Protocol mastery |
+| 7 | Cost tracking, System Design (RAG scale, multi-tenant, latency), CI/CD | Interview prep |
+| 8 | **Project 2** + Apply blitz (50+ roles) | ₹60-80k FT offer |
 
 | Day | Planned Topics | DSA |
 |-----|---------------|-----|

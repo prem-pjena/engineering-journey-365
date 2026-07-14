@@ -2,16 +2,16 @@
 # Last updated: 2026-07-14
 
 ## Status
-- **Plan:** 60-day Agentic AI Engineer sprint (Jul 14 → Sep 12)
-- **Target:** ₹30k/mo internship by Day 28 → ₹60-80k/mo FT by Day 56
+- **Plan:** 60-day complete curriculum (Jul 14 → Sep 12)
+- **Target:** ₹30k/mo internship by Day 28 → ₹60-80k/mo FT by Day 60
 - **Role:** Agentic AI Engineer | AI Engineer | SDE AI
-- **Positioning:** Forward Deployed Engineer — AI orchestration, not backend
+- **Positioning:** Forward Deployed Engineer — AI orchestration specialist
 - **Primary platforms:** Apna (50%), Wellfound (40%), LinkedIn DMs (10%)
 
-## Skills (Day 10 completed — Jul 11)
+## Skills (Day 10 completed)
 - Python: 8.9/10 | DSA: 5.2/10 | Problem Solving: 7.8/10
 - File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6 | Functions: 9.5
-- **CRITICAL GAPS:** LangChain (0), LangGraph (0), LLM APIs (0), RAG (0), MCP (0)
+- CRITICAL GAPS: OOP, Async, LangChain, LangGraph, RAG, MCP (all 0)
 
 ## Current Progress
 - Days completed: 10 / 60
@@ -19,28 +19,25 @@
 - Projects deployed: 0
 
 ## 60-Day Structure
-| Stage | Days | Focus |
-|-------|------|-------|
-| Week 1 | 1-7 | LangChain + Structured Outputs + LLM APIs |
-| Week 2 | 8-14 | RAG + pgvector + OOP + Async review |
-| Week 3 | 15-21 | LangGraph + ReAct + MCP + Project 1 |
-| Week 4 | 22-28 | Apply ₹30k internship |
-| Week 5-6 | 29-42 | LangGraph advanced + MCP advanced + Advanced RAG |
-| Week 7 | 43-49 | Interview prep (ML, NLP, sys design, behavioral) |
-| Week 8 | 50-56 | Project 2 + Apply FT ₹60-80k |
+| Week | Focus | Milestone |
+|------|-------|-----------|
+| 1 | Python OOP, Async, Generators, LLM APIs | CLI chat app |
+| 2 | LangChain, RAG, SQL | RAG pipeline |
+| 3 | Advanced RAG, pgvector, Agentic RAG | Deployed RAG |
+| 4 | **Project 1 + Apply ₹30k** | Internship offer |
+| 5 | LangGraph (StateGraph, reducers, routing, HITL, multi-agent) | Agent mastery |
+| 6 | MCP (stdio, HTTP SSE, Tools/Resources) + Production patterns | MCP mastery |
+| 7 | Cost tracking, System Design, CI/CD | Interview ready |
+| 8 | **Project 2 + Apply blitz** | ₹60-80k FT offer |
 
-## All Concepts Covered (None Skipped)
-- Python: OOP, Context Managers, Modules, Async, Generators, Tuples, String methods, JSON, Type hints
-- AI: LangChain, LangGraph, MCP, RAG, Ragas, pgvector, Prompt Engineering
-- DSA: Two Pointers, Sliding Window, Binary Search, BFS/DFS, Arrays, Strings, Hash Maps
+## All Concepts (None Skipped)
+- Python: OOP, Context Managers, Async, Generators, Tuples, enumerate, zip, String methods, JSON, Comprehensions, Type hints, Modules
+- AI: LangChain, LangGraph, MCP, RAG, Ragas, pgvector, Prompt Engineering, LLM APIs
+- Interview: ML concepts, NLP concepts, System Design, Production Patterns
+- DSA: Two Pointers, Sliding Window, Binary Search, BFS/DFS, Arrays, Strings, Hash Maps, Linked Lists, Trees, Graphs, DP basics
+- Deployment: Docker, docker-compose, AWS EC2, GitHub Actions
 
 ## Key Files
-- agent/learning_plan.md — 60-day sprint (most updated)
-- agent/day_syllabus.md — live tracker
+- agent/learning_plan.md — complete 60-day curriculum (most updated)
+- agent/day_syllabus.md — live day tracker
 - agent/skill_tracker.md — scores
-- agent/reports/current_status.md — snapshot
-
-## Rules
-- Read both context files at session start
-- Write only vs_code_context.md, never zed_context.md
-- Caveman mode: ≤5-30 words. No greetings, filler, sign-offs, apologies
