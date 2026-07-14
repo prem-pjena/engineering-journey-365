@@ -1,159 +1,241 @@
-# 📚 12-Month AI Engineer / SDE AI Roadmap
+# 📚 60-Day Agentic AI Engineer Sprint
 
-**Target Role:** AI Engineer | SDE AI | Agentic AI Engineer
-**Core Stack:** LLMs, Agents, LangChain, LangGraph, LangSmith, Prompting, RAG, MCP
-**NOT Targeting:** AI Backend Engineer, ML Engineer (math), Data Scientist
-
----
-
-## 🎯 Target Roles & Salary
-
-| Role | 6-month target | 12-month target |
-|------|---------------|----------------|
-| AI Engineer (GenAI/LLM focus) | ₹40-60k/mo | ₹80k-1.2L/mo |
-| Agentic AI Engineer | ₹50-70k/mo | ₹1-1.5L/mo |
-| SDE AI (AI features) | ₹50-70k/mo | ₹1-1.5L/mo |
+**Target Role:** Agentic AI Engineer | AI Engineer | SDE AI
+**Positioning:** Forward Deployed Engineer — AI orchestration, not backend
+**Timeline:** 60 days. ₹30k internship by Day 30 → ₹60-80k/mo FT by Day 60
+**Market:** Bangalore + Remote. AI-first startups. (Apna + Wellfound primary)
 
 ---
 
-## 🧠 Core Tech Stack
+## 🎯 Executive Summary (from Deep Research)
 
-| Domain | Tech | Depth |
-|--------|------|-------|
-| **LLMs & APIs** | OpenAI, Anthropic, Gemini, open-source models (Ollama) | Deep |
-| **Orchestration** | LangChain, LangGraph, LangSmith | Deep — core skill |
-| **Agents** | ReAct, multi-agent, tool calling, state machines | Deep — core skill |
-| **RAG & Vector DBs** | pgvector, ChromaDB, hybrid search, reranking, SQL queries | Deep — core skill |
-| **MCP** | Model Context Protocol, FastMCP servers | Deep |
-| **Prompting** | Few-shot, chain-of-thought, structured outputs | Deep ||
-| **Model Serving** | FastAPI (minimal), Docker (basic), cloud deploy | Practical |
-| **Data Querying** | SQL (SELECT, JOINs, aggregations), vector search queries, pgvector | Practical — needed for RAG |
-| **DSA** | 60-80 problems (arrays, strings, hash maps, trees, graphs) | Interview-ready |
-| **NLP Concepts** | Tokenization, embeddings, BERT vs GPT, transformers | Conceptual |
-| **ML Concepts** | Basic algorithms conceptually, evaluation metrics | Conceptual |
+| Goal | Timeline | Feasibility | Primary Platform |
+|------|----------|-------------|-----------------|
+| ₹30k/mo internship | 30 days | ✅ Highly feasible | Apna (chat-based), Wellfound |
+| ₹60-80k/mo FT (₹7.2-9.6 LPA) | 60 days | ✅ Feasible | Apna, Instahyre, Wellfound |
+
+**Key insight:** Agentic AI Engineer roles grew 260% YoY. The "no backend" positioning is validated — this is called "Forward Deployed Engineer." Skip traditional backend, focus on AI orchestration.
 
 ---
 
-## 🚫 What We SKIP
+## 📊 Skill Priority (Validated)
 
-| Topic | Reason |
-|-------|--------|
-| **Backend engineering** (deep FastAPI, PostgreSQL optimization, API scaling) | Not your role. AI Engineer uses APIs, doesn't build backend infra. |
-| **Hardcore ML math** (backpropagation derivations, calculus, linear algebra) | Not needed for AI Engineer using pre-trained models. |
-| **DevOps deep dive** (Kubernetes, CI/CD pipelines, infra monitoring) | Basic Docker + deploy is enough. |
-| **Data Science** (statistics, hypothesis testing, A/B testing deep) | Not your target. |
-| **Computer Vision** | Not relevant to LLM/agent focus. |
-
----
-
-## 📅 4-Phase Roadmap
-
-### Phase 1 (Months 1-2): AI FOUNDATION
-
-**Goal:** Get first AI Engineer role. ₹30-40k/mo.
-**Core focus:** LangChain, RAG, basic agents, prompting
-
-**Week 1-2:** Python review → LangChain basics (LCEL, chains, prompt templates) → LLM APIs (OpenAI, Gemini) → embeddings → vector DBs → basic RAG
-**Week 3-4:** LangGraph basics (StateGraph, nodes, edges) → ReAct pattern → tool calling → Ragas evaluation → MCP basics
-**Week 5-6:** **Project 1: RAG Agent** — Build + deploy. Apply for roles.
-**Week 7-8:** Interview prep + applications
-
-**By end of Month 2:** Can build RAG agents, use LangChain/LangGraph, deploy basic apps. ₹30-40k/mo role.
-
-### Phase 2 (Months 3-5): AGENT MASTERY
-
-**Goal:** Master agentic AI. ₹50-70k/mo.
-**Core focus:** LangGraph advanced, multi-agent, MCP, LangSmith
-
-**LangGraph deep:** State persistence, checkpointing, human-in-the-loop, conditional routing, complex state graphs
-**Multi-agent:** Planner → Executor → Synthesizer patterns, agent communication, task decomposition
-**MCP advanced:** Custom MCP servers (DB, API, file system tools), MCP security, discovery
-**LangSmith:** Tracing, evaluation, debugging agent workflows
-**NLP concepts:** Tokenization, BERT vs GPT, embeddings, transformers architecture (conceptual)
-
-**By end of Month 5:** Can build production multi-agent systems, MCP servers. ₹50-70k/mo role.
-
-### Phase 3 (Months 6-9): DEEPEN + BROADEN
-
-**Goal:** Be strong for ₹80k-1L/mo roles.
-**Core focus:** Advanced RAG, open-source models, evaluation, system design
-
-**Advanced RAG:** Hybrid search, cross-encoder reranking, query transformation, multi-hop RAG
-**Open-source models:** Ollama, vLLM basics, model quantization, local deployment
-**Evaluation:** Ragas advanced, LLM-as-a-judge, regression testing, prompt versioning
-**DSA:** 60-80 problems (add graphs, DP basics)
-**System design (AI-specific):** RAG at scale, agent architecture, LLM gateway, caching strategies
-
-### Phase 4 (Months 10-12): EXPERT LEVEL
-
-**Goal:** ₹1-1.5L/mo. Senior AI Engineer.
-**Core focus:** Production agents, fine-tuning concepts, cost optimization, mentoring
-
-**Production agents:** Error recovery, audit trails, multi-modal agents, long-running workflows
-**Fine-tuning concepts:** LoRA, QLoRA, when to fine-tune vs RAG vs prompting (conceptual, not implementation)
-**Cost optimization:** Semantic caching, model routing, prompt compression, token budgeting
-**Open source:** 3-5 merged PRs in LangChain, LangGraph, FastMCP, or Ragas
+| Rank | Skill | Why | Depth |
+|------|-------|-----|-------|
+| 🔴 Must-have | LangChain with_structured_output() + Pydantic | Core of AI Engineer work | Deep |
+| 🔴 Must-have | LangGraph StateGraph + Reducers | Agent orchestration | Deep |
+| 🔴 Must-have | MCP (Tools vs Resources, stdio vs HTTP transport) | Enterprise tool integration | Deep |
+| 🔴 Must-have | RAG + Ragas evaluation | Most deployed enterprise pattern | Deep |
+| 🔴 Must-have | DSA (30 problems: Two Pointers, Sliding Window, Binary Search, BFS/DFS) | Survive screens | 30 problems |
+| 🟠 High | Docker + AWS EC2 deploy | DevOps background is moat | Practical |
+| 🟠 High | Vector DB (pgvector), SQL for queries | RAG backbone | Practical |
+| 🟢 Bonus | Prompt engineering (few-shot, CoT, structured) | Day-to-day work | Deep |
 
 ---
 
-## 🏗️ The 2 Portfolio Projects
+## 🚫 Skipped (Validated)
 
-### Project 1 (Month 1-2): RAG Agent
-- LangChain + LangGraph + OpenAI + ChromaDB/pgvector
-- Agent that retrieves documents and answers with citations
-- ReAct pattern with tool calling
-- Ragas evaluation scores in README
-- Basic Docker deployment
-
-### Project 2 (Month 3-5): Multi-Agent MCP System
-- LangGraph multi-agent (Planner → Searcher → Synthesizer)
-- Custom MCP server exposing DB + API tools
-- LangSmith tracing and evaluation
-- Human-in-the-loop guardrails
-- Dockerized + deployed
+| Topic | Why |
+|-------|-----|
+| Traditional backend (Django, Spring Boot, deep FastAPI) | Not needed for Agentic AI Engineer |
+| ML math (backpropagation, calculus, linear algebra) | Not needed — orchestrating pre-trained models |
+| Data Science (statistics, hypothesis testing) | Different role entirely |
+| Computer Vision | Not relevant to LLM/agent focus |
 
 ---
 
-## 📚 Interview Prep (Conceptual Only — No Math)
+## 📅 60-Day Sprint
 
-### LLM & RAG (know these)
-- Transformer architecture concept (Q, K, V, self-attention — no math)
-- Tokenization, context windows, token limits
-- RAG evaluation: faithfulness, precision, recall
-- Chunking strategies, embedding models
-- When to use RAG vs fine-tuning vs prompting
+### Stage 1 (Days 1-30): ₹30k Internship
 
-### Agents (know these)
-- ReAct pattern (Reason + Act)
-- LangGraph StateGraph concept (nodes, edges, state)
-- Tool calling, function calling
-- Multi-agent orchestration patterns
-- Memory types (short-term, episodic, semantic)
-- Infinite loop prevention
+**Application strategy:** 50% Apna, 40% Wellfound, 10% LinkedIn DMs to founders
 
-### MCP (know these)
-- Host vs Client vs Server architecture
-- Tools vs Resources vs Prompts
-- Why MCP over custom API integrations
+#### Week 1 (Days 1-7): LangChain + Structured Outputs
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 1 | LangChain LCEL, prompt templates, ChatOpenAI | Two Pointers |
+| 2 | Pydantic BaseModel + Field descriptions + with_structured_output() | Two Pointers |
+| 3 | json_mode vs json_schema, schema validation | Two Pointers |
+| 4 | LLM APIs (OpenAI, Gemini) — chat, streaming, embeddings | Sliding Window |
+| 5 | Embedding models, cosine similarity, vector DB concepts | Sliding Window |
+| 6 | Basic FastAPI endpoint for LangChain chain | Sliding Window |
+| 7 | **Build: Chat script with structured JSON output** | Review |
 
-### NLP Concepts (conceptual)
-- BERT (encoder-only) vs GPT (decoder-only)
-- Embeddings: what they represent
-- Tokenization methods (BPE, WordPiece)
+#### Week 2 (Days 8-14): RAG + Vector DB
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 8 | Naive RAG: chunk → embed → store → retrieve → generate | Binary Search |
+| 9 | pgvector setup, SQL for queries, vector search | Binary Search |
+| 10 | Chunking strategies (size, overlap, recursive) | BFS/DFS basics |
+| 11 | LangChain document loaders + text splitters | BFS/DFS basics |
+| 12 | **Ragas evaluation** — faithfulness, context precision, recall | BFS/DFS basics |
+| 13 | Prompt engineering (few-shot, CoT, structured outputs) | Review |
+| 14 | **Build: RAG query system with eval scores** | DSA review |
+
+#### Week 3 (Days 15-21): LangGraph + Agents
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 15 | LangGraph StateGraph — nodes, edges, state | Two Pointers |
+| 16 | Reducers (operator.add, add_messages) — parallel node merging | Sliding Window |
+| 17 | ReAct pattern — agent with tool calling | Binary Search |
+| 18 | Conditional routing, state persistence | BFS/DFS |
+| 19 | Agent memory — short-term vs episodic vs semantic | Review |
+| 20 | **Build: Agent with tools + LangGraph state machine** | DSA review |
+| 21 | **Catch-up + revision** | DSA review |
+
+#### Week 4 (Days 22-30): MCP + Project 1 + APPLY
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 22 | MCP architecture — Host, Client, Server, JSON-RPC 2.0 | Review |
+| 23 | MCP Tools vs Resources vs Prompts | Review |
+| 24 | MCP transports — stdio vs Streamable HTTP | Review |
+| 25 | **Build MCP server** (SQLite DB as tool) | Review |
+| 26 | **Project 1: Autonomous RAG Agent** — integrate all concepts | Review |
+| 27 | Dockerize + deploy on AWS EC2 | Review |
+| 28 | README: architecture diagram, Ragas scores, setup | Review |
+| 29 | **Apply** — Apna (chat-based), Wellfound, LinkedIn DMs. 15-20 apps | Review |
+| 30 | **Target: ₹30k internship offer** | Review |
 
 ---
 
-## 📊 Weekly Progress Tracker
+### Stage 2 (Days 31-60): ₹60-80k FT
 
-| Week | Focus | Deliverable |
-|------|-------|-------------|
-| 1 | LangChain basics, LLM APIs, embeddings | Chat script with memory |
-| 2 | RAG pipeline, vector DBs, basic agents | RAG query system |
-| 3 | LangGraph, ReAct, tool calling | Agent with tools |
-| 4 | Ragas eval, MCP basics | Project 1 starts |
-| 5-6 | **Project 1** + applications | Deployed RAG Agent |
-| 7-8 | Interview prep + apply | ₹30-40k/mo role |
+#### Week 5 (Days 31-37): LangGraph Advanced
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 31 | Multi-agent architecture (Planner → Searcher → Synthesizer) | Review |
+| 32 | Parallel agent execution + state merging | Review |
+| 33 | Human-in-the-loop, approval gates | Review |
+| 34 | Agent evaluation — task completion, error recovery | Review |
+| 35 | LangSmith tracing + debugging | Review |
+| 36 | **Build: Multi-agent system** | Review |
+| 37 | Interview prep — LangGraph questions from bank | Review |
+
+#### Week 6 (Days 38-44): MCP Advanced + RAG Deep
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 38 | MCP Streamable HTTP transport (enterprise-grade) | Review |
+| 39 | MCP security, auth, sandboxing | Review |
+| 40 | Advanced RAG: hybrid search (BM25 + dense), cross-encoder reranking | Review |
+| 41 | Agentic RAG vs Naive RAG — agent as retriever | Review |
+| 42 | Ragas deep: Faithfulness math, Context Precision formula | Review |
+| 43 | **Build: MCP server with Streamable HTTP** | Review |
+| 44 | **Integrate MCP + LangGraph + RAG** into unified system | Review |
+
+#### Week 7 (Days 45-51): Interview Prep
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 45 | ML concepts: bias-variance, precision/recall/F1, overfitting | Targeted practice |
+| 46 | NLP concepts: BERT vs GPT, embeddings, tokenization | Targeted practice |
+| 47 | System design: RAG at scale, latency optimization, caching | Targeted practice |
+| 48 | Behavioral: termination narrative + STAR stories | Targeted practice |
+| 49 | Mock interview — LLM/RAG/Agents | Targeted practice |
+| 50 | Mock interview — LangGraph/MCP | Targeted practice |
+| 51 | **Full mock interview loop** | Targeted practice |
+
+#### Week 8 (Days 52-60): Project 2 + APPLY FT
+| Day | Focus | DSA |
+|-----|-------|-----|
+| 52 | **Project 2 start** — Multi-Agent MCP Orchestrator | Review |
+| 53 | LangGraph planner → MCP tools → agent execution | Review |
+| 54 | Ragas eval on agent outputs | Review |
+| 55 | Dockerize + deploy on AWS | Review |
+| 56 | **Apply FT** — 20-30 roles (Apna, Wellfound, Instahyre, LinkedIn) | Review |
+| 57-59 | Interview loop — follow-ups, take-homes, screening calls | Review |
+| 60 | **Target: ₹60-80k/mo FT offer** | Review |
 
 ---
 
-*Target: AI Engineer working with agents, models, LLMs. No backend. No math ML.*
+## 🏗️ The 1 Portfolio Project (Evolved)
+
+### Stage 1 Version (by Day 28): Autonomous RAG Agent
+- LangChain + LangGraph + OpenAI + pgvector
+- Structured outputs via Pydantic + with_structured_output()
+- ReAct agent with tool calling
+- Ragas evaluation scores (faithfulness, precision)
+- MCP server (basic, stdio transport)
+- Dockerized + deployed on AWS EC2
+
+### Stage 2 Version (by Day 55): MCP-Connected Multi-Agent Orchestrator
+- Same project, upgraded:
+  - Multi-agent LangGraph (Planner → Searcher → Synthesizer)
+  - MCP with Streamable HTTP transport
+  - Hybrid search + cross-encoder reranking
+  - Human-in-the-loop guardrails
+  - Ragas eval on agent outputs
+
+---
+
+## 📚 Interview Question Bank (from Deep Research)
+
+### Section 1: LangChain & Structured Outputs (5 questions)
+1. Why do LLM text responses fail in production? How does with_structured_output() fix it?
+2. Why is Pydantic Field(description="...") critical for LLM output?
+3. json_mode vs json_schema — what's the difference?
+4. How does LangChain handle schema conversion for structured outputs?
+5. What happens if the LLM returns invalid JSON? How do you handle it?
+
+### Section 2: LangGraph & State (5 questions)
+6. Why was the shift from Chains to StateGraphs necessary?
+7. What happens when 2 parallel nodes update the same state key without a reducer?
+8. How does operator.add work as a reducer? Why use add_messages?
+9. What are Conditional Edges? Give an example use case.
+10. How do you implement human-in-the-loop in LangGraph?
+
+### Section 3: MCP (5 questions)
+11. What specific problem does MCP solve?
+12. Tools vs Resources vs Prompts — when to use each?
+13. stdio vs Streamable HTTP transport — when to use each?
+14. How does MCP ensure enterprise security?
+15. Why build MCP server instead of custom REST API integration?
+
+### Section 4: RAG & Ragas (5 questions)
+16. Naive RAG vs Agentic RAG — what's the difference?
+17. Mathematically define Faithfulness. How is it measured?
+18. Context Precision vs Context Recall — what's the difference?
+19. What is "LLM-as-a-judge" methodology?
+20. How does chunk size affect retrieval accuracy?
+
+### Section 5: ML/NLP Concepts (5 questions)
+21. What is the Bias-Variance tradeoff conceptually?
+22. Precision vs Recall vs F1 Score — explain in business context
+23. What is data leakage and how to prevent it?
+24. BERT (encoder-only) vs GPT (decoder-only) — what's the difference?
+25. Bi-encoder vs Cross-encoder — when to use each in retrieval?
+
+---
+
+## 🏢 Application Strategy
+
+### Primary Platforms
+| Platform | Strategy | % Effort |
+|----------|----------|----------|
+| **Apna** | Chat-based recruiter engagement. Fastest hiring. | 50% |
+| **Wellfound** (AngelList) | Direct founder messaging. YC startups. | 40% |
+| **LinkedIn DMs** | Founders/CTOs of AI startups | 10% |
+
+### Target Job Titles
+- Agentic AI Developer (+260% YoY growth) ✅
+- GenAI & Agentic AI Engineer (+205% YoY) ✅
+- Forward Deployed Engineer (emerging, perfect fit) ✅
+- AI Platform / Systems Engineer (+105% YoY) ✅
+- AI Engineer (general)
+
+### Termination Narrative (Memorize This)
+> "During my last internship, it became clear the role was pivoting toward traditional backend infrastructure, which didn't align with my strengths in AI orchestration. I realize I should have asked more clarifying questions before accepting. The termination gave me the catalyst to fully dedicate myself to Agentic AI — I've since built production-grade LangGraph agents, MCP servers, and RAG systems with automated evaluation. I'm now hyper-focused on roles where I can deploy AI orchestration."
+
+---
+
+## 🚨 Risk Mitigation
+
+| Risk | Mitigation |
+|------|-----------|
+| DSA deficit (5.2/10) | 30 targeted problems: Two Pointers, Sliding Window, Binary Search, BFS/DFS |
+| Terminated internship | Control narrative early. Use script above. |
+| Tutorial Hell projects | Unique problem + live deploy + eval scores in README |
+| Application black holes | Skip traditional portals. Use Apna + Wellfound exclusively. |
+| Weak system design articulation | Practice explaining tradeoffs: Pinecone vs pgvector? Bi-encoder vs Cross-encoder? stdio vs HTTP transport? |
+
+---
+
+*Based on Gemini Deep Research: Strategic 60-Day Hiring Blueprint for Agentic AI Engineers (Jul 2026)*
