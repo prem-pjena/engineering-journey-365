@@ -23,10 +23,11 @@
 | **LLMs & APIs** | OpenAI, Anthropic, Gemini, open-source models (Ollama) | Deep |
 | **Orchestration** | LangChain, LangGraph, LangSmith | Deep — core skill |
 | **Agents** | ReAct, multi-agent, tool calling, state machines | Deep — core skill |
-| **RAG** | Vector DBs, chunking, hybrid search, reranking | Deep |
+| **RAG & Vector DBs** | pgvector, ChromaDB, hybrid search, reranking, SQL queries | Deep — core skill |
 | **MCP** | Model Context Protocol, FastMCP servers | Deep |
-| **Prompting** | Few-shot, chain-of-thought, structured outputs | Deep |
+| **Prompting** | Few-shot, chain-of-thought, structured outputs | Deep ||
 | **Model Serving** | FastAPI (minimal), Docker (basic), cloud deploy | Practical |
+| **Data Querying** | SQL (SELECT, JOINs, aggregations), vector search queries, pgvector | Practical — needed for RAG |
 | **DSA** | 60-80 problems (arrays, strings, hash maps, trees, graphs) | Interview-ready |
 | **NLP Concepts** | Tokenization, embeddings, BERT vs GPT, transformers | Conceptual |
 | **ML Concepts** | Basic algorithms conceptually, evaluation metrics | Conceptual |
