@@ -15,18 +15,13 @@
 
 ---
 
-## 📖 Profile README (prem-pjena/prem-pjena)
+## 📖 Profile README
 
-```markdown
-### Prem Prakash Jena
-
-**Agentic AI Engineer | Agentic Systems & Orchestration**
-
-Building production-grade AI agents and RAG systems. I specialize in designing, deploying, and evaluating autonomous multi-agent systems and state-managed LLM workflows. With a foundation in DevOps (Docker, AWS, CI/CD), I ensure AI applications are not experimental prototypes, but highly reliable, scalable production systems.
-
----
-
-### 🚀 Focus Areas
+The profile README is saved at `agent/portfolio/github_readme.md` for easy copy-paste. It contains:
+- About section, tech stack table, featured projects, experience, connect links
+- No location or job-seeking statements
+- Agentic AI Engineer positioning throughout
+- Updated version — replaces the old AI/GenAI Backend Engineer messaging
 
 - **Agentic Workflows** — LangGraph, CrewAI, MCP, Multi-Agent Systems
 - **Hybrid RAG** — Vector + BM25, Cross-encoder Reranking, Semantic Routing
