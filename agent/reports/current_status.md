@@ -1,6 +1,6 @@
 # 📊 Current Status — 60-Day Agentic AI Engineer Sprint
 
-**Last Updated:** 2026-07-17 (Market research complete)
+**Last Updated:** 2026-07-17 (Deep market research complete — verified ₹10-12 LPA target)
 
 ---
 
@@ -39,48 +39,60 @@ Days 57-60: Buffer + revision
 
 ---
 
-## ✅ Market Research — Validated Targets
+## ✅ Market Research — Validated Targets (Deep Research Complete)
 
 | Target | Research Confirms | Action |
 |--------|------------------|--------|
-| ₹30k/mo internship by Day 28 | ✅ ₹25k-₹50k paid by AI-first startups | Focus Wellfound + LinkedIn |
-| ₹60-80k/mo FT by Day 60 | ✅ ₹6-15 LPA for fresher AI engineers | Build portfolio proof |
-| Skip service-based companies | ✅ Confirmed — sub-optimal comp, slow AI | Ignore TCS/Infosys/Wipro |
-| Full report → `agent/reports/market_research_2026.md` |
+| ₹30k-₹50k/mo internship by Day 28 | ✅ Confirmed — Hungama (₹50k), Aight (₹25-50k), SuperKalam (₹25-40k), Teal India (₹30k) | Apply Wellfound + YC Work at a Startup |
+| ₹10-12 LPA FT (₹80k-₹1L/mo in-hand) by Day 60 | ✅ Confirmed as baseline for proven agentic skills — Hungama PPO ₹12-15 LPA, Peakflo ₹40-50k/mo | Build LangGraph + MCP projects |
+| US/global remote ($24k-$40k/yr) | ✅ Realistic — Smart Audit ($25-50k/yr), Lamatic ($6-10k), Peakflo, Great Question | Full-stack capability (Next.js + FastAPI) |
+| Skip service-based companies | ✅ Confirmed — TCS/Infosys max ₹7-9 LPA, slow AI adoption | Ignore. Only target AI-first |
+| Full reports → `agent/reports/market_research_2026.md` + `agent/reports/market_research_deep_2026.md` |
 
-## Target Roles
+## Target Roles (Updated with Medians)
 
-| Role | Fresher Median (LPA) | Fit |
-|------|---------------------|-----|
-| Agentic AI Engineer | ₹12.0 LPA | ✅ Primary — highest premium bracket |
-| GenAI Engineer | ₹9.85 LPA | ✅ Primary |
-| AI Engineer | ₹9.0 LPA | ✅ Primary |
-| SDE AI | ₹18.0 LPA | ✅ Aspirational (needs DSA depth) |
-
----
-
-## Key Platforms (Updated Jul 17)
-
-| Platform | Rating | Strategy | % Effort |
-|----------|--------|----------|----------|
-| **Wellfound** | ⭐⭐⭐⭐⭐ | Premium AI roles, transparent comp, GitHub-driven hiring | 50% |
-| **LinkedIn** | ⭐⭐⭐⭐ | GCC/Unicorn roles, inbound via project posts | 40% |
-| **Apna** | ⭐ | Low signal — mostly legacy IT, fake AI listings | 5% |
-| **Naukri** | ⭐⭐⭐ | Volume play, ₹5.8-9 LPA service companies | 5% |
+| Role | Fresher Median | Fit | Key Companies Hiring |
+|------|---------------|-----|---------------------|
+| **Agentic AI Engineer** | ₹12.0 LPA | ✅ Primary — highest premium | Aight, Fluexy, Gravity AI, SuperKalam |
+| **GenAI Engineer** | ₹9.85 LPA | ✅ Primary | Hungama, GTMER, Peakflo |
+| **AI Engineer (LLM)** | ₹11.3 LPA | ✅ Primary | RIOM Ventures, Great Question, Smart Audit |
+| **SDE AI** | ₹18.0 LPA | ⭐ Aspirational (needs DSA depth) | FAANG, product unicorns |
 
 ---
 
-## Skill Scores
+## 📋 Updated Platform Strategy (Jul 17)
 
-| Skill | Current | Target (Day 28) | Target (Day 60) |
-|-------|---------|-----------------|-----------------|
-| Python | 8.9/10 | 9.2/10 | 9.5/10 |
-| DSA | 5.2/10 | 6.5/10 | 7.0/10 |
-| LangChain | 0/10 | 6.0/10 | 8.0/10 |
-| LangGraph | 0/10 | 4.0/10 | 8.0/10 |
-| RAG | 0/10 | 5.0/10 | 8.0/10 |
-| MCP | 0/10 | 4.0/10 | 7.0/10 |
-| LLM APIs | 0/10 | 6.0/10 | 8.0/10 |
-| SQL/pgvector | 0/10 | 5.0/10 | 7.0/10 |
-| Pandas/NumPy | 0/10 | 5.0/10 | 7.0/10 |
-| Docker/AWS | 3.0/10 | 4.0/10 | 5.0/10 |
+| Platform | Strategy | % Effort |
+|----------|----------|----------|
+| **Wellfound** | Search exact terms: "LangGraph", "Agentic", "MCP". Direct founder chat. | 40% |
+| **YC Work at a Startup** | Filter Remote + Engineering. YC startups hire India remote aggressively. | 30% |
+| **LinkedIn DMs** | Find CTOs of funded AI startups. Send deployed project link. | 15% |
+| **X (Twitter) DMs** | Same as LinkedIn — "proof of work" bypasses HR entirely. | 10% |
+| **Apna** | Low signal. Skip. | 0% |
+| **Naukri** | Volume play only if needed. | 5% |
+
+---
+
+## Skill Scores (Updated with Research-Driven Priorities)
+
+Must-Have (market critical) | Good-to-Have (high ROI) | 🚫 Skip (low ROI for this sprint)
+
+| Skill | Current | Target (Day 28) | Target (Day 60) | Priority |
+|-------|---------|-----------------|-----------------|----------|
+| Python | 8.9/10 | 9.2/10 | 9.5/10 | ✅ Foundation |
+| FastAPI + Async Python | 0/10 | 6.0/10 | 8.0/10 | 🔴 Must-Have |
+| LangGraph | 0/10 | 5.0/10 | 8.0/10 | 🔴 Must-Have |
+| MCP (Model Context Protocol) | 0/10 | 5.0/10 | 8.0/10 | 🔴 Must-Have |
+| LangChain | 0/10 | 6.0/10 | 8.0/10 | 🔴 Must-Have |
+| RAG (naive → advanced → hybrid) | 0/10 | 5.0/10 | 8.0/10 | 🔴 Must-Have |
+| LLM Evaluation (LangSmith/Ragas) | 0/10 | 4.0/10 | 7.0/10 | 🔴 Must-Have |
+| pgvector + Hybrid Search | 0/10 | 4.0/10 | 7.0/10 | 🔴 Must-Have |
+| DSA | 5.2/10 | 6.5/10 | 7.0/10 | 🔴 Must-Have |
+| LLM APIs | 0/10 | 6.0/10 | 8.0/10 | 🔴 Must-Have |
+| Docker/AWS (ECS/EC2) | 3.0/10 | 5.0/10 | 7.0/10 | 🔴 Must-Have |
+| SQL/pgvector | 0/10 | 5.0/10 | 7.0/10 | 🔴 Must-Have |
+| Next.js + TypeScript | 0/10 | 3.0/10 | 6.0/10 | 🟡 Good-to-Have |
+| Pandas/NumPy | 0/10 | 5.0/10 | 7.0/10 | 🟡 Good-to-Have |
+| Scikit-learn (ML basics) | 0/10 | 4.0/10 | 6.0/10 | 🟡 Good-to-Have |
+| LoRA Fine-tuning | 0/10 | 0/10 | 3.0/10 | ⚪ Nice-to-Have |
+| Training CNNs/RNNs from scratch | 0/10 | 0/10 | 0/10 | 🚫 Skip entirely |
