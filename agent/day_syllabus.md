@@ -25,88 +25,90 @@
 
 | Day | Date | Status | Topics | DSA |
 |-----|------|--------|--------|-----|
-| 11 | Jul 14 | 🔴 IN PROGRESS | OOP: classes, inheritance, dunder, @property, Context Managers, Modules | Two Sum, Valid Anagram |
+| 11 | Jul 14 | 🔴 IN PROGRESS | OOP: classes, inheritance, dunder, @property, @staticmethod, @classmethod | Two Sum, Valid Anagram |
 
 ---
 
-## 📅 Upcoming (Complete 60-Day Curriculum — All Concepts, No Skipping)
+## 📅 Upcoming (Market-Validated — All Concepts, No Skipping)
 
-### Week 1 (Days 1-7): Python Foundations + LLM Basics
+### Phase 1: Python Completion + LLM APIs (Days 11-17)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 11 | OOP: classes, inheritance, dunder, @property | Build mock Vector Store class | Two Sum |
-| 12 | Context Managers, Modules, __init__.py | LLM wrapper with static methods | Valid Anagram |
-| 13 | Async: asyncio, event loop, gather | Fetch 5 mock APIs concurrently | Group Anagrams |
-| 14 | Generators (yield), Tuples, enumerate, zip | Build streaming token generator | Top K Frequent |
+| 11 | OOP: classes, inheritance, dunder, @property, @staticmethod, @classmethod | Build mock VectorStore class | Two Sum |
+| 12 | Context Managers, Modules, __init__.py | Safe File I/O Manager + Package | Valid Anagram |
+| 13 | Async: asyncio, event loop, gather + **FastAPI intro** | Build first FastAPI endpoint | Group Anagrams |
+| 14 | Generators (yield), Tuples, enumerate, zip | Streaming token generator | Top K Frequent |
 | 15 | String methods, JSON module | Parse nested JSON LLM outputs | Product of Array |
-| 16 | **Pandas + NumPy** (DataFrames, arrays, broadcasting, cleaning) | Data analysis script on mock CSV | Valid Palindrome |
-| 17 | LLM APIs: OpenAI/Gemini, streaming | Chat + streaming responses | 3Sum |
+| 16 | LLM APIs: OpenAI/Gemini, temperature, tokens, streaming | Chat + streaming response | Valid Palindrome |
+| 17 | Prompt Engineering: few-shot, CoT, system prompts | Test personas | 3Sum |
 
-### Week 2 (Days 8-14): LangChain + RAG + SQL
-| Day | Topics | DSA |
-|-----|--------|-----|
-| 18 | Prompt Engineering: few-shot, CoT, system prompts | Container With Most Water |
-| 19 | LangChain LCEL, Prompt Templates | Longest Substring |
-| 20 | with_structured_output, Pydantic schemas | Valid Parentheses |
-| 21 | Document Loaders, Text Splitters | Binary Search |
-| 22 | Vector DBs, Cosine similarity, Embeddings, ChromaDB | Search 2D Matrix |
-| 23 | Naive RAG: chunk → embed → store → retrieve | Reverse Linked List |
-| 24 | **SQL + data validation** (SELECT, INSERT, JOINs, aggregations, cleaning) | Merge Two Sorted |
+### Phase 2: LangChain + RAG Core (Days 18-24)
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 18 | LangChain LCEL, Prompt Templates | Rewrite Day 16 with LangChain | Container With Most Water |
+| 19 | with_structured_output, Pydantic schemas | Structured JSON entity extraction | Longest Substring |
+| 20 | Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF by semantic boundaries | Valid Parentheses |
+| 21 | Vector DBs, Embeddings, ChromaDB | Store chunks + similarity search | Binary Search |
+| 22 | **Naive RAG**: chunk → embed → store → retrieve → generate | End-to-end RAG script | Search 2D Matrix |
+| 23 | **SQL + pgvector basics**: SELECT, INSERT, JOINs, vector columns | Store embeddings in PostgreSQL | Reverse Linked List |
+| 24 | **Parent-Child Chunking + Cross-Encoder Reranking** | Rerank top-20 → top-3 with BGE | Merge Two Sorted |
 
-### Week 3 (Days 15-21): Advanced RAG + pgvector + ML/NLP
-| Day | Topics | DSA |
-|-----|--------|-----|
-| 25 | Multi-query, MMR retrieval | Reorder List |
-| 26 | Metadata filtering, hybrid search | Max Depth Tree |
-| 27 | Cross-encoder reranking (BGE) + **RNN/CNN basics** | Same Tree |
-| 28 | pgvector setup, vector queries, HNSW vs IVFFlat | Invert Tree |
-| 29 | **Agentic RAG** + **Transformer architecture (Q, K, V, self-attention)** | Level Order Traversal |
-| 30 | **PROJECT 1: RAG System** + Ragas evaluation + **NLP (BERT vs GPT, embeddings)** | LCA of BST |
+### Phase 3: Advanced RAG + Evaluation + Project 1 (Days 25-31)
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 25 | **Hybrid Search**: BM25 + Dense, pgvector HNSW vs IVFFlat | Implement hybrid search + index tuning | Reorder List |
+| 26 | **Corrective RAG (CRAG)** + **Adaptive RAG** | Evaluator → web fallback + router | Max Depth Tree |
+| 27 | **Conversational RAG + Agentic RAG** | Chat history + agent re-queries | Same Tree |
+| 28 | **LangSmith + Ragas Eval**: Faithfulness, Context Precision, Answer Relevancy | Golden dataset + eval pipeline | Invert Tree |
+| 29 | **PROJECT 1**: Multi-Tenant RAG System (FastAPI + pgvector + LangGraph + MCP) | Build core features | LCA of BST |
+| 30 | Project 1: Docker containerize + Cross-encoder + Hybrid Search | Complete features + eval | Level Order Traversal |
+| 31 | **Project 1 DONE**: Deploy to AWS ECS + Ragas eval + **APPLY BLITZ** | Wellfound + YC apps | Review all |
 
-### Week 4 (Days 22-28): Apply ₹30k + Interview Prep
-| Day | Topics | DSA |
-|-----|--------|-----|
-| 22-24 | Docker + AWS EC2 deploy, **ML basics (bias-variance, precision/recall/F1, cross-validation)**, **NLP concepts (BERT vs GPT, embeddings, tokenization)** | Trie, Kth Largest |
-| 25-28 | Apply on Apna + Wellfound, mock interviews, **Transformer architecture review (Q, K, V, self-attention)**, **RNN/CNN refresher** | Review all patterns |
+### Phase 4: LangGraph Mastery + MCP (Days 32-39)
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine | Course Schedule |
+| 33 | LangGraph: Reducers, add_messages, Conditional Routing | Chatbot with memory + router | Climbing Stairs |
+| 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tools | Coin Change |
+| 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 workers | Longest Increasing Subseq |
+| 36 | LangSmith Tracing for LangGraph | Instrument multi-agent | Word Break |
+| 37 | MCP: Host/Client/Server, stdio transport | Python MCP server with tools | Merge Intervals |
+| 38 | MCP: HTTP SSE, JSON-RPC 2.0, Tools vs Resources vs Prompts | DB schema as MCP Resource | Insert Interval |
+| 39 | **LangGraph + MCP Integration** | Agent discovers MCP tools | Non-overlapping Intervals |
 
-### Weeks 5-8 (Days 29-56): LangGraph → MCP → Project 2 → Apply FT
-| Week | Focus | Target |
-|------|-------|--------|
-| 5 | LangGraph (StateGraph, reducers, routing, HITL, multi-agent, LangSmith) | Agent mastery |
-| 6 | MCP (stdio, HTTP SSE, Tools/Resources/Prompts, LangGraph+MCP) | Protocol mastery |
-| 7 | Cost tracking, System Design (RAG scale, multi-tenant, latency), CI/CD | Interview prep |
-| 8 | **Project 2** + Apply blitz (50+ roles) | ₹60-80k FT offer |
+### Phase 5: Full-Stack + Production Patterns (Days 40-46)
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 40 | FastAPI Deep Dive: error handling, middleware, streaming, background tasks | Production FastAPI app | Rotate Image |
+| 41 | **Next.js + TypeScript basics** | Build chat UI component | Spiral Matrix |
+| 42 | Connect Next.js UI → FastAPI backend (streaming) | End-to-end chat app | Number of 1 Bits |
+| 43 | Docker compose: Agent + pgvector + MCP Server + Next.js | Multi-container orchestration | Counting Bits |
+| 44 | **AWS ECS**: Deploy full stack (Fargate + RDS + Load Balancer) | Cloud deployment | Missing Number |
+| 45 | **GitHub Actions CI/CD**: Auto-test, auto-eval, auto-deploy | Push → test → deploy pipeline | 3Sum review |
+| 46 | Cost tracking + Prompt versioning + A/B testing | Metadata wrapper + toggle | Min Window Substring |
 
-| Day | Planned Topics | DSA |
-|-----|---------------|-----|
-| 11 | **LangChain LCEL, prompt templates, ChatOpenAI** + Pydantic BaseModel + with_structured_output() | Contains Duplicate |
-| 12 | **LLM APIs (OpenAI, Gemini)** — chat, streaming, embeddings, json_mode vs json_schema | Valid Anagram |
-| 13 | **OOP deep dive** — classes, inheritance, dunder, @property, Context Managers, Modules | Two Sum II |
-| 14 | **Async Python** (asyncio, async/await, gather, event loop) + Tuples, enumerate(), zip() | Group Anagrams |
-| 15 | **Vector DBs** — pgvector setup, embeddings, cosine similarity, SQL queries for RAG | Top K Frequent |
-| 16 | **Naive RAG** — chunk → embed → store → retrieve → generate + chunking strategies | Product of Array |
-| 17 | **LangGraph basics** — StateGraph, nodes, edges, state, Reducers, add_messages | Valid Palindrome |
-| 18 | **ReAct pattern** — agent with tool calling, conditional routing, state persistence | 3Sum |
-| 19 | **Ragas evaluation** — faithfulness, context precision, recall + prompt engineering | Container With Most Water |
-| 20 | **MCP basics** — Host/Client/Server, Tools vs Resources vs Prompts, stdio transport | Best Time to Buy/Sell |
-| 21 | **Project 1** — Build RAG Agent with LangGraph + MCP | Longest Substring |
-| 22-28 | **Apply for ₹30k internship** — Apna, Wellfound. Interview prep. | Targeted DSA + Review |
-| 29-35 | **LangGraph advanced** — multi-agent, parallel execution, human-in-the-loop, LangSmith | Review + mock |
-| 36-42 | **MCP advanced** — Streamable HTTP, security, auth + Advanced RAG (hybrid search, reranking) | Review + mock |
-| 43-49 | **Interview prep** — ML concepts, NLP, system design, behavioral (termination narrative) | Targeted practice |
-| 50-56 | **Project 2** — Multi-Agent MCP Orchestrator + **Apply FT** ₹60-80k | DSA review |
+### Phase 6: System Design + Interview Prep (Days 47-53)
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 47 | System Design: RAG at scale, semantic caching (Redis), query routing | 1M QPD architecture | Find Min Rotated review |
+| 48 | System Design: Multi-tenant, latency optimization, LLM Gateway | Gateway design | Merge k Sorted Lists |
+| 49 | ML Concepts: bias-variance, precision/recall/F1, cross-validation | Metrics calculator | Serialize/Deserialize Tree |
+| 50 | NLP Concepts: BPE/WordPiece, BERT vs GPT, Transformer QKV | tiktoken + attention viz | Alien Dictionary |
+| 51 | DSA Mock + Portfolio Review | Polish GitHub | Word Search |
+| 52 | System Design Mock + Behavioral | Termination narrative + why AI | LCS |
+| 53 | Live Coding Mock (FastAPI + LangGraph) | Build mini agent under time | Word Ladder |
 
-**All previous concepts included:** OOP, Context Managers, Async, Tuples, Generators, String methods, JSON, Type hints — integrated into LangChain/agent projects during Weeks 1-2.
-|-------------|-----------|----------|
-| Naive RAG intro | **Semantic Chunking** — statistical rolling-window cosine distance, agentic chunking for tables/headers | 🔴 |
-| Prompt Engineering | **Constrained Decoding** — Native Structured Outputs, Pydantic response_format, no regex parsing | 🔴 |
-| LangGraph intro | **Graph State Persistence** — PostgresSaver, checkpointer, thread_id, resume across restarts | 🔴 |
-| LangGraph intro | **Topological Sorting + Deadlock Prevention** — cycles, recursion_limit, Kahn's Algorithm | 🔴 |
-| Before deployment | **MCP Integration** — MCP server exposing DB, tool discovery, JSON-RPC transport | 🔴 |
-| UI/Deployment | **SSE + Token Streaming** — StreamingResponse, async generators, real-time output | 🟡 |
-| Alongside Ragas | **Observability** — LangSmith tracing, execution tree debugging, token cost tracking | 🟡 |
-| DSA Month 1 | **Vector Math** — Cosine similarity from scratch with NumPy, L2 vs L1 vs Cosine | 🟡 |
-| DSA Month 2 | **Graph Traversal Algorithms** — BFS, DFS, topological sort (Kahn's Algorithm) | 🔴 |
+### Phase 7: Project 2 + Apply FT (Days 54-60)
+| Day | Morning | Afternoon | DSA |
+|-----|---------|-----------|-----|
+| 54 | **PROJECT 2**: Multi-Agent MCP Orchestrator (FastAPI + LangGraph + MCP + Next.js) | Build core | Trapping Rain Water |
+| 55 | Project 2: Docker + GitHub Actions + AWS ECS | CI/CD pipeline | Largest Rectangle |
+| 56 | **Project 2 DONE**: Ragas eval + Deploy + README | Production-grade | Review patterns |
+| 57 | **APPLY BLITZ**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Personalized messages | Review weak areas |
+| 58 | Follow-ups + Mock interviews | Respond to callbacks | Targeted DSA |
+| 59 | Buffer / Offer evaluation | Compare offers, negotiate | Rest |
+| 60 | **🎯 ₹10-12 LPA OFFER** | Celebrate + plan next | — |
+
 
 ---
 

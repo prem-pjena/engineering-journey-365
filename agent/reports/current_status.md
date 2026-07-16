@@ -4,25 +4,26 @@
 
 ---
 
-## 🎯 Timeline
+## 🎯 Timeline (Market-Validated)
 
 ```
-Days 1-10:  Python Foundations (vars → File I/O, Sets, Two Sum)
+Days 1-10:  Python Foundations (vars → File I/O, Sets, Two Sum) ✅ COMPLETE
 Days 11-12: OOP + Context Managers + Modules
-Days 13-14: Async + Generators
-Days 15:    String/JSON processing
-Days 16:    Pandas + NumPy
-Days 17:    LLM APIs (OpenAI/Gemini)
-Days 18-20: Prompt Engineering + LangChain LCEL + Structured Output
-Days 21-23: SQL + pgvector + RAG
-Days 24-25: LangGraph basics + ReAct agents
-Days 26-27: MCP (Model Context Protocol)
-Days 28:    APPLY — ₹30k internship target + Project 1
-Days 29-35: LangGraph advanced + multi-agent + Advanced RAG
-Days 36-42: MCP advanced + System Design
-Days 43-49: Interview prep (ML, NLP, system design)
-Days 50-56: Project 2 + APPLY FT — ₹60-80k target
-Days 57-60: Buffer + revision
+Days 13:    Async + FastAPI intro
+Days 14-15: Generators + String/JSON
+Days 16-17: LLM APIs + Prompt Engineering
+Days 18-20: LangChain LCEL + Structured Output + Semantic Chunking
+Days 21-22: Vector DBs + Naive RAG
+Days 23-24: pgvector SQL + Parent-Child Chunking + Cross-encoder Reranking
+Days 25-27: Hybrid Search + CRAG + Adaptive RAG + Conversational RAG
+Days 28-31: LangSmith/Ragas Evaluation + PROJECT 1 (Multi-Tenant RAG) + DEPLOY + APPLY
+Days 32-36: LangGraph Mastery (StateGraph → Multi-agent)
+Days 37-39: MCP (stdio → HTTP SSE → LangGraph+MCP)
+Days 40-42: FastAPI Deep Dive + Next.js UI + Full-stack integration
+Days 43-46: Docker Compose + AWS ECS + GitHub Actions CI/CD + Cost Tracking
+Days 47-53: System Design + ML/NLP Interview Prep + Mock Interviews
+Days 54-56: PROJECT 2 (Multi-Agent MCP Orchestrator) + Deploy
+Days 57-60: APPLY FT BLITZ → ₹10-12 LPA / $24-40k/yr offer 🎯
 ```
 
 ---

@@ -1,123 +1,183 @@
-# 📚 60-Day Agentic AI Engineer Sprint: Complete Curriculum
+# 📚 60-Day Agentic AI Engineer Sprint: Complete Curriculum (Market-Validated v2)
 
 **Target Role:** Agentic AI Engineer | AI Engineer | SDE AI
-**Positioning:** Forward Deployed Engineer — AI orchestration specialist
-**Timeline:** 60 days. ₹30k internship Day 28 → ₹60-80k/mo FT Day 60
+**Target Compensation:** ₹30-50k/mo intern (Day 28) → ₹10-12 LPA FT / $24-40k/yr global remote (Day 60)
 **Investment:** 5-6 hours daily. Zero days off.
 
 ---
 
-## 📊 Complete Tech Stack (Priority Matrix)
+## 📊 Complete Tech Stack (Market-Validated Priority Matrix)
 
 | Priority | Category | Technologies |
 |----------|----------|-------------|
-| 🔴 Must-Know | Python Architecture | OOP (classes, inheritance, dunder, @property, static/classmethod), Context Managers (__enter__, __exit__), Async (asyncio, await, gather), Generators (yield), Tuples, enumerate, zip, String methods, JSON, Comprehensions, Type hints, Modules |
-| 🔴 Must-Know | Core AI/ML & APIs | LangChain (LCEL, chains, templates, loaders, splitters, with_structured_output), Prompt Engineering (few-shot, CoT, system prompts), LLM APIs (OpenAI, Gemini), Transformer architecture (Q, K, V, self-attention), **RNN basics, CNN basics** |
-| 🔴 Must-Know | RAG & Data | Naive RAG, chunking strategies, Vector DBs (ChromaDB, pgvector), Cosine similarity, Embeddings, **Pandas, NumPy**, SQL (SELECT, INSERT, JOINs, aggregations, data validation) |
-| 🔴 Must-Know | Deployment | Docker, docker-compose, AWS EC2, GitHub Actions CI/CD, uv/pyproject.toml |
-| 🟠 Differentiator | Advanced Orchestration | LangGraph (StateGraph, nodes, edges, state, reducers, add_messages, conditional routing, checkpointing, human-in-the-loop, parallel execution) |
-| 🟠 Differentiator | MCP | Model Context Protocol (Host/Client/Server, Tools/Resources/Prompts, stdio vs Streamable HTTP, JSON-RPC 2.0) |
-| 🟠 Differentiator | Evaluation & Telemetry | Ragas (faithfulness, context precision/recall, LLM-as-a-judge), LangSmith, OpenTelemetry |
-| 🟠 Differentiator | Advanced RAG | Multi-query, MMR, metadata filtering, hybrid search, cross-encoder reranking, Agentic RAG, pgvector indexing (HNSW vs IVFFlat) |
-| 🔴 Must-Know | Interview ML/NLP Concepts | Bias-variance, precision/recall/F1, overfitting, cross-validation, BPE/WordPiece, BERT vs GPT, Transformer (Q, K, V, self-attention), RNN, CNN basics |
+| 🔴 Must-Know | Python Architecture | OOP (classes, inheritance, dunder, @property, static/classmethod), Context Managers, Async (asyncio, await, gather), Generators (yield), Tuples, enumerate, zip, String methods, JSON, Comprehensions, Type hints, Modules |
+| 🔴 Must-Know | Backend API | **FastAPI**, Pydantic, **Asynchronous Python** (market standard — Django/Flask are obsolete for AI roles) |
+| 🔴 Must-Know | LLM & Orchestration | LangChain (LCEL, chains, templates, loaders, splitters, with_structured_output), Prompt Engineering (few-shot, CoT, system), LLM APIs (OpenAI, Gemini) |
+| 🔴 Must-Know | Agent Frameworks | **LangGraph** (StateGraph, nodes, edges, reducers, routing, checkpointing, HITL, multi-agent, parallel) — basic LangChain chains are considered obsolete for production |
+| 🔴 Must-Know | RAG & Search | Naive → Advanced → Corrective → Adaptive → Agentic RAG, **Parent-Child Chunking**, **Semantic Chunking**, **Cross-encoder Reranking**, **Hybrid Search (BM25 + Dense)**, pgvector, ChromaDB |
+| 🔴 Must-Know | Evaluation | **LangSmith**, **Ragas (Faithfulness, Context Precision/Recall, Answer Relevancy)** — "Vibes-based testing is a terminal red flag" |
+| 🔴 Must-Know | MCP | **Model Context Protocol** (Host/Client/Server, Tools/Resources/Prompts, stdio vs Streamable HTTP, JSON-RPC 2.0) — explicitly demanded in top JDs |
+| 🔴 Must-Know | Deployment | **Docker**, **AWS ECS/EC2**, **GitHub Actions CI/CD** — separates deployable engineers from theorists |
+| 🔴 Must-Know | SQL & Vectors | PostgreSQL, pgvector, HNSW vs IVFFlat indexing, vector similarity search |
+| 🔴 Must-Know | DSA | 50 problems — hash maps, two-pointer, trees, graphs, strings, arrays, sliding window |
+| 🟡 Good-to-Have | Full-Stack | **Next.js + TypeScript** (unlocks Full Stack AI Engineer roles — premium pay for end-to-end delivery) |
+| 🟡 Good-to-Have | Data & ML | Pandas, NumPy, Scikit-learn basics |
+| 🟡 Good-to-Have | Interview Theory | Transformer architecture (Q, K, V, self-attention), BERT vs GPT, tokenization (BPE/WordPiece), bias-variance, precision/recall/F1 |
+| ⚪ Nice-to-Have | Fine-tuning | LoRA / PEFT — advanced prompting + RAG solves 90% of business problems |
+| 🚫 Skip | CNNs/RNNs from scratch | Zero JD mentions for GenAI Engineer roles. Pre-trained models via APIs is the standard |
 
 ---
 
-## 📅 60-Day Complete Curriculum
+## 📅 60-Day Complete Curriculum (Market-Validated)
 
-### Week 1 (Days 1-7): Python Foundations + LLM Basics
-
-| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
-|-----|--------------|-----------------|-------------------|------------|
-| 1 | OOP: Classes, inheritance, instantiation | Build mock Vector Store class | Two Sum | vector_store_oop.py |
-| 2 | Dunder methods, @property, classmethod | LLM wrapper with static methods | Best Time to Buy/Sell | llm_wrapper.py |
-| 3 | Context Managers (__enter__, __exit__) | Safe File I/O manager for logs | Contains Duplicate | context_logger.py |
-| 4 | Async: asyncio, event loop, gather | Fetch 5 mock APIs concurrently | Product of Array Except Self | async_api_fetch.py |
-| 5 | Generators (yield), Tuples, enumerate, zip | Build streaming token generator | Maximum Subarray | token_streamer.py |
-| 6 | String methods, JSON module | Parse nested JSON LLM outputs | Valid Palindrome | json_parser.py |
-| 7 | Type hints, Comprehensions, uv | Production Python env setup | 3Sum | pyproject.toml setup |
-
-### Week 2 (Days 8-14): LangChain + RAG + SQL
+### Phase 1: Python Completion + LLM APIs (Days 11-17)
+*Goal: Complete Python foundation, learn FastAPI, start using LLM APIs*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 8 | Modules, __init__.py, __name__ | Refactor Days 1-7 into package | Container With Most Water | structured repo |
-| 9 | LLM APIs: OpenAI/Gemini, temperature, tokens | Chat + streaming responses | Longest Substring | basic_llm_api.py |
-| 10 | Prompt Engineering: few-shot, CoT, system | Prompt testing for different personas | Longest Repeating Char | prompt_engineering.py |
-| 11 | LangChain LCEL, Prompt Templates | Rewrite Day 9 with LangChain | Valid Parentheses | lcel_chain.py |
-| 12 | with_structured_output, Pydantic | Extract structured JSON entities | Binary Search | structured_extractor.py |
-| 13 | Document Loaders, Text Splitters | Parse PDF, split by token limits | Search 2D Matrix | pdf_chunker.py |
-| 14 | Vector DBs, Cosine similarity, Embeddings | ChromaDB + store chunks | Find Min Rotated | chroma_ingestion.py |
+| 11 | OOP: classes, inheritance, dunder, @property, @staticmethod, @classmethod | Build mock VectorStore class | Two Sum | vector_store_oop.py |
+| 12 | Context Managers (`__enter__`, `__exit__`), Modules, `__init__.py` | Safe File I/O Manager + Package refactor | Valid Anagram | context_logger.py |
+| 13 | Async Python: asyncio, event loop, gather + **FastAPI intro** | Build first FastAPI endpoint (GET/POST) | Group Anagrams | fastapi_hello.py |
+| 14 | Generators (yield), Tuples, enumerate, zip | Build streaming token generator | Top K Frequent | token_streamer.py |
+| 15 | String methods, JSON module | Parse nested JSON LLM outputs | Product of Array | json_parser.py |
+| 16 | LLM APIs: OpenAI/Gemini, temperature, tokens, streaming | Chat + streaming response | Valid Palindrome | basic_llm_api.py |
+| 17 | Prompt Engineering: few-shot, CoT, system prompts | Test prompts for different personas | 3Sum | prompt_engineering.py |
 
-### Week 3 (Days 15-21): RAG Deep + pgvector
-
-| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
-|-----|--------------|-----------------|-------------------|------------|
-| 15 | Naive RAG: chunk → embed → store → retrieve | End-to-end RAG script | Reverse Linked List | naive_rag.py |
-| 16 | SQL: SELECT, INSERT, JOINs | SQLite chat history DB | Merge Two Sorted | chat_history.db |
-| 17 | SQL: Aggregations, Indexing | Analytical queries | Reorder List | analytics_queries.sql |
-| 18 | Multi-query, MMR retrieval | Maximal Marginal Relevance | Remove Nth Node | mmr_retriever.py |
-| 19 | Metadata filtering, Hybrid search | Filter by document metadata | Max Depth Tree | hybrid_search.py |
-| 20 | Cross-encoder reranking (BGE) | Re-rank retrieved chunks | Same Tree | reranked_rag.py |
-| 21 | pgvector setup + vector queries | Migrate ChromaDB → pgvector | Invert Tree | pgvector_migration.sql |
-
-### Week 4 (Days 22-30): Agents + Evaluation + Project 1
+### Phase 2: LangChain + RAG Core (Days 18-24)
+*Goal: Master LangChain, build RAG pipelines, learn SQL + pgvector*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 22 | pgvector indexing: HNSW vs IVFFlat | Implement HNSW index | LCA of BST | hnsw_index.sql |
-| 23 | Agentic RAG concepts | Agent re-queries if context poor | Level Order Traversal | agentic_rag.py |
-| 24 | Docker + AWS EC2 basics | Containerize RAG app | Trie Implement | Dockerfile |
-| 25 | Ragas: Faithfulness, Context Precision | Evaluate RAG pipeline | Design Add/Search Word | ragas_evaluation.py |
-| 26 | Ragas: LLM-as-a-judge | Custom grading criteria | Kth Largest | llm_judge.py |
-| 27 | ML concepts: bias-variance, precision/recall/F1 | Code metrics calculator | Subsets | ml_metrics.py |
-| 28 | NLP concepts: BPE/WordPiece tokenization | tiktoken token counter | Number of Islands | token_counter.py |
-| 29 | Transformer: Q, K, V, self-attention | Conceptual attention script | Clone Graph | attention_concept.py |
-| 30 | **PROJECT 1: RAG System** | Build + document + deploy | Pacific Atlantic | Month1_Capstone |
+| 18 | LangChain LCEL, Prompt Templates | Rewrite Day 16 with LangChain | Container With Most Water | lcel_chain.py |
+| 19 | with_structured_output, Pydantic schemas | Extract structured JSON entities | Longest Substring | structured_extractor.py |
+| 20 | Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF, split by semantic boundaries | Valid Parentheses | semantic_chunker.py |
+| 21 | Vector DBs, Embeddings, ChromaDB | Store chunks + similarity search | Binary Search | chroma_ingestion.py |
+| 22 | **Naive RAG**: chunk → embed → store → retrieve → generate | End-to-end RAG script | Search 2D Matrix | naive_rag.py |
+| 23 | **SQL + pgvector basics**: SELECT, INSERT, JOINs, vector columns | Store embeddings in PostgreSQL | Reverse Linked List | pgvector_setup.sql |
+| 24 | **Parent-Child Chunking + Cross-Encoder Reranking** | Rerank top-20 to top-3 with BGE | Merge Two Sorted | reranked_rag.py |
 
-### Week 5 (Days 31-37): LangGraph Mastery
-
-| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
-|-----|--------------|-----------------|-------------------|------------|
-| 31 | StateGraph, Nodes, Edges, State | Linear state machine (3 nodes) | Course Schedule | basic_state_graph.py |
-| 32 | Reducers, add_messages | Chatbot with persistent memory | Climbing Stairs | stateful_chatbot.py |
-| 33 | Conditional routing | Router node for intent classification | Coin Change | conditional_router.py |
-| 34 | Checkpointing, Human-in-the-loop | Approval interrupt before actions | Longest Increasing Subseq | hitl_agent.py |
-| 35 | Multi-agent: Supervisor pattern | Supervisor → 2 worker agents | Word Break | supervisor_agent.py |
-| 36 | Parallel execution | Multiple tools simultaneously | Merge Intervals | parallel_tools.py |
-| 37 | LangSmith tracing | Instrument multi-agent system | Insert Interval | tracing_setup.py |
-
-### Week 6 (Days 38-44): MCP + Production Patterns
+### Phase 3: Advanced RAG + Evaluation + Project 1 (Days 25-31)
+*Goal: Master advanced RAG patterns, programmatic evaluation, build & deploy Project 1*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 38 | MCP overview: Host, Client, Server | MCP host+client setup | Non-overlapping Intervals | mcp_client_setup.py |
-| 39 | MCP stdio transport | Python MCP server with tools | Rotate Image | mcp_stdio_server.py |
-| 40 | MCP HTTP SSE transport + JSON-RPC 2.0 | Migrate to HTTP/SSE | Spiral Matrix | mcp_http_server.py |
-| 41 | MCP Tools vs Resources vs Prompts | DB schema as MCP Resource | Number of 1 Bits | mcp_resources.py |
-| 42 | LangGraph + MCP integration | Agent discovers MCP tools | Counting Bits | langgraph_mcp_agent.py |
-| 43 | Error handling in agent loops | try/except reflection blocks | Missing Number | robust_agent_loop.py |
-| 44 | Rate limiting + retry (tenacity) | Exponential backoff wrapper | 3Sum review | retry_wrapper.py |
+| 25 | **Hybrid Search**: BM25 + Dense Vector, pgvector HNSW vs IVFFlat | Implement hybrid search + index tuning | Reorder List | hybrid_search.py |
+| 26 | **Corrective RAG (CRAG)** + **Adaptive RAG** | Evaluator → web search fallback + router | Max Depth Tree | corrective_adaptive_rag.py |
+| 27 | **Conversational RAG + Agentic RAG** | Chat history injection + agent re-queries | Same Tree | conversational_rag.py |
+| 28 | **LangSmith + Ragas Evaluation**: Faithfulness, Context Precision, Answer Relevancy | Build golden dataset + eval pipeline | Invert Tree | ragas_evaluation.py |
+| 29 | **PROJECT 1 BUILD**: Multi-Tenant RAG System | FastAPI + pgvector + LangGraph supervisor + MCP tools | LCA of BST | project1_start/ |
+| 30 | PROJECT 1 continued: Docker containerize + Cross-encoder + Hybrid Search | Complete all features + eval | Level Order Traversal | project1_continue/ |
+| 31 | **PROJECT 1 DONE**: Deploy to AWS ECS + Ragas eval report + **APPLY blitz** | Wellfound + YC applications with Project 1 as proof | Review all | project1_deployed/ |
 
-### Week 7 (Days 45-51): Cost + System Design + Interview Prep
-
-| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
-|-----|--------------|-----------------|-------------------|------------|
-| 45 | Cost tracking per query | Metadata wrapper for token costs | Min Window Substring | cost_tracker.py |
-| 46 | Prompt versioning + A/B testing | Toggle prompts dynamically | Find Min Rotated review | prompt_ab_tester.py |
-| 47 | System Design: RAG at scale, caching | Architecture diagram for 1M QPD | Merge k Sorted Lists | rag_architecture.md |
-| 48 | System Design: Multi-tenant isolation | Namespace filtering in pgvector | Serialize/Deserialize Tree | multitenant_db.py |
-| 49 | System Design: Latency optimization, LLM Gateway | API Gateway design | Find Median from Stream | llm_gateway_design.md |
-| 50 | CI/CD: GitHub Actions | Auto-test agent outputs on push | Word Search | .github/workflows/ci.yml |
-| 51 | docker-compose: multi-container | Agent + VectorDB + MCP Server | Alien Dictionary | docker-compose.prod.yml |
-
-### Week 8 (Days 52-60): Project 2 + Apply
+### Phase 4: LangGraph Mastery + MCP (Days 32-39)
+*Goal: Master stateful agents, MCP protocol, LangSmith tracing*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 52 | AWS EC2 advanced deploy | Deploy containerized stack | LCS | deployment logs |
-| 53 | **Project 2 start** — Agent Orchestration Engine | Begin capstone | Word Ladder | FT_Capstone |
-| 54 | Project 2: Ragas evaluations | Auto-eval scripts | Trapping Rain Water | capstone_evals.py |
+| 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine | Course Schedule | basic_state_graph.py |
+| 33 | LangGraph: Reducers, add_messages, Conditional Routing | Chatbot with memory + intent router | Climbing Stairs | stateful_chatbot.py |
+| 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tool execution | Coin Change | hitl_agent.py |
+| 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 worker agents | Longest Increasing Subseq | supervisor_agent.py |
+| 36 | LangSmith Tracing for LangGraph | Instrument multi-agent system | Word Break | langsmith_tracing.py |
+| 37 | MCP: Host/Client/Server, stdio transport | Python MCP server with tools | Merge Intervals | mcp_stdio_server.py |
+| 38 | MCP: HTTP SSE, JSON-RPC 2.0, Tools vs Resources vs Prompts | DB schema as MCP Resource | Insert Interval | mcp_http_server.py |
+| 39 | **LangGraph + MCP Integration** | Agent discovers and calls MCP tools | Non-overlapping Intervals | langgraph_mcp_agent.py |
+
+### Phase 5: Full-Stack + Production Patterns (Days 40-46)
+*Goal: Build end-to-end AI apps, deploy with CI/CD, add UI layer*
+
+| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
+|-----|--------------|-----------------|-------------------|------------|
+| 40 | FastAPI Deep Dive: error handling, middleware, streaming, background tasks | Production-grade FastAPI app | Rotate Image | fastapi_production.py |
+| 41 | **Next.js + TypeScript basics** | Build chat UI component | Spiral Matrix | chat_ui_component.tsx |
+| 42 | Connect Next.js UI → FastAPI backend (streaming responses) | End-to-end chat app | Number of 1 Bits | fullstack_chat_app/ |
+| 43 | Docker compose: Agent + pgvector + MCP Server + Next.js | Multi-container orchestration | Counting Bits | docker-compose.yml |
+| 44 | **AWS ECS**: Deploy full stack to cloud | Fargate + RDS + Load Balancer | Missing Number | aws_deploy_logs/ |
+| 45 | **GitHub Actions CI/CD**: Auto-test, auto-eval, auto-deploy | Push → test → deploy pipeline | 3Sum review | .github/workflows/ci.yml |
+| 46 | Cost tracking per query + Prompt versioning + A/B testing | Metadata wrapper + toggle prompts | Min Window Substring | cost_tracker.py |
+
+### Phase 6: System Design + Interview Prep (Days 47-53)
+*Goal: Ace AI System Design and ML/NLP interview rounds*
+
+| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
+|-----|--------------|-----------------|-------------------|------------|
+| 47 | **System Design**: RAG at scale, semantic caching (Redis), query routing | Architecture diagram for 1M QPD | Find Min Rotated review | rag_architecture.md |
+| 48 | **System Design**: Multi-tenant isolation, latency optimization, LLM Gateway | Namespace filtering + Gateway design | Merge k Sorted Lists | multitenant_design.md |
+| 49 | **ML Concepts**: bias-variance, precision/recall/F1, cross-validation, overfitting | Code metrics calculator | Serialize/Deserialize Tree | ml_metrics.py |
+| 50 | **NLP Concepts**: BPE/WordPiece tokenization, BERT vs GPT, Transformer QKV | tiktoken counter + attention visualization | Alien Dictionary | nlp_concepts.py |
+| 51 | DSA Mock + Portfolio Review | Solve problems + polish GitHub | Word Search | mock_interview_log |
+| 52 | System Design Mock + Behavioral | Practice "termination narrative" + why AI | LCS | behavioral_prep.md |
+| 53 | Live Coding Mock (FastAPI + LangGraph) | Build a mini agent under time pressure | Word Ladder | live_coding_mock/ |
+
+### Phase 7: Project 2 + Apply FT (Days 54-60)
+*Goal: Build standout capstone, apply aggressively, secure offers*
+
+| Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
+|-----|--------------|-----------------|-------------------|------------|
+| 54 | **PROJECT 2 BUILD**: Multi-Agent MCP Orchestrator | FastAPI + LangGraph + MCP + Next.js UI | Trapping Rain Water | project2_start/ |
+| 55 | PROJECT 2 continued: Docker + GitHub Actions + AWS ECS | Full CI/CD pipeline | Largest Rectangle | project2_continue/ |
+| 56 | **PROJECT 2 DONE**: Ragas eval + Deploy + README | Production-grade project with docs | Review patterns | project2_deployed/ |
+| 57 | **APPLY BLITZ**: Wellfound (20 apps) + YC (10) + LinkedIn DMs (10) | Personalized messages with project links | Review weak areas | application_log.md |
+| 58 | Follow-ups + Mock interviews | Respond to callbacks | Targeted DSA | interview_tracker.md |
+| 59 | Buffer / Offer evaluation | Compare offers, negotiate | Rest | offer_evaluation.md |
+| 60 | **CELEBRATE + PLAN NEXT** | ₹10-12 LPA offer in hand | — | done.md |
+
+---
+
+## 📋 2 Projects to Build (Market-Aligned)
+
+### Project 1: Multi-Tenant Enterprise RAG System (Days 29-31)
+**Tech Stack:** FastAPI + pgvector + LangGraph + MCP + Docker + AWS ECS + LangSmith/Ragas
+**Features:**
+- Row-level security in pgvector for data isolation
+- LangGraph supervisor agent → routes queries to vector DB / MCP web search / conversation memory
+- Parent-child chunking + cross-encoder reranking
+- Hybrid search (BM25 + dense vector)
+- Ragas evaluation in CI/CD
+- **Interview signal:** "Hire me" — shows architectural maturity
+
+### Project 2: Multi-Agent MCP Orchestrator (Days 54-56)
+**Tech Stack:** FastAPI + LangGraph + MCP + Next.js/TypeScript + Docker + AWS ECS + GitHub Actions
+**Features:**
+- Multiple specialized agents (Research → Analysis → Review)
+- MCP servers for each tool category (DB, search, computation)
+- Next.js chat UI with streaming responses
+- Full CI/CD pipeline (push → test → eval → deploy)
+- Error handling + fallback logic for every edge case
+- **Interview signal:** "Full-stack AI Engineer" — end-to-end delivery capability
+
+---
+
+## 🎯 Application Strategy
+
+| Milestone | When | Where | What to Show |
+|-----------|------|-------|-------------|
+| **Internship apply blitz** | Day 31 | Wellfound + YC Work at a Startup | Project 1 deployed + GitHub profile |
+| Ongoing applications | Days 32-56 | LinkedIn DMs + X (Twitter) DMs | Projects + technical content |
+| **FT apply blitz** | Day 57 | Wellfound + YC + LinkedIn | Both projects deployed + full tech stack |
+| Offer evaluation | Day 59-60 | Compare CTC vs cash vs equity | Market research benchmarks |
+
+---
+
+## 🚫 What We're Skipping (Research-Validated)
+
+| Old Plan Item | Reason to Skip |
+|--------------|----------------|
+| Training CNNs/RNNs from scratch | Zero JD mentions. Pre-trained models via APIs is the standard |
+| Deep ML math (backpropagation derivation) | Not tested in AI Engineer interviews |
+| Django / Flask | FastAPI has near-total dominance in AI engineering |
+| Pandas/NumPy as full week | Moved to 1-day Good-to-Have (Day 16 replaced with LLM APIs) |
+| Apna.co as primary platform | Low signal, legacy IT, fake AI listings |
+
+---
+
+## 📊 Compensation Targets (Research-Validated)
+
+| Milestone | Target | Evidence |
+|-----------|--------|----------|
+| Internship | ₹30-50k/mo | Hungama (₹50k), Aight (₹25-50k), SuperKalam (₹25-40k), Peakflo (₹40-50k) |
+| India FT | ₹10-12 LPA (₹80k-₹1L/mo in-hand) | Hungama PPO ₹12-15 LPA, market median ₹9-11 LPA |
+| Global Remote FT | $24k-$40k/yr (₹20L-₹34L/yr) | Smart Audit ($25-50k/yr), Great Question, Peakflo |
 | 55 | Project 2: Telemetry (OpenTelemetry) | Tracing + cost monitoring | Set Matrix Zeroes | capstone_telemetry.py |
 | 56 | Project 2: README, docs, polish | CTO-level architecture docs | Reverse Bits | exhaustive README |
 | 57 | Interview prep: ML/NLP concepts review | Bias-variance, embeddings, BERT vs GPT | Review | interview_notes.md |
