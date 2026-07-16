@@ -1,6 +1,6 @@
 # 📊 Current Status — 60-Day Agentic AI Engineer Sprint
 
-**Last Updated:** 2026-07-14 (Day 10 completed)
+**Last Updated:** 2026-07-17 (Market research complete)
 
 ---
 
@@ -39,23 +39,34 @@ Days 57-60: Buffer + revision
 
 ---
 
+## ✅ Market Research — Validated Targets
+
+| Target | Research Confirms | Action |
+|--------|------------------|--------|
+| ₹30k/mo internship by Day 28 | ✅ ₹25k-₹50k paid by AI-first startups | Focus Wellfound + LinkedIn |
+| ₹60-80k/mo FT by Day 60 | ✅ ₹6-15 LPA for fresher AI engineers | Build portfolio proof |
+| Skip service-based companies | ✅ Confirmed — sub-optimal comp, slow AI | Ignore TCS/Infosys/Wipro |
+| Full report → `agent/reports/market_research_2026.md` |
+
 ## Target Roles
 
-| Role | Fit |
-|------|-----|
-| Agentic AI Engineer | ✅ Primary |
-| AI Engineer (Agentic / LLM / NLP) | ✅ Primary |
-| SDE AI | ✅ Primary |
+| Role | Fresher Median (LPA) | Fit |
+|------|---------------------|-----|
+| Agentic AI Engineer | ₹12.0 LPA | ✅ Primary — highest premium bracket |
+| GenAI Engineer | ₹9.85 LPA | ✅ Primary |
+| AI Engineer | ₹9.0 LPA | ✅ Primary |
+| SDE AI | ₹18.0 LPA | ✅ Aspirational (needs DSA depth) |
 
 ---
 
-## Key Platforms
+## Key Platforms (Updated Jul 17)
 
-| Platform | Strategy | % Effort |
-|----------|----------|----------|
-| Apna | Chat-based recruiter engagement. Fastest hiring. | 50% |
-| Wellfound (AngelList) | Direct founder messaging. YC startups. | 40% |
-| LinkedIn DMs | Founders/CTOs of AI startups | 10% |
+| Platform | Rating | Strategy | % Effort |
+|----------|--------|----------|----------|
+| **Wellfound** | ⭐⭐⭐⭐⭐ | Premium AI roles, transparent comp, GitHub-driven hiring | 50% |
+| **LinkedIn** | ⭐⭐⭐⭐ | GCC/Unicorn roles, inbound via project posts | 40% |
+| **Apna** | ⭐ | Low signal — mostly legacy IT, fake AI listings | 5% |
+| **Naukri** | ⭐⭐⭐ | Volume play, ₹5.8-9 LPA service companies | 5% |
 
 ---
 
