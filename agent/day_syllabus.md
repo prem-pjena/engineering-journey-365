@@ -39,7 +39,7 @@
 | 13 | Async: asyncio, event loop, gather | Fetch 5 mock APIs concurrently | Group Anagrams |
 | 14 | Generators (yield), Tuples, enumerate, zip | Build streaming token generator | Top K Frequent |
 | 15 | String methods, JSON module | Parse nested JSON LLM outputs | Product of Array |
-| 16 | Type hints, Comprehensions, uv setup | Production Python env | Valid Palindrome |
+| 16 | **Pandas + NumPy** (DataFrames, arrays, broadcasting, cleaning) | Data analysis script on mock CSV | Valid Palindrome |
 | 17 | LLM APIs: OpenAI/Gemini, streaming | Chat + streaming responses | 3Sum |
 
 ### Week 2 (Days 8-14): LangChain + RAG + SQL
@@ -51,23 +51,23 @@
 | 21 | Document Loaders, Text Splitters | Binary Search |
 | 22 | Vector DBs, Cosine similarity, Embeddings, ChromaDB | Search 2D Matrix |
 | 23 | Naive RAG: chunk → embed → store → retrieve | Reverse Linked List |
-| 24 | SQL: SELECT, INSERT, JOINs, aggregations | Merge Two Sorted |
+| 24 | **SQL + data validation** (SELECT, INSERT, JOINs, aggregations, cleaning) | Merge Two Sorted |
 
-### Week 3 (Days 15-21): Advanced RAG + pgvector
+### Week 3 (Days 15-21): Advanced RAG + pgvector + ML/NLP
 | Day | Topics | DSA |
 |-----|--------|-----|
 | 25 | Multi-query, MMR retrieval | Reorder List |
 | 26 | Metadata filtering, hybrid search | Max Depth Tree |
-| 27 | Cross-encoder reranking (BGE) | Same Tree |
+| 27 | Cross-encoder reranking (BGE) + **RNN/CNN basics** | Same Tree |
 | 28 | pgvector setup, vector queries, HNSW vs IVFFlat | Invert Tree |
-| 29 | Agentic RAG | Level Order Traversal |
-| 30 | **PROJECT 1: RAG System** + Ragas evaluation | LCA of BST |
+| 29 | **Agentic RAG** + **Transformer architecture (Q, K, V, self-attention)** | Level Order Traversal |
+| 30 | **PROJECT 1: RAG System** + Ragas evaluation + **NLP (BERT vs GPT, embeddings)** | LCA of BST |
 
 ### Week 4 (Days 22-28): Apply ₹30k + Interview Prep
 | Day | Topics | DSA |
 |-----|--------|-----|
-| 22-24 | Docker + AWS EC2 deploy, ML concepts, NLP concepts | Trie, Kth Largest |
-| 25-28 | Apply on Apna + Wellfound, mock interviews | Review all patterns |
+| 22-24 | Docker + AWS EC2 deploy, **ML basics (bias-variance, precision/recall/F1, cross-validation)**, **NLP concepts (BERT vs GPT, embeddings, tokenization)** | Trie, Kth Largest |
+| 25-28 | Apply on Apna + Wellfound, mock interviews, **Transformer architecture review (Q, K, V, self-attention)**, **RNN/CNN refresher** | Review all patterns |
 
 ### Weeks 5-8 (Days 29-56): LangGraph → MCP → Project 2 → Apply FT
 | Week | Focus | Target |

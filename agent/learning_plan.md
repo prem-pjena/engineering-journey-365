@@ -12,14 +12,14 @@
 | Priority | Category | Technologies |
 |----------|----------|-------------|
 | 🔴 Must-Know | Python Architecture | OOP (classes, inheritance, dunder, @property, static/classmethod), Context Managers (__enter__, __exit__), Async (asyncio, await, gather), Generators (yield), Tuples, enumerate, zip, String methods, JSON, Comprehensions, Type hints, Modules |
-| 🔴 Must-Know | Core AI/ML & APIs | LangChain (LCEL, chains, templates, loaders, splitters, with_structured_output), Prompt Engineering (few-shot, CoT, system prompts), LLM APIs (OpenAI, Gemini), Transformer concepts (Q, K, V, self-attention) |
-| 🔴 Must-Know | RAG & Data | Naive RAG, chunking strategies, Vector DBs (ChromaDB, pgvector), Cosine similarity, Embeddings, SQL (SELECT, INSERT, JOINs, aggregations) |
+| 🔴 Must-Know | Core AI/ML & APIs | LangChain (LCEL, chains, templates, loaders, splitters, with_structured_output), Prompt Engineering (few-shot, CoT, system prompts), LLM APIs (OpenAI, Gemini), Transformer architecture (Q, K, V, self-attention), **RNN basics, CNN basics** |
+| 🔴 Must-Know | RAG & Data | Naive RAG, chunking strategies, Vector DBs (ChromaDB, pgvector), Cosine similarity, Embeddings, **Pandas, NumPy**, SQL (SELECT, INSERT, JOINs, aggregations, data validation) |
 | 🔴 Must-Know | Deployment | Docker, docker-compose, AWS EC2, GitHub Actions CI/CD, uv/pyproject.toml |
 | 🟠 Differentiator | Advanced Orchestration | LangGraph (StateGraph, nodes, edges, state, reducers, add_messages, conditional routing, checkpointing, human-in-the-loop, parallel execution) |
 | 🟠 Differentiator | MCP | Model Context Protocol (Host/Client/Server, Tools/Resources/Prompts, stdio vs Streamable HTTP, JSON-RPC 2.0) |
 | 🟠 Differentiator | Evaluation & Telemetry | Ragas (faithfulness, context precision/recall, LLM-as-a-judge), LangSmith, OpenTelemetry |
 | 🟠 Differentiator | Advanced RAG | Multi-query, MMR, metadata filtering, hybrid search, cross-encoder reranking, Agentic RAG, pgvector indexing (HNSW vs IVFFlat) |
-| 🟢 Nice-to-Have | Interview ML Concepts | Bias-variance, precision/recall/F1, overfitting, cross-validation, BPE/WordPiece, BERT vs GPT |
+| 🔴 Must-Know | Interview ML/NLP Concepts | Bias-variance, precision/recall/F1, overfitting, cross-validation, BPE/WordPiece, BERT vs GPT, Transformer (Q, K, V, self-attention), RNN, CNN basics |
 
 ---
 
