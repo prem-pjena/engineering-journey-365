@@ -7,21 +7,21 @@
 ## 👤 Headline (125 chars)
 
 ```
-Forward Deployed AI Engineer | Agentic Workflows (LangGraph, MCP) & RAG Systems | Shipping Production AI on AWS & Docker
+Agentic AI Engineer | LangGraph · MCP · RAG | Building Production AI Agents
 ```
 
 ---
 
 ## 📷 Profile Photo & Banner
 - **Photo:** Professional headshot, plain background, business casual
-- **Banner:** Tech-themed with text overlay: "Forward Deployed AI Engineer | LangGraph · MCP · RAG · AWS"
+- **Banner:** Tech-themed with text overlay: "Agentic AI Engineer | LangGraph · MCP · RAG · AWS"
 
 ---
 
 ## 📝 About Section
 
 ```
-As an AI Engineer specializing in Forward Deployed Engineering, I design, build, and productionize autonomous multi-agent systems and state-managed LLM workflows. I bridge the gap between conceptual AI capabilities and secure, scalable enterprise backend infrastructure.
+As an AI Engineer specializing in Agentic AI Engineering, I design, build, and productionize autonomous multi-agent systems and state-managed LLM workflows. I bridge the gap between conceptual AI capabilities and secure, scalable enterprise backend infrastructure.
 
 While standard GenAI applications rely on linear prompt-in/text-out APIs, I specialize in engineering cyclic graph topologies (LangGraph, CrewAI) where multiple specialized models pass dependencies, utilize the Model Context Protocol (MCP) for secure tool-calling, and execute tasks autonomously within strict operational constraints.
 
@@ -33,7 +33,7 @@ While standard GenAI applications rely on linear prompt-in/text-out APIs, I spec
 
 My DevOps foundation ensures I treat AI not as a data science experiment, but as reliable, containerized software ready for cloud-native deployment. I build systems evaluated mathematically, not visually.
 
-Open to AI Engineer and Forward Deployed Engineer roles — Bangalore / Remote.
+Open to AI Engineer and Agentic AI Engineer roles — Bangalore / Remote.
 ```
 
 ---
@@ -103,7 +103,7 @@ Open to AI Engineer and Forward Deployed Engineer roles — Bangalore / Remote.
 - Technical Recruiters at AI startups (Bangalore)
 - Senior/Lead AI Engineers at target companies
 - Founders/CTOs of Series A/B AI startups
-- Forward Deployed Engineers at Palantir, Databricks, Sarvam AI
+- Agentic AI Engineers at Palantir, Databricks, Sarvam AI
 
 ### Connection Message Template
 ```
@@ -113,7 +113,7 @@ Hi [Name], following your work in Agentic AI. I build production RAG & LangGraph
 ---
 
 ## 🎯 Open To Work Settings
-- **Job Titles:** AI Engineer, Agentic AI Engineer, Forward Deployed Engineer
+- **Job Titles:** AI Engineer, Agentic AI Engineer, Agentic AI Engineer
 - **Locations:** Bengaluru, Karnataka, India + Remote
 - **Visibility:** Recruiters Only (no green banner)
 

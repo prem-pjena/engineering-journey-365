@@ -7,7 +7,7 @@
 ## 🔧 Profile Essentials
 
 - **Username:** `prem-pjena` ✅
-- **Bio:** `AI Engineer & Forward Deployed Specialist | Building Agentic Workflows (LangGraph, CrewAI) & Production RAG pipelines | AWS, Docker, FastAPI`
+- **Bio:** `AI Engineer & Agentic AI Specialist | Building Agentic Workflows (LangGraph, CrewAI) & Production RAG pipelines | AWS, Docker, FastAPI`
 - **Location:** Bengaluru, India
 - **LinkedIn:** https://linkedin.com/in/premprakashj
 - **Pin:** 2 repos only — Project 1 (RAG) + Project 2 (Agent Orchestrator)
@@ -20,9 +20,9 @@
 ```markdown
 ### Prem Prakash Jena
 
-**Forward Deployed AI Engineer | Agentic Systems & Orchestration**
+**Agentic AI Engineer | Agentic Systems & Orchestration**
 
-Bridging the gap between AI research and enterprise backend infrastructure. I specialize in designing, deploying, and evaluating autonomous multi-agent systems and state-managed LLM workflows. With a foundation in DevOps (Docker, AWS, CI/CD), I ensure AI applications are not experimental prototypes, but highly reliable, scalable production systems.
+Building production-grade AI agents and RAG systems. I specialize in designing, deploying, and evaluating autonomous multi-agent systems and state-managed LLM workflows. With a foundation in DevOps (Docker, AWS, CI/CD), I ensure AI applications are not experimental prototypes, but highly reliable, scalable production systems.
 
 ---
 
