@@ -1,158 +1,135 @@
 # 💼 LinkedIn Profile Optimization — Agentic AI Engineer
 
-**Goal:** LinkedIn profile that generates inbound recruiter messages within 30 seconds of viewing.
+**Goal:** LinkedIn profile that generates inbound recruiter messages within 30 seconds.
 
 ---
 
-## 👤 Headline (125 char max)
+## 👤 Headline (125 chars)
 
 ```
-Agentic AI Engineer | LangGraph · MCP · RAG | Building Production AI Agents
-```
-
-**Why:** Keywords hit every AI Engineer JD. "Production" signals seniority over "learning."
-
----
-
-## 📷 Profile Photo
-- Professional headshot, plain background, business casual
-- Same photo as GitHub for consistency
-
----
-
-## 🖼️ Banner Image
-- **Text overlay:** "Agentic AI Engineer | LangGraph · RAG · MCP · AWS"
-- **Background:** Clean tech gradient or code snippet
-- **Tool:** Canva — search "LinkedIn banner tech"
-
----
-
-## 📝 About Section (~300 words)
-
-```
-I build production-grade AI agents using LangGraph, MCP, and RAG.
-
-Currently focused on:
-• Multi-agent orchestration with LangGraph (StateGraph, reducers, human-in-the-loop)
-• Model Context Protocol (MCP) servers for secure enterprise tool integration
-• RAG pipelines with hybrid search, cross-encoder reranking, and automated evaluation (Ragas)
-
-Recent project: Built an MCP-connected multi-agent orchestrator featuring dual-channel memory architecture, cost-tracking middleware, and CI/CD with automated Ragas evaluation — deployed on AWS.
-
-Core Stack: Python, LangChain, LangGraph, MCP, RAG, pgvector, Docker, AWS, FastAPI
-
-Previously: 6 months DevOps experience (Docker, AWS, CI/CD) — now fully transitioned to Agentic AI Engineering.
-
-Open to: AI Engineer, Agentic AI Engineer, SDE AI roles — Bangalore / Remote.
-
-📌 Check my featured projects below for deployed demos.
+Forward Deployed AI Engineer | Agentic Workflows (LangGraph, MCP) & RAG Systems | Shipping Production AI on AWS & Docker
 ```
 
 ---
 
-## 🛠️ Skills Section (Top 10 — add all below)
-
-| Skill | Endorsements Target |
-|-------|-------------------|
-| LangChain | ★★★ Get 5+ endorsements |
-| LangGraph | ★★★ Get 5+ endorsements |
-| Model Context Protocol (MCP) | ★★★ Emerging — list first |
-| Retrieval-Augmented Generation (RAG) | ★★★ |
-| Python | ★★★★★ Already strong |
-| Docker | ★★★★ Existing DevOps |
-| Amazon Web Services (AWS) | ★★★★ |
-| PostgreSQL | ★★★ |
-| Prompt Engineering | ★★★ |
-| Machine Learning | ★★★ |
+## 📷 Profile Photo & Banner
+- **Photo:** Professional headshot, plain background, business casual
+- **Banner:** Tech-themed with text overlay: "Forward Deployed AI Engineer | LangGraph · MCP · RAG · AWS"
 
 ---
 
-## 📂 Featured Projects (Pin 2)
+## 📝 About Section
 
-### Featured 1: MCP-Connected Multi-Agent Orchestrator
+```
+As an AI Engineer specializing in Forward Deployed Engineering, I design, build, and productionize autonomous multi-agent systems and state-managed LLM workflows. I bridge the gap between conceptual AI capabilities and secure, scalable enterprise backend infrastructure.
 
-**Title:** Multi-Agent MCP Orchestrator
-**Description:** LangGraph multi-agent system with custom MCP server, dual-channel memory, Ragas CI evaluation, and cost tracking. Deployed on AWS with Docker.
-**Media:** 2-min Loom demo video (architecture walkthrough)
-**URL:** GitHub repo link
-**Tags:** #LangGraph #MCP #RAG #Docker #AWS
+While standard GenAI applications rely on linear prompt-in/text-out APIs, I specialize in engineering cyclic graph topologies (LangGraph, CrewAI) where multiple specialized models pass dependencies, utilize the Model Context Protocol (MCP) for secure tool-calling, and execute tasks autonomously within strict operational constraints.
 
-### Featured 2: Enterprise RAG System
+⚙️ CORE CAPABILITIES:
+• AI Orchestration & Agents: LangGraph, CrewAI, Multi-Agent Systems
+• Search & Retrieval: Hybrid RAG, pgvector, Qdrant, Semantic Routing
+• AI Evaluation: Ragas (Faithfulness, Context Precision), LangSmith
+• Backend & DevOps: Python, FastAPI, Docker, AWS (EC2, S3), CI/CD
 
-**Title:** Enterprise RAG with Hybrid Search
-**Description:** Production RAG pipeline with hybrid search (BM25 + dense), cross-encoder reranking, and Ragas evaluation achieving 0.92 Faithfulness.
+My DevOps foundation ensures I treat AI not as a data science experiment, but as reliable, containerized software ready for cloud-native deployment. I build systems evaluated mathematically, not visually.
+
+Open to AI Engineer and Forward Deployed Engineer roles — Bangalore / Remote.
+```
+
+---
+
+## 🛠️ Skills Section (Ordered for ATS)
+
+1. Agentic AI & Multi-Agent Systems (LangGraph, CrewAI) ⭐ Pin
+2. Retrieval-Augmented Generation (RAG) & Vector Databases ⭐ Pin
+3. LLMOps & Evaluation (Ragas, LangSmith) ⭐ Pin
+4. Model Context Protocol (MCP) Integration
+5. Python & FastAPI Backend Development
+6. Docker & AWS (Cloud Infrastructure)
+7. Semantic Search & Embeddings
+8. Prompt Engineering & Structured Outputs
+9. Continuous Integration & Delivery (CI/CD)
+10. System Architecture & API Design
+
+---
+
+## 📂 Featured Projects (3)
+
+### Featured 1: Agentic Enterprise Support Orchestrator
+**Outcome:** Multi-agent LangGraph system with MCP, achieving 94% Faithfulness, <400ms p95 latency
+**Media:** 3-min Loom video (architecture walkthrough + live demo)
+**URL:** GitHub repo
+
+### Featured 2: Hybrid RAG Knowledge Assistant
+**Outcome:** RAG pipeline with hybrid search + Ragas evaluation — 0.92 Faithfulness, 0.88 Context Precision
 **Media:** Architecture diagram image
-**URL:** GitHub repo link
-**Tags:** #RAG #LangChain #pgvector #Ragas #Docker
+**URL:** GitHub repo
+
+### Featured 3: Ragas Evaluation Dashboard
+**Outcome:** Screenshot of evaluation metrics proving production readiness
+**Media:** LangSmith/Ragas dashboard screenshot
+**URL:** GitHub repo
 
 ---
 
 ## 💼 Experience Section
 
-### Role 1: AI Engineer (Self-directed) — Jul 2026 – Present
-```
-- Building production-grade AI agents using LangGraph, MCP, and RAG
-- Deployed multi-agent orchestrator with automated evaluation (Ragas) and cost tracking
-- Achieved 0.92 Faithfulness and 0.88 Context Precision on production RAG pipeline
-```
+### AI Backend Engineering Intern — SkillVeda (May 2026 – Jul 2026)
+- Engineered backend API layers integrating LLMs with enterprise infrastructure using Python and FastAPI
+- Designed and containerized AI deployment environments using Docker
+- Collaborated on data flow mapping for AI integration, successfully concluding the foundational architectural phase
 
-### Role 2: AI Engineering Intern — SkillVeda (May 2026 – Jul 2026)
-```
-- Backend development for interview process automation agents
-- Python, API development, feature engineering
-- Gained practical exposure to production AI systems
-```
-*Note: Brief and neutral. Pivot forward.*
-
-### Role 3: Jr. DevOps Engineer — [Company] (May 2025 – Oct 2025)
-```
+### Jr. DevOps Engineer — [Company] (May 2025 – Oct 2025)
 - Containerized services using Docker for dev/prod parity
 - Configured CI/CD pipelines (GitHub Actions) for automated deployments
 - Managed Linux-based infrastructure and release management
+
+---
+
+## 🗓️ 30-Day Posting Calendar
+
+| Week | Topic | Format |
+|------|-------|--------|
+| 1 | Architecture diagram of RAG system + transition from dense to hybrid search | Technical post |
+| 2 | Ragas evaluation dashboard — why Faithfulness and Context Precision matter | Screenshot + breakdown |
+| 3 | Loom demo: multi-agent system querying DB via MCP | Video post |
+| 4 | "Why Docker and FastAPI are just as important as Prompt Engineering for AI Engineers" | Contrarian take |
+
+---
+
+## 🔗 Connection Strategy
+
+### Who to Connect With (20/day)
+- Technical Recruiters at AI startups (Bangalore)
+- Senior/Lead AI Engineers at target companies
+- Founders/CTOs of Series A/B AI startups
+- Forward Deployed Engineers at Palantir, Databricks, Sarvam AI
+
+### Connection Message Template
+```
+Hi [Name], following your work in Agentic AI. I build production RAG & LangGraph systems — would love to connect.
 ```
 
 ---
 
-## 🎓 Education
-
-**B.Tech, Computer Science Engineering** — Lovely Professional University (2020–2024)
-
----
-
-## ✅ Activity Guidelines
-
-| Do | Don't |
-|----|-------|
-| Post 1x/week — technical insights | Don't post generic AI news |
-| Share project build logs | Don't share personal life |
-| Comment on CTO/founder posts | Don't ask for jobs publicly |
-| Repost with your technical take | Don't just reshare |
-| Write short threads on LangGraph tips | Don't write essays |
+## 🎯 Open To Work Settings
+- **Job Titles:** AI Engineer, Agentic AI Engineer, Forward Deployed Engineer
+- **Locations:** Bengaluru, Karnataka, India + Remote
+- **Visibility:** Recruiters Only (no green banner)
 
 ---
 
-## 📅 30-Day LinkedIn Posting Schedule
+## ✅ Checklist
 
-| Week | Topic | Format |
-|------|-------|--------|
-| 1 | "How I built a RAG system with 0.92 Faithfulness" | Case study post |
-| 2 | "LangGraph vs LangChain — when to use which?" | Comparison post |
-| 3 | "What is MCP and why should you care?" | Explainer thread |
-| 4 | "My journey from DevOps to Agentic AI" | Personal narrative |
-
----
-
-## ✅ LinkedIn Checklist
-
-| Item | Status | Notes |
-|------|--------|-------|
-| Headline optimized | ❌ | Use Agentic AI Engineer focus |
-| Profile photo updated | ❌ | Professional headshot |
-| Banner image | ❌ | Tech-themed with keywords |
-| About section | ❌ | 300 words, keyword-rich |
-| Featured projects (2) | ❌ | Repos with demo media |
-| Skills list + endorse | ❌ | Top 10 skills |
-| Experience section | ❌ | Minimal, forward-focused |
-| Open to Work turned on | ❌ | Set to AI Engineer roles |
-| Connection requests (20/day) | ❌ | Founders, CTOs, AI Eng leaders |
-| 1 post/week | ❌ | Technical content |
+| Item | Status |
+|------|--------|
+| Headline updated (125 chars) | ❌ |
+| About section written | ❌ |
+| Featured projects (3) added | ❌ |
+| Skills reordered for ATS | ❌ |
+| Experience reframed (C-A-R) | ❌ |
+| Profile photo updated | ❌ |
+| Banner image added | ❌ |
+| Open to Work configured | ❌ |
+| Connection requests (20/day) | ❌ |
+| 1 post/week published | ❌ |

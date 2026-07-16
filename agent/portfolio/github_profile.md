@@ -6,54 +6,61 @@
 
 ## 🔧 Profile Essentials
 
-- **Username:** `prem-pjena` ✅ (professional, consistent)
-- **Profile Picture:** Professional headshot or clean avatar — not cartoon/gaming
-- **Bio (under username):** `Agentic AI Engineer | LangGraph · MCP · RAG | Building production AI agents`
+- **Username:** `prem-pjena` ✅
+- **Bio:** `AI Engineer & Forward Deployed Specialist | Building Agentic Workflows (LangGraph, CrewAI) & Production RAG pipelines | AWS, Docker, FastAPI`
 - **Location:** Bengaluru, India
-- **Website/LinkedIn:** https://linkedin.com/in/premprakashj
-- **Pin:** 2 best repos (Project 1 + Project 2)
+- **LinkedIn:** https://linkedin.com/in/premprakashj
+- **Pin:** 2 repos only — Project 1 (RAG) + Project 2 (Agent Orchestrator)
+- **Unpin/Private:** All university projects, forks, generic coursework
 
 ---
 
-## 📌 Pinned Repositories
-
-### Pin 1: RAG System (Month 1)
-Role: Shows RAG + LangChain + Ragas evaluation
-→ repo name: `rag-system`
-
-### Pin 2: Agent Orchestrator (Month 2)
-Role: Shows LangGraph + MCP + multi-agent + production readiness
-→ repo name: `agent-orchestrator`
-
----
-
-## 📖 README Template for GitHub Profile
-
-Create a `README.md` in `prem-pjena/prem-pjena` (profile-level README):
+## 📖 Profile README (prem-pjena/prem-pjena)
 
 ```markdown
-### 👋 Hi, I'm Prem
+### Prem Prakash Jena
 
-**Agentic AI Engineer** building production-grade AI agents with LangGraph, MCP, and RAG.
+**Forward Deployed AI Engineer | Agentic Systems & Orchestration**
+
+Bridging the gap between AI research and enterprise backend infrastructure. I specialize in designing, deploying, and evaluating autonomous multi-agent systems and state-managed LLM workflows. With a foundation in DevOps (Docker, AWS, CI/CD), I ensure AI applications are not experimental prototypes, but highly reliable, scalable production systems.
+
+---
+
+### 🚀 Focus Areas
+
+- **Agentic Workflows** — LangGraph, CrewAI, MCP, Multi-Agent Systems
+- **Hybrid RAG** — Vector + BM25, Cross-encoder Reranking, Semantic Routing
+- **Enterprise Integration** — MCP servers, FastAPI, Docker, AWS
+- **Evaluation & LLMOps** — Ragas, LangSmith, Faithfulness, Context Precision
 
 ---
 
 ### 🛠️ Tech Stack
 
-**AI/Orchestration:** LangChain · LangGraph · MCP · RAG · Ragas · LangSmith
-**LLMs:** OpenAI · Gemini · Anthropic · Ollama
-**Backend:** Python · FastAPI · SQL · PostgreSQL/pgvector
-**Infra:** Docker · AWS EC2 · GitHub Actions · CI/CD
-**Data:** Pandas · NumPy · ChromaDB · pgvector
+| Category | Technologies |
+|----------|-------------|
+| AI/Orchestration | LangChain, LangGraph, MCP, CrewAI |
+| LLMs | OpenAI, Anthropic, Gemini, vLLM |
+| Search & Retrieval | pgvector, Qdrant, Pinecone, BM25 |
+| Evaluation | Ragas, LangSmith, TruLens |
+| Backend | Python, FastAPI, SQL |
+| Infra | Docker, AWS (EC2, S3), GitHub Actions |
 
 ---
 
-### 🏗️ Featured Projects
+### 🏆 Featured Production Deployments
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [**Agent Orchestrator**](https://github.com/prem-pjena/agent-orchestrator) | Multi-agent MCP system with automated evaluation | LangGraph · MCP · Ragas · Docker |
-| [**RAG System**](https://github.com/prem-pjena/rag-system) | Enterprise RAG with hybrid search + eval | LangChain · pgvector · Ragas · AWS |
+#### 1. ⚡ Agentic Enterprise Support Orchestrator
+*Cyclic multi-agent system using LangGraph and MCP — 94% Faithfulness, <400ms p95 latency*
+- State-managed graph topology with semantic routing and fallback mechanisms
+- Securely queries PostgreSQL via MCP enforcing least-privilege access
+- [View Repository] | [Live API Docs] | [Architecture Walkthrough]
+
+#### 2. 🧠 Hybrid RAG Knowledge Assistant
+*Document intelligence with hybrid search (dense + BM25) and Ragas-verified citations*
+- FastAPI backend, pgvector vector registry, BM25 sparse retrieval
+- Fully containerized via Docker and deployed on AWS
+- [View Repository] | [Live Demo] | [Ragas Evaluation Dashboard]
 
 ---
 
@@ -71,40 +78,53 @@ Create a `README.md` in `prem-pjena/prem-pjena` (profile-level README):
 
 ---
 
-## ✅ Checklist for GitHub
+## 📝 README Structure for Each Repo
 
-| Item | Status | Notes |
-|------|--------|-------|
-| Profile pic (professional) | ❌ | Upload clear headshot |
-| Bio updated | ❌ | Use Agentic AI Engineer focus |
-| Pinned repos (2) | ❌ | RAG + Agent Orchestrator |
-| Profile README | ❌ | Create prem-pjena/prem-pjena |
-| Repo READMEs with architecture diagrams | ❌ | One per project |
-| Ragas eval scores in README | ❌ | Faithfulness, Precision numbers |
-| Demo links (live URL or video) | ❌ | Loom or AWS EC2 link |
-| CI/CD badge | ❌ | GitHub Actions passing |
-| .env.example for each repo | ❌ | Shows production readiness |
-| Contribution graph active | ❌ | Daily commits |
+### Must-Have Sections (in order)
+1. **Headline** — 1 sentence: what it does + quantifiable result
+2. **Live Demo / Video Link** — immediately after headline
+3. **Architecture Diagram** — Mermaid.js or Excalidraw
+4. **Measurable Results** — Ragas metrics table (Faithfulness, Precision, Recall)
+5. **Design Tradeoffs** — 3-5 key decisions with rationale
+6. **Setup & Run** — single command (docker-compose up)
+7. **Tech Stack** — badges or table
+8. **Project Structure** — directory tree
+
+### Bonus Sections (Seniority Signals)
+- Cost analysis (token cost per query, optimization strategies)
+- Latency benchmarks (p50, p95, p99)
+- Failure mode documentation
+- Future improvements
 
 ---
 
-## 📝 README Structure for Each Repo
+## ✅ DOs and DON'Ts
 
-Every project repo needs:
+| DO | DON'T |
+|----|-------|
+| Pin only 2-3 high-signal repos | Pin university projects or forks |
+| Show Ragas evaluation scores | Say "accurate" without metrics |
+| Include architecture diagrams | Just show code without context |
+| Dockerize everything | Leave raw .ipynb files |
+| Live demo or Loom video | Force recruiters to clone + API keys |
+| Document design tradeoffs | Pretend there were no tradeoffs |
+| Daily commits on core projects | Manipulate contribution graph |
+| Use GitHub Issues for tracking | Leave profile stale for weeks |
 
-### Must-Have Sections
-1. **Project title + 1-line description** (what problem it solves)
-2. **Architecture diagram** (Mermaid.js or Excalidraw)
-3. **Tech stack badges** (Python, LangChain, LangGraph, Docker, etc.)
-4. **Features list** (bullet points)
-5. **Quick start** (clone → setup → run in 3 steps)
-6. **Evaluation metrics table** (Ragas scores)
-7. **Design tradeoffs** (why pgvector vs Chroma? why HNSW vs IVFFlat?)
-8. **Demo** (Loom video or live URL)
-9. **Project structure** (directory tree)
-10. **License**
+---
 
-### Bonus Sections (Signals Seniority)
-- **Cost analysis** (token cost per query, optimization strategies)
-- **Benchmarking** (latency numbers, cache hit rates)
-- **Future improvements** (shows product thinking)
+## ✅ Checklist
+
+| Item | Status |
+|------|--------|
+| Bio updated with Agentic AI focus | ❌ |
+| Profile README created | ❌ |
+| Pinned repos (2) | ❌ |
+| Unpinned irrelevant repos | ❌ |
+| Project READMEs with architecture diagrams | ❌ |
+| Ragas eval scores in README | ❌ |
+| Live demo or Loom video links | ❌ |
+| Dockerfiles in every project | ❌ |
+| CI/CD badges | ❌ |
+| .env.example files | ❌ |
+| Design tradeoffs documented | ❌ |
