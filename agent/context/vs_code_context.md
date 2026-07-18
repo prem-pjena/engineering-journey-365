@@ -1,20 +1,21 @@
 # VS Code Agent Context — Engineering Journey 365
-# Last updated: 2026-07-14
+# Last updated: 2026-07-18
 
 ## Status
 - **Plan:** 60-day complete curriculum (Jul 14 → Sep 12)
 - **Target:** ₹30k/mo internship by Day 28 → ₹60-80k/mo FT by Day 60
 - **Role:** Agentic AI Engineer | AI Engineer | SDE AI
 - **Positioning:** Forward Deployed Engineer — AI orchestration specialist
-- **Primary platforms:** Apna (50%), Wellfound (40%), LinkedIn DMs (10%)
+- **Primary platforms:** Wellfound (40%), YC Work at a Startup (30%), LinkedIn DMs (15%), X DMs (10%)
 
-## Skills (Day 10 completed)
-- Python: 8.9/10 | DSA: 5.2/10 | Problem Solving: 7.8/10
+## Skills (Day 11 completed)
+- Python: 9.2/10 | DSA: 5.5/10 | Problem Solving: 7.8/10
 - File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6 | Functions: 9.5
-- CRITICAL GAPS: OOP, Async, LangChain, LangGraph, RAG, MCP (all 0)
+- OOP: 4.5/10 | Retention: 9.8/10 | Builder: 9.7/10
+- CRITICAL GAPS: Async, LangChain, LangGraph, RAG, MCP (all 0)
 
 ## Current Progress
-- Days completed: 10 / 60
+- Days completed: 11 / 60
 - DSA solved: 1 / target 50
 - Projects deployed: 0
 
@@ -41,3 +42,4 @@
 - agent/learning_plan.md — complete 60-day curriculum (most updated)
 - agent/day_syllabus.md — live day tracker
 - agent/skill_tracker.md — scores
+- agent/reports/day11_journal.md — Day 11 learning journal
