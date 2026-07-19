@@ -122,3 +122,9 @@
 - **NirDiamant/agents-towards-production** — 28 tutorials on production deployment (Docker, Bedrock, security, tracing, GPU). Already well-covered by our plan. Reference for security guardrails.
 - **NirDiamant/Prompt_Engineering** — 22 prompting techniques (zero-shot, CoT, self-consistency, chaining, optimization). Reference for Phase 1 Prompt Engineering day.
 - **NirDiamant/GenAI_Agents** — 53 agent implementations (LangGraph, MCP, business, creative, analysis). Reference for Phase 4 when building agents.
+- **guardrails-ai/guardrails** — LLM I/O validation (PII, toxic language, structured output). Reference for production safety in Phase 5.
+- **modelcontextprotocol/servers** — Official MCP reference servers (filesystem, memory, fetch, git, sequential thinking, time). Essential reference for Phase 4 MCP implementation.
+- **agno-agi/agno** — Alternative agent framework to LangGraph. Good to know exists but plan uses LangGraph.
+- **browser-use/browser-use** — AI browser automation agent. Interesting tool, not core to plan.
+- **ed-donner/agents** — Course materials with practical agent implementations. Community reference.
+- **EthicalML/awesome-production-agentic-systems** — Curated list of production agentic tools (frameworks, observability, security, memory, protocols). Browse for discovery.
