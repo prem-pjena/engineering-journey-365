@@ -74,7 +74,9 @@
 - **RAG:** Naive → Advanced → Corrective (CRAG) → Adaptive → Conversational → Agentic RAG
 - **Search:** Hybrid Search (BM25 + Dense), pgvector, ChromaDB, Parent-Child Chunking, Semantic Chunking, Cross-encoder Reranking, HNSW vs IVFFlat
 - **Evaluation:** LangSmith, Ragas (Faithfulness, Context Precision, Answer Relevancy)
-- **MCP:** Model Context Protocol (Host/Client/Server, stdio vs HTTP SSE, Tools/Resources/Prompts, JSON-RPC 2.0)
+- **MCP:** Model Context Protocol (Host/Client/Server, stdio vs HTTP SSE, Tools/Resources/Prompts, JSON-RPC 2.0). **Study**: modelcontextprotocol/servers repo — canonical reference implementations. ed-donner/agents Week 6 for hands-on labs.
+- **Tool Planning:** **DFSDT** (Depth-First Search Decision Tree) — explores multiple tool paths and backtracks on failure. Beats linear ReAct for complex multi-tool scenarios. From OpenBMB/ToolBench research.
+- **LLM Safety:** **Guardrails** (guardrails-ai/guardrails) — input/output validators for PII, toxic language, schema compliance, competitor checking. Add to Phase 5 FastAPI backend.
 - **Deployment:** Docker, AWS ECS Fargate, AWS Bedrock, GitHub Actions CI/CD
 - **SQL:** PostgreSQL, pgvector, vector similarity search, HNSW index tuning (ef_search, m)
 - **DSA:** 50 problems — hash maps, two-pointer, trees, graphs, strings, arrays, sliding window
@@ -99,6 +101,7 @@
 
 ### Project 2 (Days 54-56): Multi-Agent MCP Orchestrator
 - FastAPI + LangGraph (supervisor → workers) + MCP servers + Next.js UI + Docker + AWS ECS + GitHub Actions CI/CD + Error handling + Fallback logic
+- **Optional enhancement:** Integrate browser-use as a tool for web UI interaction
 - Apply signal: "Full-stack AI Engineer" — end-to-end delivery
 
 ## Key Interview Answers (From Deep Research)
@@ -116,15 +119,4 @@
 - agent/reports/market_research_2026.md — salary validation data
 - agent/reports/market_research_deep_2026.md — company mapping, tech stack, skill gaps
 - agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
-- agent/learnings/deep_research_model_architecture.md — transformer, hardware, AWS, interview cheat sheet
-- **NirDiamant/RAG_Techniques** (github.com/NirDiamant/RAG_Techniques) — 42+ runnable RAG notebooks. Use in Phase 2-3 as practical reference. 3 quick additions: Proposition Chunking, Fusion Retrieval, Explainable Retrieval.
-- **NirDiamant/Agent_Memory_Techniques** — 30 notebooks on agent memory (buffer, summary, entity, knowledge graph, Mem0, Letta, Zep). Reference for Phase 4 LangGraph memory patterns.
-- **NirDiamant/agents-towards-production** — 28 tutorials on production deployment (Docker, Bedrock, security, tracing, GPU). Already well-covered by our plan. Reference for security guardrails.
-- **NirDiamant/Prompt_Engineering** — 22 prompting techniques (zero-shot, CoT, self-consistency, chaining, optimization). Reference for Phase 1 Prompt Engineering day.
-- **NirDiamant/GenAI_Agents** — 53 agent implementations (LangGraph, MCP, business, creative, analysis). Reference for Phase 4 when building agents.
-- **guardrails-ai/guardrails** — LLM I/O validation (PII, toxic language, structured output). Reference for production safety in Phase 5.
-- **modelcontextprotocol/servers** — Official MCP reference servers (filesystem, memory, fetch, git, sequential thinking, time). Essential reference for Phase 4 MCP implementation.
-- **agno-agi/agno** — Alternative agent framework to LangGraph. Good to know exists but plan uses LangGraph.
-- **browser-use/browser-use** — AI browser automation agent. Interesting tool, not core to plan.
-- **ed-donner/agents** — Course materials with practical agent implementations. Community reference.
-- **EthicalML/awesome-production-agentic-systems** — Curated list of production agentic tools (frameworks, observability, security, memory, protocols). Browse for discovery.
+- agent/learnings/gold_mines_repo_analysis.md — deep analysis of 7 key repos: Guardrails (production safety with validators), ed-donner/agents (6-week agent curriculum matching Phases 1-4), agno-agi/agno (full-stack agent framework, LangGraph alternative), modelcontextprotocol/servers (official MCP reference implementations — study for Phase 4), browser-use/browser-use (AI browser agent with MCP server/client — use in Project 2), OpenBMB/ToolBench (DFSDT algorithm that beats ReAct for multi-tool scenarios, ToolEval metrics), EthicalML/awesome-production-agentic-systems (master index of production agentic tools)

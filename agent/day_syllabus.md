@@ -69,7 +69,7 @@
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
 | 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine | Course Schedule |
-| 33 | LangGraph: Reducers, add_messages, Conditional Routing | Chatbot with memory + router | Climbing Stairs |
+| 33 | LangGraph: Reducers, add_messages, Conditional Routing + **DFSDT Concept** | Chatbot with memory + DFSDT tool planning | Climbing Stairs |
 | 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tools | Coin Change |
 | 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 workers | Longest Increasing Subseq |
 | 36 | LangSmith Tracing for LangGraph | Instrument multi-agent | Word Break |
@@ -80,7 +80,7 @@
 ### Phase 5: Full-Stack + Production Patterns (Days 40-46)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 40 | FastAPI Deep Dive: error handling, middleware, streaming, SSE | Production FastAPI app | Rotate Image |
+| 40 | FastAPI Deep Dive: error handling, middleware, streaming, SSE, **Guardrails** for LLM output safety (PII, toxicity, schema) | Production FastAPI app with safety guards | Rotate Image |
 | 41 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache | Deploy model with vLLM | Spiral Matrix |
 | 42 | **Redis Semantic Caching**: embeddings, cosine threshold 0.85-0.95, hybrid metadata filters | Build semantic cache layer | Number of 1 Bits |
 | 43 | **Next.js + TypeScript** with SSE streaming from FastAPI | Chat UI with real-time streaming | Counting Bits |

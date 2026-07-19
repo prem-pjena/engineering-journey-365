@@ -75,21 +75,21 @@
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine | Course Schedule | basic_state_graph.py |
-| 33 | LangGraph: Reducers, add_messages, Conditional Routing | Chatbot with memory + intent router | Climbing Stairs | stateful_chatbot.py |
+| 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine. Reference: ed-donner/agents Week 4 labs | Course Schedule | basic_state_graph.py |
+| 33 | LangGraph: Reducers, add_messages, Conditional Routing + **DFSDT Concept** | Chatbot with memory + intent router. **DFSDT**: Depth-First Search Decision Tree — explores multiple tool paths and backtracks on failure (beats linear ReAct for complex multi-tool tasks) | Climbing Stairs | stateful_chatbot.py |
 | 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tool execution | Coin Change | hitl_agent.py |
 | 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 worker agents | Longest Increasing Subseq | supervisor_agent.py |
 | 36 | LangSmith Tracing for LangGraph | Instrument multi-agent system | Word Break | langsmith_tracing.py |
-| 37 | MCP: Host/Client/Server, stdio transport | Python MCP server with tools | Merge Intervals | mcp_stdio_server.py |
-| 38 | MCP: HTTP SSE, JSON-RPC 2.0, Tools vs Resources vs Prompts | DB schema as MCP Resource | Insert Interval | mcp_http_server.py |
-| 39 | **LangGraph + MCP Integration** | Agent discovers and calls MCP tools | Non-overlapping Intervals | langgraph_mcp_agent.py |
+| 37 | MCP: Host/Client/Server, stdio transport | Python MCP server with tools. **Study**: modelcontextprotocol/servers Filesystem server as reference pattern | Merge Intervals | mcp_stdio_server.py |
+| 38 | MCP: HTTP SSE, JSON-RPC 2.0, Tools vs Resources vs Prompts | DB schema as MCP Resource. **Study**: modelcontextprotocol/servers Everything server (exercises ALL MCP features) | Insert Interval | mcp_http_server.py |
+| 39 | **LangGraph + MCP Integration** | Agent discovers and calls MCP tools. **Study**: ed-donner/agents Week 6 MCP labs | Non-overlapping Intervals | langgraph_mcp_agent.py |
 
 ### Phase 5: Full-Stack + Production Patterns (Days 40-46)
 *Goal: Build end-to-end AI apps, deploy with CI/CD, add UI layer*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 40 | FastAPI Deep Dive: error handling, middleware, streaming, background tasks, SSE | Production-grade FastAPI app | Rotate Image | fastapi_production.py |
+| 40 | FastAPI Deep Dive: error handling, middleware, streaming, background tasks, SSE. **Add Guardrails** for LLM output validation (PII, toxicity, schema compliance) | Production-grade FastAPI app with Guard input/output validation | Rotate Image | fastapi_production.py |
 | 41 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache | Deploy model with vLLM, measure TTFT | Spiral Matrix | vllm_basics.py |
 | 42 | **Redis Semantic Caching**: embeddings, cosine threshold (0.85-0.95), hybrid metadata filters | Build semantic cache layer | Number of 1 Bits | semantic_cache.py |
 | 43 | **Next.js + TypeScript basics** + SSE streaming from FastAPI | Chat UI with real-time streaming | Counting Bits | fullstack_chat_app/ |
