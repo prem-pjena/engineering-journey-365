@@ -117,3 +117,4 @@
 - agent/reports/market_research_deep_2026.md — company mapping, tech stack, skill gaps
 - agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
 - agent/learnings/deep_research_model_architecture.md — transformer, hardware, AWS, interview cheat sheet
+- **NirDiamant/RAG_Techniques** (github.com/NirDiamant/RAG_Techniques) — 42+ runnable RAG notebooks. Use in Phase 2-3 as practical reference. 3 quick additions: Proposition Chunking, Fusion Retrieval, Explainable Retrieval.
