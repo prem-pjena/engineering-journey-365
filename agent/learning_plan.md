@@ -11,20 +11,21 @@
 | Priority | Category | Technologies |
 |----------|----------|-------------|
 | 🔴 Must-Know | Python Architecture | OOP (classes, inheritance, dunder, @property, static/classmethod), Context Managers, Async (asyncio, await, gather), Generators (yield), Tuples, enumerate, zip, String methods, JSON, Comprehensions, Type hints, Modules |
-| 🔴 Must-Know | Backend API | **FastAPI**, Pydantic, **Asynchronous Python** (market standard — Django/Flask are obsolete for AI roles) |
-| 🔴 Must-Know | LLM & Orchestration | LangChain (LCEL, chains, templates, loaders, splitters, with_structured_output), Prompt Engineering (few-shot, CoT, system), LLM APIs (OpenAI, Gemini) |
-| 🔴 Must-Know | Agent Frameworks | **LangGraph** (StateGraph, nodes, edges, reducers, routing, checkpointing, HITL, multi-agent, parallel) — basic LangChain chains are considered obsolete for production |
+| 🔴 Must-Know | Backend API | **FastAPI**, Pydantic, **Asynchronous Python**, **Server-Sent Events (SSE)** for streaming (market standard — Django/Flask are obsolete for AI roles) |
+| 🔴 Must-Know | LLM & Orchestration | LangChain (prompt templates, loaders, splitters, with_structured_output), Prompt Engineering (few-shot, CoT, system), LLM APIs (OpenAI, Gemini) — **LCEL deep dive deprioritized, use LangGraph for orchestration** |
+| 🔴 Must-Know | Agent Frameworks | **LangGraph** (StateGraph, nodes, edges, reducers, routing, checkpointing, HITL, multi-agent, parallel) — industry standard for production agents |
 | 🔴 Must-Know | RAG & Search | Naive → Advanced → Corrective → Adaptive → Agentic RAG, **Parent-Child Chunking**, **Semantic Chunking**, **Cross-encoder Reranking**, **Hybrid Search (BM25 + Dense)**, pgvector, ChromaDB |
-| 🔴 Must-Know | Evaluation | **LangSmith**, **Ragas (Faithfulness, Context Precision/Recall, Answer Relevancy)** — "Vibes-based testing is a terminal red flag" |
-| 🔴 Must-Know | MCP | **Model Context Protocol** (Host/Client/Server, Tools/Resources/Prompts, stdio vs Streamable HTTP, JSON-RPC 2.0) — explicitly demanded in top JDs |
-| 🔴 Must-Know | Deployment | **Docker**, **AWS ECS/EC2**, **GitHub Actions CI/CD** — separates deployable engineers from theorists |
+| 🔴 Must-Know | Evaluation & Observability | **LangSmith**, **Langfuse/OpenLLMetry** (observability + tracing), **Ragas** (Faithfulness, Context Precision/Recall, Answer Relevancy) |
+| 🔴 Must-Know | Constrained Decoding | **XGrammar / Outlines** — finite-state machine token masking for guaranteed JSON output. Prevents agent crashes from malformed tool calls |
+| 🔴 Must-Know | Inference Optimization | **vLLM** (PagedAttention, continuous batching, Tensor Parallelism), KV cache management, Quantization (INT8/INT4) — essential for open-source model serving |
+| 🔴 Must-Know | Semantic Caching | **Redis** with vector embedding + cosine similarity threshold tuning (0.85-0.95) + hybrid metadata filtering for tenant isolation |
 | 🔴 Must-Know | SQL & Vectors | PostgreSQL, pgvector, HNSW vs IVFFlat indexing, vector similarity search |
 | 🔴 Must-Know | DSA | 50 problems — hash maps, two-pointer, trees, graphs, strings, arrays, sliding window |
 | 🟡 Good-to-Have | Full-Stack | **Next.js + TypeScript** (unlocks Full Stack AI Engineer roles — premium pay for end-to-end delivery) |
-| 🟡 Good-to-Have | Data & ML | Pandas, NumPy, Scikit-learn basics |
-| 🟡 Good-to-Have | Interview Theory | Transformer architecture (Q, K, V, self-attention), BERT vs GPT, tokenization (BPE/WordPiece), bias-variance, precision/recall/F1 |
-| ⚪ Nice-to-Have | Fine-tuning | LoRA / PEFT — advanced prompting + RAG solves 90% of business problems |
-| 🚫 Skip | CNNs/RNNs from scratch | Zero JD mentions for GenAI Engineer roles. Pre-trained models via APIs is the standard |
+| 🟡 Good-to-Have | Data | Pandas, NumPy basics |
+| 🟡 Good-to-Have | Interview Theory | Transformer architecture (Q, K, V, self-attention, RoPE), BERT vs GPT, tokenization high-level concept, LLM inference architecture (vLLM, KV cache) |
+| ⚪ Nice-to-Have | Fine-tuning | LoRA / PEFT — 8.5% JD mention vs RAG 35.9%. Read 1 article for concept only |
+| 🚫 Skip | CNNs/RNNs/Classical ML | Zero JD mentions for GenAI Engineer roles. Skip bias-variance, cross-validation, gradient descent entirely |
 
 ---
 
@@ -48,8 +49,8 @@
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 18 | LangChain LCEL, Prompt Templates | Rewrite Day 16 with LangChain | Container With Most Water | lcel_chain.py |
-| 19 | with_structured_output, Pydantic schemas | Extract structured JSON entities | Longest Substring | structured_extractor.py |
+| 18 | FastAPI SSE Streaming + Pydantic | Build streaming endpoint, understand Server-Sent Events | Container With Most Water | fastapi_streaming.py |
+| 19 | **Constrained Decoding (XGrammar/Outlines)** | Compile Pydantic schema → FSM → guaranteed JSON output | Longest Substring | constrained_decoding.py |
 | 20 | Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF, split by semantic boundaries | Valid Parentheses | semantic_chunker.py |
 | 21 | Vector DBs, Embeddings, ChromaDB | Store chunks + similarity search | Binary Search | chroma_ingestion.py |
 | 22 | **Naive RAG**: chunk → embed → store → retrieve → generate | End-to-end RAG script | Search 2D Matrix | naive_rag.py |
@@ -88,10 +89,10 @@
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 40 | FastAPI Deep Dive: error handling, middleware, streaming, background tasks | Production-grade FastAPI app | Rotate Image | fastapi_production.py |
-| 41 | **Next.js + TypeScript basics** | Build chat UI component | Spiral Matrix | chat_ui_component.tsx |
-| 42 | Connect Next.js UI → FastAPI backend (streaming responses) | End-to-end chat app | Number of 1 Bits | fullstack_chat_app/ |
-| 43 | Docker compose: Agent + pgvector + MCP Server + Next.js | Multi-container orchestration | Counting Bits | docker-compose.yml |
+| 40 | FastAPI Deep Dive: error handling, middleware, streaming, background tasks, SSE | Production-grade FastAPI app | Rotate Image | fastapi_production.py |
+| 41 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache | Deploy model with vLLM, measure TTFT | Spiral Matrix | vllm_basics.py |
+| 42 | **Redis Semantic Caching**: embeddings, cosine threshold (0.85-0.95), hybrid metadata filters | Build semantic cache layer | Number of 1 Bits | semantic_cache.py |
+| 43 | **Next.js + TypeScript basics** + SSE streaming from FastAPI | Chat UI with real-time streaming | Counting Bits | fullstack_chat_app/ |
 | 44 | **AWS ECS**: Deploy full stack to cloud | Fargate + RDS + Load Balancer | Missing Number | aws_deploy_logs/ |
 | 45 | **GitHub Actions CI/CD**: Auto-test, auto-eval, auto-deploy | Push → test → deploy pipeline | 3Sum review | .github/workflows/ci.yml |
 | 46 | Cost tracking per query + Prompt versioning + A/B testing | Metadata wrapper + toggle prompts | Min Window Substring | cost_tracker.py |
@@ -101,10 +102,10 @@
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 47 | **System Design**: RAG at scale, semantic caching (Redis), query routing | Architecture diagram for 1M QPD | Find Min Rotated review | rag_architecture.md |
-| 48 | **System Design**: Multi-tenant isolation, latency optimization, LLM Gateway | Namespace filtering + Gateway design | Merge k Sorted Lists | multitenant_design.md |
-| 49 | **ML Concepts**: bias-variance, precision/recall/F1, cross-validation, overfitting | Code metrics calculator | Serialize/Deserialize Tree | ml_metrics.py |
-| 50 | **NLP Concepts**: BPE/WordPiece tokenization, BERT vs GPT, Transformer QKV | tiktoken counter + attention visualization | Alien Dictionary | nlp_concepts.py |
+| 47 | **System Design**: RAG at scale, semantic caching (Redis), query routing, hybrid metadata filtering | Architecture diagram for 1M QPD | Find Min Rotated review | rag_architecture.md |
+| 48 | **System Design**: Multi-tenant isolation, latency optimization, LLM Gateway, vLLM inference architecture | Gateway design + PagedAttention explanation | Merge k Sorted Lists | inference_architecture.md |
+| 49 | **LLM Inference Concepts**: vLLM, PagedAttention, continuous batching, KV cache, quantization (INT8/INT4), constrained decoding deep dive | Explain each concept with real examples | Serialize/Deserialize Tree | llm_inference_interview.md |
+| 50 | **NLP Concepts**: Transformer (QKV, self-attention, RoPE), BERT vs GPT, tokenization (high-level), MoE, speculative decoding | tiktoken counter + attention visualization | Alien Dictionary | nlp_concepts.md |
 | 51 | DSA Mock + Portfolio Review | Solve problems + polish GitHub | Word Search | mock_interview_log |
 | 52 | System Design Mock + Behavioral | Practice "termination narrative" + why AI | LCS | behavioral_prep.md |
 | 53 | Live Coding Mock (FastAPI + LangGraph) | Build a mini agent under time pressure | Word Ladder | live_coding_mock/ |
