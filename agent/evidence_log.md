@@ -456,4 +456,50 @@
 
 ---
 
-*New evidence will be appended as milestones are reached.*
+## Evidence (Research Phase — Days 11+)
+
+### Evidence A
+| Field | Detail |
+|-------|--------|
+| **What** | Completed Day 11 — OOP: classes, inheritance, dunder, @property, @staticmethod, @classmethod, VectorStore class |
+| **Day** | Day 11 |
+| **File** | `Month-1/Day-11/` |
+
+### Evidence B
+| Field | Detail |
+|-------|--------|
+| **What** | Conducted deep market research — validated ₹30-50k intern / ₹10-12 LPA FT targets with company names and salary evidence |
+| **Day** | Research (Jul 17) |
+| **Files** | `agent/reports/market_research_2026.md`, `agent/reports/market_research_deep_2026.md` |
+
+### Evidence C
+| Field | Detail |
+|-------|--------|
+| **What** | Independently researched 14 types of RAG and 4 must-know areas for ₹12 LPA interviews |
+| **Day** | Research (Jul 17) |
+| **File** | `agent/learnings/rag_architecture_14_types.md` |
+
+### Evidence D
+| Field | Detail |
+|-------|--------|
+| **What** | Deep research on Transformer architecture, inference hardware (KV cache, VRAM, quantization), ML fundamentals, AWS services for AI — created interview cheat sheet |
+| **Day** | Research (Jul 19) |
+| **File** | `agent/learnings/deep_research_model_architecture.md` |
+
+### Evidence E
+| Field | Detail |
+|-------|--------|
+| **What** | Restructured 60-day plan to market-validated v2 — added FastAPI, LangGraph, MCP, LangSmith/Ragas, Next.js, CI/CD. Upgraded targets to ₹10-12 LPA. |
+| **Day** | Planning (Jul 17-19) |
+| **Files** | `agent/learning_plan.md`, `agent/day_syllabus.md`, `agent/context/vs_code_context.md` |
+
+### Evidence F
+| Field | Detail |
+|-------|--------|
+| **What** | Updated all CVs (resume_month1.md, resume_month2.md, resume.md) with market-validated skills, projects, and targets |
+| **Day** | Planning (Jul 19) |
+| **Files** | `agent/resume_month1.md`, `agent/resume_month2.md`, `agent/resume.md` |
+
+---
+
+*Next evidence will be appended as new days are completed.*

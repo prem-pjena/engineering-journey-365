@@ -6,7 +6,7 @@
 
 ## Summary
 
-AI Engineer Intern with experience building production backend features and AI agent systems at SkillVeda, plus 6 months of DevOps infrastructure experience (Docker, CI/CD, AWS). Previously transitioned from infrastructure to applied AI, bringing a unique blend of production deployment expertise and modern LLM orchestration skills (LangChain, LangGraph, RAG, MCP). Passionate about designing end-to-end backend systems and autonomous AI agents.
+Agentic AI Engineer with expertise in LangGraph orchestration, Model Context Protocol (MCP), and production RAG systems. Combines 6 months of DevOps infrastructure experience (Docker, AWS, CI/CD) with deep specialization in multi-agent architectures, programmatic LLM evaluation, and cost-optimized inference deployment. Previously transitioned from infrastructure to applied AI, bringing a unique blend of production deployment expertise and modern LLM orchestration skills. Built and deployed two production-grade AI systems — a multi-tenant RAG assistant and an MCP-connected multi-agent orchestrator with full CI/CD.
 
 **Note for interviews:** The one-year post-graduation gap (2024-2025) was spent on "Independent Technical Upskilling" — intentionally building Linux, Docker, and AWS foundations before entering the industry.
 
@@ -17,19 +17,20 @@ AI Engineer Intern with experience building production backend features and AI a
 | Category | Skills |
 |----------|--------|
 | **Languages** | Python, TypeScript, JavaScript, SQL |
-| **Backend** | FastAPI, Express.js, REST APIs, Drizzle ORM |
-| **Database** | PostgreSQL, SQL (JOINs, subqueries, CTEs, window functions, indexing), database design, migrations |
-| **AI/ML** | OpenAI API, Gemini API, LangChain, LangGraph, LangSmith, RAG, Vector DBs (pgvector), AI Agents, Transformers, NLP concepts |
-| **Cloud (AWS)** | S3, Lambda, IAM, API Gateway, ECS, Bedrock, CloudWatch |
-| **DevOps** | Docker, docker-compose, Git, GitHub Actions |
-| **Other** | OAuth 2.0, RLS, Caching, Async/await, JWT, Web Scraping (BeautifulSoup) |
+| **AI/ML** | LangChain, LangGraph (StateGraph, routing, HITL, multi-agent), MCP (stdio/HTTP SSE, Tools/Resources/Prompts), RAG (naive→corrective→adaptive→agentic), Prompt Engineering, LLM APIs (OpenAI, Gemini), Constrained Decoding, Ragas, LangSmith |
+| **Backend** | FastAPI, Pydantic, Asynchronous Python, REST APIs, Express.js |
+| **Vector & Search** | pgvector (HNSW/IVFFlat, hybrid search), ChromaDB, Cross-encoder Reranking, Semantic/Parent-Child Chunking |
+| **Cloud (AWS)** | Bedrock, ECS Fargate, RDS pgvector, ElastiCache, S3, Lambda, API Gateway, CloudWatch |
+| **DevOps** | Docker, docker-compose, Git, GitHub Actions CI/CD |
+| **Database** | PostgreSQL, SQL (JOINs, CTEs, window functions, indexing), database design, pgvector |
+| **Concepts** | Transformer Architecture (QKV, RoPE, KV cache), Tokenization (BPE), Sampling (temp, top-k, top-p), Quantization, ML basics, OAuth 2.0, RLS |
 
 ---
 
 ## Experience
 
 ### AI Engineering Intern — SkillVeda
-*[Start Date] – Present*
+*May 2026 – Jul 2026*
 
 - Built exponential backoff retry logic for external PDL API calls, improving reliability under rate limits
 - Optimized background worker interval from 1min → 5min, reducing database load by 80%
@@ -48,6 +49,25 @@ AI Engineer Intern with experience building production backend features and AI a
 ---
 
 ## Projects
+
+### Multi-Tenant Enterprise RAG System
+*FastAPI, LangGraph, pgvector, MCP, Cross-encoder, Docker, AWS ECS, Ragas*
+
+- Built production RAG pipeline with parent-child semantic chunking, hybrid search (BM25 + dense), and cross-encoder reranking
+- Implemented LangGraph supervisor agent with conditional routing: internal pgvector → MCP web search → conversation memory, with Corrective RAG fallback
+- Applied constrained decoding via Pydantic schemas for guaranteed JSON-structured outputs
+- Integrated Ragas CI pipeline (Faithfulness ≥ 0.9, Context Precision ≥ 0.85) blocking merges on regression
+- Containerized with Docker, deployed on AWS ECS Fargate with GitHub Actions CI/CD
+- [GitHub](https://github.com/prem-pjena/rag-system)
+
+### Multi-Agent MCP Orchestrator
+*LangGraph, MCP, FastAPI, Next.js, TypeScript, Docker, AWS ECS, Redis*
+
+- Architected multi-agent system with Supervisor pattern: Planner decomposes → Workers execute → Reviewer validates
+- Created custom MCP Server (Streamable HTTP) exposing database as Resource and APIs as Tools
+- Built Next.js chat UI with SSE streaming and real-time agent reasoning visualization
+- Implemented Redis semantic caching: embed queries → cosine similarity → cached response in <10ms
+- Deployed full stack via docker-compose on AWS ECS Fargate with CloudWatch dashboards
 
 *In progress — 2 portfolio projects building toward Jan 2027 job target:*
 1. **AI-powered API Backend** — FastAPI + PostgreSQL + OpenAI + Docker + AWS

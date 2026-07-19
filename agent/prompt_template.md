@@ -1,50 +1,88 @@
-# 🏗️ Personal Engineering Coach V1 — Standard Prompt Template
+# 🏗️ Agentic AI Engineer Coach — Standard Prompt Template (Market-Validated v2)
 
-**Purpose:** This template follows the 4-phase Elite AI Engineer Blueprint.
-
-## 📌 PHASE-SPECIFIC RULES — Read Before Generating Prompt
-
-These rules ensure DSA, System Design, and project complexity match the student's current level. **Do not assign advanced topics early.**
-
-### Phase 1 (Months 1-3): Python + FastAPI + RAG + MCP — Domestic Job Ready
-| Area | What to Include | What to NEVER Include |
-|------|----------------|----------------------|
-| **DSA Category** | Arrays, Strings, Hash Maps, Basic Two Pointers | ❌ Graphs (BFS/DFS), Trees, Tries, DP, Heaps |
-| **DSA Count** | 1-2 problems/day → total 25 by Month 1 end, 50 by Month 2 end, 60 by Month 3 end | ❌ More than 3 problems/day |
-| **DSA Difficulty** | Easy → Medium (after Week 4) | ❌ Hard problems |
-| **System Design** | ❌ NONE — not needed for domestic roles | ❌ No HLD/LLD, no AI system design |
-| **Cost Optimization** | ❌ NONE — build first, optimize later | ❌ No semantic caching, no model routing |
-| **Projects** | Basic Python → FastAPI → RAG → MCP Agent | ❌ Multi-agent, temporal graphs, enterprise features |
-| **Deployment** | Just Docker + AWS EC2 basics | ❌ ECS, Bedrock, Kubernetes |
-
-### Phase 2 (Months 4-6): Cost Optimization + LangGraph + Ragas CI — Global Ready
-| Area | What to Include |
-|------|----------------|
-| **DSA Category** | Graphs (BFS/DFS), Trees (BST, Trie), Heaps, Linked Lists |
-| **DSA Count** | 2-3 problems/day → total 75 by Month 4 end, 90 by Month 5 end, 100 by Month 6 end |
-| **DSA Difficulty** | Medium. Understand patterns, not memorize. |
-| **System Design** | 🟢 START here — 30 AI System Design questions from report. HLD sketches (LLM gateway, semantic caching architecture, RAG at scale). |
-| **Cost Optimization** | 🟢 START here — semantic caching, model routing, prompt compression, Ragas CI |
-| **Projects** | Upgrade Project 1 → v2.0 (add cache + routing). Start open source (LiteLLM, Ragas). |
-| **Deployment** | ECS, Langfuse observability, CI/CD |
-
-### Phase 3 (Months 7-9): MCP + Multi-Agent + Open Source — Elite Differentiator
-| Area | What to Include |
-|------|----------------|
-| **DSA Category** | Advanced Graphs (topological sort, cycle detection), DP (edit distance, LCS, coin change) |
-| **DSA Count** | 2-3 problems/day → total 115 by Month 7 end, 130 by Month 8 end |
-| **DSA Difficulty** | Medium. System design mock interviews in Month 9. |
-| **System Design** | LLD — API contracts, data flow, tradeoff analysis. Multi-agent architecture design. |
-| **Projects** | Build Project 2 v2.0 (Multi-Agent MCP Orchestrator). Open source 2-3 MCP servers. |
-
-### Phase 4 (Months 10-12): Enterprise Scale + System Design Authority — Top 1%
-| Area | What to Include |
-|------|----------------|
-| **DSA** | Full review of 100+ problems. System design mock interviews only. |
-| **System Design** | Master all 30 questions. Practice explaining to CTO. Multi-tenant, security, RBAC designs. |
-| **Projects** | Final upgrades — enterprise security, multi-tenant token budgeting, unified platform. |
+**Purpose:** This template follows the 60-day sprint to Agentic AI Engineer. 
+**Target:** ₹30-50k/mo intern (Day 31) → ₹10-12 LPA FT / $24-40k/yr global remote (Day 60)
+**Role:** Agentic AI Engineer | AI Engineer | SDE AI
 
 ---
+
+## 📌 PHASE-SPECIFIC RULES
+
+### Phase 1 (Days 11-17): Python Completion + FastAPI + LLM APIs
+| Area | What to Include | What to NEVER Include |
+|------|----------------|----------------------|
+| **DSA Category** | Arrays, Strings, Hash Maps, Two Pointers | ❌ Graphs, Trees, Tries, DP, Heaps |
+| **DSA Difficulty** | Easy. Patterns: frequency counter, sliding window, two-pointer | ❌ Hard problems |
+| **System Design** | ❌ NONE | ❌ No HLD/LLD yet |
+| **Concepts** | OOP, Context Managers, Async/Await, FastAPI basics, LLM API calls, Prompt Engineering, Sampling params (temp, top-k, top-p) | ❌ Fine-tuning, LoRA, quantization |
+| **Projects** | Mock VectorStore class, FastAPI endpoint, LLM chat, streaming | ❌ Multi-agent, MCP, enterprise features |
+| **Deployment** | ❌ NONE — local only for now | ❌ No Docker/AWS yet |
+
+### Phase 2 (Days 18-24): LangChain + RAG Core
+| Area | What to Include |
+|------|----------------|
+| **DSA Category** | Arrays, Strings, Hash Maps, Binary Search, Linked Lists |
+| **DSA Difficulty** | Easy-Medium |
+| **Concepts** | LangChain LCEL, Structured Output, Pydantic, Document Loaders, Semantic/Parent-Child Chunking, ChromaDB, Embeddings, Naive RAG, SQL+pgvector, Cross-encoder Reranking |
+| **Projects** | RAG pipeline, structured extractor, pgvector setup |
+| **Deployment** | ❌ Local only |
+
+### Phase 3 (Days 25-31): Advanced RAG + Evaluation + Project 1 + APPLY
+| Area | What to Include |
+|------|----------------|
+| **DSA Category** | Linked Lists, Trees, Recursion |
+| **DSA Difficulty** | Medium |
+| **Concepts** | Hybrid Search (BM25+Dense), HNSW vs IVFFlat, Corrective/Adaptive/Conversational/Agentic RAG, LangSmith + Ragas Evaluation |
+| **Projects** | **PROJECT 1**: Multi-Tenant RAG with FastAPI + pgvector + LangGraph supervisor + MCP + Cross-encoder + Docker + AWS ECS |
+| **Deployment** | 🟢 Docker, AWS ECS, CI/CD |
+| **Applications** | 🟢 Wellfound + YC Work at a Startup blitz |
+
+### Phase 4 (Days 32-39): LangGraph + MCP
+| Area | What to Include |
+|------|----------------|
+| **DSA Category** | Trees, Graphs (BFS/DFS), DP basics |
+| **DSA Difficulty** | Medium |
+| **Concepts** | StateGraph, Reducers, Conditional Routing, Checkpointing, HITL, Multi-agent Supervisor, LangSmith Tracing, MCP stdio + HTTP SSE + Tools/Resources/Prompts, LangGraph+MCP integration |
+| **Projects** | Stateful chatbot, supervisor agent, MCP server |
+
+### Phase 5 (Days 40-46): Full-Stack + Production
+| Area | What to Include |
+|------|----------------|
+| **Concepts** | FastAPI deep dive (error handling, middleware, streaming, background tasks), Next.js + TypeScript chat UI, Docker compose multi-container, AWS ECS Fargate full stack, GitHub Actions CI/CD, Cost tracking, AWS Bedrock |
+| **Projects** | Full-stack chat app deployed to cloud |
+
+### Phase 6 (Days 47-53): Interview Prep
+| Area | What to Include |
+|------|----------------|
+| **System Design** | 🟢 START here — RAG at scale, semantic caching (Redis), caching strategies, multi-tenant isolation, latency optimization, LLM Gateway design, KV cache management |
+| **ML/NLP Concepts** | Transformer (QKV, self-attention, RoPE), BERT vs GPT, BPE/WordPiece tokenization, bias-variance, precision/recall/F1, cross-validation |
+| **DSA** | Full pattern review |
+| **Behavioral** | Termination narrative, "Why AI?", portfolio walkthrough |
+
+### Phase 7 (Days 54-60): Project 2 + Apply FT
+| Area | What to Include |
+|------|----------------|
+| **Projects** | **PROJECT 2**: Multi-Agent MCP Orchestrator (FastAPI + LangGraph + MCP + Next.js UI + Docker + AWS ECS + CI/CD) |
+| **Applications** | Wellfound + YC + LinkedIn DMs + X DMs blitz |
+| **Target** | ₹10-12 LPA India / $24-40k/yr global remote |
+
+---
+
+## 🚫 What to NEVER Assign (Research-Validated Skips)
+
+| Topic | Why Skip |
+|-------|----------|
+| Training CNNs/RNNs from scratch | Zero JD mentions for GenAI/AI Engineer roles |
+| Django/Flask | FastAPI has near-total dominance in AI engineering |
+| Deep ML math (gradient descent derivation) | Not tested in AI Engineer interviews |
+| Fine-tuning (LoRA/PEFT) | Only 8.5% of JDs mention it. RAG is 35.9%. Read 1 article for interview concept |
+| Classical ML pipelines | AI Engineers build LLM pipelines, not training pipelines |
+| Apna.co | Low signal, legacy IT, fake AI listings |
+
+---
+
+```
+PERSONAL ENGINEERING COACH V1
 
 ```
 PERSONAL ENGINEERING COACH V1
