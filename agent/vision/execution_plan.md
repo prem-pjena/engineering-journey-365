@@ -22,13 +22,19 @@ Year 3 (365h): SHIP ──────── Monetize, scale, choose exit path
 
 ### Phase 1.1: Foundation (Months 1-2) — 60 hours
 **Primary goal:** Secure ₹10-12 LPA job as financial runway
+**Reality check:** You learn LangGraph on Days 32-38, MCP on Days 37-39, pgvector on Day 23. Don't try to build with tools you haven't learned yet.
 
-| Week | Focus | 1-Hour Daily Task | Deliverable |
-|------|-------|-------------------|-------------|
-| 1 | **Proof-of-Work Agent** | Build LangGraph agent with MCP server + pgvector. Open-source it. | GitHub repo + architecture diagram |
-| 2 | **Technical Writing** | Write technical teardown on Dev.to. Share on LinkedIn/Twitter. | Published article + outreach |
-| 3 | **Job Applications** | Apply to 10 YC/Wellfound startups using PoW as anchor | 10 applications sent |
-| 4 | **Follow-ups + Mop-up** | Respond to callbacks, interview prep | Offer secured 🎯 |
+| Week | Sprint Day | Vision Hour Focus | Realistic Deliverable |
+|------|-----------|-------------------|----------------------|
+| 1 | Days 11-17 | **Infrastructure setup** — folders, trackers, research notes. You're learning OOP + FastAPI this week. | vision/ folder complete. Daily tracker started. |
+| 2 | Days 18-24 | **LangChain + RAG** — extend sprint learning with extra experimentation. Research competitors in the MCP space. | Research notes on existing MCP tools. Feature comparison table. |
+| 3 | Days 25-31 | **Architecture sketches** — draw MCP-as-a-Service on paper. Write a PRD. You'll know RAG well by now. | PRD document for first micro-tool. Architecture diagram. |
+| 4 | Days 32-38 | **LangGraph + MCP** — sprint teaches you these. Vision hour: build ONE extra feature beyond the sprint. | 1 custom MCP server for your portfolio. |
+| 5 | Days 39-46 | **FastAPI + Docker deep dive** — vision hour productionizes your sprint code. Containerize everything. | Dockerized agent with CI/CD. GitHub Actions pipeline. |
+| 6 | Days 47-53 | **Interview prep** — vision hour = building portfolio presentation + case study document. | polished READMEs, architecture docs, demo video. |
+| 7 | Days 54-60 | **First micro-tool MVP** — you now know everything needed. Ship your first vision product. | HN launch of Micro-Tool #1 🚀 |
+| 8-9 | Month 2 | **Micro-Tool #1 continued** — iterate based on HN feedback. Add features users actually ask for. | v1.0 release |
+| 10-12 | Month 2-3 | **Job applications** — apply with PoW. Your vision projects ARE your portfolio. | ₹10-12 LPA offer secured 🎯 |
 
 ### Phase 1.2: Micro-Tool Sprint (Months 3-12) — 300 hours
 **Primary goal:** Prototype 5 ideas → find 1 with strong market signal

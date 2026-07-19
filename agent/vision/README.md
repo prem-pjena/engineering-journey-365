@@ -56,7 +56,7 @@
 
 | File | Purpose |
 |------|---------|
-| `execution_plan.md` | **START HERE** — Complete 3-year plan with daily sprint template, weekly cadence, monthly/quarterly reviews |
+| `daily_tracker.md` | **START HERE** — Log your 1-hour block every day with date, activity, learnings |
 | `research_report.md` | Full case studies (Bonsai, Prisma, Vercel, Hugging Face, Supabase, Cursor) + 4 market gaps |
 | `ideas.md` | Product ideas log + validation framework |
 | `research_log.md` | Weekly research log |
