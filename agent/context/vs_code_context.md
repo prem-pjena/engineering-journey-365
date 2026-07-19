@@ -1,45 +1,119 @@
 # VS Code Agent Context — Engineering Journey 365
-# Last updated: 2026-07-18
+# Last updated: 2026-07-19 (Deep research on model architecture, hardware, AWS services)
 
 ## Status
-- **Plan:** 60-day complete curriculum (Jul 14 → Sep 12)
-- **Target:** ₹30k/mo internship by Day 28 → ₹60-80k/mo FT by Day 60
+- **Plan:** 60-day sprint (Market-Validated v2) — Day 11 COMPLETED, Day 12 next
+- **Target Intern:** ₹30k-₹50k/mo by ~Day 31 (mid-Aug)
+- **Target FT:** ₹10-12 LPA India OR $24k-$40k/yr global remote by Day 60 (mid-Sep)
 - **Role:** Agentic AI Engineer | AI Engineer | SDE AI
-- **Positioning:** Forward Deployed Engineer — AI orchestration specialist
-- **Primary platforms:** Wellfound (40%), YC Work at a Startup (30%), LinkedIn DMs (15%), X DMs (10%)
+- **Positioning:** Agentic AI Engineer — orchestration specialist with full-stack delivery capability
+- **Primary platforms:** Wellfound (40%), YC Work at a Startup (30%), LinkedIn DMs (15%), X/Twitter DMs (10%), Naukri (5%)
+- **SKIP:** Apna.co, TCS/Infosys/Wipro, training CNNs/RNNs, fine-tuning (8.5% JD mention vs RAG 35.9%)
 
-## Skills (Day 11 completed)
+## Role Confirmation (Research-Validated Jul 19)
+- I am an **AI Engineer** — NOT a Data Scientist, NOT an ML Engineer
+- I consume pre-trained models via APIs, build RAG pipelines, orchestrate agents with LangGraph
+- I do NOT train models from scratch, implement gradient descent, or build custom ML pipelines
+- RAG appears in 35.9% of JDs vs Fine-tuning in only 8.5% — focus on orchestration is correct
+- Fine-tuning: Read 1 article / Concept level only. ROI of LangGraph/LangSmith >>> LoRA
+- Transformer architecture: Concept level needed for KV cache and context window understanding
+- Sampling params (temp, top-k, top-p): EXPERT level — used on every single API call
+- Inference hardware (VRAM, KV cache, quantization): EXPERT level — cost optimization is key skill
+
+## Skills (Day 11 completed — as of Jul 18)
 - Python: 9.2/10 | DSA: 5.5/10 | Problem Solving: 7.8/10
-- File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6 | Functions: 9.5
-- OOP: 4.5/10 | Retention: 9.8/10 | Builder: 9.7/10
-- CRITICAL GAPS: Async, LangChain, LangGraph, RAG, MCP (all 0)
+- OOP: 4.5/10 | File I/O: 9.9 | Sets: 9.9 | Exception Handling: 9.6
+- CRITICAL GAPS: Async, FastAPI (0), LangChain (0), LangGraph (0), RAG (0), MCP (0), LangSmith/Ragas (0), Next.js (0)
 
 ## Current Progress
 - Days completed: 11 / 60
 - DSA solved: 1 / target 50
 - Projects deployed: 0
 
-## 60-Day Structure
-| Week | Focus | Milestone |
-|------|-------|-----------|
-| 1 | Python OOP, Async, Generators, LLM APIs | CLI chat app |
-| 2 | LangChain, RAG, SQL | RAG pipeline |
-| 3 | Advanced RAG, pgvector, Agentic RAG | Deployed RAG |
-| 4 | **Project 1 + Apply ₹30k** | Internship offer |
-| 5 | LangGraph (StateGraph, reducers, routing, HITL, multi-agent) | Agent mastery |
-| 6 | MCP (stdio, HTTP SSE, Tools/Resources) + Production patterns | MCP mastery |
-| 7 | Cost tracking, System Design, CI/CD | Interview ready |
-| 8 | **Project 2 + Apply blitz** | ₹60-80k FT offer |
+## Market Research Key Findings (Jul 17-19)
+- ₹30-50k internships CONFIRMED: Hungama (₹50k), Aight (₹25-50k), SuperKalam (₹25-40k), Peakflo (₹40-50k)
+- ₹10-12 LPA FT CONFIRMED: Market median ₹9-11 LPA for AI freshers. PPO example: Hungama ₹12-15 LPA
+- Global remote CONFIRMED: Smart Audit ($25-50k/yr), Lamatic, Great Question, Peakflo
+- FastAPI is DOMINANT — Django/Flask obsolete for AI roles
+- LangGraph MANDATORY — basic LangChain chains considered obsolete for production
+- MCP explicitly demanded — Great Question requires "MCP tool structuring"
+- Programmatic eval (LangSmith/Ragas) is #1 missing skill for freshers
+- See: agent/reports/market_research_deep_2026.md
 
-## All Concepts (None Skipped)
-- Python: OOP, Context Managers, Async, Generators, Tuples, enumerate, zip, String methods, JSON, Comprehensions, Type hints, Modules
-- AI: LangChain, LangGraph, MCP, RAG, Ragas, pgvector, Prompt Engineering, LLM APIs
-- Interview: ML concepts, NLP concepts, System Design, Production Patterns
-- DSA: Two Pointers, Sliding Window, Binary Search, BFS/DFS, Arrays, Strings, Hash Maps, Linked Lists, Trees, Graphs, DP basics
-- Deployment: Docker, docker-compose, AWS EC2, GitHub Actions
+## AWS Services for AI/ML (New — from Jul 19 research)
+- **Bedrock** — serverless API for foundation models (Claude, Titan). Enterprise compliance. No infra management.
+- **ECS Fargate** — standard for hosting FastAPI agent backends (NOT Lambda — agent timeouts > 15min)
+- **Aurora pgvector** — vectors + relational data co-located. ACID compliance. Row-level security for multi-tenant.
+- **ElastiCache (Redis)** — semantic caching: embed queries, cosine similarity check, serve cached response in ms
+- **S3** — raw document storage for RAG ingestion pipeline
+- **CloudWatch** — centralized logging, latency tracking, cost monitoring
+- **API Gateway** — SSL termination, rate limiting to protect token budget
+- **Step Functions** — cloud workflow orchestrator (trigger chunking → embedding → DB write)
+- **OpenSearch** — alternative for hybrid search at massive scale (10M+ vectors)
+- Interview strategy: Speak in trade-offs ("I chose pgvector over OpenSearch to reduce operational complexity")
+
+## 7-Phase Curriculum (Market-Validated v2)
+
+| Phase | Days | Focus | Milestone |
+|-------|------|-------|-----------|
+| 1 | 11-17 | Python Completion + FastAPI + LLM APIs | CLI chat + FastAPI endpoint |
+| 2 | 18-24 | LangChain + RAG Core + pgvector | RAG pipeline |
+| 3 | 25-31 | Advanced RAG + LangSmith/Ragas + **Project 1 + DEPLOY + APPLY** | Multi-Tenant RAG deployed |
+| 4 | 32-39 | LangGraph Mastery + MCP | Stateful agents + MCP integration |
+| 5 | 40-46 | Full-Stack (Next.js UI) + Production (Docker, AWS ECS, Bedrock, CI/CD) | End-to-end deployed app |
+| 6 | 47-53 | System Design (RAG at scale, Redis caching, KV cache) + ML/NLP Interview Prep | Interview ready |
+| 7 | 54-60 | **Project 2 + DEPLOY + APPLY FT** | Multi-Agent MCP Orchestrator |
+
+## ALL Concepts (Market-Validated)
+### 🔴 Must-Know
+- **Python:** OOP (classes, inheritance, dunder, @property, static/classmethod), Context Managers, Async (asyncio, gather), Generators, Tuples, enumerate, zip, String methods, JSON, Type hints, Modules
+- **Backend:** FastAPI, Pydantic, Asynchronous Python, Constrained Decoding (Outlines/XGrammar for guaranteed JSON output)
+- **LLM:** LangChain (LCEL, templates, loaders, splitters, structured output), Prompt Engineering (few-shot, CoT, system), LLM APIs (OpenAI, Gemini)
+- **Sampling params:** Temperature (0-2), top-k, top-p, max_tokens, frequency penalty — used on EVERY API call
+- **Agents:** LangGraph (StateGraph, nodes, edges, reducers, routing, checkpointing, HITL, multi-agent supervisor, parallel)
+- **RAG:** Naive → Advanced → Corrective (CRAG) → Adaptive → Conversational → Agentic RAG
+- **Search:** Hybrid Search (BM25 + Dense), pgvector, ChromaDB, Parent-Child Chunking, Semantic Chunking, Cross-encoder Reranking, HNSW vs IVFFlat
+- **Evaluation:** LangSmith, Ragas (Faithfulness, Context Precision, Answer Relevancy)
+- **MCP:** Model Context Protocol (Host/Client/Server, stdio vs HTTP SSE, Tools/Resources/Prompts, JSON-RPC 2.0)
+- **Deployment:** Docker, AWS ECS Fargate, AWS Bedrock, GitHub Actions CI/CD
+- **SQL:** PostgreSQL, pgvector, vector similarity search, HNSW index tuning (ef_search, m)
+- **DSA:** 50 problems — hash maps, two-pointer, trees, graphs, strings, arrays, sliding window
+
+### 🟡 Good-to-Have
+- **Full-Stack:** Next.js + TypeScript (chat UI components, streaming responses)
+- **Data:** Pandas, NumPy, Scikit-learn basics
+- **Inference:** vLLM engine (PagedAttention, continuous batching), KV cache management, VRAM capacity planning
+- **Cost Optimization:** Quantization (INT8/INT4 — AWQ, GPTQ), Redis Semantic Caching
+- **Interview Theory:** Transformer (QKV, self-attention, RoPE), BERT vs GPT, BPE/WordPiece tokenization, bias-variance, precision/recall/F1
+- **AWS:** Bedrock API, ECS Fargate, CloudWatch logging
+
+### 🚫 Skipped (Research-Validated)
+- Training CNNs/RNNs from scratch, Django/Flask, deep ML math (gradient descent), Apna.co
+- Fine-tuning (LoRA/PEFT): Read 1 article only. Only 8.5% of JDs mention it.
+- Classical ML pipelines: AI Engineers build LLM pipelines, not training pipelines
+
+## 2 Key Projects
+### Project 1 (Days 29-31): Multi-Tenant Enterprise RAG System
+- FastAPI + pgvector (row-level security) + LangGraph supervisor + MCP tools + Cross-encoder reranking + Hybrid Search + Docker + AWS ECS + Ragas eval
+- Apply signal: "Hire me" — architectural maturity
+
+### Project 2 (Days 54-56): Multi-Agent MCP Orchestrator
+- FastAPI + LangGraph (supervisor → workers) + MCP servers + Next.js UI + Docker + AWS ECS + GitHub Actions CI/CD + Error handling + Fallback logic
+- Apply signal: "Full-stack AI Engineer" — end-to-end delivery
+
+## Key Interview Answers (From Deep Research)
+1. "Why RAG over Fine-tuning?": RAG solves knowledge, fine-tuning solves behavior. Start with RAG + prompting.
+2. "Transformer architecture?": Self-attention is O(n²). Place critical instructions at end of prompt for highest attention weight.
+3. "How to ensure JSON output?": Constrained decoding with Outlines/XGrammar — logit masks guarantee schema compliance.
+4. "How to optimize costs?": Compound AI systems — cheap SLM router + expensive frontier model only for complex tasks.
+5. "AWS for AI?": Bedrock for serverless, ECS Fargate for persistent backends, Aurora pgvector for RAG.
 
 ## Key Files
-- agent/learning_plan.md — complete 60-day curriculum (most updated)
-- agent/day_syllabus.md — live day tracker
-- agent/skill_tracker.md — scores
-- agent/reports/day11_journal.md — Day 11 learning journal
+- agent/learning_plan.md — market-validated v2 curriculum (MOST UPDATED)
+- agent/day_syllabus.md — live day tracker with 7-phase structure
+- agent/skill_tracker.md — scores with new skills (FastAPI, LangGraph, MCP, LangSmith, Next.js)
+- agent/reports/current_status.md — full status with research-backed targets
+- agent/reports/market_research_2026.md — salary validation data
+- agent/reports/market_research_deep_2026.md — company mapping, tech stack, skill gaps
+- agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
+- agent/learnings/deep_research_model_architecture.md — transformer, hardware, AWS, interview cheat sheet
