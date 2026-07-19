@@ -39,74 +39,74 @@
 | 12 | Context Managers, Modules, __init__.py | Safe File I/O Manager + Package | Valid Anagram |
 | 13 | Async: asyncio, event loop, gather + **FastAPI intro** | Build first FastAPI endpoint | Group Anagrams |
 | 14 | Generators (yield), Tuples, enumerate, zip | Streaming token generator | Top K Frequent |
-| 15 | String methods, JSON module | Parse nested JSON LLM outputs | Product of Array |
+| 15 | String methods, JSON module + **Constrained Decoding (XGrammar/Outlines)** | Parse nested JSON LLM outputs + FSM token masking | Product of Array |
 | 16 | LLM APIs: OpenAI/Gemini, temperature, tokens, streaming | Chat + streaming response | Valid Palindrome |
-| 17 | Prompt Engineering: few-shot, CoT, system prompts | Test personas | 3Sum |
+| 17 | **Algorithmic Prompt Optimization**: DSPy + GEPA — self-improving prompt signatures from execution traces | Replace manual prompting with compiled, optimized prompts | 3Sum |
 
-### Phase 2: LangChain + RAG Core (Days 18-24)
+### Phase 2: LangChain + Advanced RAG Foundation (Days 18-24)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 18 | FastAPI SSE Streaming + Pydantic, Constrained Decoding (XGrammar) | Build streaming endpoint + guaranteed JSON | Container With Most Water + Two Sum II |
-| 19 | Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF by semantic boundaries | Longest Substring |
-| 20 | Vector DBs, Embeddings, ChromaDB | Store chunks + similarity search | Valid Parentheses |
-| 21 | **Naive RAG**: chunk → embed → store → retrieve → generate | End-to-end RAG script | Binary Search |
-| 22 | **SQL + pgvector basics**: SELECT, INSERT, JOINs, vector columns | Store embeddings in PostgreSQL | Search 2D Matrix |
-| 23 | **Parent-Child Chunking + Cross-Encoder Reranking** | Rerank top-20 → top-3 with BGE | Reverse Linked List |
-| 24 | **Hybrid Search**: BM25 + Dense, pgvector HNSW vs IVFFlat | Implement hybrid search + index tuning | Merge Two Sorted |
+| 18 | FastAPI SSE Streaming + Pydantic + Constrained Decoding | Build streaming endpoint + FSM-guaranteed JSON | Container With Most Water + Two Sum II |
+| 19 | LangChain: Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF, compare chunk strategies | Longest Substring |
+| 20 | Vector DBs, Embeddings, ChromaDB, HNSW vs IVFFlat | Store chunks + index tuning | Valid Parentheses |
+| 21 | **Advanced Retrieval**: Proposition Generation + Step-back Prompting | Decompose docs into atomic propositions, generate broader queries | Binary Search |
+| 22 | **SQL + pgvector**: SELECT, INSERT, JOINs, vector columns, read-only scopes | Store embeddings with read-only transaction scopes | Search 2D Matrix |
+| 23 | **Parent-Child Chunking + Cross-Encoder Reranking + GraphRAG** | Rerank top-20 → top-3, introduce GraphRAG via Milvus | Reverse Linked List |
+| 24 | **Hybrid Search**: BM25 + Dense, pgvector HNSW vs IVFFlat tuning | Implement hybrid search + benchmark index configs | Merge Two Sorted |
 
-### Phase 3: Advanced RAG + Evaluation + Project 1 (Days 25-31)
+### Phase 3: Adaptive RAG + Agentic Memory + Evaluation (Days 25-31)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
 | 25 | **Corrective RAG (CRAG)** + **Adaptive RAG** | Evaluator → web fallback + router | Reorder List |
-| 26 | **Conversational RAG + Agentic RAG** | Chat history + agent re-queries | Max Depth Tree |
-| 27 | **LangSmith + Langfuse + Ragas Eval**: Faithfulness, Context Precision, Answer Relevancy | Golden dataset + eval pipeline + observability | Validate BST |
-| 28 | **PROJECT 1**: Multi-Tenant RAG System (FastAPI + pgvector + LangGraph + MCP) | Build core features | Invert Tree |
-| 29 | Project 1: Docker containerize + Cross-encoder + Hybrid Search + Constrained Decoding | Complete features + eval | LCA of BST |
-| 30 | Project 1: Deploy to AWS ECS + Ragas eval + SSE streaming | Deploy + apply ready | Level Order Traversal |
-| 31 | **Project 1 DONE + APPLY BLITZ** | Wellfound + YC apps | Longest Consecutive Sequence |
+| 26 | **Conversational RAG + Agentic RAG**. Study: NirDiamant/rag_techniques | Chat history + agent re-queries. Analyze Proposition Gen patterns | Max Depth Tree |
+| 27 | **Agentic RAG with Contextual AI**: instruction-following rerankers, grounded models | Agent rewrites queries if results poor | Validate BST |
+| 28 | **Cross-Session Agent Memory**: Mem0 (semantic dedup) + Graphiti (temporal KGs). Study: NirDiamant/Agent_Memory_Techniques Notebooks 24-27 | Integrate Mem0 into LangGraph + build temporal KG | Invert Tree |
+| 29 | **Evaluation**: LLM-as-a-judge regression, Ragas, failure-mode reporting, AIBOM tracking | Golden dataset + auto-eval pipeline (catch infinite loops, context drift) | LCA of BST |
+| 30 | **PROJECT 1 BUILD**: Multi-Tenant Enterprise Knowledge Agent (Agno dual-schema, Graphiti, Mem0, CRAG, JWT RBAC) | FastAPI + pgvector RLS + LangGraph + Cross-encoder + Hybrid Search | Level Order Traversal |
+| 31 | **Project 1 DONE + APPLY BLITZ**: Deploy AWS ECS, Ragas report | Wellfound + YC apps with Project 1 as proof | Longest Consecutive Sequence |
 
-### Phase 4: LangGraph Mastery + MCP (Days 32-39)
+### Phase 4: LangGraph + Web Automation + MCP (Days 32-39)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine | Course Schedule |
-| 33 | LangGraph: Reducers, add_messages, Conditional Routing + **DFSDT Concept** | Chatbot with memory + DFSDT tool planning | Climbing Stairs |
-| 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tools | LRU Cache |
-| 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 workers | Task Scheduler |
-| 36 | LangSmith Tracing for LangGraph | Instrument multi-agent | Min Stack |
-| 37 | MCP: Host/Client/Server, stdio transport | Python MCP server with tools | Merge Intervals |
-| 38 | MCP: HTTP SSE, JSON-RPC 2.0, Tools vs Resources vs Prompts | DB schema as MCP Resource | Insert Interval |
-| 39 | **LangGraph + MCP Integration** | Agent discovers MCP tools | Course Schedule II |
+| 32 | LangGraph: StateGraph, Nodes, Edges, State, Reducers. Study: ed-donner/agents Week 4 | Linear 3-node state + chatbot with memory | Course Schedule |
+| 33 | LangGraph: Conditional Routing + **DFSDT** + **PostgresSaver checkpointing** | Intent router with durable checkpointing (not InMemorySaver) | Climbing Stairs |
+| 34 | **Advanced LangGraph**: HITL, **Send API** (parallel fan-out), hash-based idempotent recompute. Study: OpenBMB/ToolBench | Approval interrupts + parallel dispatch to analysts | LRU Cache |
+| 35 | MCP Core: Host/Client/Server, stdio/HTTP SSE, Tools/Resources. **OAuth 2.1 for MCP** | Python MCP server + token exchange (no passthrough) | Task Scheduler |
+| 36 | **Agentic Web Interaction**: browser-use (Playwright, visual DOM) + Firecrawl (markdown extraction). Study: firecrawl/firecrawl-workflows | Research agent navigates SPAs + extracts structured data | Min Stack |
+| 37 | MCP Integrations: Explore punkpeye/awesome-mcp-servers | OAuth 2.1 integrations, schema definitions | Merge Intervals |
+| 38 | **Lightweight Orchestration**: OpenAI Agents SDK (handoffs, manager pattern, voice streaming) | Manager agent delegates to specialized sub-agents | Insert Interval |
+| 39 | **LangGraph + MCP + Web Agent Integration** | Agent discovers MCP tools + browser-use for web research | Course Schedule II |
 
-### Phase 5: Full-Stack + Production Patterns (Days 40-46)
+### Phase 5: Production Security + Sandboxed Execution + Cloud Deploy (Days 40-46)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 40 | FastAPI Deep Dive: error handling, middleware, streaming, SSE, **Guardrails** for LLM output safety (PII, toxicity, schema) | Production FastAPI app with safety guards | Kth Largest in a Stream |
-| 41 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache | Deploy model with vLLM | K Closest Points to Origin |
-| 42 | **Redis Semantic Caching**: embeddings, cosine threshold 0.85-0.95, hybrid metadata filters | Build semantic cache layer | Best Time to Buy/Sell Stock |
-| 43 | **Next.js + TypeScript** with SSE streaming from FastAPI | Chat UI with real-time streaming | Longest Repeating Char Replacement |
-| 44 | **AWS ECS**: Deploy full stack (Fargate + RDS + Load Balancer) | Cloud deployment | Linked List Cycle |
-| 45 | **GitHub Actions CI/CD**: Auto-test, auto-eval, auto-deploy | Push → test → deploy pipeline | 3Sum review |
-| 46 | Cost tracking + Prompt versioning + A/B testing | Metadata wrapper + toggle | Min Window Substring |
+| 40 | **Agent Security & RBAC**: Agno dual-schema (read-only transactions) + JWT-based multi-tenant isolation | PostgreSQL read_only scopes for analyst agents | Kth Largest in a Stream |
+| 41 | **Threat Modeling**: AgentShield config scanning + NeMo Guardrails (Colang, topical bounding, jailbreak detection) | Scan agent configs for vulns, implement safety guards | K Closest Points to Origin |
+| 42 | **Sandboxed Code Execution**: Daytona SDK (isolated ephemeral sandboxes, dedicated kernel) | Build secure Python REPL via Daytona | Best Time to Buy/Sell Stock |
+| 43 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache. Study: EthicalML/awesome-production-agentic-systems | Deploy model, measure TTFT | Longest Repeating Char Replacement |
+| 44 | **Redis Semantic Caching** + **Next.js UI** basics with SSE streaming | Semantic cache + chat UI | Linked List Cycle |
+| 45 | **AWS ECS Fargate + Docker**: Deploy full stack (Fargate + RDS + Load Balancer) | Cloud deployment + CloudWatch | 3Sum review |
+| 46 | **GitHub Actions CI/CD**: Auto-test, auto-eval (LLM-as-a-judge), auto-deploy + Cost tracking | Push → test → deploy + token cost middleware | Min Window Substring |
 
-### Phase 6: System Design + Interview Prep (Days 47-53)
+### Phase 6: System Design + Interview Mastery (Days 47-53)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 47 | System Design: RAG at scale, semantic caching, hybrid metadata filtering, Redis tuning | 1M QPD architecture | Find Min Rotated + Search in Rotated Array |
-| 48 | System Design: Multi-tenant, vLLM inference architecture, PagedAttention, continuous batching | Inference architecture design | Subsets |
-| 49 | **LLM Inference Interview Prep**: vLLM, KV cache, quantization, constrained decoding deep dive | Explain concepts with examples | Serialize/Deserialize Tree |
+| 47 | System Design: RAG at scale + LangGraph scaling (PostgresSaver, Send API, hash-based idempotent recompute) | 1M QPD architecture + parallel fan-out design | Find Min Rotated + Search in Rotated Array |
+| 48 | System Design: Multi-tenant, LLM Gateway, vLLM inference architecture, PagedAttention | Gateway design + inference trade-offs | Subsets |
+| 49 | **MCP Security Paradigms**: OAuth 2.1, mTLS, OWASP MCP Top 10 (Confused Deputy, Tool Poisoning), per-client consent | Design secure MCP proxy with token exchange | Serialize/Deserialize Tree |
 | 50 | **NLP Concepts**: Transformer QKV, RoPE, BERT vs GPT, tokenization, MoE, speculative decoding | tiktoken + attention viz | Permutations |
-| 51 | DSA Mock + Portfolio Review | Polish GitHub | Word Search |
-| 52 | System Design Mock + Behavioral | Termination narrative + why AI | Combination Sum |
-| 53 | Live Coding Mock (FastAPI + LangGraph) | Build mini agent under time | Clone Graph |
+| 51 | **Advanced Memory Theory**: Procedural Memory (workflow templates), Blackboard System (namespaces, optimistic locking) | Design memory architecture with access control | Word Search |
+| 52 | System Design Mock + Behavioral | Termination narrative + why AI + architecture trade-offs | Combination Sum |
+| 53 | Live Coding Mock (FastAPI + LangGraph + MCP) | Build mini agent under time pressure | Clone Graph |
 
-### Phase 7: Project 2 + Apply FT (Days 54-60)
+### Phase 7: Capstone Project + Apply FT (Days 54-60)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 54 | **PROJECT 2**: Multi-Agent MCP Orchestrator (FastAPI + LangGraph + MCP + Next.js) | Build core | Implement Trie (Prefix Tree) |
-| 55 | Project 2: Docker + GitHub Actions + AWS ECS | CI/CD pipeline | Time Based Key-Value Store |
-| 56 | **Project 2 DONE**: Ragas eval + Deploy + README | Production-grade | Number of Islands + Max Area of Island |
-| 57 | **APPLY BLITZ**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Personalized messages | Redundant Connection |
-| 58 | Follow-ups + Mock interviews | Respond to callbacks, practice behavioral | Evaluate Reverse Polish Notation |
+| 54 | **PROJECT 2**: Autonomous Code & Web Intelligence Swarm — Blackboard pattern + Researcher (browser-use/Firecrawl) + Coder (Daytona) | Build Blackboard with namespaces, initiate agents | Implement Trie (Prefix Tree) |
+| 55 | Project 2: MCP with OAuth 2.1 + Docker + GitHub Actions + AWS ECS | CI/CD pipeline + token exchange | Time Based Key-Value Store |
+| 56 | **Project 2 DONE**: LLM-as-a-judge regression (catch infinite loops, context drift) + Deploy + README | Production-grade with architecture diagrams | Number of Islands + Max Area of Island |
+| 57 | **APPLY BLITZ**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Personalized messages with both projects | Redundant Connection |
+| 58 | Follow-ups + Mock interviews | Respond to callbacks, practice behavioral, negotiate | Evaluate Reverse Polish Notation |
 | 59 | Buffer / Offer evaluation | Compare offers, negotiate | Rest |
 | 60 | **🎯 ₹10-12 LPA OFFER** | Celebrate + plan next | — |
 
