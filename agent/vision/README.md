@@ -56,12 +56,14 @@
 
 | File | Purpose |
 |------|---------|
-| `ideas.md` | Product ideas, problem statements |
-| `research_log.md` | What I researched each week |
+| `execution_plan.md` | **START HERE** — Complete 3-year plan with daily sprint template, weekly cadence, monthly/quarterly reviews |
+| `research_report.md` | Full case studies (Bonsai, Prisma, Vercel, Hugging Face, Supabase, Cursor) + 4 market gaps |
+| `ideas.md` | Product ideas log + validation framework |
+| `research_log.md` | Weekly research log |
 | `prototypes.md` | Quick prototypes / MVPs built |
 | `lessons.md` | Lessons learned from building |
 | `contacts.md` | People met, mentors, co-founder potentials |
-| `progress_tracker.md` | Weekly progress logging |
+| `progress_tracker.md` | Monthly/quarterly progress logging |
 
 ---
 
