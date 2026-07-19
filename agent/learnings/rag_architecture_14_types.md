@@ -112,3 +112,17 @@ A community-driven repo covering RAG from foundational to cutting-edge. Each not
 1. **Proposition Chunking** — Splits text into atomic self-contained facts. Alternative to semantic chunking. Interview answer: *"I use proposition chunking for factual precision in retrieval."*
 2. **Fusion Retrieval** — Runs multiple query phrasings in parallel, combines via Reciprocal Rank Fusion. Interview answer: *"Fusion retrieval captures different query interpretations and combines results robustly."*
 3. **Explainable Retrieval** — Shows which parts of a document caused the semantic match. Interview answer: *"Explaining WHY a document was retrieved is essential for auditing and debugging RAG pipelines."*
+
+---
+
+## 📚 Complete NirDiamant Reference Library
+
+All repos by the same author. Use as practical references during your sprint.
+
+| Repo | Techniques | Stars | When to Use |
+|------|-----------|-------|-------------|
+| [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | 42 RAG notebooks | 26k+ | Phase 2-3 (Days 20-28) |
+| [Agent_Memory_Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques) | 30 memory patterns | New | Phase 4 (Days 32-39) — memory for agents |
+| [agents-towards-production](https://github.com/NirDiamant/agents-towards-production) | 28 production tutorials | 18k+ | Phase 5 (Days 40-46) — deployment, security |
+| [Prompt_Engineering](https://github.com/NirDiamant/Prompt_Engineering) | 22 prompting techniques | 7k+ | Phase 1 (Day 17) — prompt engineering |
+| [GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents) | 53 agent implementations | 21k+ | Phase 4 (Days 32-39) — agent examples |

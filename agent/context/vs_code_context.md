@@ -118,3 +118,7 @@
 - agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
 - agent/learnings/deep_research_model_architecture.md — transformer, hardware, AWS, interview cheat sheet
 - **NirDiamant/RAG_Techniques** (github.com/NirDiamant/RAG_Techniques) — 42+ runnable RAG notebooks. Use in Phase 2-3 as practical reference. 3 quick additions: Proposition Chunking, Fusion Retrieval, Explainable Retrieval.
+- **NirDiamant/Agent_Memory_Techniques** — 30 notebooks on agent memory (buffer, summary, entity, knowledge graph, Mem0, Letta, Zep). Reference for Phase 4 LangGraph memory patterns.
+- **NirDiamant/agents-towards-production** — 28 tutorials on production deployment (Docker, Bedrock, security, tracing, GPU). Already well-covered by our plan. Reference for security guardrails.
+- **NirDiamant/Prompt_Engineering** — 22 prompting techniques (zero-shot, CoT, self-consistency, chaining, optimization). Reference for Phase 1 Prompt Engineering day.
+- **NirDiamant/GenAI_Agents** — 53 agent implementations (LangGraph, MCP, business, creative, analysis). Reference for Phase 4 when building agents.
