@@ -25,12 +25,15 @@
 
 | Date | Idea | Problem It Solves | Notes |
 |------|------|-------------------|-------|
-| | | | |
+| Jul 19 | **MCP-as-a-Service** | 86% of MCP servers stuck running locally. 43% have security vulns. | Docker-based deploy engine with OAuth + sandboxing. High fit with my MCP skills. |
+| Jul 19 | **Agent Observability Dashboard** | Datadog/Splunk useless for AI. Need hierarchical span tracing for multi-agent workflows. | Lightweight, self-hosted. Target: LangGraph developers. |
+| Jul 19 | **CLI Agent Bridge** | MCP too heavy for solo devs. CLIs are 10-32x more token-efficient. | Auto-generate CLIs from REST APIs for Cursor/Claude Code. |
+| Jul 19 | **Continuous Eval Framework** | No "pytest for agents". Devs can't test if RAG degrades over time. | Local eval using quantized SLMs in CI/CD. |
 
----
+## Idea Evaluation Framework
 
-## Rules for Ideas
-1. Must be something I would use myself
-2. Must be AI-native (not just an AI wrapper)
-3. Should have a clear "why now?" answer
-4. Should be buildable by 1-2 people initially
+Before building anything substantial, validate with:
+1. Write README for product that doesn't exist yet
+2. Share in niche communities with waitlist link
+3. If no one signs up → kill the idea immediately
+4. If 10+ people join waitlist → build MVP in 2 weeks

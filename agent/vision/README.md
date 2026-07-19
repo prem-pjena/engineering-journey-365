@@ -19,12 +19,36 @@
 
 ## 🎯 Vision Statement
 
-> *"In 3 years, I will have built an AI-native product that either:*
-> - *Serves millions of users and creates real impact, OR*
-> - *Gets acquired by a major company, OR*
-> - *Raises funding and becomes a sustainable business"*
+> *"In 3 years, I will have built an AI-native developer tool that either:*
+> - *Serves millions of developers and creates real impact, OR*
+> - *Gets acquired by a major company (Microsoft/Vercel/Datadog), OR*
+> - *Generates $5k-$15k MRR as a bootstrapped cash cow"*
 
 **I am not a management guy. I am a builder.** The product speaks for itself.
+
+---
+
+## 📊 Key Research Findings (Jul 19, 2026)
+
+| Lesson | Source |
+|--------|--------|
+| Open-source first → monetize managed layer later | Prisma, Vercel, Supabase |
+| Deep technical abstraction can trigger acquisition (no sales team needed) | Bonsai → Microsoft |
+| Sometimes the hard path (fork everything) is the only path to 10x | Cursor → $60B acquisition |
+| Pay attention to market signals — pivot if devs love your OS library | Hugging Face |
+| "X for Y" positioning + open-source = explosive growth | Supabase |
+| Solo builder in India: viable at $1.5k-$2k MRR (₹1.2L/mo) | Cost arbitrage |
+
+## 4 Market Gaps Identified (2026)
+1. **MCP Deployment as a Service** — Security sandboxing + OAuth + one-click deploy
+2. **Agent Observability** — Lightweight trace visualization for multi-agent workflows
+3. **CLI-First Agent Bridge** — Auto-generate token-efficient CLIs from REST APIs
+4. **Continuous Eval Framework** — "pytest for agentic workflows" with quantized SLMs
+
+## Three Exit Paths
+- **Bootstrapped** ($5k-$15k MRR) — Full autonomy
+- **Venture** ($1M-$3M seed) — Hockey stick growth
+- **Acquisition** ($10M-$50M) — Deep tech moat (Bonsai-style)
 
 ---
 

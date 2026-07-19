@@ -8,7 +8,7 @@
 
 | Day | What I Researched | Key Takeaways | Next Steps |
 |-----|-------------------|---------------|------------|
-| 1 | | | |
+| 1 | Deep research: case studies (Bonsai, Prisma, Vercel, Hugging Face, Supabase, Cursor), market gaps, solo builder playbook, 1095-hour roadmap | Open-source first, monetize managed layer later. MCP-as-a-Service is highest-fit gap. Solo builder in India viable at $1.5k-$2k MRR. | Build LangGraph+MCP agent this week as proof-of-work. Write technical teardown on Dev.to. |
 
 ---
 
