@@ -46,7 +46,7 @@
 ### Phase 2: LangChain + RAG Core (Days 18-24)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 18 | FastAPI SSE Streaming + Pydantic, Constrained Decoding (XGrammar) | Build streaming endpoint + guaranteed JSON | Container With Most Water |
+| 18 | FastAPI SSE Streaming + Pydantic, Constrained Decoding (XGrammar) | Build streaming endpoint + guaranteed JSON | Container With Most Water + Two Sum II |
 | 19 | Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF by semantic boundaries | Longest Substring |
 | 20 | Vector DBs, Embeddings, ChromaDB | Store chunks + similarity search | Valid Parentheses |
 | 21 | **Naive RAG**: chunk → embed → store → retrieve → generate | End-to-end RAG script | Binary Search |
@@ -59,54 +59,54 @@
 |-----|---------|-----------|-----|
 | 25 | **Corrective RAG (CRAG)** + **Adaptive RAG** | Evaluator → web fallback + router | Reorder List |
 | 26 | **Conversational RAG + Agentic RAG** | Chat history + agent re-queries | Max Depth Tree |
-| 27 | **LangSmith + Langfuse + Ragas Eval**: Faithfulness, Context Precision, Answer Relevancy | Golden dataset + eval pipeline + observability | Same Tree |
+| 27 | **LangSmith + Langfuse + Ragas Eval**: Faithfulness, Context Precision, Answer Relevancy | Golden dataset + eval pipeline + observability | Validate BST |
 | 28 | **PROJECT 1**: Multi-Tenant RAG System (FastAPI + pgvector + LangGraph + MCP) | Build core features | Invert Tree |
 | 29 | Project 1: Docker containerize + Cross-encoder + Hybrid Search + Constrained Decoding | Complete features + eval | LCA of BST |
 | 30 | Project 1: Deploy to AWS ECS + Ragas eval + SSE streaming | Deploy + apply ready | Level Order Traversal |
-| 31 | **Project 1 DONE + APPLY BLITZ** | Wellfound + YC apps | Review all |
+| 31 | **Project 1 DONE + APPLY BLITZ** | Wellfound + YC apps | Longest Consecutive Sequence |
 
 ### Phase 4: LangGraph Mastery + MCP (Days 32-39)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
 | 32 | LangGraph: StateGraph, Nodes, Edges, State | Linear 3-node state machine | Course Schedule |
 | 33 | LangGraph: Reducers, add_messages, Conditional Routing + **DFSDT Concept** | Chatbot with memory + DFSDT tool planning | Climbing Stairs |
-| 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tools | Coin Change |
-| 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 workers | Longest Increasing Subseq |
-| 36 | LangSmith Tracing for LangGraph | Instrument multi-agent | Word Break |
+| 34 | LangGraph: Checkpointing, Human-in-the-loop | Approval interrupt before tools | LRU Cache |
+| 35 | LangGraph: Multi-agent Supervisor Pattern | Supervisor → 2 workers | Task Scheduler |
+| 36 | LangSmith Tracing for LangGraph | Instrument multi-agent | Min Stack |
 | 37 | MCP: Host/Client/Server, stdio transport | Python MCP server with tools | Merge Intervals |
 | 38 | MCP: HTTP SSE, JSON-RPC 2.0, Tools vs Resources vs Prompts | DB schema as MCP Resource | Insert Interval |
-| 39 | **LangGraph + MCP Integration** | Agent discovers MCP tools | Non-overlapping Intervals |
+| 39 | **LangGraph + MCP Integration** | Agent discovers MCP tools | Course Schedule II |
 
 ### Phase 5: Full-Stack + Production Patterns (Days 40-46)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 40 | FastAPI Deep Dive: error handling, middleware, streaming, SSE, **Guardrails** for LLM output safety (PII, toxicity, schema) | Production FastAPI app with safety guards | Rotate Image |
-| 41 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache | Deploy model with vLLM | Spiral Matrix |
-| 42 | **Redis Semantic Caching**: embeddings, cosine threshold 0.85-0.95, hybrid metadata filters | Build semantic cache layer | Number of 1 Bits |
-| 43 | **Next.js + TypeScript** with SSE streaming from FastAPI | Chat UI with real-time streaming | Counting Bits |
-| 44 | **AWS ECS**: Deploy full stack (Fargate + RDS + Load Balancer) | Cloud deployment | Missing Number |
+| 40 | FastAPI Deep Dive: error handling, middleware, streaming, SSE, **Guardrails** for LLM output safety (PII, toxicity, schema) | Production FastAPI app with safety guards | Kth Largest in a Stream |
+| 41 | **vLLM Inference**: PagedAttention, continuous batching, TP, KV cache | Deploy model with vLLM | K Closest Points to Origin |
+| 42 | **Redis Semantic Caching**: embeddings, cosine threshold 0.85-0.95, hybrid metadata filters | Build semantic cache layer | Best Time to Buy/Sell Stock |
+| 43 | **Next.js + TypeScript** with SSE streaming from FastAPI | Chat UI with real-time streaming | Longest Repeating Char Replacement |
+| 44 | **AWS ECS**: Deploy full stack (Fargate + RDS + Load Balancer) | Cloud deployment | Linked List Cycle |
 | 45 | **GitHub Actions CI/CD**: Auto-test, auto-eval, auto-deploy | Push → test → deploy pipeline | 3Sum review |
 | 46 | Cost tracking + Prompt versioning + A/B testing | Metadata wrapper + toggle | Min Window Substring |
 
 ### Phase 6: System Design + Interview Prep (Days 47-53)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 47 | System Design: RAG at scale, semantic caching, hybrid metadata filtering, Redis tuning | 1M QPD architecture | Find Min Rotated review |
-| 48 | System Design: Multi-tenant, vLLM inference architecture, PagedAttention, continuous batching | Inference architecture design | Merge k Sorted Lists |
+| 47 | System Design: RAG at scale, semantic caching, hybrid metadata filtering, Redis tuning | 1M QPD architecture | Find Min Rotated + Search in Rotated Array |
+| 48 | System Design: Multi-tenant, vLLM inference architecture, PagedAttention, continuous batching | Inference architecture design | Subsets |
 | 49 | **LLM Inference Interview Prep**: vLLM, KV cache, quantization, constrained decoding deep dive | Explain concepts with examples | Serialize/Deserialize Tree |
-| 50 | **NLP Concepts**: Transformer QKV, RoPE, BERT vs GPT, tokenization, MoE, speculative decoding | tiktoken + attention viz | Alien Dictionary |
+| 50 | **NLP Concepts**: Transformer QKV, RoPE, BERT vs GPT, tokenization, MoE, speculative decoding | tiktoken + attention viz | Permutations |
 | 51 | DSA Mock + Portfolio Review | Polish GitHub | Word Search |
-| 52 | System Design Mock + Behavioral | Termination narrative + why AI | LCS |
-| 53 | Live Coding Mock (FastAPI + LangGraph) | Build mini agent under time | Word Ladder |
+| 52 | System Design Mock + Behavioral | Termination narrative + why AI | Combination Sum |
+| 53 | Live Coding Mock (FastAPI + LangGraph) | Build mini agent under time | Clone Graph |
 
 ### Phase 7: Project 2 + Apply FT (Days 54-60)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 54 | **PROJECT 2**: Multi-Agent MCP Orchestrator (FastAPI + LangGraph + MCP + Next.js) | Build core | Trapping Rain Water |
-| 55 | Project 2: Docker + GitHub Actions + AWS ECS | CI/CD pipeline | Largest Rectangle |
-| 56 | **Project 2 DONE**: Ragas eval + Deploy + README | Production-grade | Review patterns |
-| 57 | **APPLY BLITZ**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Personalized messages | Review weak areas |
-| 58 | Follow-ups + Mock interviews | Respond to callbacks | Targeted DSA |
+| 54 | **PROJECT 2**: Multi-Agent MCP Orchestrator (FastAPI + LangGraph + MCP + Next.js) | Build core | Implement Trie (Prefix Tree) |
+| 55 | Project 2: Docker + GitHub Actions + AWS ECS | CI/CD pipeline | Time Based Key-Value Store |
+| 56 | **Project 2 DONE**: Ragas eval + Deploy + README | Production-grade | Number of Islands + Max Area of Island |
+| 57 | **APPLY BLITZ**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Personalized messages | Redundant Connection |
+| 58 | Follow-ups + Mock interviews | Respond to callbacks, practice behavioral | Evaluate Reverse Polish Notation |
 | 59 | Buffer / Offer evaluation | Compare offers, negotiate | Rest |
 | 60 | **🎯 ₹10-12 LPA OFFER** | Celebrate + plan next | — |
 

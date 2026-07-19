@@ -79,7 +79,7 @@
 - **LLM Safety:** **Guardrails** (guardrails-ai/guardrails) — input/output validators for PII, toxic language, schema compliance, competitor checking. Add to Phase 5 FastAPI backend.
 - **Deployment:** Docker, AWS ECS Fargate, AWS Bedrock, GitHub Actions CI/CD
 - **SQL:** PostgreSQL, pgvector, vector similarity search, HNSW index tuning (ef_search, m)
-- **DSA:** 50 problems — hash maps, two-pointer, trees, graphs, strings, arrays, sliding window
+- **DSA:** **Pareto 50** — Arrays & Hashing, Two Pointers, Sliding Window, Stack & Queue, Binary Search, Linked Lists, Trees (BFS/DFS), Graphs (BFS/DFS/Topo Sort/Cycle Detection), Intervals, Backtracking, Heaps, Design (LRU Cache, Trie, Time-Based KV), DP Basics. **Explicitly skip**: Coin Change, LIS, Word Ladder, Trapping Rain Water, Largest Rectangle — zero ROI for Agentic AI startup interviews
 
 ### 🟡 Good-to-Have
 - **Full-Stack:** Next.js + TypeScript (chat UI components, streaming responses)
