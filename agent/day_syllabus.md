@@ -84,7 +84,7 @@
 | 45 | **Milvus Distributed Architecture**: Knowhere, Proxy/QueryNode/IndexNode, GuaranteeTs consistency, consistency_level tuning, Clustering Compaction | Deploy Milvus. Configure consistency levels. Trigger compaction | Course Schedule II |
 | 46 | **Agent Security + Ollama + AWS ECS Deploy**: Agno dual-schema, JWT RBAC, Ollama local, Guardrails + NeMo | PostgreSQL read_only scopes + guarded cloud deploy | Trapping Rain Water review |
 
-### Phase 6: AI Infrastructure & Production MLOps (Days 47-53)
+### Phase 6: AI Infrastructure & Production MLOps (Days 47-56)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
 | 47 | **Real-Time Streaming Agent Architectures**: SSE/WebSockets, state management in streams, gateway strategies (connection pooling, gRPC, drop handling) | Build real-time streaming agent endpoint | Find Min Rotated + Search in Rotated Array |
@@ -92,19 +92,41 @@
 | 49 | **AI Observability + MCP Security**: Langfuse/LangSmith tracing, Prometheus/Grafana drift detection. MCP threat models (Confused Deputy, mTLS, tool output sanitization, container isolation) | Monitoring dashboard + secure MCP proxy with mTLS + output sanitization | Serialize/Deserialize Tree |
 | 50 | **Inference Optimization + Multi-Tenant Caching**: vLLM PagedAttention (logical KV → physical GPU pages, <8 tokens/seq fragmentation). Continuous batching. Token-aware rate limiting. Silo/Pool/Bridge isolation. Tenant-aware Redis caching | Diagram PagedAttention scheduler + Sliding Window Log + tenant-aware cache | Word Ladder |
 | 51 | **Tripartite Agent Memory & Temporal Graphs**: Cognee (graph-native), Neo4j (Short/Long/Reasoning), Graphiti (bi-temporal), AgentMemory (Ebbinghaus decay). POLE+O extraction. Study: topoteretes/cognee, rohitg00/agentmemory | Design memory loop: observations → POLE+O → Long-Term graph → reasoning traces. Implement temporal decay | Permutations |
-| 52 | Live Coding Mock (FastAPI + LangGraph + MCP + Streaming) + Behavioral | Build mini streaming agent. Practice trade-off articulation | Combination Sum |
-| 53 | DSA Mock + Portfolio Review + Apply Follow-ups | Solve problems + polish GitHub README with architecture diagrams | Clone Graph |
+| 52 | **MOCK: LLM Theory & RAG Architecture** (Verbal) + **Behavioral Integration** | Practice Q&A from interview bank. Record and refine | Combination Sum |
+| 53 | **MOCK: Pair Programming** (Live coding — enforce "thinking out loud") | Build mini streaming agent with continuous vocalization | Clone Graph |
+| 54 | **MOCK: System Design** (Whiteboarding RAG pipelines + LLM Gateways) | Draw 5-step flow. Practice trade-offs | Number of Islands + Max Area |
+| 55 | **MOCK: Behavioral + Portfolio Defense + Take-Home Simulation** (6-hr block) | Build full MVP: FastAPI + LangGraph + MCP server | Redundant Connection |
+| 56 | **APPLY BLITZ + Mock Review**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Review mock recordings. Iterate based on feedback | Evaluate Reverse Polish Notation |
 
-### Phase 7: Agentic Orchestration, MCP & Advanced Tools (Days 54-60)
+### Phase 7: Agentic Orchestration, MCP & Advanced Tools (Days 57-60)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 54 | **Advanced Agent Patterns + A2A vs MCP**: Self-reflection, multi-tool, hierarchical, debate. LangGraph vs CrewAI vs AutoGen. A2A (horizontal delegation, Agent Cards, JSON-RPC 2.0) vs MCP (vertical tools). Study: a2aproject/A2A, FareedKhan-dev/all-agentic-architectures | Build self-reflecting agent + A2A card discovery + MCP tool call in same system | Implement Trie (Prefix Tree) |
-| 55 | **PROJECT 2 BUILD**: Autonomous Code & Web Intelligence Swarm — Blackboard + Researcher (browser-use/Firecrawl) + Coder (Daytona). n8n/Langflow/Dify prototyping. Ollama local | Build Blackboard with namespaces. Visual workflow in n8n | Time Based Key-Value Store |
-| 56 | **PROJECT 2**: MCP with OAuth 2.1 + Advanced MCP (streaming tools, Sampling, Roots). Claude Code integration | Docker + GitHub Actions + AWS ECS. MCP Sampling | Largest Rectangle in Histogram |
-| 57 | **PROJECT 2 DONE**: LLM-as-a-judge + Deploy + README. OpenClaw gateway (AGENTS.md, SOUL.md). Study: iusztinpaul/designing-real-world-ai-agents-workshop | Production-grade docs + OpenClaw + Deep Research Agent pattern | Number of Islands + Max Area of Island |
-| 58 | **Token Compression**: Headroom (60-95% reduction). Agent observability (LangSmith: cost/task, steps/task). Mem0 + Graphiti + AgentShield + NeMo | Headroom compression + LangSmith dashboard + security scan | Redundant Connection |
-| 59 | **APPLY BLITZ**: Wellfound (20) + YC (10) + LinkedIn DMs (10). Claude Code MCP connectivity | Personalized messages with both projects | Evaluate Reverse Polish Notation |
-| 60 | Follow-ups + Mock interviews + Offer evaluation | Negotiate, compare CTC vs cash vs equity | Course Schedule II review |
+| 57 | **Advanced Agent Patterns + A2A vs MCP**: Self-reflection, multi-tool, hierarchical, debate. LangGraph vs CrewAI vs AutoGen. A2A (horizontal delegation, Agent Cards, JSON-RPC 2.0) vs MCP (vertical tools). Study: a2aproject/A2A, FareedKhan-dev/all-agentic-architectures | Build self-reflecting agent + A2A card discovery + MCP tool call in same system | Implement Trie (Prefix Tree) |
+| 58 | **PROJECT 2 BUILD**: Autonomous Code & Web Intelligence Swarm — Blackboard + Researcher (browser-use/Firecrawl) + Coder (Daytona). **Tripartite Memory**: Neo4j/Cognee (POLE+O). n8n/Langflow/Dify. Ollama | Build Blackboard with tripartite memory. Visual workflow in n8n | Time Based Key-Value Store |
+| 59 | **PROJECT 2**: MCP with OAuth 2.1 + Advanced MCP (Sampling, Roots, streaming). Claude Code + Headroom compression + Docker + AWS ECS | Implement MCP Sampling + Headroom + CI/CD | Largest Rectangle in Histogram |
+| 60 | **PROJECT 2 DONE**: LLM-as-a-judge + Deploy + README + **APPLY BLITZ** | Production-grade docs. Apply to 40+ roles | Course Schedule II review |
+
+### Phase 8: Scalable Agentic System Design (Post-60-Day — Interview Deep Dive)
+| Topic | Morning | Afternoon | Deliverable |
+|-------|---------|-----------|-------------|
+| Distributed Systems for AI | CAP Theorem, Eventual Consistency, Message Queues (Kafka/RabbitMQ) | Circuit Breakers, Idempotency in Agent Actions | distributed_systems_ai.md |
+| Advanced Rate Limiting | Token Bucket vs Leaky Bucket vs Sliding Window Log | Model Routing vs Single Frontier Model | rate_limiting_models.md |
+| Protocol Architecture | A2A: Agent Cards, discovery, JSON-RPC 2.0, stateful tasks. MCP: Roots, Sampling | Blended A2A+MCP architectures, security (mTLS, sender-constrained tokens) | protocol_architecture.md |
+| Multi-Tenant Design | Silo/Pool/Bridge isolation, tenant-aware caching, RLS, LoRA adapters | Capacity planning: HNSW memory, peak QPS, back-of-envelope | multi_tenant_design.md |
+| Disaster Recovery | Multi-region, DB replication, agent state recovery, LLM provider fallback | Graceful degradation: cache fallbacks, model chains | dr_failover.md |
+| System Design Mock I | Design RAG for 10M QPD with multi-modal data | Design secure multi-agent with A2A + MCP | system_design_mock_1.md |
+| System Design Mock II | Design LLM inference for 500 concurrent users | Design feature store for real-time recs (50ms p99) | system_design_mock_2.md |
+
+---
+
+## 📚 Repository & Reference Integration Matrix
+| Days | Focus | Primary Repository |
+|------|-------|-------------------|
+| 11-24, 32-46 | DSA Pattern Families | labuladong/fucking-algorithm — state-space reduction for BFS and Backtracking |
+| 25-31 | ML Theory | alirezadir/machine-learning-interviews, KalyanKS-NLP/LLM-Interview-Questions — top 30 concepts |
+| 47-51 | System Design | binhnguyennus/awesome-scalability, chiphuyen/dmls-book Chapters 8-11 |
+| 49-51 | Agentic Implementation | modelcontextprotocol/servers, NirDiamant/GenAI_Agents |
+| Day 30 | Paper Reading | mli/paper-reading — DeepSeek-V3 Technical Report + Attention Is All You Need |
 
 ### Phase 8: Scalable Agentic System Design (Post-60-Day — Interview Deep Dive)
 | Topic | Morning | Afternoon | Deliverable |
