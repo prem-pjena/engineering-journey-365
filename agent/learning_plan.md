@@ -103,35 +103,50 @@
 | 45 | **Agent Security & RBAC**: Agno dual-schema (read-only transactions) + JWT isolation + **Ollama local deployment** for privacy-preserving dev | PostgreSQL read_only scopes. Deploy local LLM with Ollama. Study Ref: ollama/ollama | Course Schedule II | agent_security_ollama.py |
 | 46 | **Agentic Threat Modeling**: AgentShield config scanning + NeMo Guardrails (Colang, topical bounding, jailbreak detection) + **AWS ECS Fargate** deploy | Scan configs for vulns. Deploy guarded agent to cloud | Trapping Rain Water review | threat_model_deploy.py |
 
-### Phase 6: System Design & Production MLOps (Days 47-53)
-*Goal: Feature stores, model registries, drift detection, load balancing, inference optimization, MCP security, memory architectures*
+### Phase 6: AI Infrastructure & Production MLOps (Days 47-53)
+*Goal: Master inference optimization, caching, feature stores, model registries, CI/CD for AI, observability, and streaming architectures*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 47 | **High-Throughput RAG Architecture**: Scaling to 1M QPD — load balancing inference servers, rate limiting at AI gateway, CDN for static prompt assets/embeddings. **LangGraph scaling**: PostgresSaver, Send API, hash-based idempotent recompute | Architecture diagram for 1M QPD + parallel fan-out design | Find Min Rotated + Search in Rotated Array | rag_architecture.md |
-| 48 | **MLOps & Production ML Infrastructure**: Feature Stores (prevent training-serving skew), Model Registries via MLflow/DVC, A/B Testing Infrastructure for LLM outputs | Design feature store schema. Build MLflow experiment tracker | Subsets | mlops_infra.md |
-| 49 | **AI Observability & Drift Detection**: Monitoring latency p50/p95/p99, distributed tracing. Detecting concept/data drift via Prometheus + Grafana. **MCP Security**: OAuth 2.1, mTLS, OWASP MCP Top 10, per-client consent | Design monitoring dashboard. Build secure MCP proxy with token exchange | Serialize/Deserialize Tree | observability_mcp.md |
-| 50 | **Semantic Caching & Data Layers**: Redis LangCache (cosine threshold 0.85-0.95) for LLM cost reduction. **Inference Optimization & Hardware Topology**: vLLM continuous batching, PagedAttention, KV cache, CUDA/GPU kernel constraints | Implement multi-tier cache. Diagram GPU memory hierarchy | Word Ladder (BFS shortest path) | caching_inference.md |
-| 51 | **Agent Memory Architectures**: Procedural Memory (parameterized workflow templates from execution traces), Blackboard System (namespaces, optimistic locking, thread-safe locks). **NLP Concepts**: Transformer QKV, RoPE, BERT vs GPT, tokenization (BPE/WordPiece/Unigram/SentencePiece), MoE, speculative decoding | Design memory architecture + tiktoken counter + attention viz | Permutations | memory_nlp.py |
-| 52 | **Live Coding Mock (FastAPI + LangGraph + MCP)** + Behavioral | Build mini agent under time pressure. Practice "termination narrative" + architecture trade-offs | Combination Sum | live_coding_mock/ |
-| 53 | **DSA Mock + Portfolio Review + Apply Follow-ups** | Solve problems under time pressure. Polish GitHub. Respond to callbacks | Clone Graph | mock_interview_log |
+| 47 | **Real-Time Streaming Agent Architectures**: Northbound interface design — SSE and WebSockets for token-by-token streaming. State management in streams (agent reasoning traces, intermediate tool calls). Gateway strategies: connection pooling, bidirectional gRPC, handling drops | Build real-time streaming agent endpoint with SSE. Visualize token-by-token output | Find Min Rotated + Search in Rotated Array | streaming_architecture.py |
+| 48 | **MLOps & Production ML Infrastructure**: Feature Stores (Feast/Tecton — offline batch + online streaming pipelines, point-in-time joins to prevent training-serving skew). Model Registries (MLflow lifecycle vs DVC Git-native versioning). A/B Testing for LLM outputs. **Prompt Management**: DSPy compilation, Vellum/Promptfoo for A/B testing prompt variants, shadow deployments | Design feature store dual-pipeline. Build MLflow tracker + DSPy compiled prompt pipeline. Shadow-deploy prompt variants | Subsets | mlops_prompt_mgmt.py |
+| 49 | **AI Observability & MCP Security**: Monitoring latency p50/p95/p99, distributed tracing (Langfuse, LangSmith). Concept/data drift detection (Prometheus + Grafana). **MCP Threat Models**: Preventing Confused Deputy attacks, mTLS for server-to-server trust, prompt injection via tool output sanitization, containerized MCP server isolation. OAuth 2.1, OWASP MCP Top 10, per-client consent | Design monitoring dashboard. Build secure MCP proxy with mTLS + token exchange + output sanitization | Serialize/Deserialize Tree | observability_mcp_security.py |
+| 50 | **Inference Optimization & Multi-Tenant Caching**: vLLM PagedAttention mechanics (logical KV → physical GPU memory pages, eliminating fragmentation to <8 tokens/seq). Continuous batching at iteration level. Token-aware rate limiting (Sliding Window Log, Token Bucket). **Multi-Tenant Isolation**: Silo/Pool/Bridge models. Row-level security in pgvector. Tenant-aware Redis LangCache (tenant_id namespaces, prevent cross-tenant leakage) | Diagram PagedAttention scheduler. Implement Sliding Window Log rate limiter. Build tenant-aware cache with isolation validation | Word Ladder | inference_multitenant.py |
+| 51 | **CI/CD Pipelines & Evaluation Gates for AI Agents**: PR-time checks — prompt template linting, tool schema validation, deterministic eval against golden datasets. Token-budget regression gates (fail build on unexpected token spikes). Canary deployments for agents (gradual rollouts, error rate monitoring, automated rollback). Study Ref: EthicalML/awesome-production-agentic-systems, ashishps1/learn-ai-engineering | Build GitHub Actions CI/CD pipeline with token-budget gate + Ragas eval gate + canary deployment script | Permutations | cicd_agent_pipeline.yml |
+| 52 | **Live Coding Mock (FastAPI + LangGraph + MCP + Streaming)** + Behavioral | Build mini streaming agent under time pressure. Practice trade-off articulation (PagedAttention vs naive KV, RRF vs pure semantic, OAuth 2.1 vs API keys) | Combination Sum | live_coding_mock/ |
+| 53 | **DSA Mock + Portfolio Review + Apply Follow-ups** | Solve problems under time pressure. Polish GitHub README with architecture diagrams. Respond to callbacks | Clone Graph | mock_interview_log |
 
 ### Phase 7: Agentic Orchestration, MCP & Advanced Tools (Days 54-60)
-*Goal: Build Autonomous Code & Web Intelligence Swarm, master CrewAI/LangGraph complementarity, Ollama, Claude Code, OpenClaw, Headroom, MCP advanced features*
+*Goal: Build Autonomous Code & Web Intelligence Swarm, master LangGraph/CrewAI/AutoGen, A2A vs MCP protocols, Ollama, Claude Code, OpenClaw, Headroom*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 54 | **Advanced Agent Patterns**: Self-reflection loops, multi-tool use, hierarchical planning, multi-agent debate. **Multi-Agent Orchestration Comparison**: LangGraph (stateful production) vs CrewAI (rapid role-based assembly) vs AutoGen (conversational debate). Study Ref: crewAIInc/crewAI, NirDiamant/GenAI_Agents | Build self-reflecting agent + compare framework topologies. **Open WebUI** for local testing | Implement Trie (Prefix Tree) | agent_patterns.py |
+| 54 | **Advanced Agent Patterns**: Self-reflection loops, multi-tool use, hierarchical planning, multi-agent debate. **Multi-Agent Orchestration Comparison**: LangGraph (stateful production) vs CrewAI (rapid role-based) vs AutoGen (conversational debate). **Protocol Design — A2A vs MCP**: Horizontal agent delegation (A2A — JSON-RPC 2.0, Agent Cards, capability discovery) vs vertical tool integration (MCP). Blended architectures. Study Ref: crewAIInc/crewAI, a2aproject/A2A, FareedKhan-dev/all-agentic-architectures, alirezadir/Agentic-AI-Systems | Build self-reflecting agent. Compare framework topologies. Implement A2A card discovery + MCP tool call in same system | Implement Trie (Prefix Tree) | agent_patterns_a2a.py |
 | 55 | **PROJECT 2 BUILD**: Autonomous Code & Web Intelligence Swarm — Blackboard pattern + Researcher (browser-use + Playwright + Firecrawl) + Coder (Daytona sandbox). **Visual Workflow Builders**: n8n, Langflow, Dify for rapid prototyping. **Ollama** for local LLM serving | Build Blackboard with namespaces. Initiate agents. Prototype workflow visually in n8n | Time Based Key-Value Store | project2_start/ |
 | 56 | **PROJECT 2 continued**: MCP servers with OAuth 2.1 + **Advanced MCP** (streaming tools, resource subscriptions, Sampling for server-initiated LLM calls, Roots for directory boundaries). **Claude Code** integration for agentic coding acceleration | Docker + GitHub Actions + AWS ECS. Implement MCP Sampling. Study Ref: anthropics/claude-code | Largest Rectangle in Histogram | project2_continue/ |
-| 57 | **PROJECT 2 DONE**: LLM-as-a-judge regression (catch infinite loops, context drift) + Deploy + README with architecture diagrams. **OpenClaw** local gateway (AGENTS.md, SOUL.md configs). **Agent Skills Ecosystem**: addyosmani/agent-skills patterns | Production-grade project with docs. Set up OpenClaw gateway. Package agent skills | Number of Islands + Max Area of Island | project2_done/ |
+| 57 | **PROJECT 2 DONE**: LLM-as-a-judge regression (catch infinite loops, context drift) + Deploy + README with architecture diagrams. **OpenClaw** local gateway (AGENTS.md, SOUL.md configs). **Agent Skills Ecosystem**: addyosmani/agent-skills patterns. Study Ref: iusztinpaul/designing-real-world-ai-agents-workshop | Production-grade project with docs. Set up OpenClaw gateway. Package agent skills. Replicate workshop Deep Research Agent pattern | Number of Islands + Max Area of Island | project2_done/ |
 | 58 | **Token Compression & Optimization**: Headroom ContentRouter + SmartCrusher — compress JSON/AST/prose tool outputs by 60-95% before LLM processing. **Agent Observability**: tracing, logging, debugging loops. Track completion rate, cost/task, steps/task via LangSmith. **Memory Architectures**: Mem0, Graphiti, Redis for procedural state. AgentShield + NeMo for safety | Implement Headroom compression. Build LangSmith dashboard. Run AgentShield scan | Redundant Connection | optimization_observability.py |
 | 59 | **APPLY BLITZ**: Wellfound (20 apps) + YC (10) + LinkedIn DMs (10). **Claude Code** MCP server connectivity for dev workflow | Personalized messages with both projects. Set up CLAUDE.md workspace context | Evaluate Reverse Polish Notation | apply_blitz_log.md |
 | 60 | Follow-ups + Mock interviews + Offer evaluation | Respond to callbacks, negotiate offers. Compare CTC vs cash vs equity | Course Schedule II review | interview_tracker.md |
 
 ---
 
-## 📋 2 Projects to Build (Market-Aligned)
+### Phase 8: Scalable Agentic System Design (Post-60-Day — Interview Deep Dive)
+*Goal: Master distributed systems for AI, advanced rate limiting, A2A/MCP protocol architectures, disaster recovery, and system design interview frameworks. Study these topics after securing interviews.*
+
+| Topic | Morning (2hr) | Afternoon (2hr) | Key Deliverable |
+|-------|--------------|-----------------|-----------------|
+| **Distributed Systems Fundamentals for AI** | CAP Theorem and Eventual Consistency for distributed agent memory and vector replication. Message Queues (Kafka/RabbitMQ) for background inference tasks and document ingestion | Circuit Breakers and Retry Logic for fault-tolerant LLM API gateways. Idempotency in Agent Actions (preventing double-execution of tool calls during retries) | distributed_systems_ai.md |
+| **Advanced Rate Limiting & Load Balancing** | Token Bucket vs Leaky Bucket vs Sliding Window Log (memory cost, fairness, burst tolerance). Load balancing for inference servers (round-robin, least connections, request routing) | Model Routing vs Single Frontier Model — latency vs cost trade-offs. Token-aware rate limiting for GPU concurrency | rate_limiting_models.md |
+| **Protocol Architecture Deep Dive** | A2A Protocol: Agent Cards, capability discovery, JSON-RPC 2.0, multi-part modal messages, stateful long-running tasks. MCP: Roots, Sampling, streaming tools, subscriptions | Blended architectures: orchestrator uses A2A for horizontal delegation, workers use MCP for vertical tool access. Security: mTLS, sender-constrained tokens | protocol_architecture.md |
+| **Multi-Tenant AI Platform Design** | Silo/Pool/Bridge isolation models. Tenant-aware caching (namespace isolation, prevent cross-tenant leakage). Row-level security in pgvector. Tenant-specific LoRA adapters | Capacity planning: memory footprint for HNSW at scale, peak QPS calculations, back-of-envelope estimations for interviews | multi_tenant_design.md |
+| **Disaster Recovery & Failover** | Multi-region deployment for AI systems. Database replication strategies. Agent state recovery after crashes. Handling LLM API provider outages (fallback models) | Designing for graceful degradation: cache fallbacks, model fallback chains, degraded response strategies | dr_failover.md |
+| **System Design Mock I** | Full mock: "Design a RAG system for 10M QPD with multi-modal data" | Full mock: "Design a secure multi-agent system with A2A + MCP" | system_design_mock_1.md |
+| **System Design Mock II** | Full mock: "Design an LLM inference serving platform for 500 concurrent users" | Full mock: "Design a feature store for real-time recommendations (50ms p99)" | system_design_mock_2.md |
+
+---
+
+## 📋 2 Projects to Build (Market-Aligned) — Architecture Documentation Requirements
 
 ### Project 1 (Days 29-31): Multi-Tenant Enterprise Knowledge Agent
 **Tech Stack:** FastAPI + pgvector (RLS) + LangGraph + MCP + Mem0 + Graphiti + Cross-encoder + Hybrid Search + Docker + AWS ECS + LangSmith/Ragas
@@ -155,6 +170,20 @@
 - **LLM-as-a-judge regression testing** — catches infinite tool-calling loops, context drift, silent failures
 - Full CI/CD pipeline (push → test → eval → deploy) + cost tracking middleware
 - **Interview signal:** "Full-stack AI Engineer" — end-to-end delivery with enterprise security and sandboxing
+
+### 📐 Project 1 — Architecture Documentation Requirements
+The README MUST include:
+- **Component Diagram**: Visually mapping ingestion pipeline (parsers, embedding models), storage layer (vector DB, object storage), and serving layer (API gateway, LLM)
+- **Data Flow Definition**: Point-in-time consistency strategies, handling late-arriving events
+- **Capacity Planning**: Back-of-envelope calculations for memory footprint (RAM for 1M vectors in HNSW) and peak QPS throughput
+- **Tenant Isolation Strategy**: Row-level security implementation, tenant-aware cache key design
+
+### 📐 Project 2 — Architecture Documentation Requirements
+The README MUST include:
+- **State Machine Diagram**: Node transitions, conditional edges, HITL checkpoints using standard flowchart notation
+- **Protocol Specifications**: Which interactions use A2A (horizontal negotiation) vs MCP (vertical tool execution)
+- **Security Threat Model**: Mitigations for prompt injection, ambient authority escalation, cross-tenant data leakage in agent logs
+- **CI/CD Pipeline Design**: Token-budget regression tests, deterministic evaluation gates for automated deployment
 
 ---
 
@@ -269,6 +298,20 @@
 | ashishps1/learn-ai-engineering | Phase 6 | System design interview prep, architecture blueprints |
 | Shubhamsaboo/awesome-llm-apps | Phase 4 | Real-world LLM application patterns, RAG variants |
 | NousResearch/hermes-agent | Phase 1 Day 17 | DSPy + GEPA integration patterns for prompt evolution |
+| **donnemartin/system-design-primer** | **Phase 8** | Rate limiting algorithms, load balancing, cache eviction policies — map to vLLM/Semantic Caching |
+| **a2aproject/A2A** | **Phase 7 Day 54** | Agent-to-Agent protocol: Agent Cards, capability discovery, JSON-RPC 2.0 |
+| **FareedKhan-dev/all-agentic-architectures** | **Phase 7 Day 54** | 35 agent patterns (Reflexion, LATS, Meta-Controller). Implement deterministic-picker pattern |
+| **alirezadir/Agentic-AI-Systems** | **Phase 7 Day 54** | Multi-agent state management and reasoning loops chapter mapping |
+| **iusztinpaul/designing-real-world-ai-agents-workshop** | **Phase 7 Day 57** | End-to-end Deep Research Agent as MCP server using FastMCP + Opik evaluations |
+| **NirDiamant/agents-towards-production** | **Phase 7 Day 58** | Docker deployment, PII sanitization pipelines, security guardrails for capstone |
+| **omBharatiya/ai-system-design-guide** | **Phase 6, Phase 8** | AI system design interview questions and architecture blueprints |
+| **labuladong/fucking-algorithm** | **Phase 1-2** | DSA problem-solving frameworks, pattern-based algorithm mastery |
+| **binhnguyennus/awesome-scalability** | **Phase 8** | Scalability patterns, system design interview prep for high-throughput systems |
+| **KalyanKS-NLP/LLM-Interview-Questions** | **Phase 3, Phase 6** | LLM interview questions with answers, theory deep dives |
+| **ombharatiya/AI-Engineer-Interview-Questions** | **Phase 6** | AI Engineer specific interview questions compilation |
+| **chiphuyen/dmls-book** | **Phase 3** | Designing Machine Learning Systems — production ML patterns |
+| **HandsOnLLM/Hands-On-Large-Language-Models** | **Phase 3, Phase 4** | Practical LLM exercises that translate to interview answers |
+| **mli/paper-reading** | **Phase 3 Day 28-29** | Key papers to study: Attention Is All You Need, DeepSeek-V3, etc. |
 
 ---
 

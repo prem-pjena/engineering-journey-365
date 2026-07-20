@@ -60,8 +60,9 @@
 | 3 | 25-31 | Classical ML + NLP Theory + Transformer Internals (DeepSeek-V3 MLA/MoE) + RAG Eval | Math foundations + transformer block + eval pipeline + Project 1 |
 | 4 | 32-39 | Advanced DSA + Enterprise RAG (RAGFlow DeepDoc) + Agentic Memory (Mem0/Graphiti) | Multi-Tenant Knowledge Agent deployed |
 | 5 | 40-46 | Database Architecture (DiskANN, tsvector, CTEs, Redis) + Security (Agno, AgentShield, NeMo) + Ollama | Vector indexing expertise + secure local LLM |
-| 6 | 47-53 | System Design (MLOps, Feature Stores, Drift Detection) + MCP Security + Memory Theory | Interview ready |
-| 7 | 54-60 | Agentic Orchestration (LangGraph/CrewAI) + Advanced MCP + Claude Code + OpenClaw + Headroom + **Project 2** | Autonomous Code & Web Intelligence Swarm |
+| 6 | 47-53 | AI Infrastructure & MLOps (Streaming Architectures, Feature Stores, Observability, Inference Optimization, Multi-Tenant Caching, CI/CD for AI) | Production MLOps pipeline + streaming agents |
+| 7 | 54-60 | Agentic Orchestration (LangGraph/CrewAI/AutoGen) + A2A vs MCP Protocols + Claude Code + OpenClaw + Headroom + **Project 2** | Autonomous Code & Web Intelligence Swarm |
+| 8 | Post-60 | Scalable Agentic System Design (Distributed Systems, Rate Limiting, Protocol Architecture, Multi-Tenant Design, Disaster Recovery, System Design Mocks) | Interview-ready system design depth |
 
 ## ALL Concepts (Market-Validated v3 — 2026 Update)
 ### 🔴 Must-Know
@@ -147,4 +148,20 @@
 15. "Local LLM deployment?": Ollama for dev and privacy compliance. Critical for Indian fintech where data cannot leave premises. Supports OpenAI-compatible API, making it drop-in replaceable.
 16. "How to reduce LLM token costs?": Headroom ContentRouter compresses JSON/AST/prose by 60-95% before LLM processing. Combined with Redis LangCache semantic caching (cosine > 0.85 skip LLM call).
 - agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
-- agent/learnings/gold_mines_repo_analysis.md — deep analysis of 7 key repos: Guardrails (production safety with validators), ed-donner/agents (6-week agent curriculum matching Phases 1-4), agno-agi/agno (full-stack agent framework, LangGraph alternative), modelcontextprotocol/servers (official MCP reference implementations — study for Phase 4), browser-use/browser-use (AI browser agent with MCP server/client — use in Project 2), OpenBMB/ToolBench (DFSDT algorithm that beats ReAct for multi-tool scenarios, ToolEval metrics), EthicalML/awesome-production-agentic-systems (master index of production agentic tools)
+- agent/learnings/gold_mines_repo_analysis.md — deep analysis of 7 key repos
+
+## New Study References (System Design & Interviews)
+- **donnemartin/system-design-primer**: Rate limiting, load balancing, cache eviction — map to vLLM/Semantic Caching
+- **a2aproject/A2A**: Agent-to-Agent protocol, Agent Cards, capability discovery, JSON-RPC 2.0
+- **FareedKhan-dev/all-agentic-architectures**: 35 agent patterns (Reflexion, LATS, Meta-Controller)
+- **alirezadir/Agentic-AI-Systems**: Multi-agent state management and reasoning loops
+- **iusztinpaul/designing-real-world-ai-agents-workshop**: Deep Research Agent as MCP server via FastMCP + Opik
+- **NirDiamant/agents-towards-production**: Docker deployment, PII sanitization, security guardrails
+- **omBharatiya/ai-system-design-guide**: AI system design interview questions
+- **labuladong/fucking-algorithm**: DSA problem-solving frameworks and pattern mastery
+- **binhnguyennus/awesome-scalability**: Scalability patterns for high-throughput systems
+- **KalyanKS-NLP/LLM-Interview-Questions**: LLM interview questions with answers
+- **ombharatiya/AI-Engineer-Interview-Questions**: AI Engineer specific interview questions
+- **chiphuyen/dmls-book**: Designing Machine Learning Systems — production ML patterns
+- **HandsOnLLM/Hands-On-Large-Language-Models**: Practical LLM exercises for interviews
+- **mli/paper-reading**: Key papers: Attention Is All You Need, DeepSeek-V3
