@@ -56,13 +56,12 @@
 
 | Phase | Days | Focus | Milestone |
 |-------|------|-------|-----------|
-| 1 | 11-17 | Python + FastAPI + Algorithmic Prompting (DSPy/GEPA) | CLI chat + FastAPI endpoint + compiled prompts |
-| 2 | 18-24 | LangChain + Advanced RAG (Proposition Gen, Step-back, GraphRAG) + pgvector | Advanced RAG pipeline |
-| 3 | 25-31 | Adaptive RAG + Agentic Memory (Mem0/Graphiti) + LLM-as-a-judge Eval + **Project 1 + DEPLOY + APPLY** | Multi-Tenant Knowledge Agent deployed |
-| 4 | 32-39 | LangGraph (PostgresSaver, Send API) + Web Automation (browser-use/Firecrawl) + MCP (OAuth 2.1) + OpenAI Agents SDK | Stateful agents + web + MCP integration |
-| 5 | 40-46 | Security (Agno RBAC, AgentShield, NeMo) + Sandboxed Execution (Daytona) + vLLM + Redis + Next.js + CI/CD | Secure, sandboxed deployed app |
-| 6 | 47-53 | System Design (RAG scale, LangGraph scaling) + MCP Security (OWASP Top 10) + Advanced Memory Theory (Procedural, Blackboard) | Interview ready |
-| 7 | 54-60 | **Project 2 + DEPLOY + APPLY FT** | Autonomous Code & Web Intelligence Swarm |
+| 1-2 | 11-24 | Core DSA + Python + FastAPI + Algorithmic Prompting (DSPy/GEPA) + LangChain + Advanced RAG | CLI chat + FastAPI endpoint + compiled prompts + hybrid search |
+| 3 | 25-31 | Classical ML + NLP Theory + Transformer Internals (DeepSeek-V3 MLA/MoE) + RAG Eval | Math foundations + transformer block + eval pipeline + Project 1 |
+| 4 | 32-39 | Advanced DSA + Enterprise RAG (RAGFlow DeepDoc) + Agentic Memory (Mem0/Graphiti) | Multi-Tenant Knowledge Agent deployed |
+| 5 | 40-46 | Database Architecture (DiskANN, tsvector, CTEs, Redis) + Security (Agno, AgentShield, NeMo) + Ollama | Vector indexing expertise + secure local LLM |
+| 6 | 47-53 | System Design (MLOps, Feature Stores, Drift Detection) + MCP Security + Memory Theory | Interview ready |
+| 7 | 54-60 | Agentic Orchestration (LangGraph/CrewAI) + Advanced MCP + Claude Code + OpenClaw + Headroom + **Project 2** | Autonomous Code & Web Intelligence Swarm |
 
 ## ALL Concepts (Market-Validated v3 — 2026 Update)
 ### 🔴 Must-Know
@@ -75,44 +74,58 @@
 - **Agent Memory:** **Mem0** (semantic fact extraction, automated dedup, contradiction resolution), **Graphiti** (temporal knowledge graphs), **Procedural Memory** (parameterized workflow templates), **Blackboard System** (namespaces, optimistic locking, private scratchpads)
 - **Web Automation:** **browser-use** (Playwright, visual DOM, multi-tab navigation), **Firecrawl** (LLM-ready markdown, anti-bot bypass)
 - **Sandboxed Execution:** **Daytona SDK** — NEVER run agent code natively. Use isolated ephemeral sandboxes
-- **Search:** Hybrid Search (BM25 + Dense), pgvector, ChromaDB, HNSW vs IVFFlat
+- **Search:** Hybrid Search (BM25 + Dense + **tsvector** + **RRF**), pgvector, **pgvectorscale (DiskANN)**, ChromaDB (prototype-only), HNSW vs IVFFlat vs DiskANN
 - **Evaluation:** LangSmith, Langfuse/OpenLLMetry, Ragas (Faithfulness, Context Precision, Answer Relevancy), **LLM-as-a-judge** regression testing, **AIBOM** supply chain tracking
-- **MCP:** Model Context Protocol (Host/Client/Server, stdio vs HTTP SSE, Tools/Resources/Prompts, JSON-RPC 2.0). **OAuth 2.1 mandatory** (token exchange, no passthrough, per-client consent). Study: modelcontextprotocol/servers, punkpeye/awesome-mcp-servers
+- **MCP:** Model Context Protocol (Host/Client/Server, stdio vs HTTP SSE, Tools/Resources/Prompts, JSON-RPC 2.0). **OAuth 2.1 mandatory** (token exchange, no passthrough, per-client consent). **Advanced MCP**: streaming tools, resource subscriptions, **Sampling**, **Roots**. Study: modelcontextprotocol/servers, punkpeye/awesome-mcp-servers
 - **Agent Security:** **Dual Schema Enforcement** (Agno — read-only scopes for data agents), **JWT-based RBAC**, **AgentShield** (config vuln scanning), **NeMo Guardrails** (Colang for topical bounding, jailbreak detection)
+- **Local LLM:** **Ollama** — run LLMs locally for development, privacy compliance (critical for Indian enterprise/fintech)
+- **Agentic Coding:** **Claude Code** — agentic coding with CLAUDE.md context injection, three-phase loop (gather → act → verify)
+- **Local Gateway:** **OpenClaw** — multi-channel agent gateway, AGENTS.md/SOUL.md workspace management
+- **Token Optimization:** **Headroom** — ContentRouter/SmartCrusher, 60-95% token reduction before LLM processing
+- **Agent Frameworks (complementary):** **LangGraph** (stateful production) + **CrewAI** (rapid role-based prototyping) + **OpenAI Agents SDK** (lightweight handoffs)
 - **Tool Planning:** **DFSDT** (Depth-First Search Decision Tree) — explores multiple tool paths and backtracks on failure. From OpenBMB/ToolBench
 - **LLM Safety:** **Guardrails** (guardrails-ai/guardrails) — input/output validators for PII, toxic language, schema compliance
 - **Deployment:** Docker, AWS ECS Fargate, AWS Bedrock, GitHub Actions CI/CD
-- **SQL:** PostgreSQL, pgvector, vector similarity search, HNSW index tuning (ef_search, m), **read-only transaction scopes**
-- **DSA:** **Pareto 50** — Arrays & Hashing, Two Pointers, Sliding Window, Stack & Queue, Binary Search, Linked Lists, Trees (BFS/DFS), Graphs (BFS/DFS/Topo Sort/Cycle Detection), Intervals, Backtracking, Heaps, Design (LRU Cache, Trie, Time-Based KV), DP Basics. **Explicitly skip**: Coin Change, LIS, Word Ladder, Trapping Rain Water, Largest Rectangle
+- **SQL:** PostgreSQL, pgvector, **pgvectorscale DiskANN**, **Recursive CTEs**, **tsvector full-text search + RRF**, vector similarity search, HNSW vs IVFFlat vs DiskANN index tuning, **read-only transaction scopes**
+- **DSA:** **Pareto 50+** — Arrays & Hashing, Two Pointers, Sliding Window, Stack & Queue, Binary Search, Linked Lists, Trees (BFS/DFS), Graphs (BFS/DFS/Topo Sort/Cycle Detection), Intervals, Backtracking, Heaps, Design (LRU Cache, Trie, Time-Based KV), **DP (Coin Change, LIS, Climbing Stairs)**, **Monotonic Stack (Largest Rectangle, Trapping Rain Water)**, **BFS Shortest Path (Word Ladder)**. **Probabilistic Data Structures**: Bloom filters, HyperLogLog
 
 ### 🟡 Good-to-Have
 - **Full-Stack:** Next.js + TypeScript (chat UI components, streaming responses)
 - **Data:** Pandas, NumPy, Scikit-learn basics
 - **Inference:** vLLM engine (PagedAttention, continuous batching), KV cache management, VRAM capacity planning
 - **Cost Optimization:** Quantization (INT8/INT4 — AWQ, GPTQ), Redis Semantic Caching
-- **Interview Theory:** Transformer (QKV, self-attention, RoPE), BERT vs GPT, BPE/WordPiece tokenization, bias-variance, precision/recall/F1, **MCP OWASP Top 10**, **Procedural vs Episodic vs Semantic Memory**
+- **Interview Theory:** Transformer (QKV, self-attention, RoPE), BERT vs GPT, BPE/WordPiece/Unigram/SentencePiece, bias-variance, precision/recall/F1, **MCP OWASP Top 10**, **Procedural vs Episodic vs Semantic Memory**, **DeepSeek-V3 (MLA, MoE) internals**, **Classical ML (Logistic Regression, Random Forest, XGBoost, K-Means, PCA)**
 - **AWS:** Bedrock API, ECS Fargate, CloudWatch logging
+- **Visual Workflow Builders:** **n8n**, **Langflow**, **Dify** — rapid prototyping only; not for production
+- **Self-Hosted Chat UI:** **Open WebUI** — offline testing
 
-### 🚫 Skipped (Research-Validated)
+### 🚫 Skipped / Downgraded (Research-Validated)
 - Training CNNs/RNNs from scratch, Django/Flask, deep ML math (gradient descent), Apna.co
 - Fine-tuning (LoRA/PEFT): Read 1 article only. Only 8.5% of JDs mention it.
 - Classical ML pipelines: AI Engineers build LLM pipelines, not training pipelines
-- **Naive RAG:** Deprioritized in favor of Proposition Generation, Step-back Prompting, and GraphRAG
+- **Naive RAG:** Deprioritized — use Proposition Generation, Step-back, GraphRAG
 - **InMemorySaver:** Restricted to testing only. Use PostgresSaver for production
 - **Static API keys for MCP:** Deprecated. OAuth 2.1 token exchange is mandatory
+- **ChromaDB for production:** Downgraded to prototype-only. Use pgvector/DiskANN for scale
 
 ## 2 Key Projects
-### Project 1 (Days 29-31): Multi-Tenant Enterprise Knowledge Agent
-- FastAPI + pgvector (RLS) + LangGraph + MCP + Mem0 + Graphiti + Cross-encoder reranking + Hybrid Search + Docker + AWS ECS + Ragas eval + LLM-as-a-judge
+### Project 1 (Days 31-38): Multi-Tenant Enterprise Knowledge Agent
+- FastAPI + pgvector (RLS) + LangGraph + MCP + Mem0 + Graphiti + Cross-encoder reranking + Hybrid Search (BM25 + tsvector + RRF) + Docker + AWS ECS + Ragas eval + LLM-as-a-judge
 - **Agno dual-schema:** read-only transaction scopes for data agents, isolated schema for engineer agents
 - **JWT-based RBAC** for multi-tenant isolation
+- **RAGFlow DeepDoc** for layout-aware enterprise document parsing
 - Apply signal: "Hire me" — architectural maturity with security awareness
 
-### Project 2 (Days 54-56): Autonomous Code & Web Intelligence Swarm
-- FastAPI + LangGraph (Blackboard pattern with optimistic locking) + browser-use + Firecrawl + Daytona + MCP (OAuth 2.1) + Next.js UI + Docker + AWS ECS + GitHub Actions CI/CD
+### Project 2 (Days 54-57): Autonomous Code & Web Intelligence Swarm
+- FastAPI + LangGraph (Blackboard pattern with optimistic locking) + browser-use + Firecrawl + Daytona + MCP (OAuth 2.1, Sampling, Roots) + Next.js UI + Docker + AWS ECS + GitHub Actions CI/CD
 - **Researcher Agent:** browser-use + Playwright for visual DOM, multi-tab SPA navigation
 - **Coder Agent:** Python workflows inside isolated Daytona sandboxes
 - **MCP servers secured via OAuth 2.1** token exchange, per-client consent registries
+- **Advanced MCP:** Sampling for server-initiated LLM calls, Roots for directory boundaries
+- **Ollama** local LLM for privacy-preserving dev
+- **Claude Code** agentic coding acceleration
+- **OpenClaw** local agent gateway
+- **Headroom** token compression (60-95% reduction)
 - **LLM-as-a-judge** regression testing catches infinite loops, context drift
 - Apply signal: "Full-stack AI Engineer" — enterprise security + sandboxed execution
 
@@ -127,5 +140,11 @@
 8. "How to scale LangGraph?": PostgresSaver for durable checkpoints, Send API for parallel fan-out, hash-based idempotent recompute to skip repeated work.
 9. "Agent safety?": AgentShield for config vuln scanning, NeMo Guardrails for jailbreak detection, dual-schema DB enforcement for data integrity.
 10. "Execution sandboxing?": Daytona SDK — isolated ephemeral sandboxes with dedicated kernel, network isolation. NEVER run agent code natively.
+11. "HNSW vs DiskANN?": HNSW is RAM-only — memory cost explodes at scale (~5x vector size). DiskANN (pgvectorscale) uses SSD-optimized Vamana graphs, supports billion-scale with metadata pre-filtering without recall cliff. Choose DiskANN for >10M vectors.
+12. "Hybrid Search for RAG?": Pure semantic search misses exact keyword matches (acronyms, serial numbers). Fuse pgvector cosine similarity with PostgreSQL tsvector full-text search via Reciprocal Rank Fusion (RRF) for high recall.
+13. "DeepSeek-V3 architecture?": Multi-Head Latent Attention (MLA) compresses KV pairs into shared latent space (d_c=512) — reduces KV cache memory by ~10x. MoE with auxiliary-loss-free load balancing — only ~37B active params per token out of 671B total. Multi-Token Prediction improves training efficiency.
+14. "LangGraph vs CrewAI?": Complementary, not competing. LangGraph for deterministic stateful production (96% error recovery). CrewAI for rapid role-based prototyping (content generation, research). Use LangGraph in prod, CrewAI for experiments.
+15. "Local LLM deployment?": Ollama for dev and privacy compliance. Critical for Indian fintech where data cannot leave premises. Supports OpenAI-compatible API, making it drop-in replaceable.
+16. "How to reduce LLM token costs?": Headroom ContentRouter compresses JSON/AST/prose by 60-95% before LLM processing. Combined with Redis LangCache semantic caching (cosine > 0.85 skip LLM call).
 - agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
 - agent/learnings/gold_mines_repo_analysis.md — deep analysis of 7 key repos: Guardrails (production safety with validators), ed-donner/agents (6-week agent curriculum matching Phases 1-4), agno-agi/agno (full-stack agent framework, LangGraph alternative), modelcontextprotocol/servers (official MCP reference implementations — study for Phase 4), browser-use/browser-use (AI browser agent with MCP server/client — use in Project 2), OpenBMB/ToolBench (DFSDT algorithm that beats ReAct for multi-tool scenarios, ToolEval metrics), EthicalML/awesome-production-agentic-systems (master index of production agentic tools)
