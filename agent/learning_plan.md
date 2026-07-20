@@ -23,7 +23,11 @@
 | 🔴 Must-Know | Inference Optimization | **vLLM** (PagedAttention, continuous batching, Tensor Parallelism), KV cache management, Quantization (INT8/INT4) — essential for open-source model serving |
 | 🔴 Must-Know | Semantic Caching | **Redis** (LangCache) with vector embedding + cosine similarity threshold tuning (0.85-0.95) + hybrid metadata filtering for tenant isolation. **Redis for agent session state storage** |
 | 🔴 Must-Know | Agent Security | **Dual Schema Enforcement** (Agno pattern — read-only transaction scopes for data agents), **JWT-based RBAC**, **AgentShield** (config scanning, adversarial red-teaming), **NeMo Guardrails** (topical bounding, jailbreak detection), **OAuth 2.1** for MCP (token exchange, no token passthrough, per-client consent registries) |
-| 🔴 Must-Know | SQL & Vectors | PostgreSQL, pgvector, **pgvectorscale (DiskANN)** for SSD-optimized billion-scale vectors, HNSW vs IVFFlat vs DiskANN indexing, vector similarity search, **read-only transaction scopes**, **Recursive CTEs** for tree traversal, **tsvector full-text search + Reciprocal Rank Fusion** for hybrid retrieval |
+| 🔴 Must-Know | SQL & Vectors | PostgreSQL, pgvector, **pgvectorscale (DiskANN)** for SSD-optimized billion-scale vectors, HNSW vs IVFFlat vs DiskANN vs **PQ vs IVF+PQ** indexing, vector similarity search, **read-only transaction scopes**, **Recursive CTEs** for tree traversal, **tsvector full-text search + Reciprocal Rank Fusion** for hybrid retrieval |
+| 🔴 Must-Know | Tensor-Native Search | **Vespa** — unified tensor framework for dense, sparse, lexical, and multi-modal retrieval in single engine. Phased ranking (BM25 + HNSW + ONNX reranking) |
+| 🔴 Must-Know | Serverless Vector Storage | **LanceDB** — Arrow-native columnar format, memory-mapped S3-backed zero-copy access, compute-storage decoupling |
+| 🔴 Must-Know | Distributed Vector DB | **Milvus** — Knowhere engine, Proxy/QueryNode/IndexNode decoupling, GuaranteeTs consistency, consistency_level tuning (Strong/Bounded/Eventual) |
+| 🔴 Must-Know | Agent Memory Databases | **Cognee** (graph-native memory control plane), **Neo4j** (tripartite Short/Long/Reasoning memory), **Graphiti** (bi-temporal knowledge graphs), **AgentMemory** (MCP-integrated procedural memory with Ebbinghaus decay) |
 | 🔴 Must-Know | DSA | **Pareto 50+** — Arrays & Hashing, Two Pointers, Sliding Window, Stack & Queue, Binary Search, Linked Lists, Trees (BFS/DFS), Graphs (BFS/DFS/Topo Sort/Cycle Detection), Intervals, Backtracking, Heaps, Design (LRU Cache, Trie, Time-Based KV), **DP (Coin Change, LIS, Climbing Stairs)**, **Monotonic Stack (Largest Rectangle, Trapping Rain Water)**, **BFS Shortest Path (Word Ladder)**. **Probabilistic Data Structures**: Bloom filters, HyperLogLog. **Dimensionality Reduction**: matrix multiplication complexity for attention |
 | 🔴 Must-Know | Local LLM Deployment | **Ollama** — run LLMs locally for development, privacy-preserving deployment, data sovereignty compliance (critical for Indian enterprise/fintech) |
 | 🔴 Must-Know | Enterprise RAG Engine | **RAGFlow** — DeepDoc module for layout-aware document parsing (tables, headers, multi-column, OCR), visual RAG pipeline builder |
@@ -32,11 +36,13 @@
 | 🔴 Must-Know | Agentic Coding | **Claude Code** — agentic coding tool, CLAUDE.md workspace context injection, automated three-phase loop (gather → act → verify) |
 | 🟡 Good-to-Have | Visual Workflow Builders | **n8n**, **Langflow**, **Dify** — rapid prototyping and stakeholder demonstrations; not for production agent workflows |
 | 🟡 Good-to-Have | Self-Hosted Chat UI | **Open WebUI** — offline-capable ChatGPT alternative for local testing |
+| 🟡 Good-to-Have | Sparse Vector Search | **Elasticsearch ELSER** — learned sparse retrieval (~30K dimensions), exact-match precision + deep semantic matching without fine-tuning |
+| 🟡 Good-to-Have | Enterprise RAG Reference | **Bisheng** — study production document extraction pipelines, hybrid orchestration engines (theory only) |
 | 🟡 Good-to-Have | Full-Stack | **Next.js + TypeScript** (unlocks Full Stack AI Engineer roles — premium pay for end-to-end delivery) |
 | 🟡 Good-to-Have | Data | Pandas, NumPy basics |
 | 🟡 Good-to-Have | Interview Theory | Transformer architecture (Q, K, V, self-attention, RoPE), BERT vs GPT, tokenization (BPE/WordPiece/Unigram/SentencePiece), LLM inference architecture (vLLM, KV cache), **MCP OWASP Top 10**, **Procedural vs Episodic vs Semantic Memory**, **Blackboard Architecture**, **DeepSeek-V3 (MLA, MoE) internals**, **Classical ML (Logistic Regression, Random Forest, XGBoost, K-Means, PCA)** |
 | ⚪ Nice-to-Have | Fine-tuning | LoRA / PEFT — 8.5% JD mention vs RAG 35.9%. Read 1 article for concept only |
-| 🟡 Good-to-Have | Prototype-Only | **ChromaDB** — excellent for rapid local prototyping. NOT for production. **CrewAI** — rapid role-based assembly, not for stateful production. **n8n/Langflow/Dify** — visual prototyping only |
+| 🟡 Good-to-Have | Prototype-Only | **CrewAI** — rapid role-based assembly, not for stateful production. **n8n/Langflow/Dify** — visual prototyping only |
 | 🚫 Skip | CNNs/RNNs/Classical ML | Zero JD mentions for GenAI Engineer roles. Skip bias-variance, cross-validation, gradient descent entirely |
 
 ---
@@ -57,7 +63,7 @@
 | 17 | **Algorithmic Prompt Optimization**: DSPy + GEPA (Genetic-Pareto Evolution) | Replace manual prompt engineering with compiled, optimized prompts | 3Sum | dspy_optimizer.py |
 | 18 | FastAPI SSE Streaming + Pydantic v2 + Constrained Decoding | Build streaming endpoint + FSM-guaranteed JSON | Container With Most Water + Two Sum II | fastapi_streaming.py |
 | 19 | LangChain: Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF, split by semantic boundaries, compare chunk strategies | Longest Substring w/o Repeat | semantic_chunker.py |
-| 20 | Vector DBs, Embeddings, ChromaDB (prototype-only), HNSW vs IVFFlat | Store chunks + similarity search + index tuning | Valid Parentheses | chroma_ingestion.py |
+| 20 | Vector DBs, Embeddings, HNSW vs IVFFlat (prototyping with FAISS or local pgvector) | Store chunks + similarity search + index tuning | Valid Parentheses | vector_index_basics.py |
 | 21 | **Advanced Retrieval**: Proposition Generation + Step-back Prompting | Decompose docs into atomic propositions, generate broader queries | Binary Search | advanced_retrieval.py |
 | 22 | **SQL + pgvector**: SELECT, INSERT, JOINs, vector columns, read-only scopes | Store embeddings with read-only transaction scopes for safety | Search 2D Matrix | pgvector_setup.sql |
 | 23 | **Parent-Child Chunking + Cross-Encoder Reranking + GraphRAG** | Rerank top-20 to top-3 with BGE, introduce GraphRAG via Milvus | Reverse Linked List | reranked_rag.py |
@@ -91,17 +97,17 @@
 | 39 | **PROJECT 1 FOLLOW-UP**: Buffer day for interview callbacks, re-visit weak DSA areas | Respond to recruiter messages, practice weak patterns | Merge Intervals + Insert Interval | interview_followup/ |
 
 ### Phase 5: Database Architecture & Advanced SQL (Days 40-46)
-*Goal: Master vector indexing strategies, hybrid search, recursive CTEs, Redis caching, and production database comparisons*
+*Goal: Master vector index algorithms (FAISS PQ/IVF), tensor-native search (Vespa), serverless vector stores (LanceDB), Redis VSET, Milvus distributed architecture, hybrid search with Elasticsearch ELSER, and multi-tenant vector scaling*
 
 | Day | Morning (2hr) | Afternoon (2hr) | Evening DSA (1hr) | Deliverable |
 |-----|--------------|-----------------|-------------------|------------|
-| 40 | **Vector Indexing Deep Dive**: HNSW tuning (m, ef_construction, ef_search) for <10M vectors + active writes. IVFFlat tuning (lists, probes) for memory constraints. **DiskANN via pgvectorscale** for SSD-optimized Vamana graph — billion-scale | Benchmark HNSW vs IVFFlat vs DiskANN on same dataset. Measure recall vs QPS vs memory | Kth Largest in Stream | vector_indexing.py |
-| 41 | **Vector DB Production Comparison**: pgvector vs Pinecone vs Qdrant vs Milvus vs Weaviate — deployment cost, infra overhead, latency benchmarks. When to choose what | Decision tree analysis + cost projection for different scale scenarios | K Closest Points to Origin | vector_db_comparison.md |
-| 42 | **SQL Optimization for AI**: Recursive CTEs (WITH RECURSIVE) for traversing semantic hierarchies and document chunk trees. Partition pruning for multi-tenant RAG | Write recursive queries on hierarchical data. Set up table partitioning | Best Time to Buy/Sell Stock | sql_optimization.sql |
-| 43 | **PostgreSQL Hybrid Search**: Fusing pgvector semantic similarity (cosine/L2) with tsvector full-text search via Reciprocal Rank Fusion (RRF). Study Ref: facebookresearch/faiss, nmslib/nmslib | Build hybrid search endpoint. Compare recall vs pure semantic | Trapping Rain Water (monotonic stack mastery) | hybrid_search_rrf.py |
-| 44 | **Redis for AI**: Semantic caching (LangCache) with cosine threshold 0.85-0.95. Agent session state storage. Vector search with redis-py. Multi-tier caching strategy | Implement Redis LangCache. Measure TTFT improvement | Largest Rectangle in Histogram (monotonic stack) | redis_caching.py |
-| 45 | **Agent Security & RBAC**: Agno dual-schema (read-only transactions) + JWT isolation + **Ollama local deployment** for privacy-preserving dev | PostgreSQL read_only scopes. Deploy local LLM with Ollama. Study Ref: ollama/ollama | Course Schedule II | agent_security_ollama.py |
-| 46 | **Agentic Threat Modeling**: AgentShield config scanning + NeMo Guardrails (Colang, topical bounding, jailbreak detection) + **AWS ECS Fargate** deploy | Scan configs for vulns. Deploy guarded agent to cloud | Trapping Rain Water review | threat_model_deploy.py |
+| 40 | **FAISS Vector Primitives Lab**: IndexFactory strings — IndexFlatL2 (exhaustive), IndexIVFFlat (Voronoi partitioning), **Product Quantization (IVF4096,PQ16)**. HNSW vs IVFFlat vs PQ trade-offs. Scalar Int8 quantization (<1.5% recall loss, 64% storage reduction). Study Ref: facebookresearch/faiss | Build FAISS index comparison benchmark. Measure recall vs QPS vs memory for Flat vs IVFFlat vs IVF-PQ vs HNSW | Kth Largest in Stream | faiss_primitives.py |
+| 41 | **Vespa: Tensor-Native AI Search**: Tensor mathematical structures (mapped vs indexed dimensions). Multi-vector indexing for ColBERT late interaction. Phased ranking profiles (first-phase BM25 + HNSW, second-phase ONNX reranking). Study Ref: vespa-engine/vespa | Build hybrid search schema with nearestNeighbor + bm25(text). Define rank-profile that reranks top-1000 using local content node | K Closest Points to Origin | vespa_search.py |
+| 42 | **LanceDB & Storage Architecture Comparison**: In-memory vs SSD-optimized vs object-storage architectures. LanceDB columnar Arrow format, zero-copy memory-mapped S3 access, compute-storage decoupling. **Multi-Tenant Vector Scaling**: Pre-filtering vs post-filtering recall collapse. pgvector iterative index scans (hnsw.max_scan_tuples). Physical partitioning for tenant isolation | Calculate RAM scaling for HNSW. Contrast with LanceDB S3-backed on-demand cache fetches. Implement tenant isolation with physical partitions | Best Time to Buy/Sell Stock | lancedb_multitenant.py |
+| 43 | **Hybrid Search Architectures**: PostgreSQL pgvector + tsvector + RRF. **Elasticsearch ELSER** sparse vector retrieval (~30K dims) — semantic_text field type, Retriever API fusion. Study Ref: vespa-engine/vespa wiki.sd ColBERT patterns | Build hybrid search with pgvector RRF. Implement Elasticsearch ELSER. Compare BM25 vs dense vs sparse vs hybrid recall | Trapping Rain Water | hybrid_search_arch.py |
+| 44 | **Redis for AI: VSET & FT.HYBRID**: Native VSET data type + VSIM command for sub-millisecond similarity. FT.HYBRID fusing lexical + vector ranking in single pipeline — COMBINE RRF (tunable WINDOW, CONSTANT) vs COMBINE LINEAR. Multi-tier caching strategy. Study Ref: redis/redis, redis-developer/sql-redis | Implement VSIM search. Build FT.HYBRID with RRF and LINEAR fusion. Measure latency improvement vs two-phase approach | Largest Rectangle in Histogram | redis_vset.py |
+| 45 | **Distributed Vector Databases: Milvus Architecture**: Component decoupling — Knowhere, Proxy, QueryNode, IndexNode. GuaranteeTs and message queue time ticks for read visibility. Consistency_level tuning (Strong, Bounded Staleness, Session, Eventual). Clustering Compaction to prevent segment fragmentation | Deploy Milvus standalone. Configure consistency levels. Measure read latency under different consistency settings. Trigger compaction | Course Schedule II | milvus_architecture.py |
+| 46 | **Agent Security + Ollama + AWS ECS Deploy**: Agno dual-schema (read-only transactions) + JWT isolation + Ollama local deployment. Guardrails + NeMo for safety | PostgreSQL read_only scopes. Deploy local LLM. Guarded cloud deploy | Trapping Rain Water review | security_deploy.py |
 
 ### Phase 6: AI Infrastructure & Production MLOps (Days 47-53)
 *Goal: Master inference optimization, caching, feature stores, model registries, CI/CD for AI, observability, and streaming architectures*
@@ -112,7 +118,7 @@
 | 48 | **MLOps & Production ML Infrastructure**: Feature Stores (Feast/Tecton — offline batch + online streaming pipelines, point-in-time joins to prevent training-serving skew). Model Registries (MLflow lifecycle vs DVC Git-native versioning). A/B Testing for LLM outputs. **Prompt Management**: DSPy compilation, Vellum/Promptfoo for A/B testing prompt variants, shadow deployments | Design feature store dual-pipeline. Build MLflow tracker + DSPy compiled prompt pipeline. Shadow-deploy prompt variants | Subsets | mlops_prompt_mgmt.py |
 | 49 | **AI Observability & MCP Security**: Monitoring latency p50/p95/p99, distributed tracing (Langfuse, LangSmith). Concept/data drift detection (Prometheus + Grafana). **MCP Threat Models**: Preventing Confused Deputy attacks, mTLS for server-to-server trust, prompt injection via tool output sanitization, containerized MCP server isolation. OAuth 2.1, OWASP MCP Top 10, per-client consent | Design monitoring dashboard. Build secure MCP proxy with mTLS + token exchange + output sanitization | Serialize/Deserialize Tree | observability_mcp_security.py |
 | 50 | **Inference Optimization & Multi-Tenant Caching**: vLLM PagedAttention mechanics (logical KV → physical GPU memory pages, eliminating fragmentation to <8 tokens/seq). Continuous batching at iteration level. Token-aware rate limiting (Sliding Window Log, Token Bucket). **Multi-Tenant Isolation**: Silo/Pool/Bridge models. Row-level security in pgvector. Tenant-aware Redis LangCache (tenant_id namespaces, prevent cross-tenant leakage) | Diagram PagedAttention scheduler. Implement Sliding Window Log rate limiter. Build tenant-aware cache with isolation validation | Word Ladder | inference_multitenant.py |
-| 51 | **CI/CD Pipelines & Evaluation Gates for AI Agents**: PR-time checks — prompt template linting, tool schema validation, deterministic eval against golden datasets. Token-budget regression gates (fail build on unexpected token spikes). Canary deployments for agents (gradual rollouts, error rate monitoring, automated rollback). Study Ref: EthicalML/awesome-production-agentic-systems, ashishps1/learn-ai-engineering | Build GitHub Actions CI/CD pipeline with token-budget gate + Ragas eval gate + canary deployment script | Permutations | cicd_agent_pipeline.yml |
+| 51 | **Tripartite Agent Memory & Temporal Graphs**: Failure of flat vector stores for agent state. **Cognee** (graph-native memory control plane), **Neo4j** (Short-Term/Long-Term/Reasoning memory), **Graphiti** (bi-temporal knowledge graphs — valid time vs ingestion time), **AgentMemory** (MCP-integrated procedural memory with Ebbinghaus temporal decay). POLE+O ontology extraction (Person, Org, Location, Event, Object). Study Ref: topoteretes/cognee, rohitg00/agentmemory, getzep/graphiti | Design agent memory loop: parse observations → POLE+O extraction → Long-Term graph with provenance → Reasoning decision traces. Implement temporal decay pruning | Permutations | tripartite_memory.py |
 | 52 | **Live Coding Mock (FastAPI + LangGraph + MCP + Streaming)** + Behavioral | Build mini streaming agent under time pressure. Practice trade-off articulation (PagedAttention vs naive KV, RRF vs pure semantic, OAuth 2.1 vs API keys) | Combination Sum | live_coding_mock/ |
 | 53 | **DSA Mock + Portfolio Review + Apply Follow-ups** | Solve problems under time pressure. Polish GitHub README with architecture diagrams. Respond to callbacks | Clone Graph | mock_interview_log |
 
@@ -149,27 +155,31 @@
 ## 📋 2 Projects to Build (Market-Aligned) — Architecture Documentation Requirements
 
 ### Project 1 (Days 29-31): Multi-Tenant Enterprise Knowledge Agent
-**Tech Stack:** FastAPI + pgvector (RLS) + LangGraph + MCP + Mem0 + Graphiti + Cross-encoder + Hybrid Search + Docker + AWS ECS + LangSmith/Ragas
+**Tech Stack:** FastAPI + pgvector (RLS) + **pgvectorscale (DiskANN)** + LangGraph + MCP + Mem0 + Graphiti + Cross-encoder + Hybrid Search + Docker + AWS ECS + LangSmith/Ragas
 **Features:**
 - Agno-style dual-schema architecture: read-only transaction scopes for data-analyst agents, isolated schema for engineer agents
 - JWT-based RBAC for strict multi-tenant isolation
+- **pgvectorscale StreamingDiskANN** for handling 10M+ document chunks on SSDs without RAM exhaustion
+- **Hybrid Search with RRF**: BM25 + pgvector + tsvector fused via Reciprocal Rank Fusion
+- **Metadata pre-filtering**: iterative index scans (hnsw.max_scan_tuples) to prevent recall collapse under multi-tenant constraints
 - Temporal Knowledge Graphs (Graphiti) for relational entity tracking over time
 - Mem0 for user-scoped semantic memory with automated fact deduplication and contradiction resolution
 - Corrective RAG (CRAG) with evaluator → web search fallback
-- Parent-child chunking + cross-encoder reranking + Hybrid Search (BM25 + dense)
 - Comprehensive Ragas evaluation + LLM-as-a-judge regression testing
-- **Interview signal:** "Hire me" — shows architectural maturity, security awareness, and production thinking
+- **Interview signal:** "Hire me" — shows architectural maturity, security awareness, and production thinking at billion-vector scale
 
 ### Project 2 (Days 54-56): Autonomous Code & Web Intelligence Swarm
-**Tech Stack:** FastAPI + LangGraph (Blackboard pattern) + browser-use + Firecrawl + Daytona + MCP (OAuth 2.1) + Next.js/TypeScript + Docker + AWS ECS + GitHub Actions
+**Tech Stack:** FastAPI + LangGraph (Blackboard pattern) + browser-use + Firecrawl + Daytona + MCP (OAuth 2.1) + Next.js/TypeScript + **Neo4j/Cognee tripartite memory** + Docker + AWS ECS + GitHub Actions
 **Features:**
 - **Blackboard shared-memory architecture** with optimistic locking — agents write to namespaces (research/, code/) with thread-safe locks, maintain private scratchpads
 - **Researcher Agent**: browser-use + Playwright for visual DOM understanding, multi-tab SPA navigation; Firecrawl for LLM-ready markdown extraction and anti-bot bypass
 - **Coder Agent**: executes Python data-transformation workflows strictly inside isolated, ephemeral Daytona sandboxes (dedicated kernel, network isolation)
+- **Tripartite Agent Memory via Neo4j/Cognee**: Short-Term (conversational state), Long-Term (POLE+O knowledge graph with bi-temporal provenance), Reasoning (decision trace history)
+- **Temporal decay function** applied to short-term conversations; Ebbinghaus forgetting curves via AgentMemory MCP hooks
 - **MCP servers secured via OAuth 2.1** — token exchange, no token passthrough, per-client consent registries
 - **LLM-as-a-judge regression testing** — catches infinite tool-calling loops, context drift, silent failures
 - Full CI/CD pipeline (push → test → eval → deploy) + cost tracking middleware
-- **Interview signal:** "Full-stack AI Engineer" — end-to-end delivery with enterprise security and sandboxing
+- **Interview signal:** "Full-stack AI Engineer" — end-to-end delivery with enterprise security, tripartite memory, and temporal decay
 
 ### 📐 Project 1 — Architecture Documentation Requirements
 The README MUST include:

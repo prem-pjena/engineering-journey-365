@@ -44,7 +44,7 @@
 | 17 | **Algorithmic Prompt Optimization**: DSPy + GEPA — self-improving prompt signatures | Replace manual prompting with compiled, optimized prompts | 3Sum |
 | 18 | FastAPI SSE Streaming + Pydantic v2 + Constrained Decoding | Streaming endpoint + FSM-guaranteed JSON | Container With Most Water + Two Sum II |
 | 19 | LangChain: Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF, compare chunk strategies | Longest Substring w/o Repeat |
-| 20 | Vector DBs, Embeddings, ChromaDB (prototype-only), HNSW vs IVFFlat | Store chunks + index tuning | Valid Parentheses |
+| 20 | Vector DBs, Embeddings, HNSW vs IVFFlat (prototyping with FAISS or local pgvector) | Store chunks + index tuning | Valid Parentheses |
 | 21 | **Advanced Retrieval**: Proposition Generation + Step-back Prompting | Decompose docs into atomic propositions | Binary Search |
 | 22 | **SQL + pgvector**: SELECT, INSERT, JOINs, vector columns, read-only scopes | Store embeddings with read-only scopes | Search 2D Matrix |
 | 23 | **Parent-Child Chunking + Cross-Encoder Reranking + GraphRAG** | Rerank top-20 → top-3, introduce GraphRAG | Reverse Linked List |
@@ -76,13 +76,13 @@
 ### Phase 5: Database Architecture & Advanced SQL (Days 40-46)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 40 | **Vector Indexing Deep Dive**: HNSW tuning, IVFFlat, DiskANN via pgvectorscale | Benchmark HNSW vs IVFFlat vs DiskANN | Kth Largest in Stream |
-| 41 | **Vector DB Comparison**: pgvector vs Pinecone vs Qdrant vs Milvus vs Weaviate | Decision tree + cost projection | K Closest Points to Origin |
-| 42 | **SQL Optimization for AI**: Recursive CTEs, partition pruning | Write recursive queries, set up partitioning | Best Time to Buy/Sell Stock |
-| 43 | **PostgreSQL Hybrid Search**: pgvector + tsvector + RRF. Study: faiss, nmslib | Build hybrid search endpoint | Trapping Rain Water |
-| 44 | **Redis for AI**: LangCache semantic caching, agent session state, multi-tier caching | Implement Redis LangCache | Largest Rectangle in Histogram |
-| 45 | **Agent Security + Ollama**: Agno dual-schema, JWT RBAC + local LLM deployment | PostgreSQL read_only scopes + Ollama | Course Schedule II |
-| 46 | **AgentShield + NeMo Guardrails + AWS ECS deploy** | Config scanning + guarded cloud deploy | Trapping Rain Water review |
+| 40 | **FAISS Vector Primitives Lab**: IndexFlatL2, IndexIVFFlat (Voronoi), Product Quantization (IVF4096,PQ16), HNSW vs IVFFlat vs PQ trade-offs. Scalar Int8 quantization (<1.5% recall loss, 64% storage reduction) | Build FAISS index benchmark. Measure recall vs QPS vs memory | Kth Largest in Stream |
+| 41 | **Vespa: Tensor-Native Search**: Tensor math (mapped vs indexed dimensions), ColBERT multi-vector, phased ranking (BM25 + HNSW + ONNX reranking) | Build hybrid search schema with nearestNeighbor + bm25. Define rank-profile | K Closest Points to Origin |
+| 42 | **LanceDB + Multi-Tenant Scaling**: In-memory vs SSD vs object-storage. LanceDB Arrow columnar S3-backed. Pre-filtering vs post-filtering recall collapse. pgvector hnsw.max_scan_tuples | RAM scaling calc. Tenant isolation with physical partitions. Contrast with LanceDB | Best Time to Buy/Sell Stock |
+| 43 | **Hybrid Search Architectures**: pgvector + tsvector + RRF. Elasticsearch ELSER sparse vectors (~30K dims), semantic_text, Retriever API | Build hybrid search (pgvector RRF). Implement ELSER. Compare recall | Trapping Rain Water |
+| 44 | **Redis VSET & FT.HYBRID**: Native VSET + VSIM for sub-ms similarity. FT.HYBRID with COMBINE RRF vs COMBINE LINEAR. Multi-tier caching | Implement VSIM + FT.HYBRID. Measure vs two-phase approach | Largest Rectangle in Histogram |
+| 45 | **Milvus Distributed Architecture**: Knowhere, Proxy/QueryNode/IndexNode, GuaranteeTs consistency, consistency_level tuning, Clustering Compaction | Deploy Milvus. Configure consistency levels. Trigger compaction | Course Schedule II |
+| 46 | **Agent Security + Ollama + AWS ECS Deploy**: Agno dual-schema, JWT RBAC, Ollama local, Guardrails + NeMo | PostgreSQL read_only scopes + guarded cloud deploy | Trapping Rain Water review |
 
 ### Phase 6: AI Infrastructure & Production MLOps (Days 47-53)
 | Day | Morning | Afternoon | DSA |
@@ -91,7 +91,7 @@
 | 48 | **MLOps + Prompt Management**: Feature stores (Feast/Tecton, point-in-time joins), MLflow/DVC. DSPy compilation, Vellum/Promptfoo A/B testing | Feature store dual-pipeline + DSPy compiled prompts + shadow deployments | Subsets |
 | 49 | **AI Observability + MCP Security**: Langfuse/LangSmith tracing, Prometheus/Grafana drift detection. MCP threat models (Confused Deputy, mTLS, tool output sanitization, container isolation) | Monitoring dashboard + secure MCP proxy with mTLS + output sanitization | Serialize/Deserialize Tree |
 | 50 | **Inference Optimization + Multi-Tenant Caching**: vLLM PagedAttention (logical KV → physical GPU pages, <8 tokens/seq fragmentation). Continuous batching. Token-aware rate limiting. Silo/Pool/Bridge isolation. Tenant-aware Redis caching | Diagram PagedAttention scheduler + Sliding Window Log + tenant-aware cache | Word Ladder |
-| 51 | **CI/CD for AI Agents**: PR-time checks, token-budget regression gates, canary deployments, automated rollback | GitHub Actions pipeline with eval gates + canary deploy | Permutations |
+| 51 | **Tripartite Agent Memory & Temporal Graphs**: Cognee (graph-native), Neo4j (Short/Long/Reasoning), Graphiti (bi-temporal), AgentMemory (Ebbinghaus decay). POLE+O extraction. Study: topoteretes/cognee, rohitg00/agentmemory | Design memory loop: observations → POLE+O → Long-Term graph → reasoning traces. Implement temporal decay | Permutations |
 | 52 | Live Coding Mock (FastAPI + LangGraph + MCP + Streaming) + Behavioral | Build mini streaming agent. Practice trade-off articulation | Combination Sum |
 | 53 | DSA Mock + Portfolio Review + Apply Follow-ups | Solve problems + polish GitHub README with architecture diagrams | Clone Graph |
 

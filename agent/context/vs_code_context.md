@@ -147,6 +147,61 @@
 14. "LangGraph vs CrewAI?": Complementary, not competing. LangGraph for deterministic stateful production (96% error recovery). CrewAI for rapid role-based prototyping (content generation, research). Use LangGraph in prod, CrewAI for experiments.
 15. "Local LLM deployment?": Ollama for dev and privacy compliance. Critical for Indian fintech where data cannot leave premises. Supports OpenAI-compatible API, making it drop-in replaceable.
 16. "How to reduce LLM token costs?": Headroom ContentRouter compresses JSON/AST/prose by 60-95% before LLM processing. Combined with Redis LangCache semantic caching (cosine > 0.85 skip LLM call).
+
+## Architecture Decision Records — Vector Database Selection
+
+### Database Selection by Corpus Scale
+| Vector Count | Recommended Infrastructure | Justification |
+|-------------|---------------------------|---------------|
+| <10K | pgvector (Flat L2/IP) | Sub-ms exhaustive search, no graph overhead, ACID compliance |
+| <1M | pgvector (HNSW) | Fits in standard DB RAM. ef_search/m tunable for 99% recall |
+| <100M | Qdrant/Milvus (IVF-PQ) | Graph indices too large for RAM. PQ reduces footprint |
+| <1B | pgvectorscale/LanceDB | DiskANN/SPANN on NVMe SSDs. LanceDB S3-backed for cost efficiency |
+| >1B | Milvus/Vespa | Distributed computing, tensor frameworks, massive parallelization |
+
+### Algorithm Trade-offs
+| Algorithm | Strengths | Weaknesses | Best For |
+|-----------|-----------|------------|----------|
+| HNSW | 95%+ recall, absorbs inserts dynamically | 2-5x raw vector size RAM | Dynamic data <50M records |
+| IVFFlat | Fast build, ~1.1x memory overhead | Recall drifts, needs re-clustering | Large static datasets with offline rebuild windows |
+| DiskANN | SSD-stored, 1B+ vectors per 64GB node | Needs NVMe, expensive incremental updates | Enterprise data exceeding RAM |
+| PQ (Product Quantization) | Extreme compression via sub-vector centroids | Lossy, needs exact reranking stage | Edge devices, memory-constrained |
+
+## Performance Tuning Guide
+### HNSW (pgvector/FAISS/Milvus)
+- **m (degree)**: 16 standard, up to 48 for high dimensionality
+- **ef_construction**: 100-200 — higher = better recall, slower build
+- **ef_search**: 10-100 — higher = better recall, slower query
+
+### DiskANN (pgvectorscale)
+- **storage_layout**: memory_optimized for SBQ compression
+- **num_neighbors**: 50 (typical Vamana graph degree)
+- **search_list_size**: 100 high-throughput, 200 RAG
+- **max_alpha**: 1.2 (graph pruning threshold)
+
+### IVFFlat
+- **lists (centroids)**: sqrt(rows) for <1M, rows/1000 for >1M
+- **probes**: 10-100. probes=1 = unacceptable recall, >500 = negates index benefit
+
+### Embedding Quantization
+- **Scalar Int8**: 64% storage reduction, <1.5% recall loss
+- **Binary (1-bit)**: Up to 17% recall cliff in standard models. OK for MRL models (ModernBERT)
+
+## Advanced Vector & Memory Systems Q&A
+Q: How would you choose a vector database for 250M dynamic documents?
+A: In-memory HNSW requires ~1TB RAM. Evaluate SSD-oriented: pgvectorscale DiskANN with SBQ compression (if relational integrity needed) or LanceDB S3-backed columnar (if compute separation critical).
+
+Q: How does HNSW work and its physical limitations?
+A: Skip-list-like graph — sparse upper layers for long-range jumps, dense bottom for precise routing. 95%+ recall, dynamic inserts. But edges require 2-5x raw vector memory — uneconomical beyond 50-100M vectors.
+
+Q: Design a multi-tenant vector storage system. Pitfalls of metadata filtering?
+A: Single global index + post-filtering by tenant_id breaks ANN traversal. Greedy search routes through dense clusters — sparse tenants lose recall. Solutions: physical partitioning, iterative index scans (hnsw.max_scan_tuples), or label-embedded graph nodes.
+
+Q: Hybrid search fusion beyond RRF?
+A: RRF is unsupervised baseline. Convex Combination (weighted sum) normalizes BM25 + dense scores onto common scale — often outperforms RRF with enough labeled data to tune alpha/beta weights.
+
+Q: How do temporal knowledge graphs differ from vector stores for agent memory?
+A: Vector stores treat facts as independent stateless embeddings — superseded facts retrieved via semantic proximity cause hallucination. Temporal graphs (Graphiti, Neo4j Agent Memory) use bi-temporal edges (valid time vs ingestion time), episode-level provenance, and relational traversal instead of flat vector distances.
 - agent/learnings/rag_architecture_14_types.md — all RAG types with 12 LPA interview answers
 - agent/learnings/gold_mines_repo_analysis.md — deep analysis of 7 key repos
 
