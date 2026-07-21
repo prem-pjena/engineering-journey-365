@@ -43,7 +43,7 @@
 | 16 | LLM APIs: OpenAI/Gemini, temperature, tokens, streaming + **Probabilistic Data Structures** (Bloom filters, HyperLogLog) | Chat + streaming + set membership | Valid Palindrome |
 | 17 | **Algorithmic Prompt Optimization**: DSPy + GEPA — self-improving prompt signatures | Replace manual prompting with compiled, optimized prompts | 3Sum |
 | 18 | FastAPI SSE Streaming + Pydantic v2 + Constrained Decoding | Streaming endpoint + FSM-guaranteed JSON | Container With Most Water + Two Sum II |
-| 19 | LangChain: Document Loaders, Text Splitters, **Semantic Chunking** | Parse PDF, compare chunk strategies | Longest Substring w/o Repeat |
+| 19 | **LangChain Fundamentals**: PromptTemplate, ChatPromptTemplate, Messages, output parsers, LCEL pipe chaining | **Apply to Docs**: Document Loaders, Text Splitters, Semantic Chunking. Parse first PDF | Longest Substring w/o Repeat |
 | 20 | Vector DBs, Embeddings, HNSW vs IVFFlat (prototyping with FAISS or local pgvector) | Store chunks + index tuning | Valid Parentheses |
 | 21 | **Advanced Retrieval**: Proposition Generation + Step-back Prompting | Decompose docs into atomic propositions | Binary Search |
 | 22 | **SQL + pgvector**: SELECT, INSERT, JOINs, vector columns, read-only scopes | Store embeddings with read-only scopes | Search 2D Matrix |
@@ -58,8 +58,8 @@
 | 27 | **NLP & Embeddings**: Word2Vec, GloVe, LSTM vs Transformer, cross-attention vs causal vs bidirectional | Build embeddings + attention viz | Validate BST |
 | 28 | **Transformer Internals**: Multi-head attention math, RoPE, layer norm, residual connections, FFN. Study: karpathy/minGPT | Implement minimal transformer block | Invert Tree |
 | 29 | **DeepSeek-V3**: MLA (KV compression), MoE (auxiliary-loss-free), Multi-Token Prediction | Diagram MLA vs MHA, calculate savings | LCA of BST |
-| 30 | **Inference Optimization + RAG Eval**: KV cache, PagedAttention, speculative decoding, quantization. Ragas metrics + traditional (F1, MAP, MRR, NDCG) | Build Ragas eval pipeline | Level Order Traversal |
-| 31 | **PROJECT 1 BUILD**: Multi-Tenant Enterprise Knowledge Agent (Agno dual-schema, Graphiti, Mem0, CRAG, JWT RBAC, tsvector) | FastAPI + pgvector RLS + LangGraph + Hybrid Search | Longest Consecutive Sequence |
+| 30 | **LangSmith Platform + RAG Eval**: Projects, traces, spans, datasets. KV cache, PagedAttention, speculative decoding. Ragas (Faithfulness, Context Precision/Recall). F1, MAP, MRR, NDCG | Setup LangSmith project + build Ragas eval pipeline | Level Order Traversal |
+| 31 | **LangGraph Foundations + PROJECT 1 START**: StateGraph vs Chain, TypedDict state, Nodes, Edges, Reducers, conditional routing. Build supervisor LangGraph for RAG | FastAPI + pgvector RLS + LangGraph + Hybrid Search | Longest Consecutive Sequence |
 
 ### Phase 4: Advanced DSA & Enterprise RAG Architectures (Days 32-39)
 | Day | Morning | Afternoon | DSA |
