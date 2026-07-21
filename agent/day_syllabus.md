@@ -37,29 +37,29 @@
 |-----|---------|-----------|-----|
 | 11 | OOP: classes, inheritance, dunder, @property, @staticmethod, @classmethod | Build mock VectorStore class | Two Sum |
 | 12 | Context Managers, Modules, __init__.py | Safe File I/O Manager + Package | Valid Anagram |
-| 13 | Async: asyncio, event loop, gather + **FastAPI intro** | Build first FastAPI endpoint | Group Anagrams |
-| 14 | Generators (yield), Tuples, enumerate, zip + **Constrained Decoding (XGrammar/Outlines)** | Streaming token generator + FSM masking | Top K Frequent |
-| 15 | String methods, JSON module | Parse nested JSON LLM outputs | Product of Array |
-| 16 | LLM APIs: OpenAI/Gemini, temperature, tokens, streaming + **Probabilistic Data Structures** (Bloom filters, HyperLogLog) | Chat + streaming + set membership | Valid Palindrome |
-| 17 | **Algorithmic Prompt Optimization**: DSPy + GEPA — self-improving prompt signatures | Replace manual prompting with compiled, optimized prompts | 3Sum |
-| 18 | FastAPI SSE Streaming + Pydantic v2 + Constrained Decoding | Streaming endpoint + FSM-guaranteed JSON | Container With Most Water + Two Sum II |
-| 19 | **LangChain Fundamentals**: PromptTemplate, ChatPromptTemplate, Messages, output parsers, LCEL pipe chaining | **Apply to Docs**: Document Loaders, Text Splitters, Semantic Chunking. Parse first PDF | Longest Substring w/o Repeat |
-| 20 | Vector DBs, Embeddings, HNSW vs IVFFlat (prototyping with FAISS or local pgvector) | Store chunks + index tuning | Valid Parentheses |
-| 21 | **Advanced Retrieval**: Proposition Generation + Step-back Prompting | Decompose docs into atomic propositions | Binary Search |
-| 22 | **SQL + pgvector**: SELECT, INSERT, JOINs, vector columns, read-only scopes | Store embeddings with read-only scopes | Search 2D Matrix |
-| 23 | **Parent-Child Chunking + Cross-Encoder Reranking + GraphRAG** | Rerank top-20 → top-3, introduce GraphRAG | Reverse Linked List |
-| 24 | **Hybrid Search**: BM25 + Dense + tsvector + RRF, pgvector HNSW vs IVFFlat tuning | Implement hybrid search + benchmark | Merge Two Sorted Lists |
+| 13 | **Type Hinting** (Union, Optional, List, Dict) + **HTTP Protocol** (GET/POST, headers, status codes) + FastAPI intro | Strictly-typed FastAPI GET/POST with JSON validation | Group Anagrams |
+| 14 | Generators (yield), Tuples, enumerate, zip | Custom text stream simulator with configurable delays | Top K Frequent |
+| 15 | **String methods, regex** (re.search, re.findall) + JSON + **Defensive Parsing** (markdown fences, truncated brackets) | Error-resilient parser that strips fences and extracts JSON | Product of Array |
+| 16 | **LLM APIs**: OpenAI/Gemini, tokens, logits, softmax, autoregressive generation, temperature, streaming | Multi-turn Chat CLI with streaming + conversation history | Valid Palindrome |
+| 17 | **Prompt Engineering**: System prompts, Role prompting, Zero-shot vs Few-shot, Chain-of-Thought | Manual prompt template router with few-shot examples | 3Sum |
+| 18 | **Async Python** (asyncio, gather) + FastAPI SSE + Pydantic v2 + **Generative Parameters** (logit bias, softmax, temperature) | Streaming REST endpoint with token parameter control | Container With Most Water + Two Sum II |
+| 19 | **LangChain Fundamentals**: PromptTemplate, ChatPromptTemplate, Messages, output parsers, LCEL pipe | Document Loaders + RecursiveCharacterTextSplitter + Regex chunking | Longest Substring w/o Repeat |
+| 20 | **Vector Math**: dot product, cosine similarity, dimensions + **Embeddings API** (text-embedding-3-small) | Pure-Python cosine similarity search (no databases) | Valid Parentheses |
+| 21 | **Basic RAG**: chunk → embed → store in Python list → cosine retrieve → LLM generate. Single-hop Q&A over local doc | Binary Search |
+| 22 | **SQL Fundamentals**: Tables, rows, keys, SELECT, INSERT, JOIN + sqlite3 in Python | SQLite database for document metadata storage | Search 2D Matrix |
+| 23 | **IR Theory**: TF-IDF, sparse vs dense vectors, inverted index + **Parent-Child Chunking** + **Cross-Encoder Reranking** | Two-stage: TF-IDF retrieval + local reranking model | Reverse Linked List |
+| 24 | **Hybrid Search Theory**: BM25, RRF formula, sparse-dense fusion + pgvector HNSW vs IVFFlat tuning | BM25 keyword + dense vector search fused via RRF | Merge Two Sorted Lists |
 
 ### Phase 3: Classical ML, NLP Theory & Transformer Internals (Days 25-31)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 25 | **Math & Statistics**: Linear algebra (dot products, matrix multiplication, eigenvectors), Probability (Bayes, conditional), Distributions | Solve math foundations problems | Reorder List |
-| 26 | **Classical ML**: Logistic Regression, Random Forest, XGBoost, K-Means, PCA | Implement on toy datasets | Max Depth Tree |
-| 27 | **NLP & Embeddings**: Word2Vec, GloVe, LSTM vs Transformer, cross-attention vs causal vs bidirectional | Build embeddings + attention viz | Validate BST |
-| 28 | **Transformer Internals**: Multi-head attention math, RoPE, layer norm, residual connections, FFN. Study: karpathy/minGPT | Implement minimal transformer block | Invert Tree |
-| 29 | **DeepSeek-V3**: MLA (KV compression), MoE (auxiliary-loss-free), Multi-Token Prediction | Diagram MLA vs MHA, calculate savings | LCA of BST |
-| 30 | **LangSmith Platform + RAG Eval**: Projects, traces, spans, datasets. KV cache, PagedAttention, speculative decoding. Ragas (Faithfulness, Context Precision/Recall). F1, MAP, MRR, NDCG | Setup LangSmith project + build Ragas eval pipeline | Level Order Traversal |
-| 31 | **LangGraph Foundations + PROJECT 1 START**: StateGraph vs Chain, TypedDict state, Nodes, Edges, Reducers, conditional routing. Build supervisor LangGraph for RAG | FastAPI + pgvector RLS + LangGraph + Hybrid Search | Longest Consecutive Sequence |
+| 25 | **Calculus**: Derivatives, Chain Rule + **Optimization**: Gradient Descent, Learning Rates + **Linear Algebra**: vectors, dot products, matrices | Build gradient descent optimizer in pure Python | Reorder List |
+| 26 | **Classical ML**: Logistic Regression, Random Forest, XGBoost, K-Means, PCA + Probability & Statistics integrated | Implement on toy datasets | Max Depth Tree |
+| 27 | **Classical NLP**: Bag of Words, N-grams + **Word Embeddings**: Word2Vec, GloVe + **Sequential Models**: RNN/LSTM, vanishing gradient | Train Word2Vec. Visualize embedding space | Validate BST |
+| 28 | **Transformer Internals**: Seq2Seq bottlenecks, multi-head attention math, RoPE, layer norm, residual, FFN. Study: karpathy/minGPT | Implement transformer block. Compare with RNN | Invert Tree |
+| 29 | **Standard KV Cache** + **Mixture-of-Experts** (routing gates, sparse vs dense) + **DeepSeek-V3** (MLA, MoE, MTP) | Diagram KV cache vs MLA. Calculate savings | LCA of BST |
+| 30 | **Eval Theory**: BLEU, ROUGE, MAP, MRR, NDCG + **LangSmith** (traces, projects, datasets) + **Ragas** (Faithfulness, Precision) | LangSmith project + Ragas eval pipeline | Level Order Traversal |
+| 31 | **LangGraph Foundations**: StateGraph, TypedDict, Nodes, Edges, Reducers, conditional routing. DAG/cyclic theory | Build simple cyclic LangGraph agent (weather-checker with retry) | Longest Consecutive Sequence |
 
 ### Phase 4: Advanced DSA & Enterprise RAG Architectures (Days 32-39)
 | Day | Morning | Afternoon | DSA |
@@ -76,34 +76,30 @@
 ### Phase 5: Database Architecture & Advanced SQL (Days 40-46)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 40 | **FAISS Vector Primitives Lab**: IndexFlatL2, IndexIVFFlat (Voronoi), Product Quantization (IVF4096,PQ16), HNSW vs IVFFlat vs PQ trade-offs. Scalar Int8 quantization (<1.5% recall loss, 64% storage reduction) | Build FAISS index benchmark. Measure recall vs QPS vs memory | Kth Largest in Stream |
-| 41 | **Vespa: Tensor-Native Search**: Tensor math (mapped vs indexed dimensions), ColBERT multi-vector, phased ranking (BM25 + HNSW + ONNX reranking) | Build hybrid search schema with nearestNeighbor + bm25. Define rank-profile | K Closest Points to Origin |
-| 42 | **LanceDB + Multi-Tenant Scaling**: In-memory vs SSD vs object-storage. LanceDB Arrow columnar S3-backed. Pre-filtering vs post-filtering recall collapse. pgvector hnsw.max_scan_tuples | RAM scaling calc. Tenant isolation with physical partitions. Contrast with LanceDB | Best Time to Buy/Sell Stock |
-| 43 | **Hybrid Search Architectures**: pgvector + tsvector + RRF. Elasticsearch ELSER sparse vectors (~30K dims), semantic_text, Retriever API | Build hybrid search (pgvector RRF). Implement ELSER. Compare recall | Trapping Rain Water |
-| 44 | **Redis VSET & FT.HYBRID**: Native VSET + VSIM for sub-ms similarity. FT.HYBRID with COMBINE RRF vs COMBINE LINEAR. Multi-tier caching | Implement VSIM + FT.HYBRID. Measure vs two-phase approach | Largest Rectangle in Histogram |
-| 45 | **Milvus Distributed Architecture**: Knowhere, Proxy/QueryNode/IndexNode, GuaranteeTs consistency, consistency_level tuning, Clustering Compaction | Deploy Milvus. Configure consistency levels. Trigger compaction | Course Schedule II |
-| 46 | **Agent Security + Ollama + AWS ECS Deploy**: Agno dual-schema, JWT RBAC, Ollama local, Guardrails + NeMo | PostgreSQL read_only scopes + guarded cloud deploy | Trapping Rain Water review |
+| 40 | **Vector Compression Theory**: Sub-space clustering, centroids, FP32/FP16/Int8 + **FAISS** (Flat, IVFFlat, PQ) | Compress index with Int8 PQ. Measure recall vs memory | Kth Largest in Stream |
+| 41 | **Late-Interaction Theory**: ColBERT vs Bi-Encoders vs Cross-Encoders, MaxSim + **Vespa** (phased ranking) | Phased ranking with token-level interactions | K Closest Points to Origin |
+| 42 | **Storage Engines**: Row vs Columnar, Apache Arrow, zero-copy + **LanceDB** S3-backed + Multi-Tenant vector scaling | Multi-tenant store with columnar caching. Contrast RAM vs S3 | Best Time to Buy/Sell Stock |
+| 43 | **Hybrid Search**: pgvector + tsvector + RRF + **Elasticsearch ELSER** sparse vectors (~30K dims) | Build hybrid search. Compare 4 retrieval types | Trapping Rain Water |
+| 44 | **Redis VSET + FT.HYBRID**: VSIM for sub-ms similarity, COMBINE RRF vs LINEAR | Implement VSIM + FT.HYBRID. Measure latency | Largest Rectangle in Histogram |
+| 45 | **Distributed Systems**: CAP Theorem, Consistency Levels, Sharding + **Milvus** (Knowhere, Proxy/QueryNode/IndexNode) | Deploy clustered Milvus. Tune consistency vs latency | Course Schedule II |
+| 46 | **AI Security**: Prompt injection, Jailbreaks + **NeMo Guardrails** + **Agno dual-schema** + **Ollama** | Semantic routing firewall + guarded local LLM deploy | Trapping Rain Water review |
 
 ### Phase 6: AI Infrastructure & Production MLOps (Days 47-56)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 47 | **Real-Time Streaming Agent Architectures**: SSE/WebSockets, state management in streams, gateway strategies (connection pooling, gRPC, drop handling) | Build real-time streaming agent endpoint | Find Min Rotated + Search in Rotated Array |
-| 48 | **MLOps + Prompt Management**: Feature stores (Feast/Tecton, point-in-time joins), MLflow/DVC. DSPy compilation, Vellum/Promptfoo A/B testing | Feature store dual-pipeline + DSPy compiled prompts + shadow deployments | Subsets |
-| 49 | **MCP Fundamentals + AI Observability**: What is MCP? Host/Client/Server, JSON-RPC 2.0, Tools/Resources/Prompts, transports. Build first MCP server. **Then**: tracing + drift detection + MCP threat models | Build MCP server → add mTLS + monitoring dashboard | Serialize/Deserialize Tree |
-| 50 | **Inference Optimization + Multi-Tenant Caching**: vLLM PagedAttention (logical KV → physical GPU pages, <8 tokens/seq fragmentation). Continuous batching. Token-aware rate limiting. Silo/Pool/Bridge isolation. Tenant-aware Redis caching | Diagram PagedAttention scheduler + Sliding Window Log + tenant-aware cache | Word Ladder |
-| 51 | **Tripartite Agent Memory & Temporal Graphs**: Cognee (graph-native), Neo4j (Short/Long/Reasoning), Graphiti (bi-temporal), AgentMemory (Ebbinghaus decay). POLE+O extraction. Study: topoteretes/cognee, rohitg00/agentmemory | Design memory loop: observations → POLE+O → Long-Term graph → reasoning traces. Implement temporal decay | Permutations |
-| 52 | **MOCK: LLM Theory & RAG Architecture** (Verbal) + **Behavioral Integration** | Practice Q&A from interview bank. Record and refine | Combination Sum |
-| 53 | **MOCK: Pair Programming** (Live coding — enforce "thinking out loud") | Build mini streaming agent with continuous vocalization | Clone Graph |
-| 54 | **MOCK: System Design** (Whiteboarding RAG pipelines + LLM Gateways) | Draw 5-step flow. Practice trade-offs | Number of Islands + Max Area |
-| 55 | **MOCK: Behavioral + Portfolio Defense + Take-Home Simulation** (6-hr block) | Build full MVP: FastAPI + LangGraph + MCP server | Redundant Connection |
-| 56 | **APPLY BLITZ + Mock Review**: Wellfound (20) + YC (10) + LinkedIn DMs (10) | Review mock recordings. Iterate based on feedback | Evaluate Reverse Polish Notation |
+| 47 | **Advanced Networking**: WebSockets, Protocol Buffers, HTTP/2, gRPC bidirectional streaming | Build persistent bi-directional streaming for token delivery | Find Min Rotated + Search in Rotated Array |
+| 48 | **Git + DVC** (version control, data versioning) + **MLflow** (experiment tracking) + **Feast/Tecton** (feature stores, point-in-time joins) + DSPy compilation | Git repo + DVC dataset + MLflow tracker + feature pipeline | Subsets |
+| 49 | **JSON-RPC 2.0** + **PKI/TLS/Certificates** + **OAuth 2.1** (JWTs, scopes, grants) + **MCP** (Host/Client/Server, Tools/Resources, threat models) | Build MCP server with mTLS + OAuth 2.1 + monitoring | Serialize/Deserialize Tree |
+| 50 | **OS Memory**: Virtual vs Physical, paging + **GPU Arch**: VRAM, bandwidth, fragmentation + **vLLM** PagedAttention, continuous batching + rate limiting + multi-tenant caching | Deploy vLLM. Analyze fragmentation reduction. Tenant cache | Word Ladder |
+| 51 | **Ontology Design**: POLE+O, Knowledge Graph modeling + **Ebbinghaus Decay** theory + **Tripartite Memory**: Cognee, Neo4j, Graphiti, AgentMemory | Build POLE+O extraction → Long-Term graph with temporal decay | Permutations |
+| 52-56 | **System Design Crash Course**: Load Balancing, Scaling, Message Queues + **Mock Week**: Verbal, Pair Programming, Whiteboarding, Behavioral + Take-Home, Apply Blitz | Practice all interview formats | Combination Sum → Eval RPN |
 
 ### Phase 7: Agentic Orchestration, MCP & Advanced Tools (Days 57-60)
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
-| 57 | **Advanced Agent Patterns + A2A vs MCP**: Self-reflection, multi-tool, hierarchical, debate. LangGraph vs CrewAI vs AutoGen. A2A (horizontal delegation, Agent Cards, JSON-RPC 2.0) vs MCP (vertical tools). Study: a2aproject/A2A, FareedKhan-dev/all-agentic-architectures | Build self-reflecting agent + A2A card discovery + MCP tool call in same system | Implement Trie (Prefix Tree) |
-| 58 | **PROJECT 2 BUILD**: Autonomous Code & Web Intelligence Swarm — Blackboard + Researcher (browser-use/Firecrawl) + Coder (Daytona). **Tripartite Memory**: Neo4j/Cognee (POLE+O). n8n/Langflow/Dify. Ollama | Build Blackboard with tripartite memory. Visual workflow in n8n | Time Based Key-Value Store |
-| 59 | **PROJECT 2**: MCP with OAuth 2.1 + Advanced MCP (Sampling, Roots, streaming). Claude Code + Headroom compression + Docker + AWS ECS | Implement MCP Sampling + Headroom + CI/CD | Largest Rectangle in Histogram |
+| 57 | **Advanced Agent Patterns + A2A vs MCP**: Self-reflection, multi-tool, hierarchical, debate. LangGraph vs CrewAI vs AutoGen. A2A vs MCP blended | Build self-reflecting agent + A2A card discovery + MCP tool call | Implement Trie (Prefix Tree) |
+| 58 | **Infra Integrations**: Blackboard shared-memory, Daytona sandbox, Firecrawl scraping, Headroom compression — individual practice modules | Build each infra module separately before assembling | Time Based Key-Value Store |
+| 59 | **PROJECT 2 BUILD**: Assemble Autonomous Swarm — Blackboard + Researcher + Coder + Tripartite Memory + MCP + Headroom + CI/CD | Integrate all components. Deploy | Largest Rectangle in Histogram |
 | 60 | **PROJECT 2 DONE**: LLM-as-a-judge + Deploy + README + **APPLY BLITZ** | Production-grade docs. Apply to 40+ roles | Course Schedule II review |
 
 ### Phase 8: Scalable Agentic System Design (Post-60-Day — Interview Deep Dive)
