@@ -26,7 +26,7 @@
 
 | Day | Date | Status | Topics | DSA |
 |-----|------|--------|--------|-----|
-| 12 | Jul 17 | 🔴 IN PROGRESS | Context Managers, Modules, `__init__.py` | Valid Anagram |
+| 12 | Jul 21 | 🔴 IN PROGRESS | Terminal, Git, Context Managers, Modules, __init__.py, venv/pip | Two Sum (pending from D11) + Valid Anagram |
 
 ---
 
@@ -36,7 +36,7 @@
 | Day | Morning | Afternoon | DSA |
 |-----|---------|-----------|-----|
 | 11 | **Python Decorators** (first-class functions, @syntax) + **OOP deep dive** (@property, @staticmethod, @classmethod, dunder) | Build DocumentStore with dunder methods for exact lookup | Two Sum |
-| 12 | **Terminal Basics** (cd, ls, mkdir) + **Git** (init, add, commit) + **Context Managers** + **venv/pip** | Init Git repo. Python package. First commit | Valid Anagram |
+| 12 | **Terminal Basics** (cd, ls, mkdir) + **Git** (init, add, commit) + **Context Managers** + **venv/pip** | Init Git repo. Python package. First commit | Two Sum (pending from D11) + Valid Anagram |
 | 13 | **pip/venv** + **HTTP Protocol** (GET/POST, headers, status codes) + **Type Hinting** + **FastAPI intro** | Setup venv. Build strictly-typed GET/POST endpoint | Group Anagrams |
 | 14 | Generators (yield), Tuples, enumerate, zip | Custom text stream simulator with configurable delays | Top K Frequent |
 | 15 | **Markdown Syntax** (fences, headings) + **regex/JSON** + **Defensive Parsing** (truncated brackets, fences) | Error-resilient parser extracting JSON from markdown | Product of Array |
