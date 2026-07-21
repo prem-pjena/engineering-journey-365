@@ -17,13 +17,15 @@ Agentic AI Engineer with expertise in LangGraph orchestration, Model Context Pro
 | Category | Skills |
 |----------|--------|
 | **Languages** | Python, TypeScript, JavaScript, SQL |
-| **AI/ML** | LangChain, LangGraph (StateGraph, routing, HITL, multi-agent), MCP (stdio/HTTP SSE, Tools/Resources/Prompts), RAG (naive→corrective→adaptive→agentic), Prompt Engineering, LLM APIs (OpenAI, Gemini), Constrained Decoding, Ragas, LangSmith |
-| **Backend** | FastAPI, Pydantic, Asynchronous Python, REST APIs, Express.js |
-| **Vector & Search** | pgvector (HNSW/IVFFlat, hybrid search), ChromaDB, Cross-encoder Reranking, Semantic/Parent-Child Chunking |
-| **Cloud (AWS)** | Bedrock, ECS Fargate, RDS pgvector, ElastiCache, S3, Lambda, API Gateway, CloudWatch |
+| **AI/ML** | LangChain, LangGraph (StateGraph, routing, PostgresSaver, HITL, multi-agent, Send API), MCP (OAuth 2.1, Sampling, Roots, Tools/Resources/Prompts), CrewAI, DSPy, RAG (basic→CRAG→adaptive→agentic), Prompt Engineering, LLM APIs (OpenAI, Gemini), Constrained Decoding (XGrammar), Ragas, LangSmith, LLM-as-a-judge |
+| **Backend** | FastAPI, Pydantic v2, Asynchronous Python, SSE Streaming, REST APIs |
+| **Vector & Search** | pgvector (HNSW/DiskANN), pgvectorscale, FAISS (IVF, PQ, HNSW), Vespa, LanceDB, Milvus, Elasticsearch ELSER, Redis (VSET, FT.HYBRID), Cross-encoder Reranking, Hybrid Search (BM25 + Dense + tsvector + RRF) |
+| **Agent Memory** | Mem0, Graphiti, Cognee, Neo4j (tripartite memory), AgentMemory, Blackboard System |
+| **Agentic Tools** | browser-use (Playwright), Firecrawl, Daytona sandbox, Headroom compression, Claude Code, OpenClaw |
+| **Cloud (AWS)** | Bedrock, ECS Fargate, RDS pgvector, ElastiCache (Redis), S3, Lambda, API Gateway, CloudWatch |
 | **DevOps** | Docker, docker-compose, Git, GitHub Actions CI/CD |
-| **Database** | PostgreSQL, SQL (JOINs, CTEs, window functions, indexing), database design, pgvector |
-| **Concepts** | Transformer Architecture (QKV, RoPE, KV cache), Tokenization (BPE), Sampling (temp, top-k, top-p), Quantization, ML basics, OAuth 2.0, RLS |
+| **Database** | PostgreSQL, pgvector, SQL (CTEs, window functions, tsvector, recursive queries), SQLite, Milvus, Redis |
+| **Concepts** | Transformer Architecture (QKV, RoPE, KV cache, MLA), Tokenization (BPE/WordPiece/Unigram), DeepSeek-V3 (MoE, MTP), Sampling (temp, top-k, top-p), Quantization (Int8, PQ), vLLM (PagedAttention), Classical ML (Logistic Regression, K-Means, PCA), OAuth 2.1, mTLS, NeMo Guardrails, Agno dual-schema, Ebbinghaus Decay, POLE+O Ontology |
 
 ---
 

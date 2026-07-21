@@ -1,4 +1,4 @@
-# 🏗️ Agentic AI Engineer Coach — Standard Prompt Template (Market-Validated v2)
+# 🏗️ Agentic AI Engineer Coach — Standard Prompt Template (Market-Validated v7)
 
 **Purpose:** This template follows the 60-day sprint to Agentic AI Engineer. 
 **Target:** ₹30-50k/mo intern (Day 31) → ₹10-12 LPA FT / $24-40k/yr global remote (Day 60)
@@ -8,61 +8,59 @@
 
 ## 📌 PHASE-SPECIFIC RULES
 
-### Phase 1 (Days 11-17): Python Completion + FastAPI + LLM APIs
+### Phase 1-2 (Days 11-24): Core DSA Mastery + Python + FastAPI + LangChain + RAG
 | Area | What to Include | What to NEVER Include |
 |------|----------------|----------------------|
-| **DSA Category** | Arrays, Strings, Hash Maps, Two Pointers | ❌ Graphs, Trees, Tries, DP, Heaps |
+| **DSA Category** | Arrays, Strings, Hash Maps, Two Pointers, Binary Search, Linked Lists | ❌ Graphs, Trees, Tries, DP, Heaps |
 | **DSA Difficulty** | Easy. Patterns: frequency counter, sliding window, two-pointer | ❌ Hard problems |
 | **System Design** | ❌ NONE | ❌ No HLD/LLD yet |
-| **Concepts** | OOP, Context Managers, Async/Await, FastAPI basics, LLM API calls, Prompt Engineering, Sampling params (temp, top-k, top-p) | ❌ Fine-tuning, LoRA, quantization |
-| **Projects** | Mock VectorStore class, FastAPI endpoint, LLM chat, streaming | ❌ Multi-agent, MCP, enterprise features |
-| **Deployment** | ❌ NONE — local only for now | ❌ No Docker/AWS yet |
+| **Concepts** | OOP (decorators, @property, dunder), Context Managers, Git, pip/venv, Type Hinting, HTTP Protocol, Async/Await, FastAPI, Pydantic, SSE, LangChain (PromptTemplate, LCEL, parsers), Vector Math, Embeddings, Basic RAG, SQL (sqlite3, ACID), IR Theory (TF-IDF), Cross-encoder Reranking, Docker Basics, pgvector, Hybrid Search (BM25+RRF) | ❌ Multi-agent, MCP, DSPy, advanced vector DBs |
+| **Projects** | DocumentStore class, FastAPI endpoint, Chat CLI, LangChain chains, RAG pipeline, SQLite DB, two-stage retrieval, Docker container | ❌ Cloud deployment, MCP servers |
+| **Deployment** | 🟢 Docker containers locally (Day 24) | ❌ No AWS yet |
 
-### Phase 2 (Days 18-24): LangChain + RAG Core
+### Phase 3 (Days 25-31): Classical ML + NLP Theory + Transformers + LangGraph
 | Area | What to Include |
 |------|----------------|
-| **DSA Category** | Arrays, Strings, Hash Maps, Binary Search, Linked Lists |
+| **DSA Category** | Trees, Linked Lists |
 | **DSA Difficulty** | Easy-Medium |
-| **Concepts** | LangChain LCEL, Structured Output, Pydantic, Document Loaders, Semantic/Parent-Child Chunking, ChromaDB, Embeddings, Naive RAG, SQL+pgvector, Cross-encoder Reranking |
-| **Projects** | RAG pipeline, structured extractor, pgvector setup |
+| **Concepts** | Linear Algebra, Calculus, Gradient Descent, Pandas/NumPy, Logistic Regression, K-Means, BoW/Word2Vec/GloVe, RNN/LSTM, Transformer (QKV, RoPE), KV Cache, MoE, DeepSeek-V3, LangSmith, Ragas, LangGraph (StateGraph, Nodes, Edges, Reducers) |
+| **Projects** | Gradient descent optimizer, Logistic Regression model, Word2Vec embeddings, transformer block, LangGraph cyclic agent |
 | **Deployment** | ❌ Local only |
 
-### Phase 3 (Days 25-31): Advanced RAG + Evaluation + Project 1 + APPLY
+### Phase 4 (Days 32-39): Advanced RAG + Project 1 + Docker Compose + AWS
 | Area | What to Include |
 |------|----------------|
-| **DSA Category** | Linked Lists, Trees, Recursion |
+| **DSA Category** | Graphs (BFS/DFS), DP basics, Intervals |
 | **DSA Difficulty** | Medium |
-| **Concepts** | Hybrid Search (BM25+Dense), HNSW vs IVFFlat, Corrective/Adaptive/Conversational/Agentic RAG, LangSmith + Ragas Evaluation |
-| **Projects** | **PROJECT 1**: Multi-Tenant RAG with FastAPI + pgvector + LangGraph supervisor + MCP + Cross-encoder + Docker + AWS ECS |
-| **Deployment** | 🟢 Docker, AWS ECS, CI/CD |
+| **Concepts** | CRAG, Adaptive RAG, Conversational/Agentic RAG, OCR/Multimodal, Knowledge Graphs, Temporal KGs, Mem0, Graphiti, DSPy (Signatures, Modules, Optimizers), LLM-as-a-judge, Callbacks, SDLC |
+| **Projects** | **PROJECT 1**: Multi-Tenant RAG Agent (FastAPI + SQLite + LangGraph + pgvector Docker + CRAG + Mem0), Docker Compose, AWS ECS deploy |
+| **Deployment** | 🟢 Docker Compose, AWS ECS Fargate, CI/CD |
 | **Applications** | 🟢 Wellfound + YC Work at a Startup blitz |
 
-### Phase 4 (Days 32-39): LangGraph + MCP
+### Phase 5 (Days 40-46): Database Architecture + Vector DBs
 | Area | What to Include |
 |------|----------------|
-| **DSA Category** | Trees, Graphs (BFS/DFS), DP basics |
+| **DSA Category** | Heaps, Monotonic Stack |
 | **DSA Difficulty** | Medium |
-| **Concepts** | StateGraph, Reducers, Conditional Routing, Checkpointing, HITL, Multi-agent Supervisor, LangSmith Tracing, MCP stdio + HTTP SSE + Tools/Resources/Prompts, LangGraph+MCP integration |
-| **Projects** | Stateful chatbot, supervisor agent, MCP server |
+| **Concepts** | Vector Compression (FP32/FP16/Int8, PQ), FAISS (Flat, IVFFlat, PQ), Late-Interaction (ColBERT), Vespa, Storage Engines (row vs columnar), Cache Eviction (LRU/LFU/TTL), LanceDB, Elasticsearch ELSER, Redis VSET/FT.HYBRID, CAP Theorem, System Metrics (latency/throughput/QPS), Milvus, AI Security (prompt injection, jailbreaks), NeMo Guardrails, Agno dual-schema, Ollama |
+| **Projects** | FAISS index compression, Vespa Docker ranking, multi-tenant LanceDB store, hybrid search with ELSER, Redis VSIM, clustered Milvus, guarded Ollama agent |
+| **Deployment** | 🟢 Multi-container Docker, cloud vector DBs |
 
-### Phase 5 (Days 40-46): Full-Stack + Production
+### Phase 6 (Days 47-56): System Design + MLOps + Mock Interviews
 | Area | What to Include |
 |------|----------------|
-| **Concepts** | FastAPI deep dive (error handling, middleware, streaming, background tasks), Next.js + TypeScript chat UI, Docker compose multi-container, AWS ECS Fargate full stack, GitHub Actions CI/CD, Cost tracking, AWS Bedrock |
-| **Projects** | Full-stack chat app deployed to cloud |
+| **System Design** | 🟢 START here — RAG at scale, load balancing, rate limiting, CDN, caching tiers, multi-tenant isolation, LLM Gateway, vLLM inference optimization, MCP security, tripartite memory |
+| **Concepts** | Networking (sockets, TCP/UDP), Concurrency vs Parallelism, WebSockets, gRPC, Git branching, DVC, MLflow, Feast/Tecton Feature Stores, JSON-RPC 2.0, Webhooks, PKI/TLS, OAuth 2.1, MCP (Host/Client/Server, threat models), OS Memory (paging), Process Scheduling, GPU Architecture, vLLM (PagedAttention), Ontology Design (POLE+O), Ebbinghaus Decay, Tripartite Memory (Cognee, Neo4j, Graphiti, AgentMemory) |
+| **ML/NLP Concepts** | Training vs Inference, Transformer deep dive, KV cache mechanics, MoE routing, DeepSeek-V3 internals, evaluation metrics (BLEU, ROUGE, MAP, MRR, NDCG) |
+| **DSA** | Full pattern review across all categories |
+| **Behavioral** | Narrative architecture, termination story, startup fit |
+| **Mocks** | 5-day mock week: Verbal Theory, Pair Programming, System Design Whiteboarding, Behavioral + Take-Home, Apply Blitz |
 
-### Phase 6 (Days 47-53): Interview Prep
+### Phase 7 (Days 57-60): Capstone + Apply FT
 | Area | What to Include |
 |------|----------------|
-| **System Design** | 🟢 START here — RAG at scale, semantic caching (Redis), caching strategies, multi-tenant isolation, latency optimization, LLM Gateway design, KV cache management |
-| **ML/NLP Concepts** | Transformer (QKV, self-attention, RoPE), BERT vs GPT, BPE/WordPiece tokenization, bias-variance, precision/recall/F1, cross-validation |
-| **DSA** | Full pattern review |
-| **Behavioral** | Termination narrative, "Why AI?", portfolio walkthrough |
-
-### Phase 7 (Days 54-60): Project 2 + Apply FT
-| Area | What to Include |
-|------|----------------|
-| **Projects** | **PROJECT 2**: Multi-Agent MCP Orchestrator (FastAPI + LangGraph + MCP + Next.js UI + Docker + AWS ECS + CI/CD) |
+| **Projects** | **PROJECT 2**: Autonomous Code & Web Intelligence Swarm (Blackboard + browser-use/Firecrawl + Daytona + Neo4j/Cognee tripartite memory + MCP OAuth 2.1 + Headroom compression + Docker + AWS ECS + CI/CD) |
+| **Concepts** | Advanced Agent Patterns (self-reflection, multi-tool, hierarchical, debate), LangGraph vs CrewAI vs AutoGen, A2A vs MCP, Daytona sandbox, Firecrawl scraping, Headroom compression |
 | **Applications** | Wellfound + YC + LinkedIn DMs + X DMs blitz |
 | **Target** | ₹10-12 LPA India / $24-40k/yr global remote |
 
@@ -76,8 +74,11 @@
 | Django/Flask | FastAPI has near-total dominance in AI engineering |
 | Deep ML math (gradient descent derivation) | Not tested in AI Engineer interviews |
 | Fine-tuning (LoRA/PEFT) | Only 8.5% of JDs mention it. RAG is 35.9%. Read 1 article for interview concept |
-| Classical ML pipelines | AI Engineers build LLM pipelines, not training pipelines |
+| Classical ML pipelines (full) | AI Engineers build LLM pipelines, not training pipelines |
 | Apna.co | Low signal, legacy IT, fake AI listings |
+| ChromaDB for production | Prototype-only. Use pgvector/DiskANN for production |
+| Static API keys for MCP | OWASP MCP Top 10 vulnerability. OAuth 2.1 mandatory |
+| InMemorySaver for LangGraph | Restricted to testing. PostgresSaver mandatory for production |
 
 ---
 

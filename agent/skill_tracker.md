@@ -32,9 +32,15 @@
 | AI/ML | 2.0 | 2.0 | 2.0 | 2.0 | 2.0 | 2.0 | 2.0 | 2.0 | 2.0 | 2.0 | — |
 | Git/GitHub | 0 | 0 | — | — | — | — | — | — | — | — | — |
 | **FastAPI** | — | — | — | — | — | — | — | — | — | — | — |
+| **LangChain** | — | — | — | — | — | — | — | — | — | — | — |
 | **LangGraph** | — | — | — | — | — | — | — | — | — | — | — |
 | **MCP** | — | — | — | — | — | — | — | — | — | — | — |
 | **LangSmith/Ragas** | — | — | — | — | — | — | — | — | — | — | — |
+| **Docker** | — | — | — | — | — | — | — | — | — | — | — |
+| **SQL/PostgreSQL** | — | — | — | — | — | — | — | — | — | — | — |
+| **RAG (basic→advanced)** | — | — | — | — | — | — | — | — | — | — | — |
+| **Vector DBs** | — | — | — | — | — | — | — | — | — | — | — |
+| **DSPy** | — | — | — | — | — | — | — | — | — | — | — |
 | **Next.js** | — | — | — | — | — | — | — | — | — | — | — |
 
 ---
@@ -51,3 +57,4 @@
 | 2026-07-01 | Day 8 | Python: 7.2→7.9, Lists: 7.5→8.8, Dictionaries: 0→8.2, Loops: 7.8→8.4, Problem Solving: 6.1→6.9, DSA: 3.2→3.8, Confidence: 9.9→10.0, Builder: 8.1→8.8, Retention: 8.5→9.0 | List slicing, comprehensions, dicts, linear search, Contact Book ✅ |
 | 2026-07-04 | Day 9 | Python: 7.9→8.4, DSA: 3.8→4.5, Functions: 8.2→9.2, Exception Handling: 0→9.2, Lambda: 0→9.5, Program Organization: 7.5→9.3, Problem Solving: 6.9→7.4, Builder: 8.8→9.5, Retention: 9.0→9.6 | Exception handling, *args/**kwargs, lambda, map/filter, dispatch table, Calculator 2.0, Big O review ✅ |
 | 2026-07-11 | Day 10 | Python: 8.4→8.9, DSA: 4.5→5.2, Problem Solving: 7.4→7.8, Functions: 9.2→9.5, Exception Handling: 9.2→9.6, Builder: 9.5→9.6, Retention: 9.6→9.7 | File I/O, Sets, Two Sum (brute + optimized), Contact persistence ✅ |
+| 2026-07-14 | Day 11 | Python: 8.9→9.2, DSA: 5.2→5.5, OOP: 0→4.5, Retention: 9.7→9.8, Builder: 9.6→9.7 | OOP: classes, objects, __init__, self, object attributes, methods, inheritance, pass ✅ |

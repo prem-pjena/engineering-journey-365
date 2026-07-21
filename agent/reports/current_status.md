@@ -1,29 +1,48 @@
 # 📊 Current Status — 60-Day Agentic AI Engineer Sprint
 
-**Last Updated:** 2026-07-17 (Deep market research complete — verified ₹10-12 LPA target)
+**Last Updated:** 2026-07-21 (v7 curriculum — all audit gaps fixed)
 
 ---
 
-## 🎯 Timeline (Market-Validated)
+## 🎯 Timeline (Market-Validated v7)
 
 ```
 Days 1-10:  Python Foundations (vars → File I/O, Sets, Two Sum) ✅ COMPLETE
-Days 11-12: OOP + Context Managers + Modules
-Days 13:    Async + FastAPI intro
-Days 14-15: Generators + String/JSON
-Days 16-17: LLM APIs + Prompt Engineering
-Days 18-20: LangChain LCEL + Structured Output + Semantic Chunking
-Days 21-22: Vector DBs + Naive RAG
-Days 23-24: pgvector SQL + Parent-Child Chunking + Cross-encoder Reranking
-Days 25-27: Hybrid Search + CRAG + Adaptive RAG + Conversational RAG
-Days 28-31: LangSmith/Ragas Evaluation + PROJECT 1 (Multi-Tenant RAG) + DEPLOY + APPLY
-Days 32-36: LangGraph Mastery (StateGraph → Multi-agent)
-Days 37-39: MCP (stdio → HTTP SSE → LangGraph+MCP)
-Days 40-42: FastAPI Deep Dive + Next.js UI + Full-stack integration
-Days 43-46: Docker Compose + AWS ECS + GitHub Actions CI/CD + Cost Tracking
-Days 47-53: System Design + ML/NLP Interview Prep + Mock Interviews
-Days 54-56: PROJECT 2 (Multi-Agent MCP Orchestrator) + Deploy
-Days 57-60: APPLY FT BLITZ → ₹10-12 LPA / $24-40k/yr offer 🎯
+Days 11-12: OOP (decorators, @property, dunder) + Terminal/Git + Context Managers
+Days 13:    pip/venv + HTTP Protocol + Type Hinting + FastAPI intro
+Days 14:    Generators + Tuples + enumerate/zip
+Days 15:    Markdown + regex/JSON + Defensive Parsing
+Days 16:    .env files + LLM APIs (tokens, logits, softmax, streaming)
+Days 17:    Prompt Engineering (system prompts, few-shot, CoT)
+Days 18:    Async Python + Data Serialization (Pydantic) + SSE + Generative Parameters
+Days 19:    Data Pipeline Theory + LangChain (PromptTemplate, LCEL, parsers)
+Days 20:    Vector Math (dot product, cosine similarity) + Embeddings API
+Days 21:    Basic RAG (chunk → embed → retrieve → generate)
+Days 22:    SQL (sqlite3, ACID, transactions) + Relational DB fundamentals
+Days 23:    IR Theory (TF-IDF, inverted index) + Cross-encoder Reranking
+Days 24:    Docker Basics + Hybrid Search (BM25 + RRF) + pgvector via Docker
+Days 25:    Linear Algebra for AI + Calculus/Gradient Descent (2 sub-days)
+Days 26:    Pandas/NumPy + Classical ML (Logistic Regression, K-Means)
+Days 27:    Classical NLP (BoW, Word2Vec) + Sequence Models (RNN/LSTM) (2 sub-days)
+Days 28:    NN Lifecycle + Transformer Internals (QKV, RoPE, layer norm)
+Days 29:    KV Cache + MoE + DeepSeek-V3 (MLA, MoE, MTP)
+Days 30:    Eval Theory (BLEU, ROUGE, MAP, MRR) + LangSmith + Ragas
+Days 31:    LangGraph (StateGraph, Nodes, Edges, Reducers)
+Days 32-33: CRAG + Adaptive RAG + Multimodal AI + Conversational/Agentic RAG
+Days 34:    Knowledge Graphs + Temporal KGs + Mem0/Graphiti
+Days 35:    DSPy Deep Dive + LLM-as-a-judge
+Days 36-38: PROJECT 1 (Multi-Tenant RAG) + Docker Compose + AWS ECS Deploy
+Days 39:    Callbacks/SDLC + DSA review + APPLY BLITZ (intern)
+Days 40-41: FAISS (PQ, IVFFlat) + Vespa ColBERT (Docker)
+Days 42-43: LanceDB + Cache Eviction + Elasticsearch ELSER
+Days 44-45: Redis VSET/FT.HYBRID + Milvus (CAP Theorem, metrics)
+Days 46:    AI Security (Guardrails, Agno, Ollama)
+Days 47-48: Networking/gRPC + Git branching + DVC + MLflow + Feature Stores
+Days 49-50: JSON-RPC/Webhooks/PKI/OAuth/MCP + OS Memory/GPU/vLLM
+Days 51:    Ontology (POLE+O) + Ebbinghaus Decay + Tripartite Memory
+Days 52-56: System Design Crash Course + Mock Interview Week
+Days 57-58: Advanced Agents + A2A vs MCP + Infra Integrations
+Days 59-60: PROJECT 2 (Autonomous Swarm) + Deploy + APPLY FT BLITZ → 🎯
 ```
 
 ---
@@ -32,10 +51,10 @@ Days 57-60: APPLY FT BLITZ → ₹10-12 LPA / $24-40k/yr offer 🎯
 
 | Metric | Value |
 |--------|-------|
-| Days Completed | 10 (Day 1 ✅ → Day 10 ✅) |
-| Current Phase | Day 11 — OOP: classes, inheritance, dunder, @property |
-| Consistency Streak | 10 days |
-| DSA Problems Solved | 1 / target 50 |
+| Days Completed | 11 (Day 1 ✅ → Day 11 ✅) |
+| Current Phase | Day 12 — Terminal, Git, Context Managers, venv |
+| Consistency Streak | 11 days ✅ |
+| DSA Problems Solved | 1 / target 59 |
 | Projects Deployed | 0 |
 
 ---
@@ -44,9 +63,9 @@ Days 57-60: APPLY FT BLITZ → ₹10-12 LPA / $24-40k/yr offer 🎯
 
 | Target | Research Confirms | Action |
 |--------|------------------|--------|
-| ₹30k-₹50k/mo internship by Day 28 | ✅ Confirmed — Hungama (₹50k), Aight (₹25-50k), SuperKalam (₹25-40k), Teal India (₹30k) | Apply Wellfound + YC Work at a Startup |
-| ₹10-12 LPA FT (₹80k-₹1L/mo in-hand) by Day 60 | ✅ Confirmed as baseline for proven agentic skills — Hungama PPO ₹12-15 LPA, Peakflo ₹40-50k/mo | Build LangGraph + MCP projects |
-| US/global remote ($24k-$40k/yr) | ✅ Realistic — Smart Audit ($25-50k/yr), Lamatic ($6-10k), Peakflo, Great Question | Full-stack capability (Next.js + FastAPI) |
+| ₹30k-₹50k/mo internship by Day 31 | ✅ Confirmed — Hungama (₹50k), Aight (₹25-50k), SuperKalam (₹25-40k) | Apply Wellfound + YC Work at a Startup |
+| ₹10-12 LPA FT (₹80k-₹1L/mo in-hand) by Day 60 | ✅ Confirmed as baseline for proven agentic skills — Hungama PPO ₹12-15 LPA, Peakflo ₹40-50k/mo | Build LangGraph + MCP + tripartite memory projects |
+| US/global remote ($24k-$40k/yr) | ✅ Realistic — Smart Audit ($25-50k/yr), Great Question, Peakflo | Full-stack capability (Next.js + FastAPI) |
 | Skip service-based companies | ✅ Confirmed — TCS/Infosys max ₹7-9 LPA, slow AI adoption | Ignore. Only target AI-first |
 | Full reports → `agent/reports/market_research_2026.md` + `agent/reports/market_research_deep_2026.md` |
 
