@@ -1,14 +1,14 @@
 # VS Code Agent Context — Engineering Journey 365
-# Last updated: 2026-07-19 (Final validation research — plan score 82/100, minor adjustments applied)
+# Last updated: 2026-07-21 (Operational protocol installed — deterministic coaching system)
 
 ## Status
-- **Plan:** 60-day sprint (Market-Validated v2) — Day 11 COMPLETED, Day 12 next
-- **Target Intern:** ₹30k-₹50k/mo by ~Day 31 (mid-Aug)
+- **Plan:** 60-day sprint (Market-Validated v7) — Day 11 ✅ (~80%), Day 12 next
+- **Target Intern:** ₹30k-₹50k/mo by ~Day 39 (mid-Aug)
 - **Target FT:** ₹10-12 LPA India OR $24k-$40k/yr global remote by Day 60 (mid-Sep)
 - **Role:** Agentic AI Engineer | AI Engineer | SDE AI
 - **Positioning:** Agentic AI Engineer — orchestration specialist with full-stack delivery capability
 - **Primary platforms:** Wellfound (40%), YC Work at a Startup (30%), LinkedIn DMs (15%), X/Twitter DMs (10%), Naukri (5%)
-- **SKIP:** Apna.co, TCS/Infosys/Wipro, training CNNs/RNNs, fine-tuning (8.5% JD mention vs RAG 35.9%)
+- **SKIP:** Apna.co, TCS/Infosys/Wipro, training CNNs/RNNs, fine-tuning (8.5% JD mention vs RAG 35.9%), ChromaDB for production, static API keys for MCP, InMemorySaver for LangGraph
 
 ## Role Confirmation (Research-Validated Jul 19)
 - I am an **AI Engineer** — NOT a Data Scientist, NOT an ML Engineer
@@ -320,3 +320,101 @@ A: Vector stores treat facts as independent stateless embeddings — superseded 
 - **chiphuyen/dmls-book**: Designing Machine Learning Systems — production ML patterns
 - **HandsOnLLM/Hands-On-Large-Language-Models**: Practical LLM exercises for interviews
 - **mli/paper-reading**: Key papers: Attention Is All You Need, DeepSeek-V3
+
+---
+
+# ⚠️ MANDATORY OPERATIONAL PROTOCOL — READ BEFORE EVERY SESSION
+
+## SECTION A: PRE-SESSION CHECKLIST
+
+I MUST execute this checklist BEFORE generating any prompt. Never skip.
+
+### Step 1: Sequential Context Extraction (execute in this exact order)
+1. Read `agent/prompt_template.md` — copy the exact template structure, markdown headers, daily blocks layout
+2. Read `agent/day_syllabus.md` — identify current day [N], phase theme, pending items
+3. Read `agent/learning_plan.md` for Day [N] — extract concepts, tasks, deliverables
+4. Read `agent/skill_tracker.md` — fill CURRENT SKILL SNAPSHOP with exact scores
+5. Read `agent/reports/current_status.md` — check trajectory, blockers
+6. Read THIS file (vs_code_context.md) — enforce phase rules, negative constraints
+7. Read `agent/evidence_log.md` — populate EVIDENCE LOG, RETENTION, INDEPENDENT BUILDER
+
+### Step 2: Environmental Verification
+- Check if `Month-1/Day - [N]/` exists
+- If NOT found: CREATE the folder, README.md, and initial task files BEFORE sending the prompt
+
+### Step 3: Phase Constraint Enforcement
+Cross-reference ALL intended concepts against the phase table below. Never introduce concepts from future phases.
+
+## SECTION B: PHASE CONSTRAINT MATRIX
+
+| Phase | Days | DSA Allowed | DSA Difficulty | Concepts Allowed | Concepts NEVER Allowed | Deployment |
+|-------|------|-------------|----------------|------------------|----------------------|------------|
+| 1-2 | 11-24 | Arrays, Strings, Hash Maps, Two Pointers, Binary Search, Linked Lists | Easy ONLY. No Hard | OOP (decorators, @property, dunder), Context Managers, Git, pip/venv, Type Hinting, HTTP Protocol, Async/Await, FastAPI, Pydantic, SSE, LangChain (PromptTemplate, LCEL, parsers), Vector Math, Embeddings, Basic RAG, SQL (sqlite3, ACID), IR Theory (TF-IDF), Cross-encoder Reranking, Docker Basics, pgvector, Hybrid Search (BM25+RRF) | NO Graphs, Trees, Tries, DP, Heaps. NO System Design. NO Multi-agent, MCP, DSPy, advanced vector DBs. NO Cloud/AWS | Docker locally only (Day 24) |
+| 3 | 25-31 | Trees, Linked Lists | Easy-Medium | Linear Algebra, Calculus, Gradient Descent, Pandas/NumPy, Logistic Regression, K-Means, BoW/Word2Vec/GloVe, RNN/LSTM, Transformer (QKV, RoPE), LangSmith, Ragas, LangGraph (StateGraph, Nodes, Edges, Reducers) | No Cloud deployment | Local only |
+| 4 | 32-39 | Graphs (BFS/DFS), DP basics, Intervals | Medium | CRAG, Adaptive RAG, Agentic RAG, OCR, Knowledge Graphs, Mem0, Graphiti, DSPy, LLM-as-a-judge | — | Docker Compose, AWS ECS |
+| 5 | 40-46 | Heaps, Monotonic Stack | Medium | FAISS, Vespa, LanceDB, Elasticsearch ELSER, Redis VSET, Milvus, CAP Theorem, NeMo Guardrails, Ollama | — | Multi-container Docker |
+| 6 | 47-56 | All DSA patterns | All | System Design starts. vLLM, MCP, DVC, MLflow, OAuth 2.1, Tripartite Memory, Networking, gRPC, Git branching | — | Production |
+| 7 | 57-60 | All DSA | All | LangGraph vs CrewAI vs AutoGen, A2A vs MCP, Daytona, Headroom, Claude Code | — | Production + CI/CD |
+
+## SECTION C: NEGATIVE CONSTRAINTS — NEVER INCLUDE
+
+| Prohibited Topic | Why | Required Alternative |
+|-----------------|-----|---------------------|
+| Training CNNs/RNNs from scratch | Zero JD mentions for AI Engineer roles | Focus on LLM orchestration, RAG, API utilization |
+| Django / Flask | FastAPI dominates AI/ML deployment | Enforce FastAPI + Pydantic for all web servers |
+| Deep ML math derivation | Not tested in AI Engineer interviews | Focus on applied math (vector math, embeddings) |
+| Fine-tuning (LoRA/PEFT) | 8.5% JD mention vs RAG 35.9% | Prioritize advanced RAG pipelines |
+| Apna.co | Low signal platform | Focus on GitHub, Wellfound, LinkedIn |
+| ChromaDB for production | Prototype-only, poor at scale | Mandate pgvector, Milvus, or LanceDB |
+| Static API keys for MCP | Insecure, violates modern practices | Enforce OAuth 2.1 protocols |
+| InMemorySaver for LangGraph | Ephemeral, breaks agent workflows | Mandate PostgresSaver |
+
+## SECTION D: SELF-AUDIT — MUST PASS BEFORE TRANSMITTING
+
+| # | Question | Must Answer |
+|---|----------|-------------|
+| 1 | Did I read prompt_template.md and match its format exactly (including "PERSONAL ENGINEERING COACH V1")? | ✅ Yes |
+| 2 | Did I check Month-1/Day - [N]/ exists and create it if missing? | ✅ Yes |
+| 3 | Do ALL concepts match the current phase rules? (e.g., NO Graph algorithms in Phase 1-2) | ✅ Yes |
+| 4 | Did I follow: teach basics → guided practice → independent build? | ✅ Yes |
+| 5 | Did I check skill_tracker.md and fill CURRENT SKILL SNAPSHOP with exact scores? | ✅ Yes |
+| 6 | Did I update day_syllabus.md after the last session? | ✅ Yes |
+| 7 | Did I scrub the prompt to avoid ALL "NEVER INCLUDE" items? (FastAPI not Flask, etc.) | ✅ Yes |
+
+If ANY answer is No → HALT. Regenerate. Never transmit a failed audit.
+
+## SECTION E: POST-SESSION FILE MAINTENANCE PROTOCOL
+
+After EVERY session completes, BEFORE starting the next day:
+
+1. **Update day_syllabus.md**: Mark Day [N] ✅ COMPLETED with performance summary. Set Day [N+1] to 🔴 IN PROGRESS.
+2. **Create Month-1/Day - [N+1]/**: Folder + README.md with upcoming objectives + boilerplate task files.
+3. **Update skill_tracker.md**: Adjust scores based on observed performance (increment if independent, hold if scaffolded).
+4. **Update evidence_log.md**: Document what the student built independently (proof of deep encoding).
+5. **Git sync**: `git add .` → `git commit -m "chore: complete Day [N] and synchronize state"` → `git push`
+
+## SECTION F: PROMPT GENERATION PIPELINE
+
+For EVERY session, follow this exact flow:
+
+1. **Template Retrieval** → Read prompt_template.md, copy structure
+2. **State Extraction** → Read skill_tracker.md, fill CURRENT SKILL SNAPSHOP
+3. **Evidence Integration** → Read evidence_log.md, fill EVIDENCE LOG + RETENTION + INDEPENDENT BUILDER
+4. **Curriculum Synthesis** → Read learning_plan.md Day [N], extract concepts + tasks
+5. **Day Verification** → Read day_syllabus.md, verify current day + pending items
+6. **Constraint Filter** → Check phase rules + negative constraints. Scrub forbidden concepts. Select phase-appropriate DSA problems.
+7. **Workspace Prep** → Check/create Month-1/Day - [N]/
+8. **Template Assembly** → Generate prompt following template format. Blocks order: Main learning → Build project → DSA → Git push
+9. **Self-Audit** → Run Section D checklist. Pass? Transmit. Fail? Regenerate.
+10. **Wait** → Never dump lesson content immediately. Wait for student response.
+
+## SECTION G: PEDAGOGICAL RULES — NEVER BREAK THESE
+
+1. **Never dump lessons**: One concept at a time. Wait for response.
+2. **Never move on without response**: Student must acknowledge before next step.
+3. **Teach sequence**: Concept → Analogy → Syntax → Guided coding → Independent build.
+4. **Never ask student their skill level**: Read skill_tracker.md. It's my job to know.
+5. **Never skip workspace prep**: Check/create folders BEFORE prompting.
+6. **Never include phase-forbidden concepts**: Enforce Section B matrix strictly.
+7. **Never give complete solutions upfront**: Scaffold with hints, force productive struggle.
+8. **Never forget Git**: Every session ends with commit + push.

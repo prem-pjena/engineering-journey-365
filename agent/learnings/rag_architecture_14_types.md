@@ -126,3 +126,10 @@ All repos by the same author. Use as practical references during your sprint.
 | [agents-towards-production](https://github.com/NirDiamant/agents-towards-production) | 28 production tutorials | 18k+ | Phase 5 (Days 40-46) — deployment, security |
 | [Prompt_Engineering](https://github.com/NirDiamant/Prompt_Engineering) | 22 prompting techniques | 7k+ | Phase 1 (Day 17) — prompt engineering |
 | [GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents) | 53 agent implementations | 21k+ | Phase 4 (Days 32-39) — agent examples |
+| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | LLM I/O validation framework | — | Phase 5 (Production safety) |
+| [ed-donner/agents](https://github.com/ed-donner/agents) | 6-week agent curriculum (OpenAI→LangGraph→MCP) | — | Phase 4 (LangGraph labs) + Phase 4 (MCP labs) |
+| [agno-agi/agno](https://github.com/agno-agi/agno) | Full-stack agent framework (Agents/Teams/MCP/RAG) | — | Reference architecture for agent platforms |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Official MCP reference servers (7 servers) | — | **Essential** for Phase 4 MCP implementation |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | AI browser automation + MCP server/client | — | Project 2 — give agents browser abilities |
+| [OpenBMB/ToolBench](https://github.com/OpenBMB/ToolBench) | Tool-use benchmark with DFSDT algorithm | — | Interview prep — DFSDT > ReAct for multi-tool |
+| [awesome-production-agentic-systems](https://github.com/EthicalML/awesome-production-agentic-systems) | Curated index of production agentic tools | — | Browse for discovery |
