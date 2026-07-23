@@ -31,52 +31,38 @@
 
 ---
 
-## 📅 Upcoming (v4 — Final Audit Optimized)
+## 📅 Upcoming (Market-Validated v4 — 2026 Enterprise)
 
-### Phase 1: API & Async Core (Days 13-22)
-| Day | Morning | Afternoon | DSA (30 min only) |
+### Phase 1-2: Core DSA Mastery & Algorithmic Optimization (Days 11-24)
+| Day | Morning | Afternoon | DSA (See agent/dsa/study_plan.md) |
 |-----|---------|-----------|-----------------------------------|
-| 13 | **pip/venv** + **HTTP Protocol** + **Type Hinting** + **FastAPI intro** | Setup venv. Build strictly-typed GET/POST endpoint | Contains Duplicate #217 |
-| 14 | Generators, Tuples, enumerate, zip | Custom text stream simulator | Valid Anagram #242 (review) |
-| 15 | Markdown + regex/JSON + Defensive Parsing | Error-resilient JSON parser from markdown | Intersection of Two Arrays #349 |
-| 16 | .env + LLM APIs (tokens, logits, softmax, streaming) | Multi-turn Chat CLI with streaming | First Unique Character #387 |
-| 17 | **Asyncio deep dive** + Prompt Engineering | Async Chat CLI with concurrent API calls | Range Sum Query #303 |
-| 18 | Pydantic + FastAPI SSE + Generative Parameters | Streaming endpoint with token controls | Binary Search #704 |
-| 19 | 🔁 REVIEW DAY | 🔁 REVIEW DAY | 🔁 REVIEW DAY |
-| 20 | LangChain (PromptTemplate, LCEL, loaders, splitters) | Document Loaders + Text Splitter | Search Insert Position #35 |
-| 21 | Basic RAG (chunk → embed → retrieve → generate) | Single-hop Q&A over local doc | First Bad Version #278 |
-| 22 | SQL + ACID + sqlite3 + pgvector intro | SQLite database. Document metadata queries | Valid Parentheses #20 |
+| 11 | **Python Decorators** (first-class functions, @syntax) + **OOP deep dive** (@property, @staticmethod, @classmethod, dunder) | Build DocumentStore with dunder methods for exact lookup | Two Sum |
+| 12 | **Terminal Basics** (cd, ls, mkdir) + **Git** (init, add, commit) + **Context Managers** + **venv/pip** | Init Git repo. Python package. First commit | Valid Anagram |
+| 13 | **pip/venv** + **HTTP Protocol** (GET/POST, headers, status codes) + **Type Hinting** + **FastAPI intro** | Setup venv. Build strictly-typed GET/POST endpoint | Contains Duplicate + Missing Number + Valid Anagram (R1) |
+| 14 | Generators (yield), Tuples, enumerate, zip | Custom text stream simulator with configurable delays | Majority Element + Intersection of Two Arrays II + Contains Dup (R1), Two Sum (R3) |
+| 15 | **Markdown Syntax** (fences, headings) + **regex/JSON** + **Defensive Parsing** (truncated brackets, fences) | Error-resilient parser extracting JSON from markdown | Valid Palindrome + Two Sum II + Missing Number (R1), Majority Element (R3) |
+| 16 | **Environment Variables** (.env, os.environ) + **LLM APIs** (tokens, logits, softmax, temperature, streaming) | .env setup. Multi-turn Chat CLI with streaming | Move Zeroes + Merge Sorted Array + Valid Palindrome (R1), Intersection II (R3) |
+| 17 | **Prompt Engineering**: System prompts, few-shot, CoT | Manual prompt template router | Best Time to Buy/Sell + Max Avg Subarray + Move Zeroes (R1), Two Sum II (R3) |
+| 18 | **Async Python** + **Data Serialization** (schema, Pydantic) + FastAPI SSE + **Generative Parameters** | Streaming endpoint with Pydantic validation + token controls | Longest Substr w/o Repeat + Min Size Subarray + Best Time (R1), Merge Sorted (R3) |
+| 19 | **Data Pipeline Theory** + **LangChain** (PromptTemplate, LCEL, parsers) | Document Loaders + RecursiveCharacterTextSplitter | 🔁 REVIEW ONLY: Two Sum, Valid Anagram, Contains Dup, Missing Number, Majority, Valid Palindrome |
+| 20 | **Vector Math** (dot product, cosine similarity) + **Embeddings API** | Pure-Python cosine similarity search | Range Sum Query + Find Pivot Index + Longest Substr (R1), Max Avg (R3) |
+| 21 | **Basic RAG**: chunk → embed → store → cosine retrieve → LLM generate | Single-hop Q&A over local doc | LL Cycle + Middle of LL + Range Sum Query (R1), Pivot Index (R3) |
+| 22 | **Relational DB** + **ACID** (transactions, commit, rollback) + **SQL** (SELECT, JOIN) + **sqlite3** | SQLite database. Practice transactions | Reverse LL + Palindrome LL + LL Cycle (R1), Merge Sorted (R7) |
+| 23 | **IR Theory** (TF-IDF, inverted index) + **Parent-Child Chunking** + **Cross-Encoder Reranking** | Two-stage: TF-IDF + reranking | Binary Search + First Bad Version + Reverse LL (R1), Palindrome LL (R3) |
+| 24 | **Docker Basics** (images, containers, Dockerfiles) + **Hybrid Search** (BM25, RRF) + **pgvector via Docker** | Run pgvector in Docker. BM25 + dense + RRF fusion | Search Insert Position + Kth Missing Positive + Binary Search (R1), First Bad (R3) |
 
-### Phase 2: RAG & Orchestration (Days 23-32)
-| Day | Morning | Afternoon | DSA (30 min only) |
+### Phase 3: Classical ML, NLP Theory & Transformer Internals (Days 25-31)
+| Day | Morning | Afternoon | DSA (See agent/dsa/study_plan.md) |
 |-----|---------|-----------|-----------------------------------|
-| 23 | LangGraph (StateGraph, Nodes, Edges, Reducers) | Build deterministic LangGraph agent | Longest Common Prefix #14 |
-| 24 | Docker + Hybrid Search (BM25 + RRF) + pgvector | Run pgvector. BM25 + dense + RRF | Index of Occurrence #28 |
-| 25 | Advanced LangGraph (conditional, cycles, checkpointing) | Weather agent with retry + PostgresSaver | Majority Element #169 |
-| 26-32 | LangGraph + pgvector + LangSmith + WebSockets + A2A | Build + evaluate RAG agent, stream execution | Trees + Graphs (see study_plan.md) |
-
-### Phase 3: MCP & Integration (Days 34-40)
-| Day | Morning | Afternoon | DSA (30 min only) |
-|-----|---------|-----------|-----------------------------------|
-| 34-36 | MCP Theory + Advanced + LangGraph Integration | Build MCP server, connect to agent | Intervals + Heaps |
-| 37-39 | FastAPI Advanced + Redis + Docker Compose | Production-grade stack | Graphs + Topological Sort |
-| 40 | 🔁 REVIEW DAY | 🔁 REVIEW DAY | 🔁 REVIEW DAY |
-
-### Phase 4: MVP Project 1 — Voice/Chat Agent Backend (Days 41-50)
-| Day | Morning | Afternoon | DSA (30 min only) |
-|-----|---------|-----------|-----------------------------------|
-| 41-46 | MCP Server + LangGraph Agent + Streaming + Tests + Deploy | Enterprise tool endpoints, WebSocket streaming | Design + Caching problems |
-| 47 | 🔁 REVIEW DAY | 🔁 REVIEW DAY | 🔁 REVIEW DAY |
-| 48-50 | Polish + Loom Demo + Apply Batch 1 | Proof of Work to Top 10 companies | Tries + DP + Backtracking |
-
-### Phase 5: MVP Project 2 + Apply Blitz (Days 51-60)
-| Day | Morning | Afternoon | DSA (30 min only) |
-|-----|---------|-----------|-----------------------------------|
-| 51-53 | Financial Data Analyst Agent + SQL Agent + Frontend | LangGraph + PostgreSQL + WebSocket streaming | Heap + Design problems |
-| 54 | 🔁 REVIEW DAY | 🔁 REVIEW DAY | 🔁 REVIEW DAY |
-| 55-56 | Polish + Loom + Apply Batch 2 | Both projects live | No new DSA |
-| 57-58 | Mock Interviews (Verbal + Pair + System Design + Behavioral) | Practice rounds | No new DSA |
-| 59-60 | Apply Batch 3 + Final Review | Close loops | 🔁 FINAL REVIEW |
+| 25 | **Linear Algebra for AI**: vectors, dot products, matrices, eigenvectors | Solve linear algebra problems. Visualize transformations | LL Intersection + Remove LL Elements + Search Insert (R1), Kth Missing (R3) |
+| 25B | **Calculus**: Derivatives, Chain Rule + **Gradient Descent** | Build gradient descent optimizer. Visualize loss landscape | 🔁 REVIEW ONLY: Best Time, LL Cycle, Reverse LL, Binary Search, Contains Dup, Valid Palindrome |
+| 26 | **Pandas/NumPy** basics + **Classical ML Intro**: Logistic Regression + K-Means | Implement Logistic Regression + K-Means on toy datasets | Valid Parentheses + Min Stack + LL Intersection (R1), Remove LL (R3) |
+| 27 | **Classical NLP**: BoW, N-grams, Tokenization + **Word2Vec**/GloVe | Build BoW vectors. Train Word2Vec. Visualize with PCA | Level Order Traversal + Avg of Levels + Valid Paren (R1), Min Stack (R3) |
+| 27B | **Sequential Models**: RNN theory, vanishing gradient + **LSTM** (gates, cell state) | Compare RNN vs feedforward on sequential data | Max Depth + Invert Tree + Level Order (R1), Avg Levels (R3) |
+| 28 | **NN Lifecycle**: Training vs Inference + **Transformer Internals** (QKV, RoPE, layer norm, residual) | Implement transformer block. Compare with RNN | Same Tree + Subtree of Another + Max Depth (R1), Invert Tree (R3) |
+| 29 | **Standard KV Cache** + **Mixture-of-Experts** + **DeepSeek-V3** (MLA, MoE, MTP) | Diagram KV cache vs MLA. Calculate savings | Balanced Tree + Diameter of Tree + Same Tree (R1), Subtree (R3) |
+| 30 | **Eval Theory**: BLEU, ROUGE, MAP, MRR, NDCG + **LangSmith** + **Ragas** | LangSmith project + Ragas eval pipeline | Symmetric Tree + Queue using Stacks + Balanced (R1), Diameter (R3) |
+| 31 | **LangGraph**: StateGraph, TypedDict, Nodes, Edges, Reducers. DAG/cyclic theory | Build simple cyclic agent (weather-checker with retry) | 🔁 REVIEW ONLY: Binary Search, Reverse LL, Level Order, Max Depth, Valid Paren, Two Sum |
 
 ### Phase 4: Advanced DSA & Enterprise RAG Architectures (Days 32-39)
 | Day | Morning | Afternoon | DSA |
