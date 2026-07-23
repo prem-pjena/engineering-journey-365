@@ -8,16 +8,21 @@
 
 ```
 Days 1-10:  Python Foundations (vars → File I/O, Sets, Two Sum) ✅ COMPLETE
-Days 11-12: OOP (decorators, @property, dunder) + Terminal/Git + Context Managers
-Days 13:    pip/venv + HTTP Protocol + Type Hinting + FastAPI intro
-Days 14:    Generators + Tuples + enumerate/zip
-Days 15:    Markdown + regex/JSON + Defensive Parsing
-Days 16:    .env files + LLM APIs (tokens, logits, softmax, streaming)
-Days 17:    Prompt Engineering (system prompts, few-shot, CoT)
-Days 18:    Async Python + Data Serialization (Pydantic) + SSE + Generative Parameters
-Days 19:    Data Pipeline Theory + LangChain (PromptTemplate, LCEL, parsers)
-Days 20:    Vector Math (dot product, cosine similarity) + Embeddings API
-Days 21:    Basic RAG (chunk → embed → retrieve → generate)
+Days 11-12: OOP (decorators, @property, dunder) + Terminal/Git + Context Managers ✅
+Days 13:    pip/venv + HTTP Protocol + Type Hinting + FastAPI intro + 🧩 2 DSA
+Days 14:    Generators + Tuples + enumerate/zip + 🧩 2 DSA
+Days 15:    Markdown + regex/JSON + Defensive Parsing + 🧩 2 DSA + Reviews
+Days 16:    .env files + LLM APIs (tokens, logits, softmax, streaming) + 🧩 2 DSA
+Days 17:    Prompt Engineering (system prompts, few-shot, CoT) + 🧩 2 DSA
+Days 18:    Async Python + Data Serialization (Pydantic) + SSE + 🧩 2 DSA
+Days 19:    LangChain (PromptTemplate, LCEL, parsers) + 🔁 DSA Review Day
+Days 20:    Vector Math (dot product, cosine similarity) + Embeddings API + 🧩 2 DSA
+Days 21:    Basic RAG (chunk → embed → retrieve → generate) + 🧩 2 DSA
+Days 22:    SQL (sqlite3, ACID, transactions) + 🧩 2 DSA
+Days 23:    IR Theory (TF-IDF, inverted index) + Cross-encoder Reranking + 🧩 2 DSA
+Days 24:    Docker Basics + Hybrid Search (BM25 + RRF) + pgvector + 🧩 2 DSA
+Days 25:    Linear Algebra for AI + Calculus/Gradient Descent (2 sub-days) + 🧩 2 DSA
+Days 26:    Pandas/NumPy + Classical ML (Logistic Regression, K-Means) + 🔁 DSA Review
 Days 22:    SQL (sqlite3, ACID, transactions) + Relational DB fundamentals
 Days 23:    IR Theory (TF-IDF, inverted index) + Cross-encoder Reranking
 Days 24:    Docker Basics + Hybrid Search (BM25 + RRF) + pgvector via Docker
@@ -51,10 +56,11 @@ Days 59-60: PROJECT 2 (Autonomous Swarm) + Deploy + APPLY FT BLITZ → 🎯
 
 | Metric | Value |
 |--------|-------|
-| Days Completed | 11 (Day 1 ✅ → Day 11 ✅) |
-| Current Phase | Day 12 — Terminal, Git, Context Managers, venv |
-| Consistency Streak | 11 days ✅ |
-| DSA Problems Solved | 1 / target 59 |
+| Days Completed | 12 (Day 1 ✅ → Day 12 ✅) |
+| Current Phase | Day 13 — pip/venv + HTTP + FastAPI intro |
+| Consistency Streak | 12 days ✅ |
+| DSA Problems Solved | 2 / target ~60 (v2 — AI Engineer optimized, see agent/dsa/study_plan.md) |
+| DSA Schedule | 2 new problems/day + spaced repetition reviews, 7 review-only days |
 | Projects Deployed | 0 |
 
 ---
@@ -107,7 +113,7 @@ Must-Have (market critical) | Good-to-Have (high ROI) | 🚫 Skip (low ROI for t
 | RAG (naive → advanced → hybrid) | 0/10 | 5.0/10 | 8.0/10 | 🔴 Must-Have |
 | LLM Evaluation (LangSmith/Ragas) | 0/10 | 4.0/10 | 7.0/10 | 🔴 Must-Have |
 | pgvector + Hybrid Search | 0/10 | 4.0/10 | 7.0/10 | 🔴 Must-Have |
-| DSA | 5.2/10 | 6.5/10 | 7.0/10 | 🔴 Must-Have |
+| DSA | 5.5/10 | 7.0/10 | 8.0/10 | 🔴 Must-Have | 84 problems planned (2/day) |
 | LLM APIs | 0/10 | 6.0/10 | 8.0/10 | 🔴 Must-Have |
 | Docker/AWS (ECS/EC2) | 3.0/10 | 5.0/10 | 7.0/10 | 🔴 Must-Have |
 | SQL/pgvector | 0/10 | 5.0/10 | 7.0/10 | 🔴 Must-Have |

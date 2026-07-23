@@ -26,8 +26,11 @@
 - CRITICAL GAPS: Async, FastAPI (0), LangChain (0), LangGraph (0), RAG (0), MCP (0), LangSmith/Ragas (0), Next.js (0)
 
 ## Current Progress
-- Days completed: 11 / 60
-- DSA solved: 1 / target 50
+- Days completed: 12 / 60
+- DSA solved: 2 (Two Sum + Valid Anagram) / target ~60
+- DSA plan: v2 AI Engineer Optimized (agent/dsa/study_plan.md) — DP, Backtracking, Monotonic Stack, Grid Graphs all dropped. 8 AI-specific problems added.
+- Repetition model: Binary Graduation (D2 + D7, retire on success)
+- Day 12 completed: Terminal, Git, Context Managers, Modules, venv/pip
 - Projects deployed: 0
 
 ## Market Research Key Findings (Jul 17-19)
