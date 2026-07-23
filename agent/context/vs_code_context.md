@@ -27,10 +27,12 @@
 
 ## Current Progress
 - Days completed: 12 / 60
-- DSA solved: 2 (Two Sum + Valid Anagram) / target ~60
-- DSA plan: v2 AI Engineer Optimized (agent/dsa/study_plan.md) — DP, Backtracking, Monotonic Stack, Grid Graphs all dropped. 8 AI-specific problems added.
-- Repetition model: Binary Graduation (D2 + D7, retire on success)
-- Day 12 completed: Terminal, Git, Context Managers, Modules, venv/pip
+- DSA solved: 2 (Two Sum + Valid Anagram) / target 37 problems (30 min/day only)
+- DSA plan: v4 — 30 problems, 30 min/day. No DP, Linked Lists, Hard Graphs.
+- Curriculum: v4 — Academic ML (Linear Algebra, Word2Vec, Transformers) DELETED. 7 phases → 5 phases.
+- Focus: FastAPI + Asyncio → LangGraph + pgvector → MCP → MVP Projects
+- Target companies: 10 exclusive (Peakflo, Bolna, Lamatic, Great Question, Senzcraft, SuperKalam, Kipps, Steps AI, TrueFoundry, Wadhwani AI)
+- Day 13 in progress: pip/venv, HTTP, Type Hinting, FastAPI intro
 - Projects deployed: 0
 
 ## Market Research Key Findings (Jul 17-19)
